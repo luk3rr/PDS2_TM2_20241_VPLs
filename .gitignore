@@ -1,0 +1,12 @@
+# EXE
+program
+
+# VS to debug :')
+.vscode
+
+# HTML files
+*.html
+
+# ETC
+.editorconfig
+.clang-format

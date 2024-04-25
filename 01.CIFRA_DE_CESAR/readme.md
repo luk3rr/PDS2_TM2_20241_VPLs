@@ -18,10 +18,10 @@ O seu programa deve receber três argumentos, na seguinte ordem:
 3. O texto que deve ser cifrado ou decifrado.
 
 Por exemplo:
-> ./program d 1234 "gmu, fg qt ogduaea yqeya quz"
+> ./programa.exe d -1234 "gmu, fg qt ogduaea yqeya quz"
 
 1. 'd' indica a operação de decifragem
-2. '1234' é o deslocamento
+2. '-1234' é o deslocamento
 3. o texto entre aspas é o conteúdo que deve ser decifrado
 
 # Regras do jogo
@@ -58,7 +58,7 @@ Considerando que o executável gerado pela compilação do seu programa chama-se
 
 ### Decifragem
 **input**
-> ./programa.exe c -5 "Gdips > Rdiyjrn"
+> ./programa.exe d -5 "Gdips > Rdiyjrn"
 
 **output**
 > Linux > Windows

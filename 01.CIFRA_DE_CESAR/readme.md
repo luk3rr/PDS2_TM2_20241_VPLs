@@ -24,7 +24,7 @@ Por exemplo:
 2. '1234' é o deslocamento
 3. o texto entre aspas é o conteúdo que deve ser decifrado
 
-# Requisitos
+# Regras do jogo
 1. Você não deve cifrar caracteres especiais, ou seja, cifre apenas letras maiúsculas e minúsculas que não estejam acentuadas. Também não cifre o 'ç' ou números. Em suma, cifre somente as letras do alfabeto inglês.
 
 2. Seu programa deve lidar com deslocamentos negativos (vide exemplo 2).
@@ -83,3 +83,4 @@ Considerando que o executável gerado pela compilação do seu programa chama-se
 2. https://www.ime.usp.br/~pf/algoritmos/apend/ascii.html
 3. https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/
 4. https://runestone.academy/ns/books/published/thinkcpp/Chapter2/OperatorsforCharacters.html
+5. https://cplusplus.com/reference/string/string/

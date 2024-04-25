@@ -14,6 +14,11 @@
 #include <sstream>
 #include <string>
 
+/**
+ * @brief Generate an acronym from a given phrase
+ * @param phrase The phrase to generate the acronym
+ * @return The acronym
+ **/
 std::string GenerateAcronym(const std::string& phrase)
 {
     std::stringstream ss(phrase);
@@ -28,6 +33,11 @@ std::string GenerateAcronym(const std::string& phrase)
     return acronym;
 }
 
+/**
+ * @brief Check if a given phrase is a recursive acronym
+ * @param phrase The phrase to check
+ * @return True if the phrase is a recursive acronym, false otherwise
+ **/
 bool IsRecursiveAcronym(const std::string& phrase)
 {
     std::stringstream ss(phrase);

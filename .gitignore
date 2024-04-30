@@ -10,3 +10,4 @@ program
 # ETC
 .editorconfig
 .clang-format
+compile_flags.txt

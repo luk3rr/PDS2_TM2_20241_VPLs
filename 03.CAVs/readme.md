@@ -74,7 +74,7 @@ O main já foi implementado é você pode (e provavelmente deva) copiá-lo para 
 
 # Links não tão inúteis
 
-Se estiver curioso sobre CAVs, comece por este artigo, foi um dos mais legais que li durante a minha iniciação científica.
 1. https://onlinelibrary.wiley.com/doi/10.1002/asmb.2772
+   - Se estiver curioso sobre CAVs, comece por este artigo, foi um dos mais legais que li durante a minha iniciação científica.
 2. https://en.cppreference.com/w/cpp/types/size_t
 3. https://stackoverflow.com/questions/6923722/how-do-i-call-the-base-class-constructor

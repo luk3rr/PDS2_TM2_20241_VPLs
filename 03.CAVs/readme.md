@@ -11,11 +11,7 @@ O objetivo deste VPL é trabalhar conceitos relacionados ao desenvolvimento de c
 
 Como um engenheiro e, principalmente, como um entusiasta dos carros autônomos, sua tarefa é implementar um programa que simula **um único** pelotão de CAVs em uma via. Para essa tarefa, considere que a via é alguma reta paralela ao eixo X. Os veículos podem trafegar tanto no sentido positivo quanto no negativo, a depender da aceleração e velocidade correntes.
 
-O objetivo é, dado um ponto qualquer na via, atravessá-lo com o veículo líder. Em outros palavras, se $v$ é o veículo líder do pelotão e $t$ é o ponto alvo (target), o objetivo é atingido quando:
-
-1. Se no início da simulação $t.x > v.x$, então o objetivo é atingido quando $v.x \ge t.x$;
-
-2. Se no início da simulação $t.x < v.x$, então o objetivo é atingido quando $v.x \le t.x$.
+O objetivo é, dado um ponto qualquer na via, atravessá-lo com o veículo líder. Em outros palavras, se $v$ é o veículo líder do pelotão e $t$ é o ponto alvo (target), o objetivo é atingido quando $v.x \ge t.x$. É garantido que no início da simulação $t.x > v.x$.
 
 Para essa tarefa, considere o tempo como uma grandeza discreta. Você pode, por exemplo, ter um loop que a cada interação incrementa um contador em uma unidade e considerar isso como o seu tempo. Assim, a velocidade pode ser alterada a cada interação (como se cada loop durasse 1 segundo).
 
@@ -35,6 +31,8 @@ Por exemplo, antes da execução do programa, o usuário pode registrar 3 evento
 
 Não menos importante, os veículos têm uma velocidade máxima permitida. Então, supondo que a velocidade máxima para o exemplo acima seja 10, a partir do momento 20 até atingir o objetivo os veículos poderiam acelerar até atingir 10.
 
+Observe que mesmo que $t.x$ sempre está "a frente" de $v.x$ no início da simulação, em certos casos os veículos podem trafegar no sentido contrário caso a aceleração seja negativa (vide exemplo 2). Isso interfere diretamente no tempo até atingir o objetivo. No entanto, é garantido que nos casos de teste a ordem dos eventos é elaborada de forma que sempre o alvo seja atingido, ou seja, não existe caso onde o pelotão vai infinitamente para o sentido contrário de onde está o alvo.
+
 ## O que você deve implementar
 ### class Point
 Classe responsável por representar um ponto no plano, ou seja, deve conter os atributos necessários para armazenar coordenadas.
@@ -43,11 +41,11 @@ Classe responsável por representar um ponto no plano, ou seja, deve conter os a
 1. **m_x**, **m_y** do tipo double, utilizado para armazenar as coordenadas.
 
 #### Métodos
-1. Point(double, double): Construtor que recebe os parâmetros x e y, nessa ordem, e inicializa os atributos da classe;
+1. **Point(double, double)**: Construtor que recebe os parâmetros x e y, nessa ordem, e inicializa os atributos da classe;
 
-2. SetX(double) e SetY(double): Métodos para definir um novo valor para os atributos;
+2. **SetX(double)** e **SetY(double)**: Métodos para definir um novo valor para os atributos;
 
-3. GetX() e GetY(): Métodos para obter os valores dos atributos.
+3. **GetX()** e **GetY()**: Métodos para obter os valores dos atributos.
 
 ### class Vehicle
 Classe responsável por representar nossos queridos CAVs. Essa classe deve ser uma classe derivada de **Point**.
@@ -64,16 +62,41 @@ Cada veículo deve conter um ID, que deve ser um número inteiro positivo e deve
 4. **m_acceleration** do tipo double, que indica a aceleração do veículo.
 
 #### Métodos
-1. Vehicle(std::size_t id, double x, double y, double limitSpeed, double acceleration): Construtor que recebe e inicializa os atributos da classe
+1. **Vehicle(std::size_t id, double x, double y, double maxSpeed)**: Construtor que recebe e inicializa os atributos da classe
 
-2. SetSpeed(double), SetAcceleration(double): Métodos utilizados para alterar os atributos da classe;
+2. **SetSpeed(double), SetAcceleration(double)**: Métodos utilizados para alterar os atributos da classe;
 
-3. GetID(), GetSpeed(), GetAcceleration(): Métodos para obter os valores dos atributos.
+3. **GetID(), GetSpeed(), GetMaxSpeed(), GetAcceleration()**: Métodos para obter os valores dos atributo;
+
+4. **Move()**: Método que implementa o comportamento de mover o veículo no cenário.
+   + Atente-se a lógica de velocidade máxima
+   + DICA: A coordenada X é a única que é atualizada, uma vez que o movimento é unidimensional.
 
 OBS.: Se você estiver apanhando para inicializar os atributos da classe base (Point) através do construtor de Vehicle, o link 3 pode iluminar a sua vida.
 
 ### class Platoon
-Essa classe é a responsável por armazenar os veículos do pelotão e coordená-los, simulando o envio de informações do veículo líder para os seguidores. Como sugestão, você pode armazenar os veículos em um vector.
+Essa classe é a responsável por armazenar os veículos do pelotão e coordená-los, simulando o envio de informações do veículo líder para os seguidores.
+
+#### Atributos
+1. **m_vehicles**, Vector em que cada posição é um objetivo do tipo **Vehicle**;
+
+2. **m_target** do tipo **Point**, que armazena as coordenadas do ponto alvo;
+
+3. **m_maxSpeed** do tipo double, utilizada para armazenar a velocidade máxima do pelotão;
+
+4. **m_simulationSteps** do tipo std::size_t, e que deve armazenar o tempo atual da simulação.
+
+#### Métodos
+1. **Platoon(Point, double)**: Construtor que recebe o ponto alvo e a velocidade máxima do pelotão;
+
+2. **GetVehicles(), GetSimulationSteps()**: Métodos para obter os atributos da classe;
+
+3. **AddVehicle(double, double)**: Método utilizado para criar e adicionar um novo veículo ao pelotão. Ele recebe as coordenadas x e y que indicam a posição inicial do veículo;
+
+4. **AddEvent(std::size_t, double_t)**: Método utilizado para criar e adicionar um novo evento. Ele recebe o tempo e aceleração que deve ser definida, respectivamente;
+   + Dica: Você pode armazenar os eventos em um vector assim como fez com os veículos.
+
+4. **Start()**: Método que é chamado para iniciar a simulação. Ele só é chamado uma vez no main e depois que o pelotão e todos os veículos e eventos foram criados. Aqui você deve implementar a lógica de tratar eventos, alterar o tempo da simulação, chamar **Vehicle::Move()** para mover os veículos na via ao longo do tempo etc.
 
 ### class ou struct Event, ou utilizar std::pair
 Aqui você pode decidir utilizar class ou struct (aliás, você sabe a diferença entre class e struct?). Um event consiste em um par **<tempo, aceleração a definir>**. Onde o tempo é o momento em que a aceleração deve ser alterada.
@@ -81,15 +104,16 @@ Aqui você pode decidir utilizar class ou struct (aliás, você sabe a diferenç
 Você também pode optar por utilizar uma estrutura já implementada da STL que tem o mesmo objetivo (armazenar dois valores) chamada **std::pair**.
 
 ### Freedom
-Além disso, você é livre para implementar outros métodos ou classes que achar necessário para a sua solução.
+Além disso, você é livre para adicionar novos atributos as classes, ou implementar outros métodos ou classes que achar necessário para a sua solução.
 
-#### main
+### main
 O main já foi implementado é você pode (e provavelmente deva) copiá-lo para testar o seu programa localmente. A ideia é que vocês implementem somente os TADs, simulando o caso em que sua implementação será utilizada por outra pessoa (que conhece apenas o contrato).
 
-OBS.: Você **não** deve alterar o main.
-
 # Regras do jogo
-1. Todos os atributos de todas as classes devem ser encapsulados e serem acessados somente através de métodos Get e Set.
+1. Todos os atributos de todas as classes devem ser encapsulados e acessados somente através de métodos Get e Set.
+2. Você não deve altear o main que foi disponibilizado.
+3. Implemente todos os métodos listados acima. Se você não respeitar o contrato, meu main pode não funcionar :')
+4. Implemente, no mínimo, as classes e a herança solicitada.
 
 # Exemplos de entrada e saída
 A entrada e saída do programa já foi programada no main, mas deixo aqui uma explicação sobre como ela é feita.

@@ -26,7 +26,7 @@ class Vehicle : public Point
 
         double_t GetSpeed() const;
 
-        double_t GetLimitSpeed() const;
+        double_t GetMaxSpeed() const;
 
         double_t GetAcceleration() const;
 

@@ -25,7 +25,7 @@ double_t Vehicle::GetSpeed() const
     return this->m_speed;
 }
 
-double_t Vehicle::GetLimitSpeed() const
+double_t Vehicle::GetMaxSpeed() const
 {
     return this->m_maxSpeed;
 }

@@ -38,7 +38,7 @@ void Platoon::Start()
 {
     if (this->m_events.size() == 0)
     {
-        std::cerr << "No course plan was defined" << std::endl;
+        std::cerr << "No event was defined" << std::endl;
     }
 
     this->m_nextEvent = this->m_events[0];

@@ -1,6 +1,9 @@
 # EXE
 program
 
+# Objects
+*.o
+
 # VS to debug :')
 .vscode
 

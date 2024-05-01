@@ -8,6 +8,8 @@
 #define RINHA_H_
 
 #include "trainer.h"
+#include "trainer.h"
+#include <iostream>
 
 class Rinha
 {

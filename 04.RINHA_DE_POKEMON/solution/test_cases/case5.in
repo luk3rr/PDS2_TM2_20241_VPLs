@@ -1,5 +1,7 @@
 t DrZager
+i DrZager
 t OMonitorDePDS2
+i OMonitorDePDS2
 a OMonitorDePDS2 Shellder Aquático 83 0.66
 x DrZager Dinamite Explosivo 33 1
 r OMonitorDePDS2 Shellder DrZager Dinamite
@@ -7,4 +9,6 @@ r DrZager Dinamite OMonitorDePDS2 Shellder
 r OMonitorDePDS2 Shellder DrZager Dinamite
 r DrZager Dinamite OMonitorDePDS2 Shellder
 r OMonitorDePDS2 Shellder DrZager Dinamite
+i DrZager
+i OMonitorDePDS2
 q

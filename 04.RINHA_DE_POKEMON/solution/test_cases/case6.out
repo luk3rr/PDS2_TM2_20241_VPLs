@@ -1,0 +1,132 @@
+Treinador: T1
+----------
+Nenhum pokémon encontrado :(
+----------
+Treinador: T1
+----------
+Nenhum pokémon encontrado :(
+----------
+Treinador: T3
+----------
+Nenhum pokémon encontrado :(
+----------
+### RINHA ###
+T1 (P1) vs. T3 (P5)
+Pokémon: P1
+Tipo de ataque: A
+Potência do ataque: 0.5
+HP: 100
+Dano: 2.56
+Pokémon: P5
+Tipo de ataque: X
+Potência do ataque: 0.5
+HP: 97.44
+#############
+### RINHA ###
+T3 (P5) vs. T1 (P1)
+Pokémon: P5
+Tipo de ataque: X
+Potência do ataque: 0.5
+HP: 97.44
+Dano: 1.5
+Pokémon: P1
+Tipo de ataque: A
+Potência do ataque: 0.5
+HP: 98.5
+#############
+### RINHA ###
+T1 (P4) vs. T3 (P3)
+Pokémon: P4
+Tipo de ataque: E
+Potência do ataque: 0.5
+HP: 100
+Dano: 4
+Pokémon: P3
+Tipo de ataque: A
+Potência do ataque: 0.5
+HP: 96
+#############
+### RINHA ###
+T3 (P3) vs. T1 (P4)
+Pokémon: P3
+Tipo de ataque: A
+Potência do ataque: 0.5
+HP: 96
+Dano: 0
+Pokémon: P4
+Tipo de ataque: E
+Potência do ataque: 0.5
+HP: 100
+#############
+### RINHA ###
+T1 (P1) vs. T3 (P5)
+Pokémon: P1
+Tipo de ataque: A
+Potência do ataque: 0.5
+HP: 98.5
+Dano: 2.56
+Pokémon: P5
+Tipo de ataque: X
+Potência do ataque: 0.5
+HP: 94.88
+#############
+Treinador: T1
+----------
+Pokémon: P1
+Tipo de ataque: A
+Potência do ataque: 0.5
+HP: 98.5
+----------
+Pokémon: P2
+Tipo de ataque: X
+Potência do ataque: 0.5
+HP: 100
+----------
+Pokémon: P4
+Tipo de ataque: E
+Potência do ataque: 0.5
+HP: 100
+----------
+Treinador: T2
+----------
+Nenhum pokémon encontrado :(
+----------
+Treinador: T3
+----------
+Pokémon: P3
+Tipo de ataque: A
+Potência do ataque: 0.5
+HP: 96
+----------
+Pokémon: P5
+Tipo de ataque: X
+Potência do ataque: 0.5
+HP: 94.88
+----------
+Pokémon: P6
+Tipo de ataque: E
+Potência do ataque: 0.5
+HP: 100
+----------
+Treinador: T4
+----------
+Nenhum pokémon encontrado :(
+----------
+Fim da execução
+Classe derivada : Pokémon aquático P1 diz: Adeus!
+Classe base : Pokémon P1 foi destruído!
+Classe derivada : Pokémon explosivo P2 diz: Adeus!
+Classe base : Pokémon P2 foi destruído!
+Classe derivada : Pokémon elétrico P4 diz: Adeus!
+Classe base : Pokémon P4 foi destruído!
+Treinador T1 foi destruído!
+Treinador T2 foi destruído!
+Classe derivada : Pokémon aquático P3 diz: Adeus!
+Classe base : Pokémon P3 foi destruído!
+Classe derivada : Pokémon explosivo P5 diz: Adeus!
+Classe base : Pokémon P5 foi destruído!
+Classe derivada : Pokémon elétrico P6 diz: Adeus!
+Classe base : Pokémon P6 foi destruído!
+Treinador T3 foi destruído!
+Treinador T4 foi destruído!
+Rinha destruída pela Polícia Federal!

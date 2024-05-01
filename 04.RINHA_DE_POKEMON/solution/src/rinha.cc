@@ -5,8 +5,6 @@
  */
 
 #include "rinha.h"
-#include "trainer.h"
-#include <iostream>
 
 Rinha::Rinha() { }
 
@@ -16,6 +14,8 @@ Rinha::~Rinha()
     {
         delete trainer;
     }
+
+    std::cout << "Rinha destruída pela Polícia Federal!" << std::endl;
 }
 
 void Rinha::AddTrainer(std::string name)

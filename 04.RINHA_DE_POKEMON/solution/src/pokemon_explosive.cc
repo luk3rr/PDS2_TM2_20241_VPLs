@@ -5,7 +5,6 @@
  */
 
 #include "pokemon_explosive.h"
-#include <iostream>
 
 ExplosivePokemon::ExplosivePokemon(std::string name,
                                    std::string attackType,

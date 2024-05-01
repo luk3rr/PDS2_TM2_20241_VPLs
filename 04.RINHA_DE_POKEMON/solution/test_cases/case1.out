@@ -1,0 +1,20 @@
+### RINHA ###
+Ash (Pikachu) vs. Xerosic (Cheirosinho)
+Pokémon: Pikachu
+Tipo de ataque: Elétrico
+Potência do ataque: 0.7
+HP: 100
+Dano: 29.4
+Pokémon: Cheirosinho
+Tipo de ataque: Explosivo
+Potência do ataque: 0.99
+HP: 70.6
+#############
+Fim da execução
+Classe derivada : Pokémon elétrico Pikachu diz: Adeus!
+Classe base : Pokémon Pikachu foi destruído!
+Treinador Ash foi destruído!
+Classe derivada : Pokémon explosivo Cheirosinho diz: Adeus!
+Classe base : Pokémon Cheirosinho foi destruído!
+Treinador Xerosic foi destruído!
+Rinha destruída pela Polícia Federal!

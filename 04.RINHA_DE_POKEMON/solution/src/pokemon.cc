@@ -5,7 +5,6 @@
  */
 
 #include "pokemon.h"
-#include <iostream>
 
 Pokemon::Pokemon(std::string name, std::string attackType, double attackStrength)
 {
@@ -17,12 +16,19 @@ Pokemon::Pokemon(std::string name, std::string attackType, double attackStrength
 
 Pokemon::~Pokemon()
 {
-    std::cout << "Classe base : Pokemon " << this->m_name << " foi destruído!"
+    std::cout << "Classe base : Pokémon " << this->m_name << " foi destruído!"
               << std::endl;
 }
 
 void Pokemon::ReceiveAttack(double damage)
 {
+    if (this->m_hp == 0)
+    {
+        std::cout << this->m_name << " já morreu. Não chute Pokémon morto!"
+                  << std::endl;
+        return;
+    }
+
     this->m_hp = std::max(0.0, m_hp - damage);
 
     if (this->m_hp == 0)

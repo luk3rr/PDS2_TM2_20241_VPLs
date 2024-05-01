@@ -8,6 +8,7 @@
 #define POKEMON_H_
 
 #include <string>
+#include <iostream>
 
 /**
  * @brief Base class for all pokemons

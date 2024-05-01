@@ -7,8 +7,10 @@
 #ifndef POKEMON_ELECTRIC_H_
 #define POKEMON_ELECTRIC_H_
 
-#include "pokemon.h"
 #include <string>
+#include <iostream>
+
+#include "pokemon.h"
 
 class ElectricPokemon : public Pokemon
 {

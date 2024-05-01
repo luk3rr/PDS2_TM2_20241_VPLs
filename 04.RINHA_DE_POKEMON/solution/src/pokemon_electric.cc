@@ -5,7 +5,6 @@
  */
 
 #include "pokemon_electric.h"
-#include <iostream>
 
 ElectricPokemon::ElectricPokemon(std::string name,
                                  std::string attackType,

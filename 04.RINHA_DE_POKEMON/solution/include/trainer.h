@@ -7,10 +7,14 @@
 #ifndef TRAINER_H_
 #define TRAINER_H_
 
+#include <iostream>
 #include <string>
 #include <vector>
 
 #include "pokemon.h"
+#include "pokemon_aquatic.h"
+#include "pokemon_electric.h"
+#include "pokemon_explosive.h"
 
 class Trainer
 {

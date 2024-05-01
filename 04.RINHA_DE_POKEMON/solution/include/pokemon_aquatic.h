@@ -7,6 +7,8 @@
 #ifndef POKEMON_AQUATIC_H_
 #define POKEMON_AQUATIC_H_
 
+#include <iostream>
+
 #include "pokemon.h"
 
 class AquaticPokemon : public Pokemon

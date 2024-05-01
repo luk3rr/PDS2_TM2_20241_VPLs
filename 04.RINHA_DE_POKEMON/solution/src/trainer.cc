@@ -5,11 +5,6 @@
  */
 
 #include "trainer.h"
-#include "pokemon_aquatic.h"
-#include "pokemon_electric.h"
-#include "pokemon_explosive.h"
-
-#include <iostream>
 
 Trainer::Trainer(std::string name)
 {
@@ -18,7 +13,7 @@ Trainer::Trainer(std::string name)
 
 Trainer::~Trainer()
 {
-    for (auto& p : m_pokemons)
+    for (auto& p : this->m_pokemons)
     {
         delete p;
     }
@@ -80,7 +75,7 @@ void Trainer::PrintInfo()
     if (this->m_pokemons.size() == 0)
     {
         std::cout << line << std::endl;
-        std::cout << "Nenhum pokemon registrado :(" << std::endl;
+        std::cout << "Nenhum pokémon encontrado :(" << std::endl;
     }
     else
     {

@@ -5,7 +5,6 @@
  */
 
 #include "pokemon_aquatic.h"
-#include <iostream>
 
 AquaticPokemon::AquaticPokemon(std::string name,
                                std::string attackType,

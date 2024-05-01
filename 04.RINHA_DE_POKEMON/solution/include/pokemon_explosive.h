@@ -7,6 +7,8 @@
 #ifndef POKEMON_EXPLOSIVE_H_
 #define POKEMON_EXPLOSIVE_H_
 
+#include <iostream>
+
 #include "pokemon.h"
 
 class ExplosivePokemon : public Pokemon

@@ -4,7 +4,7 @@ Segundo a legislação brasileira, é crime realizar ou promover "brigas de galo
 aparentemente ainda não há legislações que garantam os direitos dos monstros (Pokémon vem de **Poke**tto **Mon**sutā, que é Pocket Monster em inglês). Além disso, pelo que eu entendi, monstros não são animais, então é lícito realizar rinhas de Pokémons em território brasileiro.
 
 # Tarefa
-O objetivo deste VPL é trabalhar conceitos relacionados ao desenvolvimento de classes em C++, especificamente encapsulamento, herança e composição.
+O objetivo deste VPL é trabalhar conceitos relacionados ao desenvolvimento de classes em C++, especificamente encapsulamento, herança, composição e o temido polimorfismo.
 
 Como um entusiasta das rinhas (lícitas), sua tarefa é implementar um campeonato de batalhas de Pokémons, onde diferentes treinados podem se desafiar.
 
@@ -17,41 +17,44 @@ Classe base que representa um Pokémon genérico.
 #### Atributos
 1. **m_name**, **m_attackType** do tipo string, que armazena o nome do Pokémon e o tipo do ataque que ele faz (elétrico, aquático, explosivo etc);
 
-2. **m_hp** do tipo double, que indica a vida atual do Pokemon;
+2. **m_hp** do tipo double, que indica a vida atual do Pokemon; O HP é definido como 100 para todos os Pokémons.
 
 3. **m_attackStrength** do tipo double no intervalo [0,1], que indica a potência do ataque do Pokémon.
 
 #### Métodos
-1. **Pokemon(string name, string attackType, double hp):** Método construtor para a inicialização dos atributos;
+1. **Pokemon(string name, string attackType, double m_attackStrength):** Método construtor para a inicialização dos atributos;
 
-2. **virtual void Attack(Pokemon\* other) = 0:** Método virtual puro que deve ser implementado por todas as classes derivadas (veja o link 2 e 3). Esse método deve implementar a ação de aplicar dano em outro Pokémon, de acordo com a seguinte lógica
+==talvez==
+2. **virtual ~Pokemon()**: Destrutor que deve ser implementado
+==talvez==
+
+3. **virtual void Attack(Pokemon\* other) = 0:** Método virtual puro que deve ser implementado por todas as classes derivadas (veja o link 2 e 3). Esse método deve implementar a ação de aplicar dano em outro Pokémon, de acordo com a seguinte lógica
    + Fala o próprio nome
    + Fala o tipo do ataque
    + Calcula o dano e imprime: "Dano: X"
      + O cálculo do dano é feito multiplicando a potência do ataque pela quantidade de dano que ele inflige.
    + Aplica o dano sobre outro Pokémon
 
-3. **ReceiveAttack(double)**: Método que recebe um double que indica quando um Pokémon recebe uma pancada (ou lapada, no bom português). O valor recebido como parâmetro deve ser debitado do hp do Pokémon. O hp nunca deve ficar negativo, sendo o menor valor válido zero. Caso o hp chegue a zero, deve-se imprimir a mensagem "NOME Faliceu!", seguido de uma quebra de linha;
+4. **ReceiveAttack(double)**: Método que recebe um double que indica quando um Pokémon recebe uma pancada (ou lapada, no bom português). O valor recebido como parâmetro deve ser debitado do hp do Pokémon. O hp nunca deve ficar negativo, sendo o menor valor válido zero. Caso o hp chegue a zero, deve-se imprimir a mensagem "NOME Faliceu! ;-;", seguido de uma quebra de linha;
 
-4. **SayAttackType()**: Método que imprime o tipo do ataque no seguinte formato:
+5. **virtual SayAttackType()**: Método que imprime o tipo do ataque no seguinte formato:
    + TIPO!
    + Seguido de uma quebra de linha
 
-5. **PrintInfo**: Imprime as informações do Pokémon no formato:
-   + Pokemon: NOME
+6. **PrintInfo**: Imprime as informações do Pokémon no formato:
+   + Pokémon: NOME
    + Tipo ataque: TIPO
-   + Dano: X
-   + Vida: Y
+   + Potência do ataque: X
+   + HP: Y
 
-
-### class PokemonElectric
+### class ElectricPokemon
 Herda de Pokemon.
 
 #### Atributos
 1. **m_electricPower** do tipo double, que indica quanto de dano elétrico o Pokémon pode dar.
 
 #### Métodos
-1. **PokemonElectric(string name, string attackType, double electricPower, double attackStrength)**: Método construtor para a inicialização dos atributos;
+1. **ElectricPokemon(string name, string attackType, double electricPower, double attackStrength)**: Método construtor para a inicialização dos atributos;
 
 2. **Attack(Pokemon\* other)**: Sobrescrita do método virtual da superclasse.
 
@@ -60,14 +63,14 @@ Herda de Pokemon.
    + Seguido de uma quebra de linha
    + (Imagine que "Bzzzz" é um barulho de choque e não de uma abelha ._. )
 
-### class PokemonAquatic
+### class AquaticPokemon
 Herda de Pokemon.
 
 #### Atributos
 1. **m_aquaticPower** do tipo double, que indica quanto de dano aquático o Pokémon pode dar.
 
 #### Métodos
-1. **PokemonAquatic(string name, string attackType, double aquaticPower, double attackStrength)**: Método construtor para a inicialização dos atributos;
+1. **AquaticPokemon(string name, string attackType, double aquaticPower, double attackStrength)**: Método construtor para a inicialização dos atributos;
 
 2. **Attack(Pokemon\* other)**: Sobrescrita do método virtual da superclasse.
 
@@ -154,7 +157,6 @@ Você pode assumir que todos os nomes utilizados nas entradas são válidos. Ou 
 # Regras do jogo
 1. Todos os atributos de todas as classes devem ser encapsulados e acessados somente através de métodos Get e Set.
 2. Você deve fazer todas as heranças e sobrescrita de métodos solicitadas.
-3.
 
 # Exemplos de entrada e saída
 ## Entrada

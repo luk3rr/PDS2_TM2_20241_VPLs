@@ -18,15 +18,15 @@ class Pokemon
         std::string m_name;
         std::string m_attackType;
         double      m_hp;
+        double      m_attackStrength;
 
     public:
         /**
          * @brief Constructor
          * @param name Name of the pokemon
          * @param attackType Type of attack of the pokemon
-         * @param hp Initial health points of the pokemon
          **/
-        Pokemon(std::string name, std::string attackType, double hp);
+        Pokemon(std::string name, std::string attackType, double attackStrength);
 
         /**
          * @brief Destructor
@@ -34,10 +34,21 @@ class Pokemon
         virtual ~Pokemon();
 
         /**
+         * @brief Calculate the damage of an attack
+         **/
+        virtual double CalculateDamage() = 0;
+
+        /**
          * @brief Attack another pokemon
          * @param other Pokemon to be attacked
          **/
-        virtual void Attack(Pokemon* other) = 0;
+        void Attack(Pokemon* other);
+
+        /**
+         * @brief Receive an attack from another pokemon
+         * @param damage Amount of damage received
+         **/
+        void ReceiveAttack(double damage);
 
         /**
          * @brief Get the name of the pokemon
@@ -52,22 +63,16 @@ class Pokemon
         std::string GetAttackType() const;
 
         /**
+         * @brief Get the attack strength of the pokemon
+         * @return Attack strength of the pokemon
+         **/
+        double GetAttackStrength() const;
+
+        /**
          * @brief Get the health points of the pokemon
          * @return Health points of the pokemon
          **/
         double GetHp() const;
-
-        /**
-         * @brief Set the health points of the pokemon
-         * @param hp New health points of the pokemon
-         **/
-        void GetHp(double hp);
-
-        /**
-         * @brief Receive an attack from another pokemon
-         * @param damage Amount of damage received
-         **/
-        void ReceiveAttack(double damage);
 
         /**
          * @brief Say the pokemon's name
@@ -77,7 +82,12 @@ class Pokemon
         /**
          * @brief Say the pokemon's attack type
          **/
-        void SayAttackType() const;
+        virtual void SayAttackType() const;
+
+        /**
+         * @brief Print the information of the pokemon
+         **/
+        void PrintInfo() const;
 };
 
 #endif // POKEMON_H_

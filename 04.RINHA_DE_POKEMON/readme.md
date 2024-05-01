@@ -30,7 +30,7 @@ Classe base que representa um Pokémon genérico.
    + O cálculo do dano é feito multiplicando a potência do ataque pelo poder de ataque.
 
 4. **Attack(Pokemon\* target):** Método que implementa o comportamento de atacar outro Pokémon (target).
-   + Se o Pokémon atacante estiver com HP iguala a zero, então ele não pode atacar e a função deve apenas imprimir a mensagem "NOME já partiu dessa pra melhor e não pode atacar!"
+   + Se o Pokémon atacante estiver com HP igual a zero, então ele não pode atacar e a função deve apenas imprimir a mensagem "NOME já partiu dessa pra melhor e não pode atacar!"
    + Caso contrário:
      + Imprima as informações do Pokémon atacante (use a função PrintInfo)
      + Calcule o dano que ele causa
@@ -90,6 +90,8 @@ Herda de Pokémon.
 
 ### class ExplosivePokemon
 Herda de Pokémon.
+
+Sendo politicamente correto, sei que não existe Pokémon do tipo "explosivo" no anime. No entanto, não consegui pensar em uma onomatopeia legal para um Pokémon de fogo e, cá entre nós, o BOOM dos Pokémons explosivos é fenomenal. Então, considere isso liberdade artística da minha parte.
 
 #### Atributos
 1. **m_explosivePower** do tipo double, que indica quanto de dano explosivo o Pokémon pode dar.

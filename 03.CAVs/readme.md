@@ -6,7 +6,7 @@ Um pelotão de CAVs é formado por um veículo líder e os veículos seguidores.
 ![Pelotão de CAVs](./imgs/platoon.png)
 
 # Tarefa
-O objetivo deste VPL é trabalhar conceitos relacionados ao desenvolvimento de classes em C++, especificamente encapsulamento e herança.
+O objetivo deste VPL é trabalhar conceitos relacionados ao desenvolvimento de classes em C++, especificamente encapsulamento, herança e composição.
 
 Como um engenheiro e, principalmente, como um entusiasta dos carros autônomos, sua tarefa é implementar um programa que simula **um único** pelotão de CAVs em uma via. Para essa tarefa, considere que a via é alguma reta paralela ao eixo X. Os veículos podem trafegar tanto no sentido positivo quanto no negativo, a depender da aceleração e velocidade correntes.
 

@@ -147,7 +147,7 @@ Herda de Pokémon.
 
 1. **AddTrainer(string name)**: Método para criar treinadores com um nome específico.
 
-2. Métodos para cadastro de Pokémons específicos:
+2. Métodos para criar Pokémons específicos:
    + **AddElectricPokemon(string nameTrainer, string namePokemon, double electricPower, double attackStrength);**
    + **AddAquaticPokemon(string nameTrainer, string namePokemon, double aquaticPower, double attackStrength);**
    + **AddExplosivePokemon(string nameTrainer, string namePokemon, double explosivePower, double attackStrength);**
@@ -165,9 +165,9 @@ Como ainda vivemos em um país livre, você pode adicionar novos atributos às c
 Por fim, você deve implementar o **main.cpp** do seu programa e toda a lógica de entrada/saída que será responsável por manipular os seguintes comandos:
 + 't nome': comando para cadastrar um treinador na rinha;
 + 'i nome': comando para imprimir as informações de um treinador;
-+ 'e nomeTreinador nomePokemon tipoAtaque forcaAtaque potenciaAtaque': comando para adicionar um Pokémon elétrico ao treinador informado;
-+ 'a nomeTreinador nomePokemon tipoAtaque forcaAtaque potenciaAtaque': comando para adicionar um Pokémon aquático ao treinador informado;
-+ 'x nomeTreinador nomePokemon tipoAtaque forcaAtaque potenciaAtaque': comando para adicionar um Pokémon explosivo ao treinador informado;
++ 'e nomeTreinador nomePokemon forcaAtaque potenciaAtaque': comando para adicionar um Pokémon elétrico ao treinador informado;
++ 'a nomeTreinador nomePokemon forcaAtaque potenciaAtaque': comando para adicionar um Pokémon aquático ao treinador informado;
++ 'x nomeTreinador nomePokemon forcaAtaque potenciaAtaque': comando para adicionar um Pokémon explosivo ao treinador informado;
 + 'r nomeTreinador1 nomePokemon1 nomeTreinador2 nomePokemon2': comando para realizar uma batalha de acordo com os nomes informados.
 + 'q': comando para finalizar o programa.
 

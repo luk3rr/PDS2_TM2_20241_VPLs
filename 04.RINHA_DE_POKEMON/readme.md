@@ -6,7 +6,7 @@ aparentemente ainda não há legislações que garantam os direitos dos monstros
 # Tarefa
 O objetivo deste VPL é trabalhar conceitos relacionados ao desenvolvimento de classes em C++, especificamente encapsulamento, herança, composição e o temido polimorfismo.
 
-Como um entusiasta das rinhas (lícitas), sua tarefa é implementar um campeonato de batalhas de Pokémons, onde diferentes treinados podem se desafiar.
+Como um entusiasta das rinhas (lícitas), sua tarefa é implementar um campeonato de batalhas de Pokémons, onde diferentes treinadores podem se desafiar.
 
 OBS.: Se o objetivo fosse ficar milionário, poderíamos incluir e gerenciar um sistema de apostas. No entanto, como o objetivo é apenas aprender C++ e POO, não teremos um sistema de apostas.
 
@@ -17,7 +17,7 @@ Classe base que representa um Pokémon genérico.
 #### Atributos
 1. **m_name**, **m_attackType** do tipo string, que armazena o nome do Pokémon e o tipo do ataque que ele faz (elétrico, aquático, explosivo etc);
 
-2. **m_hp** do tipo double, que indica a vida atual do Pokemon; O HP é definido inicialmente como 100 para todos os Pokémons.
+2. **m_hp** do tipo double, que indica a vida atual do Pokémon; O HP é definido inicialmente como 100 para todos os Pokémons.
 
 3. **m_attackStrength** do tipo double no intervalo [0,1], que indica a potência do ataque do Pokémon.
 
@@ -25,7 +25,7 @@ Classe base que representa um Pokémon genérico.
 1. **Pokemon(string name, string attackType, double m_attackStrength):** Método construtor para a inicialização dos atributos;
 
 2. **virtual ~Pokemon()**: Destrutor que deve ser implementado.
-    + Deve imprimir a mensagem: "Classe base : Pokemon NOME foi destruído!"
+    + Deve imprimir a mensagem: "Classe base : Pokémon NOME foi destruído!"
 
 3. **virtual double CalculateDamage() = 0:** Método virtual puro que deve ser implementado por todas as classes derivadas (veja o link 2 e 3). Deve ser responsável por calcular o dano que o Pokémon causa.
    + O cálculo do dano é feito multiplicando a potência do ataque pelo poder de ataque.
@@ -53,7 +53,7 @@ Classe base que representa um Pokémon genérico.
    + HP: Y
 
 ### class ElectricPokemon
-Herda de Pokemon.
+Herda de Pokémon.
 
 #### Atributos
 1. **m_electricPower** do tipo double, que indica quanto de dano elétrico o Pokémon pode dar.
@@ -71,7 +71,7 @@ Herda de Pokemon.
    + (Imagine que "Bzzzz" é um barulho de choque e não de uma abelha ._. )
 
 ### class AquaticPokemon
-Herda de Pokemon.
+Herda de Pokémon.
 
 #### Atributos
 1. **m_aquaticPower** do tipo double, que indica quanto de dano aquático o Pokémon pode dar.
@@ -88,7 +88,7 @@ Herda de Pokemon.
    + TIPO! Splash!
 
 ### class ExplosivePokemon
-Herda de Pokemon.
+Herda de Pokémon.
 
 #### Atributos
 1. **m_explosivePower** do tipo double, que indica quanto de dano explosivo o Pokémon pode dar.
@@ -124,7 +124,7 @@ Herda de Pokemon.
    + Se nenhum Pokémon foi cadastrado
      + Treinador: NOME
      + \----------
-     + Nenhum Pokemon encontrado :(
+     + Nenhum Pokémon encontrado :(
      + \---------
    + Caso contrário:
      + Treinador: NOME
@@ -204,10 +204,10 @@ HP: 70.6\
 #############\
 Fim da execução\
 Classe derivada : Pokémon elétrico Pikachu diz: Adeus!\
-Classe base : Pokemon Pikachu foi destruído!\
+Classe base : Pokémon Pikachu foi destruído!\
 Treinador Ash foi destruído!\
 Classe derivada : Pokémon explosivo Cheirosinho diz: Adeus!\
-Classe base : Pokemon Cheirosinho foi destruído!\
+Classe base : Pokémon Cheirosinho foi destruído!\
 Treinador Xerosic foi destruído!\
 Rinha destruída pela Polícia Federal!
 
@@ -281,10 +281,10 @@ HP: 0\
 #############\
 Fim da execução\
 Classe derivada : Pokémon explosivo Dinamite diz: Adeus!\
-Classe base : Pokemon Dinamite foi destruído!\
+Classe base : Pokémon Dinamite foi destruído!\
 Treinador DrZager foi destruído!\
 Classe derivada : Pokémon aquático Shellder diz: Adeus!\
-Classe base : Pokemon Shellder foi destruído!\
+Classe base : Pokémon Shellder foi destruído!\
 Treinador OMonitorDePDS2 foi destruído!\
 Rinha destruída pela Polícia Federal!
 

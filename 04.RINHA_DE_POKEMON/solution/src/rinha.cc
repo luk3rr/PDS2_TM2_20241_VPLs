@@ -88,13 +88,13 @@ Trainer* Rinha::GetTrainer(std::string name)
     return nullptr;
 }
 
-void Rinha::Fight(std::string nameTrainer1,
-                  std::string namePokemon1,
-                  std::string nameTrainer2,
-                  std::string namePokemon2)
+void Rinha::Fight(std::string trainerName1,
+                  std::string pokemonName1,
+                  std::string trainerName2,
+                  std::string pokemonName2)
 {
-    Trainer* trainer1 = this->GetTrainer(nameTrainer1);
-    Trainer* trainer2 = this->GetTrainer(nameTrainer2);
+    Trainer* trainer1 = this->GetTrainer(trainerName1);
+    Trainer* trainer2 = this->GetTrainer(trainerName2);
 
     if (trainer1 == nullptr or trainer2 == nullptr)
     {
@@ -102,8 +102,8 @@ void Rinha::Fight(std::string nameTrainer1,
         return;
     }
 
-    Pokemon* pokemon1 = trainer1->UsePokemon(namePokemon1);
-    Pokemon* pokemon2 = trainer2->UsePokemon(namePokemon2);
+    Pokemon* pokemon1 = trainer1->UsePokemon(pokemonName1);
+    Pokemon* pokemon2 = trainer2->UsePokemon(pokemonName2);
 
     if (pokemon1 == nullptr or pokemon2 == nullptr)
     {
@@ -112,8 +112,8 @@ void Rinha::Fight(std::string nameTrainer1,
     }
 
     std::cout << "### RINHA ###" << std::endl;
-    std::cout << nameTrainer1 << " (" << namePokemon1 << ") vs. " << nameTrainer2
-              << " (" << namePokemon2 << ")" << std::endl;
+    std::cout << trainerName1 << " (" << pokemonName1 << ") vs. " << trainerName2
+              << " (" << pokemonName2 << ")" << std::endl;
 
     pokemon1->Attack(pokemon2);
 

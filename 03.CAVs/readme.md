@@ -8,7 +8,7 @@ Um pelotão de CAVs é formado por um veículo líder e os veículos seguidores.
 # Tarefa
 O objetivo deste VPL é trabalhar conceitos relacionados ao desenvolvimento de classes em C++, especificamente encapsulamento, herança e composição.
 
-Como um engenheiro e, principalmente, como um entusiasta dos carros autônomos, sua tarefa é implementar um programa que simula **um único** pelotão de CAVs em uma via. Para essa tarefa, considere que a via é alguma reta paralela ao eixo X. Os veículos podem trafegar tanto no sentido positivo quanto no negativo, a depender da aceleração e velocidade correntes.
+Como um engenheiro e, principalmente, como um entusiasta dos carros autônomos, sua tarefa é implementar um programa que simula **um único** pelotão de CAVs em uma via. Para essa tarefa, considere que a via é alguma reta paralela ao eixo X. Os veículos podem trafegar tanto no sentido positivo quanto no negativo, a depender da aceleração e velocidade vigente.
 
 O objetivo é, dado um ponto qualquer na via, atravessá-lo com o veículo líder. Em outros palavras, se $v$ é o veículo líder do pelotão e $t$ é o ponto alvo (target), o objetivo é atingido quando $v.x \ge t.x$. É garantido que no início da simulação $t.x > v.x$.
 

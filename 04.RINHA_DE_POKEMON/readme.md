@@ -51,7 +51,7 @@ Classe base que representa um Pokémon genérico.
         + Tipo de ataque: TIPO
         + Potência do ataque: X
         + HP: Y
-   + (TIPO é a mensagem impressa pela função SayAttackType(). Você vai perceber que vai ser chamado SayAttackType() com o comportamento implementado pela classe base!)
+   + (TIPO é a mensagem impressa pela função SayAttackType(). Você vai perceber que vai ser chamado SayAttackType() com o comportamento implementado pela classe derivada!)
 
 ### class ElectricPokemon
 Herda de Pokémon.
@@ -148,11 +148,11 @@ Herda de Pokémon.
 1. **AddTrainer(string name)**: Método para criar treinadores com um nome específico.
 
 2. Métodos para criar Pokémons específicos:
-   + **AddElectricPokemon(string nameTrainer, string namePokemon, double electricPower, double attackStrength);**
-   + **AddAquaticPokemon(string nameTrainer, string namePokemon, double aquaticPower, double attackStrength);**
-   + **AddExplosivePokemon(string nameTrainer, string namePokemon, double explosivePower, double attackStrength);**
+   + **AddElectricPokemon(string trainerName, string pokemonName, double electricPower, double attackStrength);**
+   + **AddAquaticPokemon(string trainerName, string pokemonName, double aquaticPower, double attackStrength);**
+   + **AddExplosivePokemon(string trainerName, string pokemonName, double explosivePower, double attackStrength);**
 
-3. **Fight(string nameTrainer1, string namePokemon1, string nameTrainer2, string namePokemon2):** Executa a batalha considerando o nome dos treinadores e Pokémons informados. Deve imprimir as seguintes informações:
+3. **Fight(string trainerName1, string pokemonName1, string trainerName2, string pokemonName2):** Executa a batalha considerando o nome dos treinadores e Pokémons informados. Deve imprimir as seguintes informações:
    + \### RINHA \###
    + NOME\_TREINADOR\_1 (NOME\_POKEMON\_1) vs. NOME\_TREINADOR\_2 (NOME\_POKEMON\_2)
    + Chamar método **Attack** (nesse caso, pokemon1 ataca pokemon2)
@@ -160,6 +160,8 @@ Herda de Pokémon.
 
 ### Freedom
 Como ainda vivemos em um país livre, você pode adicionar novos atributos às classes, ou implementar outros métodos ou classes que achar necessário para a sua solução. Além disso, você não precisa seguir a nomenclatura de atributos, métodos e classes utilizada. Você poderia, por exemplo, colocar tudo em português, mas o seu programa deve implementar a lógica e comportamento solicitados.
+
+Além disso, você pode estar se perguntando por que diabos eu pedi para você imprimir mensagens nos destrutores. Bom, além de tentar fazer com que você os implemente, também gostaria que você visualizasse a ordem que os destrutores são chamados quando há heranças envolvidas.
 
 ### Main
 Por fim, você deve implementar o **main.cpp** do seu programa e toda a lógica de entrada/saída que será responsável por manipular os seguintes comandos:
@@ -213,6 +215,40 @@ Treinador Xerosic foi destruído!\
 Rinha destruída pela Polícia Federal!
 
 ## Exemplo 2
+DISCLAIMER: Eu sei que o Meowth não é um Pokémon explosivo, mas eu queria mandar a Equipe Rocket para o espaço e tenho certeza que você não gostaria de implementar mais um tipo de Pokémon só para que eu pudesse fazer isso ._.
+
+**input**\
+t Ash\
+t EquipeRocket\
+e Ash Pikachu 100 1\
+x EquipeRocket Meowth 1 0.1\
+r Ash Pikachu EquipeRocket Meowth\
+q
+
+**output**\
+\### RINHA ###\
+Ash (Pikachu) vs. EquipeRocket (Meowth)\
+Pokémon: Pikachu\
+Tipo de ataque: Elétrico! Bzzzz!\
+Potência do ataque: 1\
+HP: 100\
+Dano: 100\
+Meowth Faliceu! ;-;\
+Pokémon: Meowth\
+Tipo de ataque: Explosivo! Booom!\
+Potência do ataque: 0.1\
+HP: 0\
+#############\
+Fim da execução\
+Classe derivada : Pokémon elétrico Pikachu diz: Adeus!\
+Classe base : Pokémon Pikachu foi destruído!\
+Treinador Ash foi destruído!\
+Classe derivada : Pokémon explosivo Meowth diz: Adeus!\
+Classe base : Pokémon Meowth foi destruído!\
+Treinador EquipeRocket foi destruído!\
+Rinha destruída pela Polícia Federal!
+
+## Exemplo 3
 **input**\
 t DrZager\
 t OMonitorDePDS2\

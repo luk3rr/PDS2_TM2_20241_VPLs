@@ -90,7 +90,8 @@ void Pokemon::SayAttackType() const
 void Pokemon::PrintInfo() const
 {
     std::cout << "Pokémon: " << this->m_name << std::endl;
-    std::cout << "Tipo de ataque: " << this->m_attackType << std::endl;
+    std::cout << "Tipo de ataque: ";
+    this->SayAttackType();
     std::cout << "Potência do ataque: " << this->m_attackStrength << std::endl;
     std::cout << "HP: " << this->m_hp << std::endl;
 }

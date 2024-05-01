@@ -28,5 +28,5 @@ double ElectricPokemon::CalculateDamage()
 
 void ElectricPokemon::SayAttackType() const
 {
-    std::cout << "Elétrico! Bzzzz!" << std::endl;
+    std::cout << this->GetAttackType() << "! Bzzzz!" << std::endl;
 }

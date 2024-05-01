@@ -14,7 +14,7 @@ int main()
 {
     Rinha       rinha;
     char        command;
-    std::string trainerName, pokemonName, attackType;
+    std::string trainerName, pokemonName;
     std::string trainerName1, pokemonName1, trainerName2, pokemonName2;
     double      attackStrength, attackPower;
 
@@ -35,34 +35,29 @@ int main()
                 break;
 
             case 'e':
-                std::cin >> trainerName >> pokemonName >> attackType >> attackPower >>
-                    attackStrength;
+                std::cin >> trainerName >> pokemonName >> attackPower >> attackStrength;
 
                 rinha.AddElectricPokemon(trainerName,
                                          pokemonName,
-                                         attackType,
                                          attackPower,
                                          attackStrength);
+
                 break;
 
             case 'a':
-                std::cin >> trainerName >> pokemonName >> attackType >> attackPower >>
-                    attackStrength;
+                std::cin >> trainerName >> pokemonName >> attackPower >> attackStrength;
 
                 rinha.AddAquaticPokemon(trainerName,
                                         pokemonName,
-                                        attackType,
                                         attackPower,
                                         attackStrength);
                 break;
 
             case 'x':
-                std::cin >> trainerName >> pokemonName >> attackType >> attackPower >>
-                    attackStrength;
+                std::cin >> trainerName >> pokemonName >> attackPower >> attackStrength;
 
                 rinha.AddExplosivePokemon(trainerName,
                                           pokemonName,
-                                          attackType,
                                           attackPower,
                                           attackStrength);
                 break;

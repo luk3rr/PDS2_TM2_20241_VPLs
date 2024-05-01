@@ -28,5 +28,5 @@ double AquaticPokemon::CalculateDamage()
 
 void AquaticPokemon::SayAttackType() const
 {
-    std::cout << "Aquático! Splash!" << std::endl;
+    std::cout << this->GetAttackType() << "! Splash!" << std::endl;
 }

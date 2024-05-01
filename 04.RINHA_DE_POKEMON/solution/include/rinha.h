@@ -29,13 +29,11 @@ class Rinha
          * @brief Add a new electric pokemon to a trainer
          * @param trainerName The name of the trainer
          * @param pokemonName The name of the pokemon
-         * @param attackType The attack type of the pokemon
          * @param electricPower The electric power of the pokemon
          * @param attackStrength The attack strength of the pokemon
          **/
         void AddElectricPokemon(std::string trainerName,
                                 std::string pokemonName,
-                                std::string attackType,
                                 double      electricPower,
                                 double      attackStrength);
 
@@ -49,7 +47,6 @@ class Rinha
          **/
         void AddAquaticPokemon(std::string trainerName,
                                std::string pokemonName,
-                               std::string attackType,
                                double      aquaticPower,
                                double      attackStrength);
 
@@ -63,7 +60,6 @@ class Rinha
          **/
         void AddExplosivePokemon(std::string trainerName,
                                  std::string pokemonName,
-                                 std::string attackType,
                                  double      explosivePower,
                                  double      attackStrength);
 

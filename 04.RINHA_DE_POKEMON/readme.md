@@ -1,4 +1,3 @@
-# WARNING: This VPL is under construction
 # Rinha de Pokémon
 Segundo a legislação brasileira, é crime realizar ou promover "brigas de galo" ou quaisquer outras lutas entre animais. No entanto, no mundo de Pokémon
 aparentemente ainda não há legislações que garantam os direitos dos monstros (Pokémon vem de **Poke**tto **Mon**sutā, que é Pocket Monster em inglês). Além disso, pelo que eu entendi, monstros não são animais, então é lícito realizar rinhas de Pokémons em território brasileiro.
@@ -46,11 +45,13 @@ Classe base que representa um Pokémon genérico.
 
 5. **virtual SayAttackType()**: Método que imprime o tipo do ataque.
 
-6. **PrintInfo**: Imprime as informações do Pokémon no formato:
-   + Pokémon: NOME
-   + Tipo ataque: TIPO
-   + Potência do ataque: X
-   + HP: Y
+6. **PrintInfo**:
+   + Imprime as informações do Pokémon no formato:
+        + Pokémon: NOME
+        + Tipo de ataque: TIPO
+        + Potência do ataque: X
+        + HP: Y
+   + (TIPO é a mensagem impressa pela função SayAttackType(). Você vai perceber que vai ser chamado SayAttackType() com o comportamento implementado pela classe base!)
 
 ### class ElectricPokemon
 Herda de Pokémon.
@@ -147,9 +148,9 @@ Herda de Pokémon.
 1. **AddTrainer(string name)**: Método para criar treinadores com um nome específico.
 
 2. Métodos para cadastro de Pokémons específicos:
-   + **AddElectricPokemon(string nameTrainer, string namePokemon, string attackType, double electricPower, double attackStrength);**
-   + **AddAquaticPokemon(string nameTrainer, string namePokemon, string attackType, double aquaticPower, double attackStrength);**
-   + **AddExplosivePokemon(string nameTrainer, string namePokemon, string attackType, double explosivePower, double attackStrength);**
+   + **AddElectricPokemon(string nameTrainer, string namePokemon, double electricPower, double attackStrength);**
+   + **AddAquaticPokemon(string nameTrainer, string namePokemon, double aquaticPower, double attackStrength);**
+   + **AddExplosivePokemon(string nameTrainer, string namePokemon, double explosivePower, double attackStrength);**
 
 3. **Fight(string nameTrainer1, string namePokemon1, string nameTrainer2, string namePokemon2):** Executa a batalha considerando o nome dos treinadores e Pokémons informados. Deve imprimir as seguintes informações:
    + \### RINHA \###
@@ -181,24 +182,24 @@ Você pode assumir que todos os nomes utilizados nas entradas são válidos. Ou 
 
 # Exemplos de entrada e saída
 ## Exemplo 1
-**input**
+**input**\
 t Ash\
 t Xerosic\
-e Ash Pikachu Elétrico 42 0.7\
-x Xerosic Cheirosinho Explosivo 33 0.99\
+e Ash Pikachu 42 0.7\
+x Xerosic Cheirosinho 33 0.99\
 r Ash Pikachu Xerosic Cheirosinho\
 q
 
-**output**
-\### RINHA ###
+**output**\
+\### RINHA ###\
 Ash (Pikachu) vs. Xerosic (Cheirosinho)\
 Pokémon: Pikachu\
-Tipo de ataque: Elétrico\
+Tipo de ataque: Elétrico! Bzzzz!\
 Potência do ataque: 0.7\
 HP: 100\
 Dano: 29.4\
 Pokémon: Cheirosinho\
-Tipo de ataque: Explosivo\
+Tipo de ataque: Explosivo! Booom!\
 Potência do ataque: 0.99\
 HP: 70.6\
 #############\
@@ -211,12 +212,12 @@ Classe base : Pokémon Cheirosinho foi destruído!\
 Treinador Xerosic foi destruído!\
 Rinha destruída pela Polícia Federal!
 
-## Exemplo 1
-**input**
+## Exemplo 2
+**input**\
 t DrZager\
 t OMonitorDePDS2\
-a OMonitorDePDS2 Shellder Aquático 83 0.66\
-x DrZager Dinamite Explosivo 33 1\
+a OMonitorDePDS2 Shellder 83 0.66\
+x DrZager Dinamite 33 1\
 r OMonitorDePDS2 Shellder DrZager Dinamite\
 r DrZager Dinamite OMonitorDePDS2 Shellder\
 r OMonitorDePDS2 Shellder DrZager Dinamite\
@@ -224,41 +225,41 @@ r DrZager Dinamite OMonitorDePDS2 Shellder\
 r OMonitorDePDS2 Shellder DrZager Dinamite\
 q
 
-**output**
+**output**\
 \### RINHA ###\
 OMonitorDePDS2 (Shellder) vs. DrZager (Dinamite)\
 Pokémon: Shellder\
-Tipo de ataque: Aquático\
+Tipo de ataque: Aquático! Splash!\
 Potência do ataque: 0.66\
 HP: 100\
 Dano: 54.78\
 Pokémon: Dinamite\
-Tipo de ataque: Explosivo\
+Tipo de ataque: Explosivo! Booom!\
 Potência do ataque: 1\
 HP: 45.22\
 #############\
 \### RINHA ###\
 DrZager (Dinamite) vs. OMonitorDePDS2 (Shellder)\
 Pokémon: Dinamite\
-Tipo de ataque: Explosivo\
+Tipo de ataque: Explosivo! Booom!\
 Potência do ataque: 1\
 HP: 45.22\
 Dano: 33\
 Pokémon: Shellder\
-Tipo de ataque: Aquático\
+Tipo de ataque: Aquático! Splash!\
 Potência do ataque: 0.66\
 HP: 67\
 #############\
 \### RINHA ###\
 OMonitorDePDS2 (Shellder) vs. DrZager (Dinamite)\
 Pokémon: Shellder\
-Tipo de ataque: Aquático\
+Tipo de ataque: Aquático! Splash!\
 Potência do ataque: 0.66\
 HP: 67\
 Dano: 54.78\
 Dinamite Faliceu! ;-;\
 Pokémon: Dinamite\
-Tipo de ataque: Explosivo\
+Tipo de ataque: Explosivo! Booom!\
 Potência do ataque: 1\
 HP: 0\
 #############\
@@ -266,16 +267,16 @@ HP: 0\
 DrZager (Dinamite) vs. OMonitorDePDS2 (Shellder)\
 Dinamite já partiu dessa pra melhor e não pode atacar!\
 #############\
-\### RINHA ###
+\### RINHA ###\
 OMonitorDePDS2 (Shellder) vs. DrZager (Dinamite)\
 Pokémon: Shellder\
-Tipo de ataque: Aquático\
+Tipo de ataque: Aquático! Splash!\
 Potência do ataque: 0.66\
 HP: 67\
 Dano: 54.78\
 Dinamite já morreu. Não chute Pokémon morto!\
 Pokémon: Dinamite\
-Tipo de ataque: Explosivo\
+Tipo de ataque: Explosivo! Booom!\
 Potência do ataque: 1\
 HP: 0\
 #############\

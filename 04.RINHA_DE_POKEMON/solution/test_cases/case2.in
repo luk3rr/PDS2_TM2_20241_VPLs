@@ -1,7 +1,7 @@
 t Ash
 t Xerosic
-e Ash Pikachu Elétrico 68 0.7
-x Xerosic Cheirosinho Explosivo 33 0.99
+e Ash Pikachu 68 0.7
+x Xerosic Cheirosinho 33 0.99
 r Ash Pikachu Xerosic Cheirosinho
 r Xerosic Cheirosinho Ash Pikachu
 r Ash Pikachu Xerosic Cheirosinho

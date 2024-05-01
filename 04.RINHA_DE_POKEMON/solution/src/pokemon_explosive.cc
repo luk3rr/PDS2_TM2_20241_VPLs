@@ -28,5 +28,5 @@ double ExplosivePokemon::CalculateDamage()
 
 void ExplosivePokemon::SayAttackType() const
 {
-    std::cout << "Explosivo! Booom!" << std::endl;
+    std::cout << this->GetAttackType() << "! Booom!" << std::endl;
 }

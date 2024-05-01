@@ -1,6 +1,6 @@
 t Ash
 t EquipeRocket
-e Ash Pikachu Elétrico 100 1
-x EquipeRocket Meowth Explosivo 1 0.1
+e Ash Pikachu 100 1
+x EquipeRocket Meowth 1 0.1
 r Ash Pikachu EquipeRocket Meowth
 q

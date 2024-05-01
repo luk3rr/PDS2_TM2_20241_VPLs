@@ -26,7 +26,6 @@ void Rinha::AddTrainer(std::string name)
 
 void Rinha::AddElectricPokemon(std::string trainerName,
                                std::string pokemonName,
-                               std::string attackType,
                                double      electricPower,
                                double      attackStrength)
 {
@@ -38,12 +37,11 @@ void Rinha::AddElectricPokemon(std::string trainerName,
         return;
     }
 
-    trainer->AddElectricPokemon(pokemonName, attackType, electricPower, attackStrength);
+    trainer->AddElectricPokemon(pokemonName, "Elétrico", electricPower, attackStrength);
 }
 
 void Rinha::AddAquaticPokemon(std::string trainerName,
                               std::string pokemonName,
-                              std::string attackType,
                               double      aquaticPower,
                               double      attackStrength)
 {
@@ -55,12 +53,11 @@ void Rinha::AddAquaticPokemon(std::string trainerName,
         return;
     }
 
-    trainer->AddAquaticPokemon(pokemonName, attackType, aquaticPower, attackStrength);
+    trainer->AddAquaticPokemon(pokemonName, "Aquático", aquaticPower, attackStrength);
 }
 
 void Rinha::AddExplosivePokemon(std::string trainerName,
                                 std::string pokemonName,
-                                std::string attackType,
                                 double      explosivePower,
                                 double      attackStrength)
 {
@@ -73,7 +70,7 @@ void Rinha::AddExplosivePokemon(std::string trainerName,
     }
 
     trainer->AddExplosivePokemon(pokemonName,
-                                 attackType,
+                                 "Explosivo",
                                  explosivePower,
                                  attackStrength);
 }

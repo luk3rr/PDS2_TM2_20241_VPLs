@@ -110,7 +110,7 @@ Sendo politicamente correto, sei que não existe Pokémon do tipo "explosivo" no
 ### Trainer
 #### Atributos
 1. **m_name**, do tipo string, que armazena o nome do treinador;
-2. **m_pokemons**, um vector que armazenar uma lista de ponteiros para objetivos do tipo **Pokémon**.
+2. **m_pokemons**, um vector que armazenar uma lista de ponteiros para objetos do tipo **Pokémon**.
 
 #### Métodos
 1. **Trainer(string)**: Construtor que inicializa o atributo 'name' do treinador.
@@ -141,7 +141,7 @@ Sendo politicamente correto, sei que não existe Pokémon do tipo "explosivo" no
 
 ### Rinha
 #### Atributos
-2. **m_trainers**, um vector que armazenar uma lista de ponteiros para objetivos do tipo **Trainer**.
+2. **m_trainers**, um vector que armazenar uma lista de ponteiros para objetos do tipo **Trainer**.
 
 #### Métodos
 1. **Rinha()**: Construtor default.
@@ -182,7 +182,7 @@ Você pode assumir que todos os nomes utilizados nas entradas são válidos. Ou 
 # Regras do jogo
 1. Todos os atributos de todas as classes devem ser encapsulados e acessados somente através de métodos Get e Set.
 2. Você deve fazer todas as heranças e sobrescrita de métodos solicitadas.
-3. Respeita o formato das mensagens que são impressas. O moodle verifica se seu programa funciona corretamente comparando a sua saída com a esperada para cada caso de teste. Se houver algum coisa fora de lugar, os testes vão falhar.
+3. Respeita o formato das mensagens que são impressas. O moodle verifica se seu programa funciona corretamente comparando a sua saída com a esperada para cada caso de teste. Se houver alguma coisa fora de lugar, os testes vão falhar.
 
 # Exemplos de entrada e saída
 ## Exemplo 1

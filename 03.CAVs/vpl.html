@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>readme</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="connected-and-autonomous-vehicles">Connected and Autonomous
+Vehicles</h1>
+<p>CAVs são veículos que incorporam tanto a tecnologia de veículos
+conectados, isto é, são capazes de trocar informações entre si, como
+também a tecnologia de serem autônomos. A união dessas duas tecnologias
+permite que os veículos formem pelotões que planejam manobras em
+conjunto para atingir um certo objetivo, além de trazer outros
+benefícios, como a segurança e a eficiência no transporte.</p>
+<p>Um pelotão de CAVs é formado por um veículo líder e os veículos
+seguidores. A responsabilidade do líder é enviar comandos para os
+veículos seguidores, como o de acelerar, frear, alinhar com o pelotão
+etc. A imagem abaixa ilustra um pelotão de 5 CAVs.</p>
+<figure>
+<img src="./imgs/platoon.png" alt="Pelotão de CAVs" />
+<figcaption aria-hidden="true">Pelotão de CAVs</figcaption>
+</figure>
+<h1 id="tarefa">Tarefa</h1>
+<p>O objetivo deste VPL é trabalhar conceitos relacionados ao
+desenvolvimento de classes em C++, especificamente encapsulamento,
+herança e composição.</p>
+<p>Como um engenheiro e, principalmente, como um entusiasta dos carros
+autônomos, sua tarefa é implementar um programa que simula <strong>um
+único</strong> pelotão de CAVs em uma via. Para essa tarefa, considere
+que a via é alguma reta paralela ao eixo X. Os veículos podem trafegar
+tanto no sentido positivo quanto no negativo, a depender da aceleração e
+velocidade vigente.</p>
+<p>O objetivo é, dado um ponto qualquer na via, atravessá-lo com o
+veículo líder. Em outros palavras, se <span
+class="math inline"><em>v</em></span> é o veículo líder do pelotão e
+<span class="math inline"><em>t</em></span> é o ponto alvo (target), o
+objetivo é atingido quando <span
+class="math inline"><em>v</em>.<em>x</em> ≥ <em>t</em>.<em>x</em></span>.
+É garantido que no início da simulação <span
+class="math inline"><em>t</em>.<em>x</em> &gt; <em>v</em>.<em>x</em></span>.</p>
+<p>Para essa tarefa, considere o tempo como uma grandeza discreta. Você
+pode, por exemplo, ter um loop que a cada interação incrementa um
+contador em uma unidade e considerar isso como o seu tempo. Assim, a
+velocidade pode ser alterada a cada interação (como se cada loop durasse
+1 segundo).</p>
+<p>Inicialmente, o nosso cenário começa com a velocidade e aceleração de
+todos os veículos iguais a zero. A velocidade é alterada através de
+<strong>eventos</strong> registrados pelo usuário. Um evento consiste em
+dois valores:</p>
+<ol type="1">
+<li><p>Inteiro não negativo que representa o tempo da simulação que ele
+deve ocorrer;</p></li>
+<li><p>O novo valor da aceleração dos veículos.</p></li>
+</ol>
+<p>Por exemplo, antes da execução da simulação, o usuário pode ter
+registrado 3 eventos:</p>
+<ol type="1">
+<li><p>No tempo 10, a aceleração deve ser definida como 10;</p></li>
+<li><p>No tempo 14, a aceleração deve ser definida como -5;</p></li>
+<li><p>No tempo 20, a aceleração deve ser definida como 1.</p></li>
+</ol>
+<p>Não menos importante, os veículos têm uma velocidade máxima
+permitida. Então, supondo que a velocidade máxima para o exemplo acima
+seja 10, a partir do momento 20 até atingir o objetivo os veículos
+poderiam acelerar até atingir 10 e permanecer com essa velocidade.</p>
+<p>Observe que mesmo que <span
+class="math inline"><em>t</em>.<em>x</em></span> sempre está “a frente”
+de <span class="math inline"><em>v</em>.<em>x</em></span> no início da
+simulação, em certos casos os veículos podem trafegar no sentido
+contrário caso a aceleração seja negativa (vide exemplo 2). Isso
+interfere diretamente no tempo até atingir o objetivo. No entanto, é
+garantido que nos casos de teste a ordem dos eventos é elaborada de
+forma que sempre o alvo seja atingido, ou seja, não existe caso onde o
+pelotão vai infinitamente para o sentido contrário de onde está o
+alvo.</p>
+<h2 id="o-que-você-deve-implementar">O que você deve implementar</h2>
+<h3 id="class-point">class Point</h3>
+<p>Classe responsável por representar um ponto no plano, ou seja, deve
+conter os atributos necessários para armazenar coordenadas.</p>
+<h4 id="atributos">Atributos</h4>
+<ol type="1">
+<li><strong>m_x</strong>, <strong>m_y</strong> do tipo double, utilizado
+para armazenar as coordenadas.</li>
+</ol>
+<h4 id="métodos">Métodos</h4>
+<ol type="1">
+<li><p><strong>Point(double, double)</strong>: Construtor que recebe os
+parâmetros x e y, nessa ordem, e inicializa os atributos da
+classe;</p></li>
+<li><p><strong>SetX(double)</strong> e <strong>SetY(double)</strong>:
+Métodos para definir um novo valor para os atributos;</p></li>
+<li><p><strong>GetX()</strong> e <strong>GetY()</strong>: Métodos para
+obter os valores dos atributos.</p></li>
+</ol>
+<h3 id="class-vehicle">class Vehicle</h3>
+<p>Classe responsável por representar nossos queridos CAVs. Essa classe
+deve ser uma classe derivada de <strong>Point</strong>.</p>
+<p>Cada veículo deve conter um ID, que deve ser um número inteiro não
+negativo e deve ser sequencial. Assim, o primeiro veículo deve ter o ID
+igual a 0, o segundo com ID igual a 1 etc etc etc.</p>
+<h4 id="atributos-1">Atributos</h4>
+<ol type="1">
+<li><p><strong>m_id</strong> do tipo std::size_t (veja o link 2),
+utilizado para armazenar o ID do veículo;</p></li>
+<li><p><strong>m_speed</strong> do tipo double, que deve armazenar a
+velocidade atual;</p></li>
+<li><p><strong>m_maxSpeed</strong> do tipo double, que indica a
+velocidade máxima que o veículo pode ter;</p></li>
+<li><p><strong>m_acceleration</strong> do tipo double, que indica a
+aceleração do veículo.</p></li>
+</ol>
+<h4 id="métodos-1">Métodos</h4>
+<ol type="1">
+<li><p><strong>Vehicle(std::size_t id, double x, double y, double
+maxSpeed)</strong>: Construtor que recebe e inicializa os atributos da
+classe;</p></li>
+<li><p><strong>SetSpeed(double), SetAcceleration(double)</strong>:
+Métodos utilizados para alterar os atributos da classe;</p></li>
+<li><p><strong>GetID(), GetSpeed(), GetMaxSpeed(),
+GetAcceleration()</strong>: Métodos para obter os valores dos
+atributo;</p></li>
+<li><p><strong>Move()</strong>: Método que implementa o comportamento de
+mover o veículo no cenário.</p>
+<ul>
+<li>Atente-se a lógica de velocidade máxima</li>
+<li>DICA: A coordenada X é a única que é atualizada, uma vez que o
+movimento é unidimensional.</li>
+</ul></li>
+</ol>
+<p>OBS.: Se você estiver apanhando para inicializar os atributos da
+classe base (Point) através do construtor de Vehicle, o link 3 pode
+iluminar a sua vida.</p>
+<h3 id="class-platoon">class Platoon</h3>
+<p>Essa classe é a responsável por armazenar os veículos do pelotão e
+coordená-los, simulando o envio de informações do veículo líder para os
+seguidores.</p>
+<h4 id="atributos-2">Atributos</h4>
+<ol type="1">
+<li><p><strong>m_vehicles</strong>, Vector em que cada posição é um
+objetivo do tipo <strong>Vehicle</strong>;</p></li>
+<li><p><strong>m_target</strong> do tipo <strong>Point</strong>, que
+armazena as coordenadas do ponto alvo;</p></li>
+<li><p><strong>m_maxSpeed</strong> do tipo double, utilizada para
+armazenar a velocidade máxima do pelotão;</p></li>
+<li><p><strong>m_simulationSteps</strong> do tipo std::size_t, e que
+deve armazenar o tempo atual da simulação.</p></li>
+</ol>
+<h4 id="métodos-2">Métodos</h4>
+<ol type="1">
+<li><p><strong>Platoon(Point, double)</strong>: Construtor que recebe o
+ponto alvo e a velocidade máxima do pelotão;</p></li>
+<li><p><strong>GetVehicles(), GetSimulationSteps()</strong>: Métodos
+para obter os atributos da classe;</p></li>
+<li><p><strong>AddVehicle(double, double)</strong>: Método utilizado
+para criar e adicionar um novo veículo ao pelotão. Ele recebe as
+coordenadas x e y que indicam a posição inicial do veículo;</p></li>
+<li><p><strong>AddEvent(std::size_t, double_t)</strong>: Método
+utilizado para criar e adicionar um novo evento. Ele recebe o tempo e
+aceleração que deve ser definida, respectivamente;</p>
+<ul>
+<li>Dica: Você pode armazenar os eventos em um vector assim como fez com
+os veículos.</li>
+</ul></li>
+<li><p><strong>Start()</strong>: Método que é chamado para iniciar a
+simulação. Ele só é chamado uma vez no main, depois que o pelotão e
+todos os veículos e eventos foram criados. Aqui você deve implementar a
+lógica de tratar eventos, alterar o tempo da simulação, chamar
+<strong>Vehicle::Move()</strong> para mover os veículos na via ao longo
+do tempo etc.</p></li>
+</ol>
+<h3 id="class-ou-struct-event-ou-utilizar-stdpair">class ou struct
+Event, ou utilizar std::pair</h3>
+<p>Aqui você pode decidir utilizar class ou struct (aliás, você sabe a
+diferença entre class e struct?). Como dito anteriormente, um evento
+consiste em um par <strong>&lt;tempo, aceleração&gt;</strong>, onde o
+tempo é o momento em que a aceleração deve ser alterada.</p>
+<p>Você também pode optar por utilizar uma estrutura já implementada da
+STL que tem o mesmo objetivo (armazenar dois valores) chamada
+<strong>std::pair</strong> (veja o link 4).</p>
+<h3 id="freedom">Freedom</h3>
+<p>Como ainda vivemos em um país livre, você pode adicionar novos
+atributos às classes, ou implementar outros métodos ou classes que achar
+necessário para a sua solução.</p>
+<h3 id="main">main</h3>
+<p>O main já foi implementado e você pode (e provavelmente deve)
+copiá-lo para testar o seu programa localmente. A ideia é que você
+implemente somente os TADs, simulando o caso em que sua implementação
+será utilizada por outra pessoa, que conhece apenas o contrato.</p>
+<h1 id="regras-do-jogo">Regras do jogo</h1>
+<ol type="1">
+<li>Todos os atributos de todas as classes devem ser encapsulados e
+acessados somente através de métodos Get e Set.</li>
+<li>Você não deve alterar o main que foi disponibilizado. Use-o apenas
+para testar a sua solução.</li>
+<li>Implemente todos os métodos listados acima. Se você não respeitar o
+contrato, meu main pode não funcionar :’)</li>
+<li>Implemente, no mínimo, as classes e a herança solicitada.</li>
+</ol>
+<h1 id="exemplos-de-entrada-e-saída">Exemplos de entrada e saída</h1>
+<p>A entrada e saída do programa já foi programada no main, mas deixo
+aqui uma explicação sobre como ela é feita.</p>
+<h2 id="entrada">Entrada</h2>
+<p>A entrada para o seu programa consiste em <span
+class="math inline">1 + <em>v</em> + <em>e</em></span> linhas.</p>
+<p>A primeira linha recebe 5 valores, na seguinte ordem:</p>
+<ol type="1">
+<li><p>Número total de eventos (<span
+class="math inline"><em>e</em></span>);</p></li>
+<li><p>Número total de veículos (<span
+class="math inline"><em>v</em></span>);</p></li>
+<li><p>Velocidade máxima que os veículos podem atingir na via;</p></li>
+<li><p>Coordenada X do ponto alvo;</p></li>
+<li><p>Coordenada Y do ponto alvo.</p></li>
+</ol>
+<p>As próximas <span class="math inline"><em>v</em></span> linhas são
+responsáveis por criar os veículos do nosso cenário, e cada uma contém
+dois valores que são as coordenadas cartesianas que indicam a posição
+inicial de veículo.</p>
+<p>As demais <span class="math inline"><em>e</em></span> linhas são os
+eventos que devem ocorrer durante a simulação. Também são compostas por
+dois valores:</p>
+<ol type="1">
+<li><p>Tempo em que o evento devo ocorrer;</p></li>
+<li><p>Aceleração a ser definida no tempo em questão.</p></li>
+</ol>
+<h2 id="saída">Saída</h2>
+<p>A saída é composta por <span
+class="math inline">1 + <em>v</em></span> linhas.</p>
+<p>A primeira linha deve indicar o tempo total até atingir o
+objetivo.</p>
+<p>As demais <span class="math inline"><em>v</em></span> linhas devem
+conter o ID, a velocidade e a posição do veículo no momento em que o
+objetivo foi atingido.</p>
+<p>O formato definido no main é o seguinte: + ID : VELOCIDADE : X Y</p>
+<h2 id="exemplo-1">Exemplo 1</h2>
+<p><strong>input</strong><br />
+3 2 10 30 0<br />
+5 0<br />
+3 0<br />
+0 0<br />
+1 2<br />
+5 1</p>
+<p><strong>output</strong><br />
+6<br />
+0 : 9 : 34 0<br />
+1 : 9 : 32 0<br />
+2 : 9 : 29 0</p>
+<h2 id="exemplo-2">Exemplo 2</h2>
+<p>Observe que nesse exemplo, os veículos começam a desacelerar no tempo
+20 e até mesmo viajam no sentido negativo da via por um determinado
+tempo.</p>
+<p><strong>input</strong><br />
+5 3 3 50 0.2<br />
+0 0.2<br />
+-1 0.2<br />
+-2 0.2<br />
+-3 0.2<br />
+-4 0.2<br />
+10 1.0<br />
+20 -5<br />
+30 1</p>
+<p><strong>output</strong><br />
+528<br />
+0 : 3 : 51 0.2<br />
+1 : 3 : 50 0.2<br />
+2 : 3 : 49 0.2<br />
+3 : 3 : 48 0.2<br />
+4 : 3 : 47 0.2</p>
+<h2 id="exemplo-3">Exemplo 3</h2>
+<p><strong>input</strong><br />
+2 6 42 2001 0<br />
+1 1<br />
+0 1<br />
+0 1<br />
+1 3<br />
+2 4<br />
+5 -0.5<br />
+80 0.19<br />
+220 -0.003</p>
+<p><strong>output</strong><br />
+1098<br />
+0 : 2.466 : 2002.46 1<br />
+1 : 2.466 : 2001.46 1</p>
+<h1 id="links-não-tão-inúteis">Links não tão inúteis</h1>
+<ol type="1">
+  <li>
+    <a href="https://onlinelibrary.wiley.com/doi/10.1002/asmb.2772" target="_blank">https://onlinelibrary.wiley.com/doi/10.1002/asmb.2772</a>
+    <ul>
+      <li>Se estiver curioso sobre CAVs, comece por este artigo, foi um dos mais legais que li durante a minha iniciação científica.</li>
+    </ul>
+  </li>
+  <li>
+    <a href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">https://en.cppreference.com/w/cpp/types/size_t</a>
+  </li>
+  <li>
+    <a href="https://stackoverflow.com/questions/6923722/how-do-i-call-the-base-class-constructor" target="_blank">https://stackoverflow.com/questions/6923722/how-do-i-call-the-base-class-constructor</a>
+  </li>
+  <li>
+    <a href="https://www.geeksforgeeks.org/pair-in-cpp-stl/" target="_blank">https://www.geeksforgeeks.org/pair-in-cpp-stl/</a>
+  </li>
+</ol>
+</body>
+</html>

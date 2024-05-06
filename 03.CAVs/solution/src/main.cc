@@ -26,7 +26,7 @@ int main()
     Platoon platoon(Point(targetX, targetY), maxSpeed);
 
     // Adiciona os veículos ao pelotão
-    for (int i = 0; i < totalVehicles; i++)
+    for (std::size_t i = 0; i < totalVehicles; i++)
     {
         double_t start_x, start_y;
         std::cin >> start_x >> start_y;
@@ -35,7 +35,7 @@ int main()
     }
 
     // Adiciona os eventos
-    for (int i = 0; i < totalEvents; i++)
+    for (std::size_t i = 0; i < totalEvents; i++)
     {
         std::size_t simulationTime;
         double_t    acceleration;

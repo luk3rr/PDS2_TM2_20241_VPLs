@@ -122,9 +122,9 @@ A entrada para o seu programa consiste em $1 + v + e$ linhas.
 
 A primeira linha recebe 5 valores, na seguinte ordem:
 
-1. Número total de eventos ($e$);
+1. Número total de veículos ($v$);
 
-2. Número total de veículos ($v$);
+2. Número total de eventos ($e$);
 
 3. Velocidade máxima que os veículos podem atingir na via;
 

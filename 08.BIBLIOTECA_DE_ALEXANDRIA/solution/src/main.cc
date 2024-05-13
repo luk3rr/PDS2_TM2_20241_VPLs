@@ -76,8 +76,6 @@ int main()
             }
             else if (type == 'c')
             {
-                // - **AddCD(copies, tracks, duration, title, artist, date)**
-
                 std::size_t copies, tracks, duration;
                 std::string title, artist, date;
 
@@ -90,9 +88,40 @@ int main()
                 std::cerr << "Comando inválido" << std::endl;
             }
         }
+        else if (command == 'r') // Reserva um item
+        {
+            char type;
+            std::cin >> type;
+
+            if (type == 't')
+            {
+                std::string title;
+                std::cin >> title;
+
+                library.Reserve(title);
+            }
+            else if (type == 'i')
+            {
+                std::size_t id;
+                std::cin >> id;
+
+                library.Reserve(id);
+            }
+        }
+        else if (command == 'd') // Devolve um livro
+        {
+            std::size_t id;
+            std::cin >> id;
+
+            library.Release(id);
+        }
         else if (command == 's')
         {
             library.PrintCollection();
+        }
+        else
+        {
+            std::cerr << "Comando inválido: " << command << std::endl;
         }
     }
 

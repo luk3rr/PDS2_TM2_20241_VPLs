@@ -1,0 +1,62 @@
+s
+a l 1 500 Sapiens YuvalNoahHarari 123456789-00 2011 História CompanhiaDasLetras
+s
+r t Sapiens
+a l 1 400 HomoDeus YuvalNoahHarari 123456789-00 08/02/2017 História,Filosofia CompanhiaDasLetras
+a l 1 300 UmaBreveHistoriaDoTempo StephenHawking 123456789-00 01/04/1988 Ciência Intrínseca
+a l 1 250 SobreAsLeisDaFisica RichardFeynman 123456789-00 01/06/2017 Física ContrapontoEditora
+a l 1 200 OPoderDoPensamentoMatematico JordanEllenberg 123456789-00 29/05/2014 Matemática Zahar
+r t ORomanceDasEquaçõesAlgébricas
+a l 1 220 ORomanceDasEquaçõesAlgébricas GilbertoGeraldoGarbi 123456789-00 1997 Matemática EditoraLivrariaDaFísica
+a l 1 180 AstrofisicaParaApressados NeildeGrasseTyson 123456789-00 2017 Astronomia Planeta
+a l 1 300 EuSouMalala MalalaYousafzai 123456789-00 08/10/2013 Biografia CompanhiadasLetras
+a l 1 500 Eragon ChristopherPaolini 123456789-00 20/12/2002 Fantasia Rocco
+a l 1 350 HarryPottereOPrisioneiroDeAzkaban J.K.Rowling 123456789-00 08/07/1999 Fantasia Scholastic
+r t ORomanceDasEquaçõesAlgébricas
+a l 1 200 DiarioDeUmBanana1 JeffKinney 123456789-00 25/04/2007 Infantojuvenil VREditora
+a l 1 100 OPequenoPrincipe AntoineDeSaint-Exupéry 123456789-00 06/04/1943 Fábula HarperCollins
+a l 1 250 OsSonhosDeEinstein AlanLightman 123456789-00 01/09/2016 FicçãoCientífica CompanhiaDasLetras
+r t HomoDeus
+r i 1
+a l 1 300 Cosmos CarlSagan 123456789-00 01/10/1980 Ciência CompanhiaDasLetras
+r i 12
+r t UmaBreveHistoriaDoTempo
+a l 1 250 OMundoAssombadopelosDemônios CarlSagan 123456789-00 01/01/1996 Ciência CompanhiaDeBolso
+a l 1 333 José CarlosDrummondDeAndrade 123456789-00 2012 Poesia CompanhiaDasLetras
+s
+r t SobreAsLeisDaFisica
+r t OPoderDoPensamentoMatematico
+r t AstrofisicaParaApressados
+r t EuSouMalala
+r t Eragon
+r t HarryPottereOPrisioneiroDeAzkaban
+r t DiarioDeUmBanana
+r t OPequenoPrincipe
+r t OsSonhosDeEinstein
+r t Cosmos
+r t OMundoAssombadopelosDemônios
+s
+r i 0
+r i 1
+r i 5
+r i 9
+d 1
+d 2
+d 3
+d 4
+d 1
+d 5
+d 6
+d 7
+d 8
+d 9
+d 10
+d 11
+d 20
+d 12
+d 13
+d 14
+d 15
+d 16
+d 6
+s

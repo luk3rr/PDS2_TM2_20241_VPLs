@@ -36,7 +36,7 @@ class Book : public Item
         std::string GetPublisher() const;
         std::size_t GetNumPages() const;
 
-        void PrintInfo();
+        void PrintInfo() override;
 };
 
 #endif // BOOK_H_

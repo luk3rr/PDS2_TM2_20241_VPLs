@@ -19,7 +19,10 @@ CompactDisc::CompactDisc(std::size_t id,
     this->m_duration = duration;
 }
 
-CompactDisc::~CompactDisc() { }
+CompactDisc::~CompactDisc()
+{
+    std::cout << "CD " << this->GetID() << " diz: Ouça-me amanhã!" << std::endl;
+}
 
 std::size_t CompactDisc::GetTracks() const
 {
@@ -31,17 +34,28 @@ std::size_t CompactDisc::GetDuration() const
     return this->m_duration;
 }
 
+#include <iomanip>
+#include <iostream>
+
 void CompactDisc::PrintInfo()
 {
     std::cout << "ITEM: " << this->GetItemType() << std::endl;
     std::cout << "ID: " << this->GetID() << std::endl;
-    std::cout << "TITLE: " << this->GetTitle() << std::endl;
-    std::cout << "ARTIST: " << this->GetAuthor() << std::endl;
-    std::cout << "TRACKS: " << this->GetTracks() << std::endl;
-    std::cout << "DURATION: " << this->GetDuration() / 3600 << ":"
-              << (this->GetDuration() % 3600) / 60 << ":" << this->GetDuration() % 60
-              << std::endl;
-    std::cout << "DATE: " << this->GetDate() << std::endl;
-    std::cout << "AVAILABLE COPIES: " << this->GetAvailableCopies() << std::endl;
-    std::cout << "LOANED COPIES: " << this->GetLoanedCopies() << std::endl;
+    std::cout << "TÍTULO: " << this->GetTitle() << std::endl;
+    std::cout << "ARTISTA: " << this->GetAuthor() << std::endl;
+    std::cout << "FAIXAS: " << this->GetTracks() << std::endl;
+
+    // Formatar a duração no formato hh:mm:ss
+    int duration = this->GetDuration();
+    int hours    = duration / 3600;
+    int minutes  = (duration % 3600) / 60;
+    int seconds  = duration % 60;
+
+    std::cout << "DURAÇÃO: " << std::setfill('0') << std::setw(2) << hours << ":"
+              << std::setfill('0') << std::setw(2) << minutes << ":"
+              << std::setfill('0') << std::setw(2) << seconds << std::endl;
+
+    std::cout << "DATA: " << this->GetDate() << std::endl;
+    std::cout << "CÓPIAS DISPONÍVEIS: " << this->GetAvailableCopies() << std::endl;
+    std::cout << "CÓPIAS RESERVADAS: " << this->GetLoanedCopies() << std::endl;
 }

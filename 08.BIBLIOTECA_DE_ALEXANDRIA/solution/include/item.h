@@ -29,7 +29,7 @@ class Item
              std::string date,
              std::string itemType);
 
-        ~Item();
+        virtual ~Item();
 
         std::size_t GetID() const;
         std::size_t GetAvailableCopies() const;
@@ -45,7 +45,7 @@ class Item
         // Libera um item que foi reservado
         void Release();
 
-        void PrintInfo();
+        virtual void PrintInfo();
 };
 
 #endif // ITEM_H_

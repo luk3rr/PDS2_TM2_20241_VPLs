@@ -1,0 +1,227 @@
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: Sapiens
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 1
+TÍTULO: HomoDeus
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História,Filosofia
+NÚMERO DE PÁGINAS: 400
+ISBN: 123456789-00
+DATA: 08/02/2017
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 2
+TÍTULO: UmaBreveHistoriaDoTempo
+AUTOR(A): StephenHawking
+EDITORA: Intrínseca
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 01/04/1988
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 3
+TÍTULO: SobreAsLeisDaFisica
+AUTOR(A): RichardFeynman
+EDITORA: ContrapontoEditora
+GÊNERO: Física
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/06/2017
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 4
+TÍTULO: OPoderDoPensamentoMatematico
+AUTOR(A): JordanEllenberg
+EDITORA: Zahar
+GÊNERO: Matemática
+NÚMERO DE PÁGINAS: 200
+ISBN: 123456789-00
+DATA: 29/05/2014
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 5
+TÍTULO: ORomanceDasEquaçõesAlgébricas
+AUTOR(A): GilbertoGeraldoGarbi
+EDITORA: EditoraLivrariaDaFísica
+GÊNERO: Matemática
+NÚMERO DE PÁGINAS: 220
+ISBN: 123456789-00
+DATA: 1997
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 6
+TÍTULO: AstrofisicaParaApressados
+AUTOR(A): NeildeGrasseTyson
+EDITORA: Planeta
+GÊNERO: Astronomia
+NÚMERO DE PÁGINAS: 180
+ISBN: 123456789-00
+DATA: 2017
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 7
+TÍTULO: EuSouMalala
+AUTOR(A): MalalaYousafzai
+EDITORA: CompanhiadasLetras
+GÊNERO: Biografia
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 08/10/2013
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 8
+TÍTULO: Eragon
+AUTOR(A): ChristopherPaolini
+EDITORA: Rocco
+GÊNERO: Fantasia
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 20/12/2002
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 9
+TÍTULO: HarryPottereOPrisioneiroDeAzkaban
+AUTOR(A): J.K.Rowling
+EDITORA: Scholastic
+GÊNERO: Fantasia
+NÚMERO DE PÁGINAS: 350
+ISBN: 123456789-00
+DATA: 08/07/1999
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 10
+TÍTULO: DiarioDeUmBanana1
+AUTOR(A): JeffKinney
+EDITORA: VREditora
+GÊNERO: Infantojuvenil
+NÚMERO DE PÁGINAS: 200
+ISBN: 123456789-00
+DATA: 25/04/2007
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 11
+TÍTULO: OPequenoPrincipe
+AUTOR(A): AntoineDeSaint-Exupéry
+EDITORA: HarperCollins
+GÊNERO: Fábula
+NÚMERO DE PÁGINAS: 100
+ISBN: 123456789-00
+DATA: 06/04/1943
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 12
+TÍTULO: OsSonhosDeEinstein
+AUTOR(A): AlanLightman
+EDITORA: CompanhiaDasLetras
+GÊNERO: FicçãoCientífica
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/09/2016
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 13
+TÍTULO: Cosmos
+AUTOR(A): CarlSagan
+EDITORA: CompanhiaDasLetras
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 01/10/1980
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 14
+TÍTULO: OMundoAssombadopelosDemônios
+AUTOR(A): CarlSagan
+EDITORA: CompanhiaDeBolso
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/01/1996
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 15
+TÍTULO: José
+AUTOR(A): CarlosDrummondDeAndrade
+EDITORA: CompanhiaDasLetras
+GÊNERO: Poesia
+NÚMERO DE PÁGINAS: 333
+ISBN: 123456789-00
+DATA: 2012
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+Fim da execução
+Livro 0 diz: Leia-me amanhã!
+Item 0 liberado da memória!
+Livro 1 diz: Leia-me amanhã!
+Item 1 liberado da memória!
+Livro 2 diz: Leia-me amanhã!
+Item 2 liberado da memória!
+Livro 3 diz: Leia-me amanhã!
+Item 3 liberado da memória!
+Livro 4 diz: Leia-me amanhã!
+Item 4 liberado da memória!
+Livro 5 diz: Leia-me amanhã!
+Item 5 liberado da memória!
+Livro 6 diz: Leia-me amanhã!
+Item 6 liberado da memória!
+Livro 7 diz: Leia-me amanhã!
+Item 7 liberado da memória!
+Livro 8 diz: Leia-me amanhã!
+Item 8 liberado da memória!
+Livro 9 diz: Leia-me amanhã!
+Item 9 liberado da memória!
+Livro 10 diz: Leia-me amanhã!
+Item 10 liberado da memória!
+Livro 11 diz: Leia-me amanhã!
+Item 11 liberado da memória!
+Livro 12 diz: Leia-me amanhã!
+Item 12 liberado da memória!
+Livro 13 diz: Leia-me amanhã!
+Item 13 liberado da memória!
+Livro 14 diz: Leia-me amanhã!
+Item 14 liberado da memória!
+Livro 15 diz: Leia-me amanhã!
+Item 15 liberado da memória!
+Bye!

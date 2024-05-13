@@ -16,7 +16,7 @@ Book::Book(std::size_t id,
            std::string date,
            std::string genre,
            std::string publisher)
-    : Item(id, availableCopies, title, author, date, "Book")
+    : Item(id, availableCopies, title, author, date, "Livro")
 {
     this->m_numPages  = pages;
     this->m_genre     = genre;
@@ -26,6 +26,7 @@ Book::Book(std::size_t id,
 
 Book::~Book()
 {
+    std::cout << "Livro " << this->GetID() << " diz: Leia-me amanhã!" << std::endl;
 }
 
 std::string Book::GetISBN() const
@@ -52,13 +53,13 @@ void Book::PrintInfo()
 {
     std::cout << "ITEM: " << this->GetItemType() << std::endl;
     std::cout << "ID: " << this->GetID() << std::endl;
-    std::cout << "TITLE: " << this->GetTitle() << std::endl;
-    std::cout << "AUTHOR: " << this->GetAuthor() << std::endl;
-    std::cout << "PUBLISHER: " << this->GetPublisher() << std::endl;
-    std::cout << "GENRE: " << this->GetGenre() << std::endl;
-    std::cout << "NUMBER OF PAGES: " << this->GetNumPages() << std::endl;
+    std::cout << "TÍTULO: " << this->GetTitle() << std::endl;
+    std::cout << "AUTOR(A): " << this->GetAuthor() << std::endl;
+    std::cout << "EDITORA: " << this->GetPublisher() << std::endl;
+    std::cout << "GÊNERO: " << this->GetGenre() << std::endl;
+    std::cout << "NÚMERO DE PÁGINAS: " << this->GetNumPages() << std::endl;
     std::cout << "ISBN: " << this->GetISBN() << std::endl;
-    std::cout << "DATE: " << this->GetDate() << std::endl;
-    std::cout << "AVAILABLE COPIES: " << this->GetAvailableCopies() << std::endl;
-    std::cout << "LOANED COPIES: " << this->GetLoanedCopies() << std::endl;
+    std::cout << "DATA: " << this->GetDate() << std::endl;
+    std::cout << "CÓPIAS DISPONÍVEIS: " << this->GetAvailableCopies() << std::endl;
+    std::cout << "CÓPIAS RESERVADAS: " << this->GetLoanedCopies() << std::endl;
 }

@@ -55,6 +55,8 @@ class Library
         Item* Search(std::string title);
 
         void Reserve(std::size_t id);
+        void Reserve(std::string title);
+
         void Release(std::size_t id);
 
         void PrintCollection();

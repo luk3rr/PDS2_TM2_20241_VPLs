@@ -29,7 +29,7 @@ class CompactDisc : public Item
         std::size_t GetTracks() const;
         std::size_t GetDuration() const;
 
-        void PrintInfo();
+        void PrintInfo() override;
 };
 
 #endif // CD_H_

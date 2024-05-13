@@ -1,0 +1,122 @@
+Vários itens com o mesmo título encontrados:
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: Sapiens
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 1
+TÍTULO: Sapiens
+AUTOR(A): VamoVerSeSeuProgramaEhBãoMesmo
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+Item Sapiens não encontrado o.O
+Item 0 reservado com sucesso :)
+Item 1 reservado com sucesso :)
+Item 0 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: Sapiens
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 1
+TÍTULO: Sapiens
+AUTOR(A): VamoVerSeSeuProgramaEhBãoMesmo
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 2
+TÍTULO: ORomanceDasEquaçõesAlgébricas
+AUTOR(A): GilbertoGeraldoGarbi
+EDITORA: EditoraLivrariaDaFísica
+GÊNERO: Matemática
+NÚMERO DE PÁGINAS: 220
+ISBN: 123456789-00
+DATA: 1997
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 3
+TÍTULO: ExtraExtraUmGatoBotouUmOvo:EntendaOCaso
+EDITORA: Anônimo
+TÓPICOS: PiadaRuim
+DATA: May2014
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 4
+TÍTULO: FolhaDeSãoPaulo
+EDITORA: FolhaDeSãoPaulo
+TÓPICOS: Política,Economia,Esportes
+DATA: 01/05/2019
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 5
+TÍTULO: SobrevivendoNoInferno
+ARTISTA: RacionaisMC's
+FAIXAS: 13
+DURAÇÃO: 01:10:27
+DATA: 27/10/1997
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 6
+TÍTULO: Reanimation
+ARTISTA: LinkinPark
+FAIXAS: 11
+DURAÇÃO: 01:03:09
+DATA: 30/07/2002
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+Nenhuma cópia do item 3 está emprestada o.O
+Fim da execução
+Livro 0 diz: Leia-me amanhã!
+Item 0 liberado da memória!
+Livro 1 diz: Leia-me amanhã!
+Item 1 liberado da memória!
+Livro 2 diz: Leia-me amanhã!
+Item 2 liberado da memória!
+Revista 3 diz: Leia-me amanhã!
+Item 3 liberado da memória!
+Jornal 4 diz: Leia-me amanhã!
+Item 4 liberado da memória!
+CD 5 diz: Ouça-me amanhã!
+Item 5 liberado da memória!
+CD 6 diz: Ouça-me amanhã!
+Item 6 liberado da memória!
+Bye!

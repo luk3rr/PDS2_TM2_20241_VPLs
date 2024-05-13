@@ -8,7 +8,14 @@
 
 Library::Library() { }
 
-Library::~Library() { }
+Library::~Library()
+{
+    for (auto item : this->m_items)
+    {
+        delete item;
+    }
+    std::cout << "Bye!" << std::endl;
+}
 
 void Library::AddBook(std::size_t copies,
                       std::size_t pages,
@@ -101,7 +108,7 @@ Item* Library::Search(std::string title)
     }
     else
     {
-        std::cout << "Itens encontrados:" << std::endl;
+        std::cout << "Vários itens com o mesmo título encontrados:" << std::endl;
         std::cout << "----------" << std::endl;
 
         for (auto item : items_found)
@@ -122,6 +129,24 @@ void Library::Reserve(std::size_t id)
     {
         item->Reserve();
     }
+    else
+    {
+        std::cout << "Item " << id << " não encontrado o.O" << std::endl;
+    }
+}
+
+void Library::Reserve(std::string title)
+{
+    Item* item = this->Search(title);
+
+    if (item != nullptr)
+    {
+        item->Reserve();
+    }
+    else
+    {
+        std::cout << "Item " << title << " não encontrado o.O" << std::endl;
+    }
 }
 
 void Library::Release(std::size_t id)
@@ -131,6 +156,10 @@ void Library::Release(std::size_t id)
     if (item != nullptr)
     {
         item->Release();
+    }
+    else
+    {
+        std::cout << "Item " << id << " não encontrado o.O" << std::endl;
     }
 }
 
@@ -143,9 +172,12 @@ void Library::PrintCollection()
     }
     else
     {
+
+        std::cout << "----------" << std::endl;
         for (auto item : this->m_items)
         {
             item->PrintInfo();
+            std::cout << "----------" << std::endl;
         }
     }
 }

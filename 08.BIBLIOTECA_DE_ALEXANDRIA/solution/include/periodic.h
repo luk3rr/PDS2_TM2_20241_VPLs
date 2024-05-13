@@ -34,7 +34,7 @@ class Periodic : public Item
         std::size_t GetNumber() const;
         std::string GetTopics() const;
 
-        void PrintInfo();
+        void PrintInfo() override;
 };
 
 #endif // PERIODICS_H_

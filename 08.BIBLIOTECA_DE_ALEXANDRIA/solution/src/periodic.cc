@@ -14,12 +14,17 @@ Periodic::Periodic(std::size_t id,
                    std::string title,
                    std::string date,
                    std::string editor,
-                   std::string type,
-                   std::string topics) : Item(id, availableCopies, title, editor, date, type)
+                   std::string topics,
+                   std::string type) : Item(id, availableCopies, title, editor, date, type)
 {
     this->m_volume = volume;
     this->m_number = number;
     this->m_topics = topics;
+}
+
+Periodic::~Periodic()
+{
+    std::cout << this->GetItemType() << " " << this->GetID() << " diz: Leia-me amanhã!" << std::endl;
 }
 
 std::size_t Periodic::GetVolume() const
@@ -41,10 +46,10 @@ void Periodic::PrintInfo()
 {
     std::cout << "ITEM: " << this->GetItemType() << std::endl;
     std::cout << "ID: " << this->GetID() << std::endl;
-    std::cout << "TITLE: " << this->GetTitle() << std::endl;
-    std::cout << "EDITOR: " << this->GetAuthor() << std::endl;
-    std::cout << "TOPICS: " << this->GetTopics() << std::endl;
-    std::cout << "DATE: " << this->GetDate() << std::endl;
-    std::cout << "AVAILABLE COPIES: " << this->GetAvailableCopies() << std::endl;
-    std::cout << "LOANED COPIES: " << this->GetLoanedCopies() << std::endl;
+    std::cout << "TÍTULO: " << this->GetTitle() << std::endl;
+    std::cout << "EDITORA: " << this->GetAuthor() << std::endl;
+    std::cout << "TÓPICOS: " << this->GetTopics() << std::endl;
+    std::cout << "DATA: " << this->GetDate() << std::endl;
+    std::cout << "CÓPIAS DISPONÍVEIS: " << this->GetAvailableCopies() << std::endl;
+    std::cout << "CÓPIAS RESERVADAS: " << this->GetLoanedCopies() << std::endl;
 }

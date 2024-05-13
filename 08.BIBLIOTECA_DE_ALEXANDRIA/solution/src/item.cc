@@ -25,7 +25,7 @@ Item::Item(std::size_t id,
 
 Item::~Item()
 {
-    std::cout << "Item " << this->m_id << " destruído!" << std::endl;
+    std::cout << "Item " << this->m_id << " liberado da memória!" << std::endl;
 }
 
 std::size_t Item::GetID() const
@@ -92,17 +92,17 @@ void Item::Release()
     }
     else
     {
-        std::cout << "Item " << this->m_id << " não está emprestado o.O" << std::endl;
+        std::cout << "Nenhuma cópia do item " << this->m_id << " está emprestada o.O" << std::endl;
     }
 }
 
 void Item::PrintInfo()
 {
-    std::cout << "ITEM TYPE: " << this->m_itemType << std::endl;
+    std::cout << "TIPO: " << this->m_itemType << std::endl;
     std::cout << "ID: " << this->m_id << std::endl;
-    std::cout << "TITLE: " << this->m_title << std::endl;
-    std::cout << "AUTHOR: " << this->m_author << std::endl;
-    std::cout << "DATE: " << this->m_date << std::endl;
-    std::cout << "AVAILABLE COPIES: " << this->m_availableCopies << std::endl;
-    std::cout << "LOANED COPIES: " << this->m_loanedCopies << std::endl;
+    std::cout << "TÍTULO: " << this->m_title << std::endl;
+    std::cout << "AUTOR(A): " << this->m_author << std::endl;
+    std::cout << "DATA: " << this->m_date << std::endl;
+    std::cout << "CÓPIAS DISPONÍVEIS: " << this->m_availableCopies << std::endl;
+    std::cout << "CÓPIAS RESERVADAS: " << this->m_loanedCopies << std::endl;
 }

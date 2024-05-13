@@ -52,6 +52,9 @@ void Vehicle::Move()
     if (this->m_speed > m_maxSpeed)
         this->m_speed = m_maxSpeed;
 
+    else if (m_speed < -m_maxSpeed)
+        m_speed = -m_maxSpeed;
+
     double newX = this->GetX() + m_speed;
     this->SetX(newX);
 }

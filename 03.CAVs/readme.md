@@ -180,12 +180,12 @@ Observe que nesse exemplo, os veículos começam a desacelerar no tempo 20 e at�
 30 1
 
 **output**\
-528\
-0 : 3 : 51 0.2\
-1 : 3 : 50 0.2\
-2 : 3 : 49 0.2\
-3 : 3 : 48 0.2\
-4 : 3 : 47 0.2
+53\
+0 : 3 : 52 0.2\
+1 : 3 : 51 0.2\
+2 : 3 : 50 0.2\
+3 : 3 : 49 0.2\
+4 : 3 : 48 0.2
 
 ## Exemplo 3
 **input**\

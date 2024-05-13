@@ -51,7 +51,7 @@ Classe responsável por representar um item genérico do acervo da biblioteca.
 
 - **Release()**: Método que implementa a lógica de devolução do item e liberá-lo para um novo empréstimo.
   - Se realmente houver algum empréstimo, deve imprimir "Item ID recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)"
-  - A sua lógica deve lidar com a tentativa de devolver um item que não está emprestado. Se nenhum item tiver sido emprestado, então imprima "Nenhuma cópia do item ID está emprestado o.O".
+  - A sua lógica deve lidar com a tentativa de devolver um item que não está emprestado. Se nenhum item tiver sido emprestado, então imprima "Nenhuma cópia do item ID está emprestada o.O".
     - Isso é mais simples do que você inicialmente pode imaginar. Se m_loanedCopies for igual a zero para um determinado item, então nenhuma cópia dele foi emprestada. Se não...
 
 ### class Book
@@ -109,7 +109,7 @@ Classe que representa um periódico (revista, jornal etc). Deve ser herança de 
 
 Se você estiver se perguntando o motivo de eu não ter separado a classe periódico em duas classes diferentes (revista e jornal), a resposta é uma das duas opções abaixo:
 1. O monitor não teve criatividade suficiente para elaborar atributos ou métodos que fossem específicos das duas classes
-2. O monitor estava com pena dos alunos e decidiu diminuir o tamanho do VPL agregando revista e jornal em apenas uma classe
+2. O monitor estava com pena dos alunos e decidiu diminuir o tamanho do VPL, agregando revista e jornal em apenas uma classe
 
 Qual opção você acha que é ? O.O
 
@@ -185,7 +185,7 @@ Classe que representa um /compact disc/. Deve ser herança de Item.
     - \----------
   - Se não houver itens, imprima apenas "Estamos sem itens, mas você pode fazer uma doação ;-;"
 
-Coloquei não coloquei o tipo dos parâmetros recebidos pelos métodos acima, você certamente conseguirá inferi-los. Sua função deve ter exatamente os mesmo parâmetros como descrito acima, mas você pode mudar a ordem ou o nome deles.
+Não coloquei o tipo dos parâmetros recebidos pelos métodos acima, você certamente conseguirá inferi-los. Sua função deve ter exatamente os mesmo parâmetros como descrito acima, mas você pode mudar a ordem ou o nome deles.
 
 A respeito da lógica de criar IDs para cada item:
 - Cada ID deve ser um inteiro não negativo

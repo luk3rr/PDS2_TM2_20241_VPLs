@@ -32,9 +32,9 @@ Atributos que você deve adicionar em Library:
   - Existem n formas de fazer isso, algumas mais fáceis que outras. Pense um pouco, mas como você provavelmente ainda é juninho na programação, se não tiver criatividade suficiente [pegue na mão do monitor que ele lhe mostrará um caminho](https://github.com/luk3rr/aaaaaaaaah/blob/main/SOCORRO/historico_de_emprestimos.cc).
 - Assim como fez com Item, crie um método para procurar um User pelo ID.
 - A assinatura dos métodos Reserve e Release precisa ser alterada, conforme abaixo:
-  - **void Reserve(std::size_t user_id, std::size_t item_id);**
+  - **void Reserve(std::size_t item_id, std::size_t user_id);**
   - **void Reserve(std::string item_title, std::size_t user_id);**
-  - **void Release(std::size_t user_id, std::size_t item_id);**
+  - **void Release(std::size_t item_id, std::size_t user_id);**
 - Baseado nessa nova assinatura, a lógica da reserva e a devolução de um ID precisa considerar também o usuário.
 
 ### Freedom

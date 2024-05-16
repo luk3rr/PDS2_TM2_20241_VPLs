@@ -26,8 +26,41 @@ CÓPIAS RESERVADAS: 0
 ----------
 Item Sapiens não encontrado o.O
 Item 0 reservado com sucesso :)
+Usuário u1 reservou o item Sapiens com sucesso!
 Item 1 reservado com sucesso :)
+Usuário u1 reservou o item Sapiens com sucesso!
 Item 0 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Usuário u1 devolveu o item Sapiens com sucesso!
+Item 3 reservado com sucesso :)
+Usuário u1 reservou o item ExtraExtraUmGatoBotouUmOvo:EntendaOCaso com sucesso!
+----------
+Item: Sapiens
+Usuário: u1
+Status: Devolvido
+----------
+Item: Sapiens
+Usuário: u1
+Status: Reservado
+----------
+Item: ExtraExtraUmGatoBotouUmOvo:EntendaOCaso
+Usuário: u1
+Status: Reservado
+----------
+Item 3 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Usuário u1 devolveu o item ExtraExtraUmGatoBotouUmOvo:EntendaOCaso com sucesso!
+----------
+Item: Sapiens
+Usuário: u1
+Status: Devolvido
+----------
+Item: Sapiens
+Usuário: u1
+Status: Reservado
+----------
+Item: ExtraExtraUmGatoBotouUmOvo:EntendaOCaso
+Usuário: u1
+Status: Devolvido
+----------
 ----------
 ITEM: Livro
 ID: 0
@@ -103,7 +136,12 @@ DATA: 30/07/2002
 CÓPIAS DISPONÍVEIS: 1
 CÓPIAS RESERVADAS: 0
 ----------
-Nenhuma cópia do item 3 está emprestada o.O
+----------
+ID: 0
+NAME: u1
+EMAIL: e1
+CPF: c1
+----------
 Fim da execução
 Livro 0 diz: Leia-me amanhã!
 Item 0 liberado da memória!
@@ -119,4 +157,5 @@ CD 5 diz: Ouça-me amanhã!
 Item 5 liberado da memória!
 CD 6 diz: Ouça-me amanhã!
 Item 6 liberado da memória!
+Usuário 0 foi para o beleléu!
 Bye!

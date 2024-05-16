@@ -16,6 +16,7 @@ User::User(std::size_t id, std::string name, std::string email, std::string cpf)
 
 User::~User()
 {
+    std::cout << "Usuário " << this->m_id << " foi para o beleléu!" << std::endl;
 }
 
 std::string User::GetName() const

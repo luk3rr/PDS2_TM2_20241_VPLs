@@ -1,3 +1,41 @@
+Item 0 reservado com sucesso :)
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
+Item 0 não disponível para empréstimo :(
+Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 ----------
 ITEM: CD
 ID: 0
@@ -6,8 +44,8 @@ ARTISTA: MarvinGaye
 FAIXAS: 10
 DURAÇÃO: 01:15:00
 DATA: 01/05/1971
-CÓPIAS DISPONÍVEIS: 1
-CÓPIAS RESERVADAS: 0
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
 ----------
 ITEM: CD
 ID: 1
@@ -329,6 +367,99 @@ DATA: 25/01/1994
 CÓPIAS DISPONÍVEIS: 1
 CÓPIAS RESERVADAS: 0
 ----------
+----------
+ID: 0
+NAME: CarlosAlberto
+EMAIL: alo@u1.me
+CPF: naodevemosdivulgarocpfdeusuarios
+----------
+ID: 1
+NAME: CarlosAlberto
+EMAIL: aloCarlinhos@gmail.com
+CPF: 000000000-00
+----------
+ID: 2
+NAME: Luuucaaas
+EMAIL: aloalo@gmail.com
+CPF: SimEuGostoDeMarvinGaye
+----------
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
+Item: WhatsGoingOn
+Usuário: Luuucaaas
+Status: Reservado
+----------
 Fim da execução
 CD 0 diz: Ouça-me amanhã!
 Item 0 liberado da memória!
@@ -396,4 +527,7 @@ CD 31 diz: Ouça-me amanhã!
 Item 31 liberado da memória!
 CD 32 diz: Ouça-me amanhã!
 Item 32 liberado da memória!
+Usuário 0 foi para o beleléu!
+Usuário 1 foi para o beleléu!
+Usuário 2 foi para o beleléu!
 Bye!

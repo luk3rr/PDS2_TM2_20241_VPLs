@@ -1,3 +1,33 @@
+Item TheEconomista não encontrado o.O
+Vários itens com o mesmo título encontrados:
+----------
+ITEM: Jornal
+ID: 14
+TÍTULO: TheEconomist
+EDITORA: MichaelBrown
+TÓPICOS: Economics,Business,Finance
+DATA: May2024
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 19
+TÍTULO: TheEconomist
+EDITORA: MichaelBrown
+TÓPICOS: Economics,Business,Finance
+DATA: May2024
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+Item TheEconomist não encontrado o.O
+Item 0 reservado com sucesso :)
+Usuário CarlosAlberto reservou o item ToKillAMockingbird com sucesso!
+Item 0 reservado com sucesso :)
+Usuário CarlosAlberto reservou o item ToKillAMockingbird com sucesso!
+Item 0 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Usuário CarlosAlberto devolveu o item ToKillAMockingbird com sucesso!
+Item 0 reservado com sucesso :)
+Usuário CarlosAlberto reservou o item ToKillAMockingbird com sucesso!
 ----------
 ITEM: Livro
 ID: 0
@@ -8,8 +38,8 @@ GÊNERO: Fiction
 NÚMERO DE PÁGINAS: 336
 ISBN: 9780061120084
 DATA: 1960
-CÓPIAS DISPONÍVEIS: 5
-CÓPIAS RESERVADAS: 0
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 2
 ----------
 ITEM: Livro
 ID: 1
@@ -218,6 +248,30 @@ DATA: May2014
 CÓPIAS DISPONÍVEIS: 2
 CÓPIAS RESERVADAS: 0
 ----------
+----------
+ID: 0
+NAME: CarlosAlberto
+EMAIL: alo@u1.me
+CPF: naodevemosdivulgarocpfdeusuarios
+----------
+ID: 1
+NAME: CarlosAlberto
+EMAIL: aloCarlinhos@gmail.com
+CPF: 000000000-00
+----------
+----------
+Item: ToKillAMockingbird
+Usuário: CarlosAlberto
+Status: Devolvido
+----------
+Item: ToKillAMockingbird
+Usuário: CarlosAlberto
+Status: Reservado
+----------
+Item: ToKillAMockingbird
+Usuário: CarlosAlberto
+Status: Reservado
+----------
 Fim da execução
 Livro 0 diz: Leia-me amanhã!
 Item 0 liberado da memória!
@@ -261,4 +315,6 @@ Revista 19 diz: Leia-me amanhã!
 Item 19 liberado da memória!
 Revista 20 diz: Leia-me amanhã!
 Item 20 liberado da memória!
+Usuário 0 foi para o beleléu!
+Usuário 1 foi para o beleléu!
 Bye!

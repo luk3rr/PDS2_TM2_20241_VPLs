@@ -105,7 +105,7 @@ int main()
             {
                 std::size_t user_id;
                 std::string title;
-                std::cin >> user_id >> title;
+                std::cin >> title >> user_id;
 
                 library.Reserve(title, user_id);
             }
@@ -126,7 +126,17 @@ int main()
         }
         else if (command == 's')
         {
-            library.PrintCollection();
+            char type;
+            std::cin >> type;
+
+            if (type == 'c')
+                library.PrintCollection();
+
+            else if (type == 'u')
+                library.PrintUsers();
+
+            else if (type == 'r')
+                library.PrintReservations();
         }
         else
         {

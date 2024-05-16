@@ -16,6 +16,12 @@ Library::~Library()
     {
         delete item;
     }
+
+    for (auto user : this->m_users)
+    {
+        delete user;
+    }
+
     std::cout << "Bye!" << std::endl;
 }
 
@@ -73,6 +79,11 @@ void Library::AddCD(std::size_t copies,
                                             title,
                                             artist,
                                             date));
+}
+
+void Library::AddUser(std::string name, std::string email, std::string cpf)
+{
+    this->m_users.push_back(new User(this->m_users.size(), name, email, cpf));
 }
 
 Item* Library::SearchItem(std::size_t id)
@@ -136,7 +147,7 @@ User* Library::SearchUser(std::size_t id)
     return nullptr;
 }
 
-void Library::Reserve(std::size_t user_id, std::size_t item_id)
+void Library::Reserve(std::size_t item_id, std::size_t user_id)
 {
     Item* item = this->SearchItem(item_id);
 
@@ -155,6 +166,7 @@ void Library::Reserve(std::size_t user_id, std::size_t item_id)
     }
 
     this->m_reservations.push_back(std::make_pair(std::make_pair(item, user), false));
+
     item->Reserve();
 
     std::cout << "Usuário " << user->GetName() << " reservou o item "
@@ -185,7 +197,7 @@ void Library::Reserve(std::string item_title, std::size_t user_id)
               << item->GetTitle() << " com sucesso!" << std::endl;
 }
 
-void Library::Release(std::size_t user_id, std::size_t item_id)
+void Library::Release(std::size_t item_id, std::size_t user_id)
 {
     Item* item = this->SearchItem(item_id);
 
@@ -205,7 +217,7 @@ void Library::Release(std::size_t user_id, std::size_t item_id)
 
     bool found = false;
 
-    for (auto reservation : this->m_reservations)
+    for (auto& reservation : this->m_reservations)
     {
         if (reservation.first.first->GetID() == item_id and
             reservation.first.second->GetID() == user_id)
@@ -216,6 +228,7 @@ void Library::Release(std::size_t user_id, std::size_t item_id)
 
             std::cout << "Usuário " << user->GetName() << " devolveu o item "
                       << item->GetTitle() << " com sucesso!" << std::endl;
+
             found = true;
             break;
         }

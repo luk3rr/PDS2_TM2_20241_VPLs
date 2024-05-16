@@ -1,0 +1,264 @@
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: ToKillAMockingbird
+AUTOR(A): HarperLee
+EDITORA: Harper&Row
+GÊNERO: Fiction
+NÚMERO DE PÁGINAS: 336
+ISBN: 9780061120084
+DATA: 1960
+CÓPIAS DISPONÍVEIS: 5
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 1
+TÍTULO: 1984
+AUTOR(A): GeorgeOrwell
+EDITORA: Brace&World
+GÊNERO: Dystopian,Fiction,Harcourt
+NÚMERO DE PÁGINAS: 324
+ISBN: 9780452284234
+DATA: 1949
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 2
+TÍTULO: PrideAndPrejudice
+AUTOR(A): JaneAusten
+EDITORA: EgertonWhitehall
+GÊNERO: Romance
+NÚMERO DE PÁGINAS: 304
+ISBN: 9781623000069
+DATA: 1813
+CÓPIAS DISPONÍVEIS: 4
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 3
+TÍTULO: TheCatcherInTheRye
+AUTOR(A): J.D.Salinger
+EDITORA: LittleBrownAndCompany
+GÊNERO: Fiction
+NÚMERO DE PÁGINAS: 368
+ISBN: 9780316769480
+DATA: 1951
+CÓPIAS DISPONÍVEIS: 6
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 4
+TÍTULO: LordOfTheFlies
+AUTOR(A): WilliamGolding
+EDITORA: FaberAndFaber
+GÊNERO: Allegorical,Novel
+NÚMERO DE PÁGINAS: 279
+ISBN: 9780571056866
+DATA: 1954
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 5
+TÍTULO: TheGreatGatsby
+AUTOR(A): F.ScottFitzgerald
+EDITORA: Scribner
+GÊNERO: Fiction
+NÚMERO DE PÁGINAS: 294
+ISBN: 9780743227932
+DATA: 1925
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 6
+TÍTULO: ToTheLighthouse
+AUTOR(A): VirginiaWoolf
+EDITORA: HogarthPress
+GÊNERO: Modernist,Novel
+NÚMERO DE PÁGINAS: 256
+ISBN: 9780156907392
+DATA: 1927
+CÓPIAS DISPONÍVEIS: 4
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 7
+TÍTULO: WarAndPeace
+AUTOR(A): LeoTolstoy
+EDITORA: TheRussianMessenger
+GÊNERO: Historical,Fiction
+NÚMERO DE PÁGINAS: 608
+ISBN: 9780140447934
+DATA: 1869
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 8
+TÍTULO: TheGrapesOfWrath
+AUTOR(A): JohnSteinbeck
+EDITORA: TheVikingPress
+GÊNERO: Realist,Novel
+NÚMERO DE PÁGINAS: 400
+ISBN: 9780142000663
+DATA: 1939
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 9
+TÍTULO: CrimeAndPunishment
+AUTOR(A): FyodorDostoevsky
+EDITORA: TheRussianMessenger
+GÊNERO: Philosophical,Novel
+NÚMERO DE PÁGINAS: 384
+ISBN: 9780140449136
+DATA: 1866
+CÓPIAS DISPONÍVEIS: 5
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 10
+TÍTULO: TheNewYorkTimes
+EDITORA: JohnDoe
+TÓPICOS: Politics,Economy,Sports
+DATA: January1,2024
+CÓPIAS DISPONÍVEIS: 5
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 11
+TÍTULO: NationalGeographic
+EDITORA: JaneSmith
+TÓPICOS: Science,Nature,Geography
+DATA: February2024
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 12
+TÍTULO: ScientificAmerican
+EDITORA: AlanJones
+TÓPICOS: Science,Technology,Innovation
+DATA: March2024
+CÓPIAS DISPONÍVEIS: 4
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 13
+TÍTULO: TimeMagazine
+EDITORA: EmilyWhite
+TÓPICOS: Politics,Entertainment,WorldNews
+DATA: April2024
+CÓPIAS DISPONÍVEIS: 6
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 14
+TÍTULO: TheEconomist
+EDITORA: MichaelBrown
+TÓPICOS: Economics,Business,Finance
+DATA: May2024
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 15
+TÍTULO: TimeMagazine
+EDITORA: JohnDoe
+TÓPICOS: Politics,Entertainment,WorldNews
+DATA: January1,2024
+CÓPIAS DISPONÍVEIS: 5
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 16
+TÍTULO: NationalGeographic
+EDITORA: JaneSmith
+TÓPICOS: Science,Nature,Geography
+DATA: February2024
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 17
+TÍTULO: ScientificAmerican
+EDITORA: AlanJones
+TÓPICOS: Science,Technology,Innovation
+DATA: March2024
+CÓPIAS DISPONÍVEIS: 4
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 18
+TÍTULO: NewScientist
+EDITORA: EmilyWhite
+TÓPICOS: Science,Technology,Research
+DATA: April2024
+CÓPIAS DISPONÍVEIS: 6
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 19
+TÍTULO: TheEconomist
+EDITORA: MichaelBrown
+TÓPICOS: Economics,Business,Finance
+DATA: May2024
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 20
+TÍTULO: ExtraExtraUmGatoBotouUmOvo:EntendaOCaso
+EDITORA: Anônimo
+TÓPICOS: PiadaRuim
+DATA: May2014
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+Fim da execução
+Livro 0 diz: Leia-me amanhã!
+Item 0 liberado da memória!
+Livro 1 diz: Leia-me amanhã!
+Item 1 liberado da memória!
+Livro 2 diz: Leia-me amanhã!
+Item 2 liberado da memória!
+Livro 3 diz: Leia-me amanhã!
+Item 3 liberado da memória!
+Livro 4 diz: Leia-me amanhã!
+Item 4 liberado da memória!
+Livro 5 diz: Leia-me amanhã!
+Item 5 liberado da memória!
+Livro 6 diz: Leia-me amanhã!
+Item 6 liberado da memória!
+Livro 7 diz: Leia-me amanhã!
+Item 7 liberado da memória!
+Livro 8 diz: Leia-me amanhã!
+Item 8 liberado da memória!
+Livro 9 diz: Leia-me amanhã!
+Item 9 liberado da memória!
+Jornal 10 diz: Leia-me amanhã!
+Item 10 liberado da memória!
+Jornal 11 diz: Leia-me amanhã!
+Item 11 liberado da memória!
+Jornal 12 diz: Leia-me amanhã!
+Item 12 liberado da memória!
+Jornal 13 diz: Leia-me amanhã!
+Item 13 liberado da memória!
+Jornal 14 diz: Leia-me amanhã!
+Item 14 liberado da memória!
+Revista 15 diz: Leia-me amanhã!
+Item 15 liberado da memória!
+Revista 16 diz: Leia-me amanhã!
+Item 16 liberado da memória!
+Revista 17 diz: Leia-me amanhã!
+Item 17 liberado da memória!
+Revista 18 diz: Leia-me amanhã!
+Item 18 liberado da memória!
+Revista 19 diz: Leia-me amanhã!
+Item 19 liberado da memória!
+Revista 20 diz: Leia-me amanhã!
+Item 20 liberado da memória!
+Bye!

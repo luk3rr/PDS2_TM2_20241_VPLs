@@ -1,0 +1,2163 @@
+case = 0
+input =
+a l 5 336 ToKillAMockingbird HarperLee 9780061120084 1960 Fiction Harper&Row
+a l 3 324 1984 GeorgeOrwell 9780452284234 1949 Dystopian,Fiction,Harcourt Brace&World
+a l 4 304 PrideAndPrejudice JaneAusten 9781623000069 1813 Romance EgertonWhitehall
+a l 6 368 TheCatcherInTheRye J.D.Salinger 9780316769480 1951 Fiction LittleBrownAndCompany
+a l 2 279 LordOfTheFlies WilliamGolding 9780571056866 1954 Allegorical,Novel FaberAndFaber
+a l 3 294 TheGreatGatsby F.ScottFitzgerald 9780743227932 1925 Fiction Scribner
+a l 4 256 ToTheLighthouse VirginiaWoolf 9780156907392 1927 Modernist,Novel HogarthPress
+a l 3 608 WarAndPeace LeoTolstoy 9780140447934 1869 Historical,Fiction TheRussianMessenger
+a l 2 400 TheGrapesOfWrath JohnSteinbeck 9780142000663 1939 Realist,Novel TheVikingPress
+a l 5 384 CrimeAndPunishment FyodorDostoevsky 9780140449136 1866 Philosophical,Novel TheRussianMessenger
+a j 5 10 1 TheNewYorkTimes January1,2024 JohnDoe Politics,Economy,Sports
+a j 3 8 5 NationalGeographic February2024 JaneSmith Science,Nature,Geography
+a j 4 12 3 ScientificAmerican March2024 AlanJones Science,Technology,Innovation
+a j 6 16 7 TimeMagazine April2024 EmilyWhite Politics,Entertainment,WorldNews
+a j 2 6 4 TheEconomist May2024 MichaelBrown Economics,Business,Finance
+a r 5 10 1 TimeMagazine January1,2024 JohnDoe Politics,Entertainment,WorldNews
+a r 3 8 5 NationalGeographic February2024 JaneSmith Science,Nature,Geography
+a r 4 12 3 ScientificAmerican March2024 AlanJones Science,Technology,Innovation
+a r 6 16 7 NewScientist April2024 EmilyWhite Science,Technology,Research
+a r 2 6 4 TheEconomist May2024 MichaelBrown Economics,Business,Finance
+a r 2 6 4 ExtraExtraUmGatoBotouUmOvo:EntendaOCaso May2014 Anônimo PiadaRuim
+s
+
+output =
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: ToKillAMockingbird
+AUTOR(A): HarperLee
+EDITORA: Harper&Row
+GÊNERO: Fiction
+NÚMERO DE PÁGINAS: 336
+ISBN: 9780061120084
+DATA: 1960
+CÓPIAS DISPONÍVEIS: 5
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 1
+TÍTULO: 1984
+AUTOR(A): GeorgeOrwell
+EDITORA: Brace&World
+GÊNERO: Dystopian,Fiction,Harcourt
+NÚMERO DE PÁGINAS: 324
+ISBN: 9780452284234
+DATA: 1949
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 2
+TÍTULO: PrideAndPrejudice
+AUTOR(A): JaneAusten
+EDITORA: EgertonWhitehall
+GÊNERO: Romance
+NÚMERO DE PÁGINAS: 304
+ISBN: 9781623000069
+DATA: 1813
+CÓPIAS DISPONÍVEIS: 4
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 3
+TÍTULO: TheCatcherInTheRye
+AUTOR(A): J.D.Salinger
+EDITORA: LittleBrownAndCompany
+GÊNERO: Fiction
+NÚMERO DE PÁGINAS: 368
+ISBN: 9780316769480
+DATA: 1951
+CÓPIAS DISPONÍVEIS: 6
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 4
+TÍTULO: LordOfTheFlies
+AUTOR(A): WilliamGolding
+EDITORA: FaberAndFaber
+GÊNERO: Allegorical,Novel
+NÚMERO DE PÁGINAS: 279
+ISBN: 9780571056866
+DATA: 1954
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 5
+TÍTULO: TheGreatGatsby
+AUTOR(A): F.ScottFitzgerald
+EDITORA: Scribner
+GÊNERO: Fiction
+NÚMERO DE PÁGINAS: 294
+ISBN: 9780743227932
+DATA: 1925
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 6
+TÍTULO: ToTheLighthouse
+AUTOR(A): VirginiaWoolf
+EDITORA: HogarthPress
+GÊNERO: Modernist,Novel
+NÚMERO DE PÁGINAS: 256
+ISBN: 9780156907392
+DATA: 1927
+CÓPIAS DISPONÍVEIS: 4
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 7
+TÍTULO: WarAndPeace
+AUTOR(A): LeoTolstoy
+EDITORA: TheRussianMessenger
+GÊNERO: Historical,Fiction
+NÚMERO DE PÁGINAS: 608
+ISBN: 9780140447934
+DATA: 1869
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 8
+TÍTULO: TheGrapesOfWrath
+AUTOR(A): JohnSteinbeck
+EDITORA: TheVikingPress
+GÊNERO: Realist,Novel
+NÚMERO DE PÁGINAS: 400
+ISBN: 9780142000663
+DATA: 1939
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 9
+TÍTULO: CrimeAndPunishment
+AUTOR(A): FyodorDostoevsky
+EDITORA: TheRussianMessenger
+GÊNERO: Philosophical,Novel
+NÚMERO DE PÁGINAS: 384
+ISBN: 9780140449136
+DATA: 1866
+CÓPIAS DISPONÍVEIS: 5
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 10
+TÍTULO: TheNewYorkTimes
+EDITORA: JohnDoe
+TÓPICOS: Politics,Economy,Sports
+DATA: January1,2024
+CÓPIAS DISPONÍVEIS: 5
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 11
+TÍTULO: NationalGeographic
+EDITORA: JaneSmith
+TÓPICOS: Science,Nature,Geography
+DATA: February2024
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 12
+TÍTULO: ScientificAmerican
+EDITORA: AlanJones
+TÓPICOS: Science,Technology,Innovation
+DATA: March2024
+CÓPIAS DISPONÍVEIS: 4
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 13
+TÍTULO: TimeMagazine
+EDITORA: EmilyWhite
+TÓPICOS: Politics,Entertainment,WorldNews
+DATA: April2024
+CÓPIAS DISPONÍVEIS: 6
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 14
+TÍTULO: TheEconomist
+EDITORA: MichaelBrown
+TÓPICOS: Economics,Business,Finance
+DATA: May2024
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 15
+TÍTULO: TimeMagazine
+EDITORA: JohnDoe
+TÓPICOS: Politics,Entertainment,WorldNews
+DATA: January1,2024
+CÓPIAS DISPONÍVEIS: 5
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 16
+TÍTULO: NationalGeographic
+EDITORA: JaneSmith
+TÓPICOS: Science,Nature,Geography
+DATA: February2024
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 17
+TÍTULO: ScientificAmerican
+EDITORA: AlanJones
+TÓPICOS: Science,Technology,Innovation
+DATA: March2024
+CÓPIAS DISPONÍVEIS: 4
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 18
+TÍTULO: NewScientist
+EDITORA: EmilyWhite
+TÓPICOS: Science,Technology,Research
+DATA: April2024
+CÓPIAS DISPONÍVEIS: 6
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 19
+TÍTULO: TheEconomist
+EDITORA: MichaelBrown
+TÓPICOS: Economics,Business,Finance
+DATA: May2024
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 20
+TÍTULO: ExtraExtraUmGatoBotouUmOvo:EntendaOCaso
+EDITORA: Anônimo
+TÓPICOS: PiadaRuim
+DATA: May2014
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+Fim da execução
+Livro 0 diz: Leia-me amanhã!
+Item 0 liberado da memória!
+Livro 1 diz: Leia-me amanhã!
+Item 1 liberado da memória!
+Livro 2 diz: Leia-me amanhã!
+Item 2 liberado da memória!
+Livro 3 diz: Leia-me amanhã!
+Item 3 liberado da memória!
+Livro 4 diz: Leia-me amanhã!
+Item 4 liberado da memória!
+Livro 5 diz: Leia-me amanhã!
+Item 5 liberado da memória!
+Livro 6 diz: Leia-me amanhã!
+Item 6 liberado da memória!
+Livro 7 diz: Leia-me amanhã!
+Item 7 liberado da memória!
+Livro 8 diz: Leia-me amanhã!
+Item 8 liberado da memória!
+Livro 9 diz: Leia-me amanhã!
+Item 9 liberado da memória!
+Jornal 10 diz: Leia-me amanhã!
+Item 10 liberado da memória!
+Jornal 11 diz: Leia-me amanhã!
+Item 11 liberado da memória!
+Jornal 12 diz: Leia-me amanhã!
+Item 12 liberado da memória!
+Jornal 13 diz: Leia-me amanhã!
+Item 13 liberado da memória!
+Jornal 14 diz: Leia-me amanhã!
+Item 14 liberado da memória!
+Revista 15 diz: Leia-me amanhã!
+Item 15 liberado da memória!
+Revista 16 diz: Leia-me amanhã!
+Item 16 liberado da memória!
+Revista 17 diz: Leia-me amanhã!
+Item 17 liberado da memória!
+Revista 18 diz: Leia-me amanhã!
+Item 18 liberado da memória!
+Revista 19 diz: Leia-me amanhã!
+Item 19 liberado da memória!
+Revista 20 diz: Leia-me amanhã!
+Item 20 liberado da memória!
+Bye!
+
+case = 1
+input =
+a l 5 300 DomCasmurro MachadoDeAssis 9788532803186 01/01/1899 Romance EditoraNovaFronteira
+a j 3 10 5 FolhaDeSãoPaulo 01/05/2019 FolhaDeSãoPaulo Política,Economia,Esportes
+a r 2 7 12 Veja 15/04/2024 EditoraAbril Política,Cultura,Tecnologia
+a c 4 12 8230 RaçaNegra-AoVivo RaçaNegra 20/03/2024
+s
+r t DomCasmurro
+r i 3
+d 2
+d 0
+s
+
+output =
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: DomCasmurro
+AUTOR(A): MachadoDeAssis
+EDITORA: EditoraNovaFronteira
+GÊNERO: Romance
+NÚMERO DE PÁGINAS: 300
+ISBN: 9788532803186
+DATA: 01/01/1899
+CÓPIAS DISPONÍVEIS: 5
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 1
+TÍTULO: FolhaDeSãoPaulo
+EDITORA: FolhaDeSãoPaulo
+TÓPICOS: Política,Economia,Esportes
+DATA: 01/05/2019
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 2
+TÍTULO: Veja
+EDITORA: EditoraAbril
+TÓPICOS: Política,Cultura,Tecnologia
+DATA: 15/04/2024
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 3
+TÍTULO: RaçaNegra-AoVivo
+ARTISTA: RaçaNegra
+FAIXAS: 12
+DURAÇÃO: 02:17:10
+DATA: 20/03/2024
+CÓPIAS DISPONÍVEIS: 4
+CÓPIAS RESERVADAS: 0
+----------
+Item 0 reservado com sucesso :)
+Item 3 reservado com sucesso :)
+Nenhuma cópia do item 2 está emprestada o.O
+Item 0 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: DomCasmurro
+AUTOR(A): MachadoDeAssis
+EDITORA: EditoraNovaFronteira
+GÊNERO: Romance
+NÚMERO DE PÁGINAS: 300
+ISBN: 9788532803186
+DATA: 01/01/1899
+CÓPIAS DISPONÍVEIS: 5
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 1
+TÍTULO: FolhaDeSãoPaulo
+EDITORA: FolhaDeSãoPaulo
+TÓPICOS: Política,Economia,Esportes
+DATA: 01/05/2019
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 2
+TÍTULO: Veja
+EDITORA: EditoraAbril
+TÓPICOS: Política,Cultura,Tecnologia
+DATA: 15/04/2024
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 3
+TÍTULO: RaçaNegra-AoVivo
+ARTISTA: RaçaNegra
+FAIXAS: 12
+DURAÇÃO: 02:17:10
+DATA: 20/03/2024
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 1
+----------
+Fim da execução
+Livro 0 diz: Leia-me amanhã!
+Item 0 liberado da memória!
+Jornal 1 diz: Leia-me amanhã!
+Item 1 liberado da memória!
+Revista 2 diz: Leia-me amanhã!
+Item 2 liberado da memória!
+CD 3 diz: Ouça-me amanhã!
+Item 3 liberado da memória!
+Bye!
+
+case = 2
+input =
+a l 5 300 DomCasmurro MachadoDeAssis 9788532803186 01/01/1899 Romance EditoraNovaFronteira
+a j 3 10 5 FolhaDeSãoPaulo 01/05/2019 FolhaDeSãoPaulo Política,Economia,Esportes
+a r 2 7 12 Veja 15/04/2024 EditoraAbril Política,Cultura,Tecnologia
+a c 4 12 8230 RaçaNegra-AoVivo RaçaNegra 20/03/2024
+s
+r t DomCasmurro
+r i 3
+d 2
+d 0
+d 1
+r i 4
+r i 100
+r t RaçaNegraAoVivo
+r t RaçaNegra-AoVivo
+r t RaçaNegra-AoVivo
+d 3
+d 3
+d 3
+s
+
+output =
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: DomCasmurro
+AUTOR(A): MachadoDeAssis
+EDITORA: EditoraNovaFronteira
+GÊNERO: Romance
+NÚMERO DE PÁGINAS: 300
+ISBN: 9788532803186
+DATA: 01/01/1899
+CÓPIAS DISPONÍVEIS: 5
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 1
+TÍTULO: FolhaDeSãoPaulo
+EDITORA: FolhaDeSãoPaulo
+TÓPICOS: Política,Economia,Esportes
+DATA: 01/05/2019
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 2
+TÍTULO: Veja
+EDITORA: EditoraAbril
+TÓPICOS: Política,Cultura,Tecnologia
+DATA: 15/04/2024
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 3
+TÍTULO: RaçaNegra-AoVivo
+ARTISTA: RaçaNegra
+FAIXAS: 12
+DURAÇÃO: 02:17:10
+DATA: 20/03/2024
+CÓPIAS DISPONÍVEIS: 4
+CÓPIAS RESERVADAS: 0
+----------
+Item 0 reservado com sucesso :)
+Item 3 reservado com sucesso :)
+Nenhuma cópia do item 2 está emprestada o.O
+Item 0 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Nenhuma cópia do item 1 está emprestada o.O
+Item 4 não encontrado o.O
+Item 100 não encontrado o.O
+Item RaçaNegraAoVivo não encontrado o.O
+Item 3 reservado com sucesso :)
+Item 3 reservado com sucesso :)
+Item 3 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Item 3 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Item 3 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: DomCasmurro
+AUTOR(A): MachadoDeAssis
+EDITORA: EditoraNovaFronteira
+GÊNERO: Romance
+NÚMERO DE PÁGINAS: 300
+ISBN: 9788532803186
+DATA: 01/01/1899
+CÓPIAS DISPONÍVEIS: 5
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 1
+TÍTULO: FolhaDeSãoPaulo
+EDITORA: FolhaDeSãoPaulo
+TÓPICOS: Política,Economia,Esportes
+DATA: 01/05/2019
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 2
+TÍTULO: Veja
+EDITORA: EditoraAbril
+TÓPICOS: Política,Cultura,Tecnologia
+DATA: 15/04/2024
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 3
+TÍTULO: RaçaNegra-AoVivo
+ARTISTA: RaçaNegra
+FAIXAS: 12
+DURAÇÃO: 02:17:10
+DATA: 20/03/2024
+CÓPIAS DISPONÍVEIS: 4
+CÓPIAS RESERVADAS: 0
+----------
+Fim da execução
+Livro 0 diz: Leia-me amanhã!
+Item 0 liberado da memória!
+Jornal 1 diz: Leia-me amanhã!
+Item 1 liberado da memória!
+Revista 2 diz: Leia-me amanhã!
+Item 2 liberado da memória!
+CD 3 diz: Ouça-me amanhã!
+Item 3 liberado da memória!
+Bye!
+
+case = 3
+input =
+a c 1 10 4500 WhatsGoingOn MarvinGaye 01/05/1971
+a c 1 15 6000 AThousandSuns LinkinPark 14/09/2010
+a c 1 10 5000 Parachutes Coldplay 10/07/2000
+a c 1 13 4500 Rumours FleetwoodMac 04/02/1977
+a c 1 10 4300 DarkSideOfTheMoon PinkFloyd 01/03/1973
+a c 1 12 4500 CollisionCourse LinkinPark&Jay-Z 30/11/2004
+a c 1 9 4000 HighwayToHell AC/DC 27/07/1979
+a c 1 10 3500 BackInBlack AC/DC 25/07/1980
+a c 1 8 4000 Metallica Metallica 12/08/1991
+a c 1 10 4000 LedZeppelinIV LedZeppelin 08/11/1971
+a c 1 5 3300 Frank AmyWinehouse 20/10/2003
+a c 1 10 4500 Cleopatra TheLumineers 08/04/2016
+a c 1 11 4000 Ten PearlJam 27/08/1991
+a c 1 33 5000 Sgt.PeppersLonelyHeartsClubBand TheBeatles 26/05/1967
+a c 1 9 4000 OfftheWall MichaelJackson 10/08/1979
+a c 1 9 4200 Thriller MichaelJackson 30/11/1982
+a c 1 18 3500 RandomAccessMemories DaftPunk 17/05/2013
+a c 1 22 4000 SongsInTheKeyOfLife StevieWonder 28/09/1976
+a c 1 7 3000 AtLast! EttaJames 15/11/1960
+a c 1 7 3000 Madonna Madonna 27/07/1983
+a c 1 16 3000 MamonasAssassinas MamonasAssassinas 23/06/1995
+a c 1 6 1850 Legend BobMarley&TheWailers 08/05/1984
+a c 1 6 2500 Exodus BobMarley&TheWailers 03/06/1977
+a c 1 13 3000 SobrevivendoNoInferno RacionaisMC's 27/10/1997
+a c 1 12 3500 NadaComoUmDiaApósOOutroDia RacionaisMC's 27/10/2002
+a c 1 13 2500 MTVUnplugged PearlJam 01/11/1992
+a c 1 9 3500 Audioslave Audioslave 19/11/2002
+a c 1 4 4000 That'stheSpirit BringMeTheHorizon 11/09/2015
+a c 1 11 4000 Reanimation LinkinPark 30/07/2002
+a c 1 7 3000 Meteora LinkinPark 25/03/2003
+a c 1 12 3000 HybridTheory LinkinPark 24/10/2000
+a c 1 16 3500 HotButteredSoul IsaacHayes 23/09/1969
+a c 1 9 3500 JarOfFlies AliceInChains 25/01/1994
+s
+
+output =
+----------
+ITEM: CD
+ID: 0
+TÍTULO: WhatsGoingOn
+ARTISTA: MarvinGaye
+FAIXAS: 10
+DURAÇÃO: 01:15:00
+DATA: 01/05/1971
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 1
+TÍTULO: AThousandSuns
+ARTISTA: LinkinPark
+FAIXAS: 15
+DURAÇÃO: 01:40:00
+DATA: 14/09/2010
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 2
+TÍTULO: Parachutes
+ARTISTA: Coldplay
+FAIXAS: 10
+DURAÇÃO: 01:23:20
+DATA: 10/07/2000
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 3
+TÍTULO: Rumours
+ARTISTA: FleetwoodMac
+FAIXAS: 13
+DURAÇÃO: 01:15:00
+DATA: 04/02/1977
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 4
+TÍTULO: DarkSideOfTheMoon
+ARTISTA: PinkFloyd
+FAIXAS: 10
+DURAÇÃO: 01:11:40
+DATA: 01/03/1973
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 5
+TÍTULO: CollisionCourse
+ARTISTA: LinkinPark&Jay-Z
+FAIXAS: 12
+DURAÇÃO: 01:15:00
+DATA: 30/11/2004
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 6
+TÍTULO: HighwayToHell
+ARTISTA: AC/DC
+FAIXAS: 9
+DURAÇÃO: 01:06:40
+DATA: 27/07/1979
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 7
+TÍTULO: BackInBlack
+ARTISTA: AC/DC
+FAIXAS: 10
+DURAÇÃO: 00:58:20
+DATA: 25/07/1980
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 8
+TÍTULO: Metallica
+ARTISTA: Metallica
+FAIXAS: 8
+DURAÇÃO: 01:06:40
+DATA: 12/08/1991
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 9
+TÍTULO: LedZeppelinIV
+ARTISTA: LedZeppelin
+FAIXAS: 10
+DURAÇÃO: 01:06:40
+DATA: 08/11/1971
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 10
+TÍTULO: Frank
+ARTISTA: AmyWinehouse
+FAIXAS: 5
+DURAÇÃO: 00:55:00
+DATA: 20/10/2003
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 11
+TÍTULO: Cleopatra
+ARTISTA: TheLumineers
+FAIXAS: 10
+DURAÇÃO: 01:15:00
+DATA: 08/04/2016
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 12
+TÍTULO: Ten
+ARTISTA: PearlJam
+FAIXAS: 11
+DURAÇÃO: 01:06:40
+DATA: 27/08/1991
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 13
+TÍTULO: Sgt.PeppersLonelyHeartsClubBand
+ARTISTA: TheBeatles
+FAIXAS: 33
+DURAÇÃO: 01:23:20
+DATA: 26/05/1967
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 14
+TÍTULO: OfftheWall
+ARTISTA: MichaelJackson
+FAIXAS: 9
+DURAÇÃO: 01:06:40
+DATA: 10/08/1979
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 15
+TÍTULO: Thriller
+ARTISTA: MichaelJackson
+FAIXAS: 9
+DURAÇÃO: 01:10:00
+DATA: 30/11/1982
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 16
+TÍTULO: RandomAccessMemories
+ARTISTA: DaftPunk
+FAIXAS: 18
+DURAÇÃO: 00:58:20
+DATA: 17/05/2013
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 17
+TÍTULO: SongsInTheKeyOfLife
+ARTISTA: StevieWonder
+FAIXAS: 22
+DURAÇÃO: 01:06:40
+DATA: 28/09/1976
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 18
+TÍTULO: AtLast!
+ARTISTA: EttaJames
+FAIXAS: 7
+DURAÇÃO: 00:50:00
+DATA: 15/11/1960
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 19
+TÍTULO: Madonna
+ARTISTA: Madonna
+FAIXAS: 7
+DURAÇÃO: 00:50:00
+DATA: 27/07/1983
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 20
+TÍTULO: MamonasAssassinas
+ARTISTA: MamonasAssassinas
+FAIXAS: 16
+DURAÇÃO: 00:50:00
+DATA: 23/06/1995
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 21
+TÍTULO: Legend
+ARTISTA: BobMarley&TheWailers
+FAIXAS: 6
+DURAÇÃO: 00:30:50
+DATA: 08/05/1984
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 22
+TÍTULO: Exodus
+ARTISTA: BobMarley&TheWailers
+FAIXAS: 6
+DURAÇÃO: 00:41:40
+DATA: 03/06/1977
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 23
+TÍTULO: SobrevivendoNoInferno
+ARTISTA: RacionaisMC's
+FAIXAS: 13
+DURAÇÃO: 00:50:00
+DATA: 27/10/1997
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 24
+TÍTULO: NadaComoUmDiaApósOOutroDia
+ARTISTA: RacionaisMC's
+FAIXAS: 12
+DURAÇÃO: 00:58:20
+DATA: 27/10/2002
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 25
+TÍTULO: MTVUnplugged
+ARTISTA: PearlJam
+FAIXAS: 13
+DURAÇÃO: 00:41:40
+DATA: 01/11/1992
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 26
+TÍTULO: Audioslave
+ARTISTA: Audioslave
+FAIXAS: 9
+DURAÇÃO: 00:58:20
+DATA: 19/11/2002
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 27
+TÍTULO: That'stheSpirit
+ARTISTA: BringMeTheHorizon
+FAIXAS: 4
+DURAÇÃO: 01:06:40
+DATA: 11/09/2015
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 28
+TÍTULO: Reanimation
+ARTISTA: LinkinPark
+FAIXAS: 11
+DURAÇÃO: 01:06:40
+DATA: 30/07/2002
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 29
+TÍTULO: Meteora
+ARTISTA: LinkinPark
+FAIXAS: 7
+DURAÇÃO: 00:50:00
+DATA: 25/03/2003
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 30
+TÍTULO: HybridTheory
+ARTISTA: LinkinPark
+FAIXAS: 12
+DURAÇÃO: 00:50:00
+DATA: 24/10/2000
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 31
+TÍTULO: HotButteredSoul
+ARTISTA: IsaacHayes
+FAIXAS: 16
+DURAÇÃO: 00:58:20
+DATA: 23/09/1969
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 32
+TÍTULO: JarOfFlies
+ARTISTA: AliceInChains
+FAIXAS: 9
+DURAÇÃO: 00:58:20
+DATA: 25/01/1994
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+Fim da execução
+CD 0 diz: Ouça-me amanhã!
+Item 0 liberado da memória!
+CD 1 diz: Ouça-me amanhã!
+Item 1 liberado da memória!
+CD 2 diz: Ouça-me amanhã!
+Item 2 liberado da memória!
+CD 3 diz: Ouça-me amanhã!
+Item 3 liberado da memória!
+CD 4 diz: Ouça-me amanhã!
+Item 4 liberado da memória!
+CD 5 diz: Ouça-me amanhã!
+Item 5 liberado da memória!
+CD 6 diz: Ouça-me amanhã!
+Item 6 liberado da memória!
+CD 7 diz: Ouça-me amanhã!
+Item 7 liberado da memória!
+CD 8 diz: Ouça-me amanhã!
+Item 8 liberado da memória!
+CD 9 diz: Ouça-me amanhã!
+Item 9 liberado da memória!
+CD 10 diz: Ouça-me amanhã!
+Item 10 liberado da memória!
+CD 11 diz: Ouça-me amanhã!
+Item 11 liberado da memória!
+CD 12 diz: Ouça-me amanhã!
+Item 12 liberado da memória!
+CD 13 diz: Ouça-me amanhã!
+Item 13 liberado da memória!
+CD 14 diz: Ouça-me amanhã!
+Item 14 liberado da memória!
+CD 15 diz: Ouça-me amanhã!
+Item 15 liberado da memória!
+CD 16 diz: Ouça-me amanhã!
+Item 16 liberado da memória!
+CD 17 diz: Ouça-me amanhã!
+Item 17 liberado da memória!
+CD 18 diz: Ouça-me amanhã!
+Item 18 liberado da memória!
+CD 19 diz: Ouça-me amanhã!
+Item 19 liberado da memória!
+CD 20 diz: Ouça-me amanhã!
+Item 20 liberado da memória!
+CD 21 diz: Ouça-me amanhã!
+Item 21 liberado da memória!
+CD 22 diz: Ouça-me amanhã!
+Item 22 liberado da memória!
+CD 23 diz: Ouça-me amanhã!
+Item 23 liberado da memória!
+CD 24 diz: Ouça-me amanhã!
+Item 24 liberado da memória!
+CD 25 diz: Ouça-me amanhã!
+Item 25 liberado da memória!
+CD 26 diz: Ouça-me amanhã!
+Item 26 liberado da memória!
+CD 27 diz: Ouça-me amanhã!
+Item 27 liberado da memória!
+CD 28 diz: Ouça-me amanhã!
+Item 28 liberado da memória!
+CD 29 diz: Ouça-me amanhã!
+Item 29 liberado da memória!
+CD 30 diz: Ouça-me amanhã!
+Item 30 liberado da memória!
+CD 31 diz: Ouça-me amanhã!
+Item 31 liberado da memória!
+CD 32 diz: Ouça-me amanhã!
+Item 32 liberado da memória!
+Bye!
+
+case = 4
+input =
+a l 1 500 Sapiens YuvalNoahHarari 123456789-00 2011 História CompanhiaDasLetras
+a l 1 400 HomoDeus YuvalNoahHarari 123456789-00 08/02/2017 História,Filosofia CompanhiaDasLetras
+a l 1 300 UmaBreveHistoriaDoTempo StephenHawking 123456789-00 01/04/1988 Ciência Intrínseca
+a l 1 250 SobreAsLeisDaFisica RichardFeynman 123456789-00 01/06/2017 Física ContrapontoEditora
+a l 1 200 OPoderDoPensamentoMatematico JordanEllenberg 123456789-00 29/05/2014 Matemática Zahar
+a l 1 220 ORomanceDasEquaçõesAlgébricas GilbertoGeraldoGarbi 123456789-00 1997 Matemática EditoraLivrariaDaFísica
+a l 1 180 AstrofisicaParaApressados NeildeGrasseTyson 123456789-00 2017 Astronomia Planeta
+a l 1 300 EuSouMalala MalalaYousafzai 123456789-00 08/10/2013 Biografia CompanhiadasLetras
+a l 1 500 Eragon ChristopherPaolini 123456789-00 20/12/2002 Fantasia Rocco
+a l 1 350 HarryPottereOPrisioneiroDeAzkaban J.K.Rowling 123456789-00 08/07/1999 Fantasia Scholastic
+a l 1 200 DiarioDeUmBanana1 JeffKinney 123456789-00 25/04/2007 Infantojuvenil VREditora
+a l 1 100 OPequenoPrincipe AntoineDeSaint-Exupéry 123456789-00 06/04/1943 Fábula HarperCollins
+a l 1 250 OsSonhosDeEinstein AlanLightman 123456789-00 01/09/2016 FicçãoCientífica CompanhiaDasLetras
+a l 1 300 Cosmos CarlSagan 123456789-00 01/10/1980 Ciência CompanhiaDasLetras
+a l 1 250 OMundoAssombadopelosDemônios CarlSagan 123456789-00 01/01/1996 Ciência CompanhiaDeBolso
+a l 1 333 José CarlosDrummondDeAndrade 123456789-00 2012 Poesia CompanhiaDasLetras
+s
+
+output =
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: Sapiens
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 1
+TÍTULO: HomoDeus
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História,Filosofia
+NÚMERO DE PÁGINAS: 400
+ISBN: 123456789-00
+DATA: 08/02/2017
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 2
+TÍTULO: UmaBreveHistoriaDoTempo
+AUTOR(A): StephenHawking
+EDITORA: Intrínseca
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 01/04/1988
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 3
+TÍTULO: SobreAsLeisDaFisica
+AUTOR(A): RichardFeynman
+EDITORA: ContrapontoEditora
+GÊNERO: Física
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/06/2017
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 4
+TÍTULO: OPoderDoPensamentoMatematico
+AUTOR(A): JordanEllenberg
+EDITORA: Zahar
+GÊNERO: Matemática
+NÚMERO DE PÁGINAS: 200
+ISBN: 123456789-00
+DATA: 29/05/2014
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 5
+TÍTULO: ORomanceDasEquaçõesAlgébricas
+AUTOR(A): GilbertoGeraldoGarbi
+EDITORA: EditoraLivrariaDaFísica
+GÊNERO: Matemática
+NÚMERO DE PÁGINAS: 220
+ISBN: 123456789-00
+DATA: 1997
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 6
+TÍTULO: AstrofisicaParaApressados
+AUTOR(A): NeildeGrasseTyson
+EDITORA: Planeta
+GÊNERO: Astronomia
+NÚMERO DE PÁGINAS: 180
+ISBN: 123456789-00
+DATA: 2017
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 7
+TÍTULO: EuSouMalala
+AUTOR(A): MalalaYousafzai
+EDITORA: CompanhiadasLetras
+GÊNERO: Biografia
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 08/10/2013
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 8
+TÍTULO: Eragon
+AUTOR(A): ChristopherPaolini
+EDITORA: Rocco
+GÊNERO: Fantasia
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 20/12/2002
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 9
+TÍTULO: HarryPottereOPrisioneiroDeAzkaban
+AUTOR(A): J.K.Rowling
+EDITORA: Scholastic
+GÊNERO: Fantasia
+NÚMERO DE PÁGINAS: 350
+ISBN: 123456789-00
+DATA: 08/07/1999
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 10
+TÍTULO: DiarioDeUmBanana1
+AUTOR(A): JeffKinney
+EDITORA: VREditora
+GÊNERO: Infantojuvenil
+NÚMERO DE PÁGINAS: 200
+ISBN: 123456789-00
+DATA: 25/04/2007
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 11
+TÍTULO: OPequenoPrincipe
+AUTOR(A): AntoineDeSaint-Exupéry
+EDITORA: HarperCollins
+GÊNERO: Fábula
+NÚMERO DE PÁGINAS: 100
+ISBN: 123456789-00
+DATA: 06/04/1943
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 12
+TÍTULO: OsSonhosDeEinstein
+AUTOR(A): AlanLightman
+EDITORA: CompanhiaDasLetras
+GÊNERO: FicçãoCientífica
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/09/2016
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 13
+TÍTULO: Cosmos
+AUTOR(A): CarlSagan
+EDITORA: CompanhiaDasLetras
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 01/10/1980
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 14
+TÍTULO: OMundoAssombadopelosDemônios
+AUTOR(A): CarlSagan
+EDITORA: CompanhiaDeBolso
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/01/1996
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 15
+TÍTULO: José
+AUTOR(A): CarlosDrummondDeAndrade
+EDITORA: CompanhiaDasLetras
+GÊNERO: Poesia
+NÚMERO DE PÁGINAS: 333
+ISBN: 123456789-00
+DATA: 2012
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+Fim da execução
+Livro 0 diz: Leia-me amanhã!
+Item 0 liberado da memória!
+Livro 1 diz: Leia-me amanhã!
+Item 1 liberado da memória!
+Livro 2 diz: Leia-me amanhã!
+Item 2 liberado da memória!
+Livro 3 diz: Leia-me amanhã!
+Item 3 liberado da memória!
+Livro 4 diz: Leia-me amanhã!
+Item 4 liberado da memória!
+Livro 5 diz: Leia-me amanhã!
+Item 5 liberado da memória!
+Livro 6 diz: Leia-me amanhã!
+Item 6 liberado da memória!
+Livro 7 diz: Leia-me amanhã!
+Item 7 liberado da memória!
+Livro 8 diz: Leia-me amanhã!
+Item 8 liberado da memória!
+Livro 9 diz: Leia-me amanhã!
+Item 9 liberado da memória!
+Livro 10 diz: Leia-me amanhã!
+Item 10 liberado da memória!
+Livro 11 diz: Leia-me amanhã!
+Item 11 liberado da memória!
+Livro 12 diz: Leia-me amanhã!
+Item 12 liberado da memória!
+Livro 13 diz: Leia-me amanhã!
+Item 13 liberado da memória!
+Livro 14 diz: Leia-me amanhã!
+Item 14 liberado da memória!
+Livro 15 diz: Leia-me amanhã!
+Item 15 liberado da memória!
+Bye!
+
+case = 5
+input =
+s
+a l 1 500 Sapiens YuvalNoahHarari 123456789-00 2011 História CompanhiaDasLetras
+s
+r t Sapiens
+a l 1 400 HomoDeus YuvalNoahHarari 123456789-00 08/02/2017 História,Filosofia CompanhiaDasLetras
+a l 1 300 UmaBreveHistoriaDoTempo StephenHawking 123456789-00 01/04/1988 Ciência Intrínseca
+a l 1 250 SobreAsLeisDaFisica RichardFeynman 123456789-00 01/06/2017 Física ContrapontoEditora
+a l 1 200 OPoderDoPensamentoMatematico JordanEllenberg 123456789-00 29/05/2014 Matemática Zahar
+r t ORomanceDasEquaçõesAlgébricas
+a l 1 220 ORomanceDasEquaçõesAlgébricas GilbertoGeraldoGarbi 123456789-00 1997 Matemática EditoraLivrariaDaFísica
+a l 1 180 AstrofisicaParaApressados NeildeGrasseTyson 123456789-00 2017 Astronomia Planeta
+a l 1 300 EuSouMalala MalalaYousafzai 123456789-00 08/10/2013 Biografia CompanhiadasLetras
+a l 1 500 Eragon ChristopherPaolini 123456789-00 20/12/2002 Fantasia Rocco
+a l 1 350 HarryPottereOPrisioneiroDeAzkaban J.K.Rowling 123456789-00 08/07/1999 Fantasia Scholastic
+r t ORomanceDasEquaçõesAlgébricas
+a l 1 200 DiarioDeUmBanana1 JeffKinney 123456789-00 25/04/2007 Infantojuvenil VREditora
+a l 1 100 OPequenoPrincipe AntoineDeSaint-Exupéry 123456789-00 06/04/1943 Fábula HarperCollins
+a l 1 250 OsSonhosDeEinstein AlanLightman 123456789-00 01/09/2016 FicçãoCientífica CompanhiaDasLetras
+r t HomoDeus
+r i 1
+a l 1 300 Cosmos CarlSagan 123456789-00 01/10/1980 Ciência CompanhiaDasLetras
+r i 12
+r t UmaBreveHistoriaDoTempo
+a l 1 250 OMundoAssombadopelosDemônios CarlSagan 123456789-00 01/01/1996 Ciência CompanhiaDeBolso
+a l 1 333 José CarlosDrummondDeAndrade 123456789-00 2012 Poesia CompanhiaDasLetras
+s
+r t SobreAsLeisDaFisica
+r t OPoderDoPensamentoMatematico
+r t AstrofisicaParaApressados
+r t EuSouMalala
+r t Eragon
+r t HarryPottereOPrisioneiroDeAzkaban
+r t DiarioDeUmBanana
+r t OPequenoPrincipe
+r t OsSonhosDeEinstein
+r t Cosmos
+r t OMundoAssombadopelosDemônios
+s
+r i 0
+r i 1
+r i 5
+r i 9
+d 1
+d 2
+d 3
+d 4
+d 1
+d 5
+d 6
+d 7
+d 8
+d 9
+d 10
+d 11
+d 20
+d 12
+d 13
+d 14
+d 15
+d 16
+d 6
+s
+
+output =
+Estamos sem itens, mas você pode fazer uma doação ;-;
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: Sapiens
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+Item 0 reservado com sucesso :)
+Item ORomanceDasEquaçõesAlgébricas não encontrado o.O
+Item 5 reservado com sucesso :)
+Item 1 reservado com sucesso :)
+Item 1 não disponível para empréstimo :(
+Item 12 reservado com sucesso :)
+Item 2 reservado com sucesso :)
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: Sapiens
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 1
+TÍTULO: HomoDeus
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História,Filosofia
+NÚMERO DE PÁGINAS: 400
+ISBN: 123456789-00
+DATA: 08/02/2017
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 2
+TÍTULO: UmaBreveHistoriaDoTempo
+AUTOR(A): StephenHawking
+EDITORA: Intrínseca
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 01/04/1988
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 3
+TÍTULO: SobreAsLeisDaFisica
+AUTOR(A): RichardFeynman
+EDITORA: ContrapontoEditora
+GÊNERO: Física
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/06/2017
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 4
+TÍTULO: OPoderDoPensamentoMatematico
+AUTOR(A): JordanEllenberg
+EDITORA: Zahar
+GÊNERO: Matemática
+NÚMERO DE PÁGINAS: 200
+ISBN: 123456789-00
+DATA: 29/05/2014
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 5
+TÍTULO: ORomanceDasEquaçõesAlgébricas
+AUTOR(A): GilbertoGeraldoGarbi
+EDITORA: EditoraLivrariaDaFísica
+GÊNERO: Matemática
+NÚMERO DE PÁGINAS: 220
+ISBN: 123456789-00
+DATA: 1997
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 6
+TÍTULO: AstrofisicaParaApressados
+AUTOR(A): NeildeGrasseTyson
+EDITORA: Planeta
+GÊNERO: Astronomia
+NÚMERO DE PÁGINAS: 180
+ISBN: 123456789-00
+DATA: 2017
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 7
+TÍTULO: EuSouMalala
+AUTOR(A): MalalaYousafzai
+EDITORA: CompanhiadasLetras
+GÊNERO: Biografia
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 08/10/2013
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 8
+TÍTULO: Eragon
+AUTOR(A): ChristopherPaolini
+EDITORA: Rocco
+GÊNERO: Fantasia
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 20/12/2002
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 9
+TÍTULO: HarryPottereOPrisioneiroDeAzkaban
+AUTOR(A): J.K.Rowling
+EDITORA: Scholastic
+GÊNERO: Fantasia
+NÚMERO DE PÁGINAS: 350
+ISBN: 123456789-00
+DATA: 08/07/1999
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 10
+TÍTULO: DiarioDeUmBanana1
+AUTOR(A): JeffKinney
+EDITORA: VREditora
+GÊNERO: Infantojuvenil
+NÚMERO DE PÁGINAS: 200
+ISBN: 123456789-00
+DATA: 25/04/2007
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 11
+TÍTULO: OPequenoPrincipe
+AUTOR(A): AntoineDeSaint-Exupéry
+EDITORA: HarperCollins
+GÊNERO: Fábula
+NÚMERO DE PÁGINAS: 100
+ISBN: 123456789-00
+DATA: 06/04/1943
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 12
+TÍTULO: OsSonhosDeEinstein
+AUTOR(A): AlanLightman
+EDITORA: CompanhiaDasLetras
+GÊNERO: FicçãoCientífica
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/09/2016
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 13
+TÍTULO: Cosmos
+AUTOR(A): CarlSagan
+EDITORA: CompanhiaDasLetras
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 01/10/1980
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 14
+TÍTULO: OMundoAssombadopelosDemônios
+AUTOR(A): CarlSagan
+EDITORA: CompanhiaDeBolso
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/01/1996
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 15
+TÍTULO: José
+AUTOR(A): CarlosDrummondDeAndrade
+EDITORA: CompanhiaDasLetras
+GÊNERO: Poesia
+NÚMERO DE PÁGINAS: 333
+ISBN: 123456789-00
+DATA: 2012
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+Item 3 reservado com sucesso :)
+Item 4 reservado com sucesso :)
+Item 6 reservado com sucesso :)
+Item 7 reservado com sucesso :)
+Item 8 reservado com sucesso :)
+Item 9 reservado com sucesso :)
+Item DiarioDeUmBanana não encontrado o.O
+Item 11 reservado com sucesso :)
+Item 12 não disponível para empréstimo :(
+Item 13 reservado com sucesso :)
+Item 14 reservado com sucesso :)
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: Sapiens
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 1
+TÍTULO: HomoDeus
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História,Filosofia
+NÚMERO DE PÁGINAS: 400
+ISBN: 123456789-00
+DATA: 08/02/2017
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 2
+TÍTULO: UmaBreveHistoriaDoTempo
+AUTOR(A): StephenHawking
+EDITORA: Intrínseca
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 01/04/1988
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 3
+TÍTULO: SobreAsLeisDaFisica
+AUTOR(A): RichardFeynman
+EDITORA: ContrapontoEditora
+GÊNERO: Física
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/06/2017
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 4
+TÍTULO: OPoderDoPensamentoMatematico
+AUTOR(A): JordanEllenberg
+EDITORA: Zahar
+GÊNERO: Matemática
+NÚMERO DE PÁGINAS: 200
+ISBN: 123456789-00
+DATA: 29/05/2014
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 5
+TÍTULO: ORomanceDasEquaçõesAlgébricas
+AUTOR(A): GilbertoGeraldoGarbi
+EDITORA: EditoraLivrariaDaFísica
+GÊNERO: Matemática
+NÚMERO DE PÁGINAS: 220
+ISBN: 123456789-00
+DATA: 1997
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 6
+TÍTULO: AstrofisicaParaApressados
+AUTOR(A): NeildeGrasseTyson
+EDITORA: Planeta
+GÊNERO: Astronomia
+NÚMERO DE PÁGINAS: 180
+ISBN: 123456789-00
+DATA: 2017
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 7
+TÍTULO: EuSouMalala
+AUTOR(A): MalalaYousafzai
+EDITORA: CompanhiadasLetras
+GÊNERO: Biografia
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 08/10/2013
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 8
+TÍTULO: Eragon
+AUTOR(A): ChristopherPaolini
+EDITORA: Rocco
+GÊNERO: Fantasia
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 20/12/2002
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 9
+TÍTULO: HarryPottereOPrisioneiroDeAzkaban
+AUTOR(A): J.K.Rowling
+EDITORA: Scholastic
+GÊNERO: Fantasia
+NÚMERO DE PÁGINAS: 350
+ISBN: 123456789-00
+DATA: 08/07/1999
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 10
+TÍTULO: DiarioDeUmBanana1
+AUTOR(A): JeffKinney
+EDITORA: VREditora
+GÊNERO: Infantojuvenil
+NÚMERO DE PÁGINAS: 200
+ISBN: 123456789-00
+DATA: 25/04/2007
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 11
+TÍTULO: OPequenoPrincipe
+AUTOR(A): AntoineDeSaint-Exupéry
+EDITORA: HarperCollins
+GÊNERO: Fábula
+NÚMERO DE PÁGINAS: 100
+ISBN: 123456789-00
+DATA: 06/04/1943
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 12
+TÍTULO: OsSonhosDeEinstein
+AUTOR(A): AlanLightman
+EDITORA: CompanhiaDasLetras
+GÊNERO: FicçãoCientífica
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/09/2016
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 13
+TÍTULO: Cosmos
+AUTOR(A): CarlSagan
+EDITORA: CompanhiaDasLetras
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 01/10/1980
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 14
+TÍTULO: OMundoAssombadopelosDemônios
+AUTOR(A): CarlSagan
+EDITORA: CompanhiaDeBolso
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/01/1996
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 15
+TÍTULO: José
+AUTOR(A): CarlosDrummondDeAndrade
+EDITORA: CompanhiaDasLetras
+GÊNERO: Poesia
+NÚMERO DE PÁGINAS: 333
+ISBN: 123456789-00
+DATA: 2012
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+Item 0 não disponível para empréstimo :(
+Item 1 não disponível para empréstimo :(
+Item 5 não disponível para empréstimo :(
+Item 9 não disponível para empréstimo :(
+Item 1 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Item 2 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Item 3 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Item 4 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Nenhuma cópia do item 1 está emprestada o.O
+Item 5 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Item 6 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Item 7 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Item 8 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Item 9 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Nenhuma cópia do item 10 está emprestada o.O
+Item 11 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Item 20 não encontrado o.O
+Item 12 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Item 13 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Item 14 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+Nenhuma cópia do item 15 está emprestada o.O
+Item 16 não encontrado o.O
+Nenhuma cópia do item 6 está emprestada o.O
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: Sapiens
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 1
+TÍTULO: HomoDeus
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História,Filosofia
+NÚMERO DE PÁGINAS: 400
+ISBN: 123456789-00
+DATA: 08/02/2017
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 2
+TÍTULO: UmaBreveHistoriaDoTempo
+AUTOR(A): StephenHawking
+EDITORA: Intrínseca
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 01/04/1988
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 3
+TÍTULO: SobreAsLeisDaFisica
+AUTOR(A): RichardFeynman
+EDITORA: ContrapontoEditora
+GÊNERO: Física
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/06/2017
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 4
+TÍTULO: OPoderDoPensamentoMatematico
+AUTOR(A): JordanEllenberg
+EDITORA: Zahar
+GÊNERO: Matemática
+NÚMERO DE PÁGINAS: 200
+ISBN: 123456789-00
+DATA: 29/05/2014
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 5
+TÍTULO: ORomanceDasEquaçõesAlgébricas
+AUTOR(A): GilbertoGeraldoGarbi
+EDITORA: EditoraLivrariaDaFísica
+GÊNERO: Matemática
+NÚMERO DE PÁGINAS: 220
+ISBN: 123456789-00
+DATA: 1997
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 6
+TÍTULO: AstrofisicaParaApressados
+AUTOR(A): NeildeGrasseTyson
+EDITORA: Planeta
+GÊNERO: Astronomia
+NÚMERO DE PÁGINAS: 180
+ISBN: 123456789-00
+DATA: 2017
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 7
+TÍTULO: EuSouMalala
+AUTOR(A): MalalaYousafzai
+EDITORA: CompanhiadasLetras
+GÊNERO: Biografia
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 08/10/2013
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 8
+TÍTULO: Eragon
+AUTOR(A): ChristopherPaolini
+EDITORA: Rocco
+GÊNERO: Fantasia
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 20/12/2002
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 9
+TÍTULO: HarryPottereOPrisioneiroDeAzkaban
+AUTOR(A): J.K.Rowling
+EDITORA: Scholastic
+GÊNERO: Fantasia
+NÚMERO DE PÁGINAS: 350
+ISBN: 123456789-00
+DATA: 08/07/1999
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 10
+TÍTULO: DiarioDeUmBanana1
+AUTOR(A): JeffKinney
+EDITORA: VREditora
+GÊNERO: Infantojuvenil
+NÚMERO DE PÁGINAS: 200
+ISBN: 123456789-00
+DATA: 25/04/2007
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 11
+TÍTULO: OPequenoPrincipe
+AUTOR(A): AntoineDeSaint-Exupéry
+EDITORA: HarperCollins
+GÊNERO: Fábula
+NÚMERO DE PÁGINAS: 100
+ISBN: 123456789-00
+DATA: 06/04/1943
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 12
+TÍTULO: OsSonhosDeEinstein
+AUTOR(A): AlanLightman
+EDITORA: CompanhiaDasLetras
+GÊNERO: FicçãoCientífica
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/09/2016
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 13
+TÍTULO: Cosmos
+AUTOR(A): CarlSagan
+EDITORA: CompanhiaDasLetras
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 300
+ISBN: 123456789-00
+DATA: 01/10/1980
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 14
+TÍTULO: OMundoAssombadopelosDemônios
+AUTOR(A): CarlSagan
+EDITORA: CompanhiaDeBolso
+GÊNERO: Ciência
+NÚMERO DE PÁGINAS: 250
+ISBN: 123456789-00
+DATA: 01/01/1996
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 15
+TÍTULO: José
+AUTOR(A): CarlosDrummondDeAndrade
+EDITORA: CompanhiaDasLetras
+GÊNERO: Poesia
+NÚMERO DE PÁGINAS: 333
+ISBN: 123456789-00
+DATA: 2012
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+Fim da execução
+Livro 0 diz: Leia-me amanhã!
+Item 0 liberado da memória!
+Livro 1 diz: Leia-me amanhã!
+Item 1 liberado da memória!
+Livro 2 diz: Leia-me amanhã!
+Item 2 liberado da memória!
+Livro 3 diz: Leia-me amanhã!
+Item 3 liberado da memória!
+Livro 4 diz: Leia-me amanhã!
+Item 4 liberado da memória!
+Livro 5 diz: Leia-me amanhã!
+Item 5 liberado da memória!
+Livro 6 diz: Leia-me amanhã!
+Item 6 liberado da memória!
+Livro 7 diz: Leia-me amanhã!
+Item 7 liberado da memória!
+Livro 8 diz: Leia-me amanhã!
+Item 8 liberado da memória!
+Livro 9 diz: Leia-me amanhã!
+Item 9 liberado da memória!
+Livro 10 diz: Leia-me amanhã!
+Item 10 liberado da memória!
+Livro 11 diz: Leia-me amanhã!
+Item 11 liberado da memória!
+Livro 12 diz: Leia-me amanhã!
+Item 12 liberado da memória!
+Livro 13 diz: Leia-me amanhã!
+Item 13 liberado da memória!
+Livro 14 diz: Leia-me amanhã!
+Item 14 liberado da memória!
+Livro 15 diz: Leia-me amanhã!
+Item 15 liberado da memória!
+Bye!
+
+case = 6
+input =
+s
+a l 1 500 Sapiens YuvalNoahHarari 123456789-00 2011 História CompanhiaDasLetras
+a l 1 500 Sapiens VamoVêSeSeurProgramaEhBãoMesmo 123456789-00 2011 História CompanhiaDasLetras
+s
+r t Sapiens
+
+output =
+Estamos sem itens, mas você pode fazer uma doação ;-;
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: Sapiens
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 1
+TÍTULO: Sapiens
+AUTOR(A): VamoVêSeSeurProgramaEhBãoMesmo
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+Vários itens com o mesmo título encontrados:
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: Sapiens
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 1
+TÍTULO: Sapiens
+AUTOR(A): VamoVêSeSeurProgramaEhBãoMesmo
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+Item Sapiens não encontrado o.O
+Fim da execução
+Livro 0 diz: Leia-me amanhã!
+Item 0 liberado da memória!
+Livro 1 diz: Leia-me amanhã!
+Item 1 liberado da memória!
+Bye!
+
+case = 7
+input =
+a l 1 500 Sapiens YuvalNoahHarari 123456789-00 2011 História CompanhiaDasLetras
+a l 1 500 Sapiens VamoVerSeSeuProgramaEhBãoMesmo 123456789-00 2011 História CompanhiaDasLetras
+a l 1 220 ORomanceDasEquaçõesAlgébricas GilbertoGeraldoGarbi 123456789-00 1997 Matemática EditoraLivrariaDaFísica
+a r 2 6 4 ExtraExtraUmGatoBotouUmOvo:EntendaOCaso May2014 Anônimo PiadaRuim
+a j 3 10 5 FolhaDeSãoPaulo 01/05/2019 FolhaDeSãoPaulo Política,Economia,Esportes
+a c 1 13 4227 SobrevivendoNoInferno RacionaisMC's 27/10/1997
+a c 1 11 3789 Reanimation LinkinPark 30/07/2002
+r t Sapiens
+r i 0
+r i 1
+d 0
+r 3
+s
+d 3
+
+output =
+Vários itens com o mesmo título encontrados:
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: Sapiens
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 1
+TÍTULO: Sapiens
+AUTOR(A): VamoVerSeSeuProgramaEhBãoMesmo
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+Item Sapiens não encontrado o.O
+Item 0 reservado com sucesso :)
+Item 1 reservado com sucesso :)
+Item 0 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
+----------
+ITEM: Livro
+ID: 0
+TÍTULO: Sapiens
+AUTOR(A): YuvalNoahHarari
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Livro
+ID: 1
+TÍTULO: Sapiens
+AUTOR(A): VamoVerSeSeuProgramaEhBãoMesmo
+EDITORA: CompanhiaDasLetras
+GÊNERO: História
+NÚMERO DE PÁGINAS: 500
+ISBN: 123456789-00
+DATA: 2011
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
+----------
+ITEM: Livro
+ID: 2
+TÍTULO: ORomanceDasEquaçõesAlgébricas
+AUTOR(A): GilbertoGeraldoGarbi
+EDITORA: EditoraLivrariaDaFísica
+GÊNERO: Matemática
+NÚMERO DE PÁGINAS: 220
+ISBN: 123456789-00
+DATA: 1997
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Revista
+ID: 3
+TÍTULO: ExtraExtraUmGatoBotouUmOvo:EntendaOCaso
+EDITORA: Anônimo
+TÓPICOS: PiadaRuim
+DATA: May2014
+CÓPIAS DISPONÍVEIS: 2
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: Jornal
+ID: 4
+TÍTULO: FolhaDeSãoPaulo
+EDITORA: FolhaDeSãoPaulo
+TÓPICOS: Política,Economia,Esportes
+DATA: 01/05/2019
+CÓPIAS DISPONÍVEIS: 3
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 5
+TÍTULO: SobrevivendoNoInferno
+ARTISTA: RacionaisMC's
+FAIXAS: 13
+DURAÇÃO: 01:10:27
+DATA: 27/10/1997
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+ITEM: CD
+ID: 6
+TÍTULO: Reanimation
+ARTISTA: LinkinPark
+FAIXAS: 11
+DURAÇÃO: 01:03:09
+DATA: 30/07/2002
+CÓPIAS DISPONÍVEIS: 1
+CÓPIAS RESERVADAS: 0
+----------
+Nenhuma cópia do item 3 está emprestada o.O
+Fim da execução
+Livro 0 diz: Leia-me amanhã!
+Item 0 liberado da memória!
+Livro 1 diz: Leia-me amanhã!
+Item 1 liberado da memória!
+Livro 2 diz: Leia-me amanhã!
+Item 2 liberado da memória!
+Revista 3 diz: Leia-me amanhã!
+Item 3 liberado da memória!
+Jornal 4 diz: Leia-me amanhã!
+Item 4 liberado da memória!
+CD 5 diz: Ouça-me amanhã!
+Item 5 liberado da memória!
+CD 6 diz: Ouça-me amanhã!
+Item 6 liberado da memória!
+Bye!
+

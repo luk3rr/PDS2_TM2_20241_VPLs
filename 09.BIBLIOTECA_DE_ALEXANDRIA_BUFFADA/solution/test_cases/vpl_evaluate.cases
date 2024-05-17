@@ -503,19 +503,21 @@ a r 2 7 12 Veja 15/04/2024 EditoraAbril Política,Cultura,Tecnologia
 a c 4 12 8230 RaçaNegra-AoVivo RaçaNegra 20/03/2024
 s c
 r t DomCasmurro
-r i 3
-d 2
-d 0
-d 1
-r i 4
-r i 100
-r t RaçaNegraAoVivo
-r t RaçaNegra-AoVivo
-r t RaçaNegra-AoVivo
-d 3
-d 3
-d 3
-s
+r i 3 0
+d 2 0
+d 0 0
+d 1 140
+r i 4 0
+r i 100 1
+r t RaçaNegraAoVivo 1
+r t RaçaNegra-AoVivo 2
+r t RaçaNegra-AoVivo 4
+d 3 0
+d 3 0
+d 3 1
+s r
+s c
+s u
 
 output =
 ----------

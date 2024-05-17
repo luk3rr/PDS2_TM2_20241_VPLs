@@ -40,7 +40,7 @@ class Item
         std::string GetItemType() const;
 
         // Reserva um item
-        void Reserve();
+        bool Reserve();
 
         // Libera um item que foi reservado
         void Release();

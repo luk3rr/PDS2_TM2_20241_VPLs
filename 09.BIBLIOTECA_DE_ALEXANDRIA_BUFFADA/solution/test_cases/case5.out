@@ -27,19 +27,18 @@ Item 2 reservado com sucesso :)
 Usuário u1 reservou o item UmaBreveHistoriaDoTempo com sucesso!
 ----------
 ID: 0
-NAME: u1
+NOME: u1
 EMAIL: e1
 CPF: c1
 ----------
 ID: 1
-NAME: u2
+NOME: u2
 EMAIL: e2
 CPF: c2
 ----------
 Item 3 reservado com sucesso :)
 Usuário u3 reservou o item SobreAsLeisDaFisica com sucesso!
 Item 4 não disponível para empréstimo :(
-Usuário u3 reservou o item OPoderDoPensamentoMatematico com sucesso!
 Item 6 reservado com sucesso :)
 Usuário u3 reservou o item AstrofisicaParaApressados com sucesso!
 Item 7 reservado com sucesso :)
@@ -52,7 +51,6 @@ Item DiarioDeUmBanana não encontrado o.O
 Item 11 reservado com sucesso :)
 Usuário u2 reservou o item OPequenoPrincipe com sucesso!
 Item 12 não disponível para empréstimo :(
-Usuário u2 reservou o item OsSonhosDeEinstein com sucesso!
 Item 13 reservado com sucesso :)
 Usuário u1 reservou o item Cosmos com sucesso!
 Item 14 reservado com sucesso :)
@@ -82,10 +80,6 @@ Item: SobreAsLeisDaFisica
 Usuário: u3
 Status: Reservado
 ----------
-Item: OPoderDoPensamentoMatematico
-Usuário: u3
-Status: Reservado
-----------
 Item: AstrofisicaParaApressados
 Usuário: u3
 Status: Reservado
@@ -106,10 +100,6 @@ Item: OPequenoPrincipe
 Usuário: u2
 Status: Reservado
 ----------
-Item: OsSonhosDeEinstein
-Usuário: u2
-Status: Reservado
-----------
 Item: Cosmos
 Usuário: u1
 Status: Reservado
@@ -121,11 +111,8 @@ Status: Reservado
 Item 0 reservado com sucesso :)
 Usuário u2 reservou o item Sapiens com sucesso!
 Item 1 não disponível para empréstimo :(
-Usuário u2 reservou o item HomoDeus com sucesso!
 Item 5 não disponível para empréstimo :(
-Usuário u3 reservou o item ORomanceDasEquaçõesAlgébricas com sucesso!
 Item 9 não disponível para empréstimo :(
-Usuário u1 reservou o item HarryPottereOPrisioneiroDeAzkaban com sucesso!
 Item 1 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
 Usuário u1 devolveu o item HomoDeus com sucesso!
 Usuário u2 não reservou o item UmaBreveHistoriaDoTempo o.O
@@ -133,10 +120,8 @@ Item 2 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
 Usuário u1 devolveu o item UmaBreveHistoriaDoTempo com sucesso!
 Usuário u2 não reservou o item UmaBreveHistoriaDoTempo o.O
 Usuário u2 não reservou o item SobreAsLeisDaFisica o.O
-Item 4 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
-Usuário u3 devolveu o item OPoderDoPensamentoMatematico com sucesso!
-Nenhuma cópia do item 1 está emprestada o.O
-Usuário u1 devolveu o item HomoDeus com sucesso!
+Usuário u3 não reservou o item OPoderDoPensamentoMatematico o.O
+Usuário u1 não reservou o item HomoDeus o.O
 Usuário u2 não reservou o item ORomanceDasEquaçõesAlgébricas o.O
 Usuário u2 não reservou o item AstrofisicaParaApressados o.O
 Usuário u2 não reservou o item EuSouMalala o.O
@@ -152,8 +137,7 @@ Item 14 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
 Usuário u3 devolveu o item OMundoAssombadopelosDemônios com sucesso!
 Usuário u3 não reservou o item José o.O
 Item 16 não encontrado o.O
-Nenhuma cópia do item 1 está emprestada o.O
-Usuário u2 devolveu o item HomoDeus com sucesso!
+Usuário u2 não reservou o item HomoDeus o.O
 Usuário u1 não reservou o item AstrofisicaParaApressados o.O
 Item 14 reservado com sucesso :)
 Usuário u3 reservou o item OMundoAssombadopelosDemônios com sucesso!
@@ -182,10 +166,6 @@ Item: SobreAsLeisDaFisica
 Usuário: u3
 Status: Reservado
 ----------
-Item: OPoderDoPensamentoMatematico
-Usuário: u3
-Status: Devolvido
-----------
 Item: AstrofisicaParaApressados
 Usuário: u3
 Status: Reservado
@@ -206,10 +186,6 @@ Item: OPequenoPrincipe
 Usuário: u2
 Status: Reservado
 ----------
-Item: OsSonhosDeEinstein
-Usuário: u2
-Status: Reservado
-----------
 Item: Cosmos
 Usuário: u1
 Status: Reservado
@@ -220,18 +196,6 @@ Status: Devolvido
 ----------
 Item: Sapiens
 Usuário: u2
-Status: Reservado
-----------
-Item: HomoDeus
-Usuário: u2
-Status: Devolvido
-----------
-Item: ORomanceDasEquaçõesAlgébricas
-Usuário: u3
-Status: Reservado
-----------
-Item: HarryPottereOPrisioneiroDeAzkaban
-Usuário: u1
 Status: Reservado
 ----------
 Item: OMundoAssombadopelosDemônios
@@ -296,8 +260,8 @@ GÊNERO: Matemática
 NÚMERO DE PÁGINAS: 200
 ISBN: 123456789-00
 DATA: 29/05/2014
-CÓPIAS DISPONÍVEIS: 1
-CÓPIAS RESERVADAS: 0
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
 ----------
 ITEM: Livro
 ID: 5

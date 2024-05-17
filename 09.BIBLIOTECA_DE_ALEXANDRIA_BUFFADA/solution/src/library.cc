@@ -165,12 +165,14 @@ void Library::Reserve(std::size_t item_id, std::size_t user_id)
         return;
     }
 
-    this->m_reservations.push_back(std::make_pair(std::make_pair(item, user), false));
+    if (item->Reserve())
+    {
+        this->m_reservations.push_back(
+            std::make_pair(std::make_pair(item, user), false));
 
-    item->Reserve();
-
-    std::cout << "Usuário " << user->GetName() << " reservou o item "
-              << item->GetTitle() << " com sucesso!" << std::endl;
+        std::cout << "Usuário " << user->GetName() << " reservou o item "
+                  << item->GetTitle() << " com sucesso!" << std::endl;
+    }
 }
 
 void Library::Reserve(std::string item_title, std::size_t user_id)
@@ -190,11 +192,14 @@ void Library::Reserve(std::string item_title, std::size_t user_id)
         return;
     }
 
-    this->m_reservations.push_back(std::make_pair(std::make_pair(item, user), false));
-    item->Reserve();
+    if (item->Reserve())
+    {
+        this->m_reservations.push_back(
+            std::make_pair(std::make_pair(item, user), false));
 
-    std::cout << "Usuário " << user->GetName() << " reservou o item "
-              << item->GetTitle() << " com sucesso!" << std::endl;
+        std::cout << "Usuário " << user->GetName() << " reservou o item "
+                  << item->GetTitle() << " com sucesso!" << std::endl;
+    }
 }
 
 void Library::Release(std::size_t item_id, std::size_t user_id)
@@ -220,7 +225,7 @@ void Library::Release(std::size_t item_id, std::size_t user_id)
     for (auto& reservation : this->m_reservations)
     {
         if (reservation.first.first->GetID() == item_id and
-            reservation.first.second->GetID() == user_id)
+            reservation.first.second->GetID() == user_id and not reservation.second)
         {
             reservation.second = true;
 

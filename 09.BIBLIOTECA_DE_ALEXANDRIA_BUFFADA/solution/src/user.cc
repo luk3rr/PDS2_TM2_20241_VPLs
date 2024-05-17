@@ -42,7 +42,7 @@ std::size_t User::GetID() const
 void User::PrintInfo() const
 {
     std::cout << "ID: " << this->m_id << std::endl;
-    std::cout << "NAME: " << this->m_name << std::endl;
+    std::cout << "NOME: " << this->m_name << std::endl;
     std::cout << "EMAIL: " << this->m_email << std::endl;
     std::cout << "CPF: " << this->m_cpf << std::endl;
 }

@@ -18,17 +18,17 @@ CÓPIAS RESERVADAS: 0
 ----------
 ----------
 ID: 0
-NAME: CarlosAlberto
+NOME: CarlosAlberto
 EMAIL: alo@u1.me
 CPF: naodevemosdivulgarocpfdeusuarios
 ----------
 ID: 1
-NAME: CarlosAlberto
+NOME: CarlosAlberto
 EMAIL: aloCarlinhos@gmail.com
 CPF: 000000000-00
 ----------
 ID: 2
-NAME: Luuucaaas
+NOME: Luuucaaas
 EMAIL: aloalo@gmail.com
 CPF: SimEuGostoDoLivrosSapiensMasReservar500LivrosÉDemais
 ----------
@@ -36,42 +36,26 @@ Não há reservas no momento. Hoje em dia as pessoas só pensam em TikTok -.-
 Item 0 reservado com sucesso :)
 Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Usuário CarlosAlberto não reservou o item Sapiens o.O
 Item 0 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
 Usuário Luuucaaas devolveu o item Sapiens com sucesso!
-Nenhuma cópia do item 0 está emprestada o.O
-Usuário Luuucaaas devolveu o item Sapiens com sucesso!
-Nenhuma cópia do item 0 está emprestada o.O
-Usuário Luuucaaas devolveu o item Sapiens com sucesso!
-Nenhuma cópia do item 0 está emprestada o.O
-Usuário Luuucaaas devolveu o item Sapiens com sucesso!
+Usuário Luuucaaas não reservou o item Sapiens o.O
+Usuário Luuucaaas não reservou o item Sapiens o.O
+Usuário Luuucaaas não reservou o item Sapiens o.O
 Item 0 reservado com sucesso :)
 Usuário CarlosAlberto reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário CarlosAlberto reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Usuário 3 não encontrado o.O
 Usuário 5 não encontrado o.O
 ----------
@@ -269,17 +253,17 @@ CÓPIAS RESERVADAS: 0
 ----------
 ----------
 ID: 0
-NAME: CarlosAlberto
+NOME: CarlosAlberto
 EMAIL: alo@u1.me
 CPF: naodevemosdivulgarocpfdeusuarios
 ----------
 ID: 1
-NAME: CarlosAlberto
+NOME: CarlosAlberto
 EMAIL: aloCarlinhos@gmail.com
 CPF: 000000000-00
 ----------
 ID: 2
-NAME: Luuucaaas
+NOME: Luuucaaas
 EMAIL: aloalo@gmail.com
 CPF: SimEuGostoDoLivrosSapiensMasReservar500LivrosÉDemais
 ----------
@@ -289,59 +273,7 @@ Usuário: Luuucaaas
 Status: Devolvido
 ----------
 Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
 Usuário: CarlosAlberto
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: CarlosAlberto
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
 Status: Reservado
 ----------
 Fim da execução

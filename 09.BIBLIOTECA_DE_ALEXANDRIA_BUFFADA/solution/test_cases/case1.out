@@ -9,9 +9,7 @@ Usuário voceeeeeee reservou o item FolhaDeSãoPaulo com sucesso!
 Item 1 reservado com sucesso :)
 Usuário outrapessoa reservou o item FolhaDeSãoPaulo com sucesso!
 Item 1 não disponível para empréstimo :(
-Usuário Lucaaassss reservou o item FolhaDeSãoPaulo com sucesso!
 Item 1 não disponível para empréstimo :(
-Usuário Lucaaassss reservou o item FolhaDeSãoPaulo com sucesso!
 Usuário Lucaaassss não reservou o item Veja o.O
 Usuário voceeeeeee não reservou o item Veja o.O
 Usuário Lucaaassss não reservou o item Veja o.O
@@ -65,17 +63,17 @@ CÓPIAS RESERVADAS: 0
 ----------
 ----------
 ID: 0
-NAME: Lucaaassss
+NOME: Lucaaassss
 EMAIL: alo@lucas.me
 CPF: 0111001001100101011000010110110001101101011001010110111001110100011001010010000001110110011000110010000011000011101010010010000001100011011101010111001001101001011011110111001101101111
 ----------
 ID: 1
-NAME: voceeeeeee
+NOME: voceeeeeee
 EMAIL: alo@vc.me
 CPF: 011011010111010101101001011101000110111101101111001000000110001101110101011100100110100101101111011100110110111100100000011011010111001101101101
 ----------
 ID: 2
-NAME: outrapessoa
+NOME: outrapessoa
 EMAIL: alo@op.me
 CPF: 011011100010000001100011011000010111001001100001001000000110010101110101001000000110111000100000011000110110111101101100011011110111000101110101011001010110100100100000011101010110110100100000011000110111000001100110001000000110010101101101001000000110001001101001011011100110000101110010011010010110111100100000001001110010110100100111
 ----------
@@ -95,14 +93,6 @@ Status: Reservado
 Item: FolhaDeSãoPaulo
 Usuário: outrapessoa
 Status: Devolvido
-----------
-Item: FolhaDeSãoPaulo
-Usuário: Lucaaassss
-Status: Reservado
-----------
-Item: FolhaDeSãoPaulo
-Usuário: Lucaaassss
-Status: Reservado
 ----------
 Fim da execução
 Livro 0 diz: Leia-me amanhã!

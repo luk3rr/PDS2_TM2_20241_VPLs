@@ -286,12 +286,12 @@ CÓPIAS RESERVADAS: 0
 ----------
 ----------
 ID: 0
-NAME: CarlosAlberto
+NOME: CarlosAlberto
 EMAIL: alo@u1.me
 CPF: naodevemosdivulgarocpfdeusuarios
 ----------
 ID: 1
-NAME: CarlosAlberto
+NOME: CarlosAlberto
 EMAIL: aloCarlinhos@gmail.com
 CPF: 000000000-00
 ----------
@@ -396,9 +396,7 @@ Usuário voceeeeeee reservou o item FolhaDeSãoPaulo com sucesso!
 Item 1 reservado com sucesso :)
 Usuário outrapessoa reservou o item FolhaDeSãoPaulo com sucesso!
 Item 1 não disponível para empréstimo :(
-Usuário Lucaaassss reservou o item FolhaDeSãoPaulo com sucesso!
 Item 1 não disponível para empréstimo :(
-Usuário Lucaaassss reservou o item FolhaDeSãoPaulo com sucesso!
 Usuário Lucaaassss não reservou o item Veja o.O
 Usuário voceeeeeee não reservou o item Veja o.O
 Usuário Lucaaassss não reservou o item Veja o.O
@@ -452,17 +450,17 @@ CÓPIAS RESERVADAS: 0
 ----------
 ----------
 ID: 0
-NAME: Lucaaassss
+NOME: Lucaaassss
 EMAIL: alo@lucas.me
 CPF: 0111001001100101011000010110110001101101011001010110111001110100011001010010000001110110011000110010000011000011101010010010000001100011011101010111001001101001011011110111001101101111
 ----------
 ID: 1
-NAME: voceeeeeee
+NOME: voceeeeeee
 EMAIL: alo@vc.me
 CPF: 011011010111010101101001011101000110111101101111001000000110001101110101011100100110100101101111011100110110111100100000011011010111001101101101
 ----------
 ID: 2
-NAME: outrapessoa
+NOME: outrapessoa
 EMAIL: alo@op.me
 CPF: 011011100010000001100011011000010111001001100001001000000110010101110101001000000110111000100000011000110110111101101100011011110111000101110101011001010110100100100000011101010110110100100000011000110111000001100110001000000110010101101101001000000110001001101001011011100110000101110010011010010110111100100000001001110010110100100111
 ----------
@@ -482,14 +480,6 @@ Status: Reservado
 Item: FolhaDeSãoPaulo
 Usuário: outrapessoa
 Status: Devolvido
-----------
-Item: FolhaDeSãoPaulo
-Usuário: Lucaaassss
-Status: Reservado
-----------
-Item: FolhaDeSãoPaulo
-Usuário: Lucaaassss
-Status: Reservado
 ----------
 Fim da execução
 Livro 0 diz: Leia-me amanhã!
@@ -646,41 +636,23 @@ output =
 Item 0 reservado com sucesso :)
 Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item WhatsGoingOn com sucesso!
 ----------
 ITEM: CD
 ID: 0
@@ -1014,92 +986,20 @@ CÓPIAS RESERVADAS: 0
 ----------
 ----------
 ID: 0
-NAME: CarlosAlberto
+NOME: CarlosAlberto
 EMAIL: alo@u1.me
 CPF: naodevemosdivulgarocpfdeusuarios
 ----------
 ID: 1
-NAME: CarlosAlberto
+NOME: CarlosAlberto
 EMAIL: aloCarlinhos@gmail.com
 CPF: 000000000-00
 ----------
 ID: 2
-NAME: Luuucaaas
+NOME: Luuucaaas
 EMAIL: aloalo@gmail.com
 CPF: SimEuGostoDeMarvinGaye
 ----------
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: WhatsGoingOn
-Usuário: Luuucaaas
-Status: Reservado
 ----------
 Item: WhatsGoingOn
 Usuário: Luuucaaas
@@ -1253,17 +1153,17 @@ CÓPIAS RESERVADAS: 0
 ----------
 ----------
 ID: 0
-NAME: CarlosAlberto
+NOME: CarlosAlberto
 EMAIL: alo@u1.me
 CPF: naodevemosdivulgarocpfdeusuarios
 ----------
 ID: 1
-NAME: CarlosAlberto
+NOME: CarlosAlberto
 EMAIL: aloCarlinhos@gmail.com
 CPF: 000000000-00
 ----------
 ID: 2
-NAME: Luuucaaas
+NOME: Luuucaaas
 EMAIL: aloalo@gmail.com
 CPF: SimEuGostoDoLivrosSapiensMasReservar500LivrosÉDemais
 ----------
@@ -1271,42 +1171,26 @@ Não há reservas no momento. Hoje em dia as pessoas só pensam em TikTok -.-
 Item 0 reservado com sucesso :)
 Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Usuário CarlosAlberto não reservou o item Sapiens o.O
 Item 0 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
 Usuário Luuucaaas devolveu o item Sapiens com sucesso!
-Nenhuma cópia do item 0 está emprestada o.O
-Usuário Luuucaaas devolveu o item Sapiens com sucesso!
-Nenhuma cópia do item 0 está emprestada o.O
-Usuário Luuucaaas devolveu o item Sapiens com sucesso!
-Nenhuma cópia do item 0 está emprestada o.O
-Usuário Luuucaaas devolveu o item Sapiens com sucesso!
+Usuário Luuucaaas não reservou o item Sapiens o.O
+Usuário Luuucaaas não reservou o item Sapiens o.O
+Usuário Luuucaaas não reservou o item Sapiens o.O
 Item 0 reservado com sucesso :)
 Usuário CarlosAlberto reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário CarlosAlberto reservou o item Sapiens com sucesso!
 Item 0 não disponível para empréstimo :(
-Usuário Luuucaaas reservou o item Sapiens com sucesso!
 Usuário 3 não encontrado o.O
 Usuário 5 não encontrado o.O
 ----------
@@ -1504,17 +1388,17 @@ CÓPIAS RESERVADAS: 0
 ----------
 ----------
 ID: 0
-NAME: CarlosAlberto
+NOME: CarlosAlberto
 EMAIL: alo@u1.me
 CPF: naodevemosdivulgarocpfdeusuarios
 ----------
 ID: 1
-NAME: CarlosAlberto
+NOME: CarlosAlberto
 EMAIL: aloCarlinhos@gmail.com
 CPF: 000000000-00
 ----------
 ID: 2
-NAME: Luuucaaas
+NOME: Luuucaaas
 EMAIL: aloalo@gmail.com
 CPF: SimEuGostoDoLivrosSapiensMasReservar500LivrosÉDemais
 ----------
@@ -1524,59 +1408,7 @@ Usuário: Luuucaaas
 Status: Devolvido
 ----------
 Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
-Status: Reservado
-----------
-Item: Sapiens
 Usuário: CarlosAlberto
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: CarlosAlberto
-Status: Reservado
-----------
-Item: Sapiens
-Usuário: Luuucaaas
 Status: Reservado
 ----------
 Fim da execução
@@ -1721,19 +1553,18 @@ Item 2 reservado com sucesso :)
 Usuário u1 reservou o item UmaBreveHistoriaDoTempo com sucesso!
 ----------
 ID: 0
-NAME: u1
+NOME: u1
 EMAIL: e1
 CPF: c1
 ----------
 ID: 1
-NAME: u2
+NOME: u2
 EMAIL: e2
 CPF: c2
 ----------
 Item 3 reservado com sucesso :)
 Usuário u3 reservou o item SobreAsLeisDaFisica com sucesso!
 Item 4 não disponível para empréstimo :(
-Usuário u3 reservou o item OPoderDoPensamentoMatematico com sucesso!
 Item 6 reservado com sucesso :)
 Usuário u3 reservou o item AstrofisicaParaApressados com sucesso!
 Item 7 reservado com sucesso :)
@@ -1746,7 +1577,6 @@ Item DiarioDeUmBanana não encontrado o.O
 Item 11 reservado com sucesso :)
 Usuário u2 reservou o item OPequenoPrincipe com sucesso!
 Item 12 não disponível para empréstimo :(
-Usuário u2 reservou o item OsSonhosDeEinstein com sucesso!
 Item 13 reservado com sucesso :)
 Usuário u1 reservou o item Cosmos com sucesso!
 Item 14 reservado com sucesso :)
@@ -1776,10 +1606,6 @@ Item: SobreAsLeisDaFisica
 Usuário: u3
 Status: Reservado
 ----------
-Item: OPoderDoPensamentoMatematico
-Usuário: u3
-Status: Reservado
-----------
 Item: AstrofisicaParaApressados
 Usuário: u3
 Status: Reservado
@@ -1800,10 +1626,6 @@ Item: OPequenoPrincipe
 Usuário: u2
 Status: Reservado
 ----------
-Item: OsSonhosDeEinstein
-Usuário: u2
-Status: Reservado
-----------
 Item: Cosmos
 Usuário: u1
 Status: Reservado
@@ -1815,11 +1637,8 @@ Status: Reservado
 Item 0 reservado com sucesso :)
 Usuário u2 reservou o item Sapiens com sucesso!
 Item 1 não disponível para empréstimo :(
-Usuário u2 reservou o item HomoDeus com sucesso!
 Item 5 não disponível para empréstimo :(
-Usuário u3 reservou o item ORomanceDasEquaçõesAlgébricas com sucesso!
 Item 9 não disponível para empréstimo :(
-Usuário u1 reservou o item HarryPottereOPrisioneiroDeAzkaban com sucesso!
 Item 1 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
 Usuário u1 devolveu o item HomoDeus com sucesso!
 Usuário u2 não reservou o item UmaBreveHistoriaDoTempo o.O
@@ -1827,10 +1646,8 @@ Item 2 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
 Usuário u1 devolveu o item UmaBreveHistoriaDoTempo com sucesso!
 Usuário u2 não reservou o item UmaBreveHistoriaDoTempo o.O
 Usuário u2 não reservou o item SobreAsLeisDaFisica o.O
-Item 4 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
-Usuário u3 devolveu o item OPoderDoPensamentoMatematico com sucesso!
-Nenhuma cópia do item 1 está emprestada o.O
-Usuário u1 devolveu o item HomoDeus com sucesso!
+Usuário u3 não reservou o item OPoderDoPensamentoMatematico o.O
+Usuário u1 não reservou o item HomoDeus o.O
 Usuário u2 não reservou o item ORomanceDasEquaçõesAlgébricas o.O
 Usuário u2 não reservou o item AstrofisicaParaApressados o.O
 Usuário u2 não reservou o item EuSouMalala o.O
@@ -1846,8 +1663,7 @@ Item 14 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)
 Usuário u3 devolveu o item OMundoAssombadopelosDemônios com sucesso!
 Usuário u3 não reservou o item José o.O
 Item 16 não encontrado o.O
-Nenhuma cópia do item 1 está emprestada o.O
-Usuário u2 devolveu o item HomoDeus com sucesso!
+Usuário u2 não reservou o item HomoDeus o.O
 Usuário u1 não reservou o item AstrofisicaParaApressados o.O
 Item 14 reservado com sucesso :)
 Usuário u3 reservou o item OMundoAssombadopelosDemônios com sucesso!
@@ -1876,10 +1692,6 @@ Item: SobreAsLeisDaFisica
 Usuário: u3
 Status: Reservado
 ----------
-Item: OPoderDoPensamentoMatematico
-Usuário: u3
-Status: Devolvido
-----------
 Item: AstrofisicaParaApressados
 Usuário: u3
 Status: Reservado
@@ -1900,10 +1712,6 @@ Item: OPequenoPrincipe
 Usuário: u2
 Status: Reservado
 ----------
-Item: OsSonhosDeEinstein
-Usuário: u2
-Status: Reservado
-----------
 Item: Cosmos
 Usuário: u1
 Status: Reservado
@@ -1914,18 +1722,6 @@ Status: Devolvido
 ----------
 Item: Sapiens
 Usuário: u2
-Status: Reservado
-----------
-Item: HomoDeus
-Usuário: u2
-Status: Devolvido
-----------
-Item: ORomanceDasEquaçõesAlgébricas
-Usuário: u3
-Status: Reservado
-----------
-Item: HarryPottereOPrisioneiroDeAzkaban
-Usuário: u1
 Status: Reservado
 ----------
 Item: OMundoAssombadopelosDemônios
@@ -1990,8 +1786,8 @@ GÊNERO: Matemática
 NÚMERO DE PÁGINAS: 200
 ISBN: 123456789-00
 DATA: 29/05/2014
-CÓPIAS DISPONÍVEIS: 1
-CÓPIAS RESERVADAS: 0
+CÓPIAS DISPONÍVEIS: 0
+CÓPIAS RESERVADAS: 1
 ----------
 ITEM: Livro
 ID: 5
@@ -2428,7 +2224,7 @@ CÓPIAS RESERVADAS: 0
 ----------
 ----------
 ID: 0
-NAME: u1
+NOME: u1
 EMAIL: e1
 CPF: c1
 ----------

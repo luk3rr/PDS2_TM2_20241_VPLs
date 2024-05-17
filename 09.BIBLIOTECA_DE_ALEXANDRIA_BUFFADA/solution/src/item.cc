@@ -63,7 +63,7 @@ std::string Item::GetItemType() const
     return this->m_itemType;
 }
 
-void Item::Reserve()
+bool Item::Reserve()
 {
     if (this->m_availableCopies > 0)
     {
@@ -71,11 +71,13 @@ void Item::Reserve()
         this->m_loanedCopies++;
 
         std::cout << "Item " << this->m_id << " reservado com sucesso :)" << std::endl;
+        return true;
     }
     else
     {
         std::cout << "Item " << this->m_id << " não disponível para empréstimo :("
                   << std::endl;
+        return false;
     }
 }
 

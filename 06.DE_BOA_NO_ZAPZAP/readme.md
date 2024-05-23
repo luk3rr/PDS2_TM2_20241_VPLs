@@ -4,10 +4,10 @@ Esse vpl parece uma boa para trabalhar com ponteiros, mas não tanto com heranç
 # De boa no ZapZap (VPL em construção)
 A Rondolândia é uma nação idílica, governada por uma dinastia de capivaras fundada por Bacon - The Great, há várias gerações.
 
-Em um certo momento passado, as capivaras perceberam que ideia o labor é uma furada, e decidiram criar a filosofia do ZapZap, que advoga pela manutenção da tranquilidade e que essa tranquilidade só pode ser alcançada fortalecendo as relações sociais. Assim, Torresmo IV, soberano da Rondolândia, teve a brilhante ideia de criar uma rede social chamada ZapZap, onde seus súditos pudessem praticar a filosofia do ZapZap sem sair de casa, o que aumentaria a paz no reino e permitiria Torresmo IV espionar todos os súditos do reino, prevenindo possíveis rebeliões e garantindo a permanência da dinastia por mais várias gerações. Uma ideia genial, não é mesmo ?!
+Em um certo momento passado, as capivaras perceberam que ideia do labor é uma furada, e decidiram criar a filosofia do ZapZap, que advoga pela manutenção da tranquilidade e que essa tranquilidade só pode ser alcançada fortalecendo as relações sociais. Assim, Torresmo IV, soberano da Rondolândia, teve a brilhante ideia de criar uma rede social chamada ZapZap, onde seus súditos pudessem praticar a filosofia do ZapZap sem sair de casa, o que aumentaria a paz no reino e permitiria Torresmo IV espionar todos os súditos do reino, prevenindo possíveis rebeliões e garantindo a permanência da dinastia por mais várias gerações. Uma ideia genial, não é mesmo ?!
 
 # Tarefa
-O objetivo deste VPL é trabalhar conceitos relacionados ao desenvolvimento de classes em C++, especificamente encapsulamento, herança, composição e o temido polimorfismo.
+O objetivo deste VPL é trabalhar conceitos relacionados ao emprego de smart pointers em C++.
 
 Como um entusiasta dos sistemas de espionagem, sua tarefa é ajudar Torresmo no desenvolvimento de sua rede social.
 
@@ -16,17 +16,20 @@ Para que Torresmo fique satisfeito, a rede social deve permitir que as pessoas c
 Não menos importante, Torresmo precisa saber de todas as mensagens que são trocadas no reino.
 
 ## O que você deve implementar
-### class Capirava
-
 ### class Soberano
-
 #### Atributos
 
 #### Métodos
 
 ### class Suditos
+#### Atributos
+
+#### Métodos
 
 ### class Mensagem
+#### Atributos
+
+#### Métodos
 
 ### Freedom
 Como ainda vivemos em um país livre, você pode adicionar novos atributos às classes, ou implementar outros métodos ou classes que achar necessário para a sua solução. Além disso, você não precisa seguir a nomenclatura de atributos, métodos e classes utilizada. Você poderia, por exemplo, colocar tudo em português, mas o seu programa deve implementar a lógica e comportamento solicitados.

@@ -1,0 +1,4 @@
+-xc++
+-I
+06.DE_BOA_NO_ZAPZAP/solution/include
+-std=c++20

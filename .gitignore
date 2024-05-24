@@ -9,8 +9,3 @@ program
 
 # HTML files
 *.html
-
-# ETC
-.editorconfig
-.clang-format
-compile_flags.txt

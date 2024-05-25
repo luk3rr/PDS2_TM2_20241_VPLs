@@ -81,7 +81,7 @@ int main()
                 break;
             }
             case 'q': {
-                std::cout << "E as capiravas viveram felizes para sempre..."
+                std::cout << "E as capivaras viveram felizes para sempre..."
                           << std::endl;
                 return EXIT_SUCCESS;
             }

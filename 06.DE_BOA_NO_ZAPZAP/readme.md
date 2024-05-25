@@ -1,16 +1,17 @@
-# De boa no ZapZap (VPL em construção)
+# De boa no ZapZap
 A Rondolândia é uma nação idílica, governada por uma dinastia de capivaras fundada por Bacon - The Great, há várias gerações.
 
 Em um certo momento passado, as capivaras perceberam que ideia do labor é uma furada, e decidiram criar a filosofia do ZapZap, que advoga pela manutenção da tranquilidade e que essa tranquilidade só pode ser alcançada fortalecendo as relações sociais. Assim, Torresmo IV, soberano da Rondolândia, teve a brilhante ideia de criar uma rede social chamada ZapZap, onde seus súditos pudessem praticar a filosofia do ZapZap sem sair de casa, o que aumentaria a paz no reino e permitiria Torresmo IV espionar todos os súditos do reino, prevenindo possíveis rebeliões e garantindo a permanência da dinastia por mais várias gerações. Uma ideia genial, não é mesmo ?!
+
+![img/capivara.webp](img/capivara.webp)
+De boa na Lagoa da Pampulha ( ‾ʖ̫‾)
 
 # Tarefa
 O objetivo deste VPL é trabalhar conceitos relacionados ao emprego de smart pointers em C++ (homens de verdade usam /new/ e /delete/, mas ok, vocês precisam aprender isso ¯\\_(ツ)_/¯).
 
 Como um entusiasta dos sistemas de espionagem, sua tarefa é ajudar Torresmo no desenvolvimento de sua rede social.
 
-Para que Torresmo fique satisfeito, a rede social deve permitir que as pessoas criem conexões, enviem mensagens pessoais para uma conexão e postem mensagens para todas as conexões.
-
-Não menos importante, Torresmo precisa saber de todas as mensagens que são trocadas no reino.
+Para que Torresmo fique satisfeito, a rede social deve permitir que as pessoas criem conexões, enviem mensagens pessoais para uma conexão e postem mensagens para todas as conexões. Não menos importante, Torresmo precisa saber de todas as fofocas que são trocadas no reino.
 
 ## O que você deve implementar
 ### class Soberano
@@ -59,7 +60,7 @@ Não menos importante, Torresmo precisa saber de todas as mensagens que são tro
 
 - **void EnviarMensagem(std::shared_ptr<Mensagem> msg, std::shared_ptr<Sudito> destinatario)**: Método para enviar uma mensagem pessoal para outra conexão
   - Se o destinatário não for conexão do Súdito atual, então imprima "Súdito <NOME> não pode enviar mensagem para <NOME\_DESTINATARIO>" pois não são conexões!" e finalize a função.
-  - Caso contrário, deve imprimir "Súdito <NOME> enviando nova mensagem para <NOME_DESTINATARIO>" e enviar a mensagem.
+  - Caso contrário, deve imprimir "Súdito <NOME> enviando nova mensagem para <NOME\_DESTINATARIO>" e enviar a mensagem.
 
 - **void PostarMensagem(std::shared_ptr<Mensagem> msg)**: Método para postar uma mensagem para todas as conexões
   - Deve imprimir "Súdito <NOME> postou uma nova mensagem!" e implementar toda a lógica de distribuir as mensagens entre as conexões
@@ -128,9 +129,10 @@ Essa classe é a responsável por representar a nossa rede social, gerenciando t
 
 - **void PostarMensagem(const std::string& nome, const std::string& conteudo)**: Posta uma mensagem para todas as conexões de um súdito. O nome do destinatário desse post deve ser "Conexões".
 
-
 - **void ImprimirTodasMensagens() const**: Imprime todas as mensagens capturadas pelo soberano
+
 - **void ImprimirMensagensEnviadas(const std::string& nome) const**: Imprime todas as mensagens enviadas por um súdito
+
 - **void ImprimirMensagensRecebidas(const std::string& nome) const**: Imprime todas as mensagens recebidas por um súdito
 
 OBS.: Para que a saída dos métodos de impressão sejam condizentes com a saída para os casos de teste, imprima as informações na ordem que elas foram inseridas no vector.
@@ -140,7 +142,7 @@ Se você ainda não se deparou com erros de dependência circular, provavelmente
 
 Esse erro ocorre quando você tem dois arquivos que se incluem mutuamente. Por exemplo, suponho que você tenha o arquivo *a.hpp* e o arquivo *b.hpp*. O erro de dependência circular ocorre se você incluir *a.hpp* em *b.hpp* e também incluir *b.hpp* em *a.hpp*. Isso deixa o compilador literalmente doidão e ele não vai conseguir compilar seu código.
 
-Existem várias formas de lidar com erros de dependência circular, e todas sempre me pareceram sempre gambiarras. Caso você se depare com esse empecilho, os links 4, podem te ajudar.
+Existem várias formas de lidar com erros de dependência circular, e todas sempre me pareceram sempre gambiarras. Caso você se depare com esse empecilho, os links 5, 6 e 7 podem te ajudar.
 
 ### Freedom
 Como ainda vivemos em um país livre, você pode adicionar novos atributos às classes, ou implementar outros métodos ou classes que achar necessário para a sua solução. Além disso, você não precisa seguir a nomenclatura de atributos, métodos e classes utilizada. Você poderia, por exemplo, colocar tudo em inglês, mas o seu programa deve implementar a lógica e comportamento solicitados.
@@ -166,7 +168,7 @@ Antes da execução o seu programa já deve instância um Soberano com o nome "T
 
 Você pode assumir que **não** ocorre de dois súditos terem o mesmo nome e que todos os nomes são válidos, ou seja, não vou tentar trollar o seu programa. Além disso, nos casos de teste sempre haverá um, e somente um, soberano.
 
-A última mensagem impressa pelo seu programa deve ser "E as capiravas viveram felizes para sempre..."
+A última mensagem impressa pelo seu programa deve ser "E as capivaras viveram felizes para sempre..."
 
 # Regras do jogo
 1. Todos os atributos de todas as classes devem ser encapsulados e acessados somente através de métodos Get e Set. Se você perceber que algum método Get ou Set não é utilizado pelo seu programa, então você não precisa implementá-lo.
@@ -311,13 +313,13 @@ Remetente: CapitãoCapivara\
 Destinatário: Conexões\
 Conteúdo: De boa na lagoa rsrs!\
 \----------\
-E as capiravas viveram felizes para sempre...
+E as capivaras viveram felizes para sempre...
 
 # Links não tão inúteis
 1. [https://stackoverflow.com/questions/2572678/c-stl-map-vs-vector-speed](https://stackoverflow.com/questions/2572678/c-stl-map-vs-vector-speed)
-1. [https://www.youtube.com/watch?v=K_v_EIIZlp4](https://www.youtube.com/watch?v=K_v_EIIZlp4)
-2. [https://www.youtube.com/watch?v=7mwgA9XFIEQ](https://www.youtube.com/watch?v=7mwgA9XFIEQ)
-3. [https://www.youtube.com/watch?v=FsfRsGFHuv4](https://www.youtube.com/watch?v=FsfRsGFHuv4)
-4. [https://stackoverflow.com/questions/625799/resolve-build-errors-due-to-circular-dependency-amongst-classes](https://stackoverflow.com/questions/625799/resolve-build-errors-due-to-circular-dependency-amongst-classes)
-5. [https://pvigier.github.io/2018/02/09/dependency-graph.html](https://pvigier.github.io/2018/02/09/dependency-graph.html)
-6. [https://stackoverflow.com/questions/4757565/what-are-forward-declarations-in-c](https://stackoverflow.com/questions/4757565/what-are-forward-declarations-in-c)
+2. [https://www.youtube.com/watch?v=K_v_EIIZlp4](https://www.youtube.com/watch?v=K_v_EIIZlp4)
+3. [https://www.youtube.com/watch?v=7mwgA9XFIEQ](https://www.youtube.com/watch?v=7mwgA9XFIEQ)
+4. [https://www.youtube.com/watch?v=FsfRsGFHuv4](https://www.youtube.com/watch?v=FsfRsGFHuv4)
+5. [https://stackoverflow.com/questions/625799/resolve-build-errors-due-to-circular-dependency-amongst-classes](https://stackoverflow.com/questions/625799/resolve-build-errors-due-to-circular-dependency-amongst-classes)
+6. [https://pvigier.github.io/2018/02/09/dependency-graph.html](https://pvigier.github.io/2018/02/09/dependency-graph.html)
+7. [https://stackoverflow.com/questions/4757565/what-are-forward-declarations-in-c](https://stackoverflow.com/questions/4757565/what-are-forward-declarations-in-c)

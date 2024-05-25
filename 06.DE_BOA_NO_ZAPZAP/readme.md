@@ -7,7 +7,7 @@ Em um certo momento passado, as capivaras perceberam que ideia do labor é uma f
 De boa na Lagoa da Pampulha ( ‾ʖ̫‾)
 
 # Tarefa
-O objetivo deste VPL é trabalhar conceitos relacionados ao emprego de smart pointers em C++ (homens de verdade usam /new/ e /delete/, mas ok, vocês precisam aprender isso ¯\\_(ツ)_/¯).
+O objetivo deste VPL é trabalhar conceitos relacionados ao emprego de smart pointers em C++ (homens de verdade usam *new* e *delete*, mas okay, vocês precisam aprender isso ¯\\_(ツ)_/¯).
 
 Como um entusiasta dos sistemas de espionagem, sua tarefa é ajudar Torresmo no desenvolvimento de sua rede social.
 
@@ -37,7 +37,7 @@ Para que Torresmo fique satisfeito, a rede social deve permitir que as pessoas c
     - ETC
     - \----------
   - Caso contrário
-    - Súdito: <NOME>
+    - Soberano: <NOME>
     - \----------
     - Nenhuma mensagem encontrada.
     - \----------
@@ -148,7 +148,7 @@ Existem várias formas de lidar com erros de dependência circular, e todas semp
 Como ainda vivemos em um país livre, você pode adicionar novos atributos às classes, ou implementar outros métodos ou classes que achar necessário para a sua solução. Além disso, você não precisa seguir a nomenclatura de atributos, métodos e classes utilizada. Você poderia, por exemplo, colocar tudo em inglês, mas o seu programa deve implementar a lógica e comportamento solicitados.
 
 ### Main
-Antes da execução o seu programa já deve instância um Soberano com o nome "Torresmo IV".
+Antes da execução o seu programa já deve instânciar um Soberano com o nome "Torresmo IV".
 
 - 's nome': comando para cadastrar um súdito
 
@@ -323,3 +323,5 @@ E as capivaras viveram felizes para sempre...
 5. [https://stackoverflow.com/questions/625799/resolve-build-errors-due-to-circular-dependency-amongst-classes](https://stackoverflow.com/questions/625799/resolve-build-errors-due-to-circular-dependency-amongst-classes)
 6. [https://pvigier.github.io/2018/02/09/dependency-graph.html](https://pvigier.github.io/2018/02/09/dependency-graph.html)
 7. [https://stackoverflow.com/questions/4757565/what-are-forward-declarations-in-c](https://stackoverflow.com/questions/4757565/what-are-forward-declarations-in-c)
+8. [https://www.geeksforgeeks.org/smart-pointers-cpp/](https://www.geeksforgeeks.org/smart-pointers-cpp/)
+9. [https://medium.com/@victorgsampaio/entendendo-c-smart-pointers-d0ca51a87886](https://medium.com/@victorgsampaio/entendendo-c-smart-pointers-d0ca51a87886)

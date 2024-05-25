@@ -1,0 +1,29 @@
+s IronCapy
+s SuperCapy
+s BatCapy
+s WonderCapy
+s CapyFlash
+s Aquacapy
+s CapyThor
+c IronCapy SuperCapy
+c IronCapy BatCapy
+c SuperCapy WonderCapy
+c BatCapy CapyFlash
+c WonderCapy Aquacapy
+c CapyFlash CapyThor
+c Aquacapy IronCapy
+m IronCapy SuperCapy Hey SuperCapy, você consegue levantar essa árvore?
+m SuperCapy WonderCapy Bom dia, WonderCapy! Vamos salvar o mundo hoje?
+m BatCapy CapyFlash CapyFlash, preciso da sua ajuda na Batcaverna!
+m WonderCapy Aquacapy Aquacapy, tem água suficiente na lagoa para nadar?
+m CapyFlash CapyThor CapyThor, me empresta seu martelo?
+m Aquacapy IronCapy IronCapy, precisamos melhorar a armadura!
+p IronCapy Vou dar uma volta com minha armadura nova!
+p BatCapy Alguém viu o Coringa por aí?
+p WonderCapy Hoje é dia de treino intenso, pessoal!
+i r SuperCapy
+i r CapyFlash
+i e IronCapy
+i e WonderCapy
+a
+q

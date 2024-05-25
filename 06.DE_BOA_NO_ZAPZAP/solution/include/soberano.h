@@ -14,16 +14,37 @@
 
 #include "mensagem.h"
 
+/**
+ * Classe que representa um soberano.
+ **/
 class Soberano
 {
-    public:
-        Soberano(std::string nome);
-        void RegistrarMensagem(std::shared_ptr<Mensagem> mensagem);
-        void ExibirMensagens() const;
-
     private:
         std::string                            m_nome;
         std::vector<std::shared_ptr<Mensagem>> m_mensagens;
+
+    public:
+        Soberano(std::string nome);
+
+        /**
+         * @return Nome do soberano
+         */
+        std::string GetNome() const;
+
+        /**
+         * @return Vector com todas as mensagens capturadas pelo soberano
+         */
+        std::vector<std::shared_ptr<Mensagem>> GetMensagens() const;
+
+        /**
+         * @brief Registra uma mensagem no histórico do soberano
+         */
+        void RegistrarMensagem(std::shared_ptr<Mensagem> mensagem);
+
+        /**
+         * @brief Exibe todas as mensagens capturadas pelo soberano
+         */
+        void ExibirMensagens() const;
 };
 
 #endif // SOBERANO_H_

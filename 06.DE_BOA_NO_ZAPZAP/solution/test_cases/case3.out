@@ -1,0 +1,98 @@
+Soberano Torresmo IV agora está farejando todas as mensagens do reino!
+Súdito Alice adicionou Bob como conexão!
+Súdito Bob adicionou Alice como conexão!
+Súdito Alice adicionou Carol como conexão!
+Súdito Carol adicionou Alice como conexão!
+Súdito Bob adicionou Dave como conexão!
+Súdito Dave adicionou Bob como conexão!
+Súdito Carol adicionou Eve como conexão!
+Súdito Eve adicionou Carol como conexão!
+Súdito Dave adicionou Frank como conexão!
+Súdito Frank adicionou Dave como conexão!
+Súdito Eve adicionou Grace como conexão!
+Súdito Grace adicionou Eve como conexão!
+Súdito Frank adicionou Alice como conexão!
+Súdito Alice adicionou Frank como conexão!
+Súdito Alice enviando nova mensagem para Bob
+Súdito Bob recebeu uma nova mensagem de Alice
+Súdito Bob não pode enviar mensagem para Carol pois não são conexões!
+Súdito Carol não pode enviar mensagem para Dave pois não são conexões!
+Súdito Dave não pode enviar mensagem para Eve pois não são conexões!
+Súdito Eve não pode enviar mensagem para Frank pois não são conexões!
+Súdito Frank não pode enviar mensagem para Grace pois não são conexões!
+Súdito Alice postou uma nova mensagem!
+Súdito Bob recebeu uma nova mensagem de Alice
+Súdito Carol recebeu uma nova mensagem de Alice
+Súdito Frank recebeu uma nova mensagem de Alice
+Súdito Carol postou uma nova mensagem!
+Súdito Alice recebeu uma nova mensagem de Carol
+Súdito Eve recebeu uma nova mensagem de Carol
+Súdito Dave postou uma nova mensagem!
+Súdito Bob recebeu uma nova mensagem de Dave
+Súdito Frank recebeu uma nova mensagem de Dave
+----------
+Mensagens recebidas por Bob:
+----------
+Remetente: Alice
+Conteúdo: Hoje tem aula de PDS2?
+----------
+Remetente: Alice
+Conteúdo: Quem está a fim de um café no intervalo?
+----------
+Remetente: Dave
+Conteúdo: Alguém viu meu pen drive?
+----------
+----------
+Mensagens recebidas por Eve:
+----------
+Remetente: Carol
+Conteúdo: Preciso de ajuda com o projeto!
+----------
+----------
+Mensagens enviadas por Alice:
+----------
+Destinatário: Bob
+Conteúdo: Hoje tem aula de PDS2?
+----------
+----------
+Nenhuma mensagem enviada por Dave
+----------
+Soberano: Torresmo IV
+----------
+Remetente: Alice
+Destinatário: Bob
+Conteúdo: Hoje tem aula de PDS2?
+----------
+Remetente: Bob
+Destinatário: Carol
+Conteúdo: Alguém viu minha calculadora?
+----------
+Remetente: Carol
+Destinatário: Dave
+Conteúdo: Dave, você entendeu o trabalho de PDS2?
+----------
+Remetente: Dave
+Destinatário: Eve
+Conteúdo: Eve, vamos estudar juntos para a prova?
+----------
+Remetente: Eve
+Destinatário: Frank
+Conteúdo: Frank, você vai na festa da faculdade?
+----------
+Remetente: Frank
+Destinatário: Grace
+Conteúdo: Grace, trouxe meu livro de matemática?
+----------
+Remetente: Alice
+Destinatário: Conexões
+Conteúdo: Quem está a fim de um café no intervalo?
+----------
+Remetente: Carol
+Destinatário: Conexões
+Conteúdo: Preciso de ajuda com o projeto!
+----------
+Remetente: Dave
+Destinatário: Conexões
+Conteúdo: Alguém viu meu pen drive?
+----------
+E as capiravas viveram felizes para sempre...

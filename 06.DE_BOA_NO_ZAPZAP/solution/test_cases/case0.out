@@ -1,0 +1,78 @@
+Soberano Torresmo IV agora está farejando todas as mensagens do reino!
+Súdito Capivara1 adicionou Capivara2 como conexão!
+Súdito Capivara2 adicionou Capivara1 como conexão!
+Súdito Capivara1 adicionou Capivara3 como conexão!
+Súdito Capivara3 adicionou Capivara1 como conexão!
+Súdito Capivara2 adicionou Capivara3 como conexão!
+Súdito Capivara3 adicionou Capivara2 como conexão!
+Súdito Capivara3 adicionou Capivara4 como conexão!
+Súdito Capivara4 adicionou Capivara3 como conexão!
+Súdito Capivara1 enviando nova mensagem para Capivara2
+Súdito Capivara2 recebeu uma nova mensagem de Capivara1
+Súdito Capivara2 enviando nova mensagem para Capivara3
+Súdito Capivara3 recebeu uma nova mensagem de Capivara2
+Súdito Capivara3 enviando nova mensagem para Capivara4
+Súdito Capivara4 recebeu uma nova mensagem de Capivara3
+Súdito Capivara1 postou uma nova mensagem!
+Súdito Capivara2 recebeu uma nova mensagem de Capivara1
+Súdito Capivara3 recebeu uma nova mensagem de Capivara1
+Súdito Capivara3 postou uma nova mensagem!
+Súdito Capivara1 recebeu uma nova mensagem de Capivara3
+Súdito Capivara2 recebeu uma nova mensagem de Capivara3
+Súdito Capivara4 recebeu uma nova mensagem de Capivara3
+----------
+Mensagens recebidas por Capivara2:
+----------
+Remetente: Capivara1
+Conteúdo: Olá Capivara2, como você está?
+----------
+Remetente: Capivara1
+Conteúdo: Mensagem para todos os meus amigos!
+----------
+Remetente: Capivara3
+Conteúdo: Estou muito feliz hoje!
+----------
+----------
+Mensagens recebidas por Capivara3:
+----------
+Remetente: Capivara2
+Conteúdo: Bom dia Capivara3!
+----------
+Remetente: Capivara1
+Conteúdo: Mensagem para todos os meus amigos!
+----------
+----------
+Mensagens enviadas por Capivara1:
+----------
+Destinatário: Capivara2
+Conteúdo: Olá Capivara2, como você está?
+----------
+----------
+Mensagens enviadas por Capivara3:
+----------
+Destinatário: Capivara4
+Conteúdo: Vamos nos encontrar mais tarde?
+----------
+Soberano: Torresmo IV
+----------
+Remetente: Capivara1
+Destinatário: Capivara2
+Conteúdo: Olá Capivara2, como você está?
+----------
+Remetente: Capivara2
+Destinatário: Capivara3
+Conteúdo: Bom dia Capivara3!
+----------
+Remetente: Capivara3
+Destinatário: Capivara4
+Conteúdo: Vamos nos encontrar mais tarde?
+----------
+Remetente: Capivara1
+Destinatário: Conexões
+Conteúdo: Mensagem para todos os meus amigos!
+----------
+Remetente: Capivara3
+Destinatário: Conexões
+Conteúdo: Estou muito feliz hoje!
+----------
+E as capiravas viveram felizes para sempre...

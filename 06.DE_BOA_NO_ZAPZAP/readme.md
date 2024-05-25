@@ -16,24 +16,27 @@ Não menos importante, Torresmo precisa saber de todas as mensagens que são tro
 ### class Soberano
 #### Atributos
 - **std::string m_nome**: Nome do soberano
+
 - **std::vector<std::shared_ptr<Mensagem>> m_mensagens**: Vetor que armazena todas as mensagens trocadas no reino
 
 #### Métodos
 - **Soberano(std::string nome)**: Construtor que inicializa o nome do soberano
-  - Devo imprimir a mensagem "Soberano NOME agora está farejando todas as mensagens do reino!"
+  - Devo imprimir a mensagem "Soberano <NOME> agora está farejando todas as mensagens do reino!"
+
 - **void RegistrarMensagem(std::shared_ptr<Mensagem> mensagem)**: Método para registrar uma nova mensagem no vetor de mensagens
+
 - **void ExibirMensagens() const**: Método para exibir todas as mensagens captadas pelo soberano.
   - Caso ele já tenha captado ao menos uma mensagem:
-    - Soberano: NOME
+    - Soberano: <NOME>
     - \----------
-    - Remetente: NOME\_REMETENTE
-    - Destinatário: NOME\_DESTINATARIO
-    - Conteúdo: CONTEUDO\_MENSAGEM
+    - Remetente: <NOME\_REMETENTE>
+    - Destinatário: <NOME\_DESTINATARIO>
+    - Conteúdo: <CONTEUDO\_MENSAGEM>
     - \----------
     - ETC
     - \----------
   - Caso contrário
-    - Súdito: NOME
+    - Súdito: <NOME>
     - \----------
     - Nenhuma mensagem encontrada.
     - \----------
@@ -41,61 +44,95 @@ Não menos importante, Torresmo precisa saber de todas as mensagens que são tro
 ### class Sudito
 #### Atributos
 - **std::string m_nome**: Nome do súdito
-- **std::vector<std::unique_ptr<Sudito>> m_conexoes**: Vetor de smart pointers para armazenar as conexões do súdito
+
+- **std::vector<std::shared_ptr<Sudito>> m_conexoes**: Vetor de smart pointers para armazenar as conexões do súdito
+
 - **std::vector<std::shared_ptr<Mensagem>> m_mensagensRecebidas**: Vetor de smart pointers para armazenar mensagens recebidas
+
+- **std::vector<std::shared_ptr<Mensagem>> m_mensagensEnviadas**: Vetor de smart pointers para armazenar mensagens enviadas
     
 #### Métodos
 - **Suditos(std::string nome)**: Construtor que inicializa o nome do súdito
+
 - **void AdicionarConexao(std::shared_ptr<Sudito> novaConexao)**: Método para adicionar uma nova conexão
   - Deve imprimir a mensagem "Súdito <NOME> adicionou <NOME\_NOVA\_CONEXAO> como conexão!"
-- **void EnviarMensagem(std::shared_ptr<Sudito> destinatario, std::string conteudo, Soberano& soberano)**: Método para enviar uma mensagem pessoal para outra conexão
-  - Deve imprimir "Súdito <NOME> enviando nova mensagem para <NOME_DESTINATARIO>"
-- **void PostarMensagem(std::string conteudo, Soberano& soberano)**: Método para postar uma mensagem para todas as conexões
-  - Deve imprimir "Súdito <NOME> postou uma nova mensagem!"
-- **void ReceberMensagem(std::shared_ptr<Mensagem> mensagem)**: Método para receber uma mensagem
-  - Deve imprimir "Súdito <NOME> recebeu uma nova mensagem!"
+
+- **void EnviarMensagem(std::shared_ptr<Mensagem> msg, std::shared_ptr<Sudito> destinatario)**: Método para enviar uma mensagem pessoal para outra conexão
+  - Se o destinatário não for conexão do Súdito atual, então imprima "Súdito <NOME> não pode enviar mensagem para <NOME\_DESTINATARIO>" pois não são conexões!" e finalize a função.
+  - Caso contrário, deve imprimir "Súdito <NOME> enviando nova mensagem para <NOME_DESTINATARIO>" e enviar a mensagem.
+
+- **void PostarMensagem(std::shared_ptr<Mensagem> msg)**: Método para postar uma mensagem para todas as conexões
+  - Deve imprimir "Súdito <NOME> postou uma nova mensagem!" e implementar toda a lógica de distribuir as mensagens entre as conexões
+
+- **void ReceberMensagem(std::shared_ptr<Mensagem> msg)**: Método para receber uma mensagem
+  - Deve imprimir "Súdito <NOME> recebeu uma nova mensagem de <NOME\_REMETENTE"
+
+- **void ExibirMensagensEnviadas()**: Método para imprimir todas as mensagens enviadas pelo súdito
+  - Se nenhuma mensagem foi enviada, imprima no seguinte formato:
+    - \---------
+    - Nenhuma mensagem enviada por <NOME>
+    - \---------
+  - Caso contrário, imprima:
+    - \---------
+    - Mensagens enviadas por <NOME>:
+    - \---------
+    - Destinatário: <NOME\_DESTINATARIO>
+    - Conteúdo: <CONTEUDO\_MSG>
+    - \---------
+    - etc etc
+    - \---------
+
+- **void ExibirMensagensRecebidas()**: Método para imprimir todas as mensagens recebidas pelo súdito
+  - Se nenhuma mensagem foi recebida, imprima no seguinte formato:
+    - \---------
+    - Nenhuma mensagem recebida por <NOME>
+    - \---------
+  - Caso contrário, imprima:
+    - \---------
+    - Mensagens recebidas por <NOME>:
+    - \---------
+    - Remetente: <NOME\_REMETENTE>
+    - Conteúdo: <CONTEUDO\_MSG>
+    - \---------
+    - etc etc
+    - \---------
 
 ### class Mensagem
 #### Atributos
 - **std::string m_conteudo**: Conteúdo da mensagem
+
+- **std::string m_destinatario**: Nome do destinatário (acho que talvez aqui possa ser smart pointer, mas não lembro o motivo de ter colocado string '-')
+
 - **std::shared_ptr<Sudito> m_remetente**: Smart pointer para o remetente da mensagem
-- **std::shared_ptr<Sudito> m_destinatario**: Smart pointer para o destinatário da mensagem
 
 #### Métodos
-- **Mensagem(std::string conteudo, std::shared_ptr<Sudito> remetente, std::shared_ptr<Sudito> destinatario)**: Construtor que inicializa o conteúdo da mensagem, o remetente e o destinatário
-- **std::string GetConteudo() const**: Método para obter o conteúdo da mensagem
-- **std::shared_ptr<Sudito> GetRemetente() const**: Método para obter o remetente da mensagem
-- **std::shared_ptr<Sudito> GetDestinatario() const**: Método para obter o destinatario da mensagem
+- **Mensagem(std::string conteudo, std::shared_ptr<Sudito> remetente, std::string destinatario)**: Construtor que inicializa o conteúdo da mensagem, o remetente e o destinatário
+
+- Os métodos Gets e Sets que forem necessários
 
 ### class ZapZap
 Essa classe é a responsável por representar a nossa rede social, gerenciando todas as demais classes.
 
 #### Atributos
 - **Soberano m_soberano**: Instância do soberano que armazena todas as mensagens trocadas no reino
-- **std::unordered_map<std::string, std::shared_ptr<Sudito>> m_suditos**: Mapa que armazena os súditos cadastrados na rede social
+
+- **std::unordered_map<std::string, std::shared_ptr<Sudito>> m_suditos**: Map que armazena os súditos cadastrados na rede social
   - Você também pode utilizar vector, mas por motivos que não entram no escopo da disciplina de PDS2, a busca é mais rápida utilizando estruturas de dados do tipo **map** do que do tipo **vector**. Na seção /links não tão inúteis/ (eles são inúteis se você não os abrir e ver o conteúdo), deixei algumas referências sobre o **map**, caso você queira aprender algo a mais. Algoritmos e estruturas de dados são a parte mais legal da computação, então divirta-se!
 
 #### Métodos
 - **void CadastrarSudito(const std::string& nome)**: Cadastra um novo súdito
-- **void CriarConexao(const std::string& nome1, const std::string& nome2)**: Cria uma conexão entre dois súditos
-- **void EnviarMensagem(const std::string& nome1, const std::string& nome2, const std::string& conteudo)**: Envia uma mensagem pessoal de um súdito para outro
-- **void PostarMensagem(const std::string& nome, const std::string& conteudo)**: Posta uma mensagem para todas as conexões de um súdito
-- **void ImprimirMensagensSúdito(const std::string& nome) const**: Imprime as mensagens recebidas por um súdito no seguinte formato:
-  - Caso ele já tenha recebido ao menos uma mensagem:
-    - Súdito: NOME
-    - \----------
-    - Remetente: NOME\_REMETENTE
-    - Conteúdo: CONTEUDO\_MENSAGEM
-    - \----------
-    - ETC
-    - \----------
-  - Caso contrário
-    - Súdito: NOME
-    - \----------
-    - Nenhuma mensagem encontrada.
-    - \----------
 
-- **void ImprimirTodasMensagens() const**: Imprime todas as mensagens registradas pelo soberano.
+- **void CriarConexao(const std::string& nome1, const std::string& nome2)**: Cria uma conexão entre dois súditos
+
+- **void EnviarMensagem(const std::string& nome1, const std::string& nome2, const std::string& conteudo)**: Envia uma mensagem pessoal de um súdito para outro. Nesse caso, nome1 envia para nome2
+
+- **void PostarMensagem(const std::string& nome, const std::string& conteudo)**: Posta uma mensagem para todas as conexões de um súdito. O nome do destinatário desse post deve ser "Conexões".
+
+
+- **void ImprimirTodasMensagens() const**: Imprime todas as mensagens capturadas pelo soberano
+- **void ImprimirMensagensEnviadas(const std::string& nome) const**: Imprime todas as mensagens enviadas por um súdito
+- **void ImprimirMensagensRecebidas(const std::string& nome) const**: Imprime todas as mensagens recebidas por um súdito
+
 OBS.: Para que a saída dos métodos de impressão sejam condizentes com a saída para os casos de teste, imprima as informações na ordem que elas foram inseridas no vector.
 
 ### Dependência circular
@@ -109,15 +146,27 @@ Existem várias formas de lidar com erros de dependência circular, e todas semp
 Como ainda vivemos em um país livre, você pode adicionar novos atributos às classes, ou implementar outros métodos ou classes que achar necessário para a sua solução. Além disso, você não precisa seguir a nomenclatura de atributos, métodos e classes utilizada. Você poderia, por exemplo, colocar tudo em inglês, mas o seu programa deve implementar a lógica e comportamento solicitados.
 
 ### Main
+Antes da execução o seu programa já deve instância um Soberano com o nome "Torresmo IV".
+
 - 's nome': comando para cadastrar um súdito
+
 - 'c nome1 nome2': comando para criar uma conexão entre dois súditos
+
 - 'm nome1 nome2 conteudo': comando para enviar uma mensagem pessoal de nome1 para nome2
+
 - 'p nome conteudo': comando para postar uma mensagem de nome para todas as suas conexões
-- 'i nome': comando para imprimir as mensagens recebidas por um súdito
+
+- 'i r nome': comando para imprimir as mensagens recebidas por um súdito
+
+- 'i e nome': comando para imprimir as mensagens enviadas por um súdito
+
 - 'a': comando para imprimir todas as mensagens registradas pelo soberano
+
 - 'q': comando para finalizar o programa
 
-Você pode assumir que todos os nomes utilizados nas entradas são válidos e também que **não** ocorre de dois súditos terem o mesmo nome. Além disso, nos casos de teste sempre haverá um, e somente um, soberano.
+Você pode assumir que **não** ocorre de dois súditos terem o mesmo nome e que todos os nomes são válidos, ou seja, não vou tentar trollar o seu programa. Além disso, nos casos de teste sempre haverá um, e somente um, soberano.
+
+A última mensagem impressa pelo seu programa deve ser "E as capiravas viveram felizes para sempre..."
 
 # Regras do jogo
 1. Todos os atributos de todas as classes devem ser encapsulados e acessados somente através de métodos Get e Set. Se você perceber que algum método Get ou Set não é utilizado pelo seu programa, então você não precisa implementá-lo.
@@ -127,7 +176,142 @@ Você pode assumir que todos os nomes utilizados nas entradas são válidos e ta
 # Exemplos de entrada e saída
 ## Exemplo 1
 **input**\
+s Capivarinhas\
+s CapyMcCapyface\
+s SrPelos\
+s DonaCapivara\
+s BigCapy\
+s CapitãoCapivara\
+s CapyGato\
+c Capivarinhas CapyMcCapyface\
+c Capivarinhas SrPelos\
+c CapyMcCapyface DonaCapivara\
+c SrPelos BigCapy\
+c DonaCapivara CapitãoCapivara\
+c BigCapy CapyGato\
+m Capivarinhas CapyMcCapyface E aí, CapyMcCapyface! Vamos dar um rolê na lagoa?\
+m CapyMcCapyface DonaCapivara Alô, DonaCapivara! Tem pão de queijo aí?\
+m SrPelos BigCapy CapyPower! Vamos dominar o mundo?\
+m DonaCapivara CapitãoCapivara Capitão, meu Capitão! Preparado para a missão?\
+m BigCapy CapyGato CapyGato, para de roubar minhas cenouras!\
+p Capivarinhas Hora de relaxar na sombra!\
+p SrPelos Alguém viu minha boia de patinho?\
+p DonaCapivara Festa na lagoa hoje à noite!\
+p CapitãoCapivara De boa na lagoa rsrs!\
+i r CapyMcCapyface\
+i r BigCapy\
+i e Capivarinhas\
+i e SrPelos\
+a\
+q
+
 **output**\
+Soberano Torresmo IV agora está farejando todas as mensagens do reino!\
+Súdito Capivarinhas adicionou CapyMcCapyface como conexão!\
+Súdito CapyMcCapyface adicionou Capivarinhas como conexão!\
+Súdito Capivarinhas adicionou SrPelos como conexão!\
+Súdito SrPelos adicionou Capivarinhas como conexão!\
+Súdito CapyMcCapyface adicionou DonaCapivara como conexão!\
+Súdito DonaCapivara adicionou CapyMcCapyface como conexão!\
+Súdito SrPelos adicionou BigCapy como conexão!\
+Súdito BigCapy adicionou SrPelos como conexão!\
+Súdito DonaCapivara adicionou CapitãoCapivara como conexão!\
+Súdito CapitãoCapivara adicionou DonaCapivara como conexão!\
+Súdito BigCapy adicionou CapyGato como conexão!\
+Súdito CapyGato adicionou BigCapy como conexão!\
+Súdito Capivarinhas enviando nova mensagem para CapyMcCapyface\
+Súdito CapyMcCapyface recebeu uma nova mensagem de Capivarinhas\
+Súdito CapyMcCapyface enviando nova mensagem para DonaCapivara\
+Súdito DonaCapivara recebeu uma nova mensagem de CapyMcCapyface\
+Súdito SrPelos enviando nova mensagem para BigCapy\
+Súdito BigCapy recebeu uma nova mensagem de SrPelos\
+Súdito DonaCapivara enviando nova mensagem para CapitãoCapivara\
+Súdito CapitãoCapivara recebeu uma nova mensagem de DonaCapivara\
+Súdito BigCapy enviando nova mensagem para CapyGato\
+Súdito CapyGato recebeu uma nova mensagem de BigCapy\
+Súdito Capivarinhas postou uma nova mensagem!\
+Súdito CapyMcCapyface recebeu uma nova mensagem de Capivarinhas\
+Súdito SrPelos recebeu uma nova mensagem de Capivarinhas\
+Súdito SrPelos postou uma nova mensagem!\
+Súdito Capivarinhas recebeu uma nova mensagem de SrPelos\
+Súdito BigCapy recebeu uma nova mensagem de SrPelos\
+Súdito DonaCapivara postou uma nova mensagem!\
+Súdito CapyMcCapyface recebeu uma nova mensagem de DonaCapivara\
+Súdito CapitãoCapivara recebeu uma nova mensagem de DonaCapivara\
+Súdito CapitãoCapivara postou uma nova mensagem!\
+Súdito DonaCapivara recebeu uma nova mensagem de CapitãoCapivara\
+\----------\
+Mensagens recebidas por CapyMcCapyface:\
+\----------\
+Remetente: Capivarinhas\
+Conteúdo: E aí, CapyMcCapyface! Vamos dar um rolê na lagoa?\
+\----------\
+Remetente: Capivarinhas\
+Conteúdo: Hora de relaxar na sombra!\
+\----------\
+Remetente: DonaCapivara\
+Conteúdo: Festa na lagoa hoje à noite!\
+\----------\
+\----------\
+Mensagens recebidas por BigCapy:\
+\----------\
+Remetente: SrPelos\
+Conteúdo: CapyPower! Vamos dominar o mundo?\
+\----------\
+Remetente: SrPelos\
+Conteúdo: Alguém viu minha boia de patinho?\
+\----------\
+\----------\
+Mensagens enviadas por Capivarinhas:\
+\----------\
+Destinatário: CapyMcCapyface\
+Conteúdo: E aí, CapyMcCapyface! Vamos dar um rolê na lagoa?\
+\----------\
+\----------\
+Mensagens enviadas por SrPelos:\
+\----------\
+Destinatário: BigCapy\
+Conteúdo: CapyPower! Vamos dominar o mundo?\
+\----------\
+Soberano: Torresmo IV\
+\----------\
+Remetente: Capivarinhas\
+Destinatário: CapyMcCapyface\
+Conteúdo: E aí, CapyMcCapyface! Vamos dar um rolê na lagoa?\
+\----------\
+Remetente: CapyMcCapyface\
+Destinatário: DonaCapivara\
+Conteúdo: Alô, DonaCapivara! Tem pão de queijo aí?\
+\----------\
+Remetente: SrPelos\
+Destinatário: BigCapy\
+Conteúdo: CapyPower! Vamos dominar o mundo?\
+\----------\
+Remetente: DonaCapivara\
+Destinatário: CapitãoCapivara\
+Conteúdo: Capitão, meu Capitão! Preparado para a missão?\
+\----------\
+Remetente: BigCapy\
+Destinatário: CapyGato\
+Conteúdo: CapyGato, para de roubar minhas cenouras!\
+\----------\
+Remetente: Capivarinhas\
+Destinatário: Conexões\
+Conteúdo: Hora de relaxar na sombra!\
+\----------\
+Remetente: SrPelos\
+Destinatário: Conexões\
+Conteúdo: Alguém viu minha boia de patinho?\
+\----------\
+Remetente: DonaCapivara\
+Destinatário: Conexões\
+Conteúdo: Festa na lagoa hoje à noite!\
+\----------\
+Remetente: CapitãoCapivara\
+Destinatário: Conexões\
+Conteúdo: De boa na lagoa rsrs!\
+\----------\
+E as capiravas viveram felizes para sempre...
 
 # Links não tão inúteis
 1. [https://stackoverflow.com/questions/2572678/c-stl-map-vs-vector-speed](https://stackoverflow.com/questions/2572678/c-stl-map-vs-vector-speed)

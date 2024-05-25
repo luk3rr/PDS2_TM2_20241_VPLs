@@ -1,0 +1,29 @@
+s Alice
+s Bob
+s Carol
+s Dave
+s Eve
+s Frank
+s Grace
+c Alice Bob
+c Alice Carol
+c Bob Dave
+c Carol Eve
+c Dave Frank
+c Eve Grace
+c Frank Alice
+m Alice Bob Hoje tem aula de PDS2?
+m Bob Carol Alguém viu minha calculadora?
+m Carol Dave Dave, você entendeu o trabalho de PDS2?
+m Dave Eve Eve, vamos estudar juntos para a prova?
+m Eve Frank Frank, você vai na festa da faculdade?
+m Frank Grace Grace, trouxe meu livro de matemática?
+p Alice Quem está a fim de um café no intervalo?
+p Carol Preciso de ajuda com o projeto!
+p Dave Alguém viu meu pen drive?
+i r Bob
+i r Eve
+i e Alice
+i e Dave
+a
+q

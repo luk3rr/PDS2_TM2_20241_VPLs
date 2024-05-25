@@ -1,0 +1,28 @@
+s Capivarinhas
+s CapyMcCapyface
+s SrPelos
+s DonaCapivara
+s BigCapy
+s CapitãoCapivara
+s CapyGato
+c Capivarinhas CapyMcCapyface
+c Capivarinhas SrPelos
+c CapyMcCapyface DonaCapivara
+c SrPelos BigCapy
+c DonaCapivara CapitãoCapivara
+c BigCapy CapyGato
+m Capivarinhas CapyMcCapyface E aí, CapyMcCapyface! Vamos dar um rolê na lagoa?
+m CapyMcCapyface DonaCapivara Alô, DonaCapivara! Tem pão de queijo aí?
+m SrPelos BigCapy CapyPower! Vamos dominar o mundo?
+m DonaCapivara CapitãoCapivara Capitão, meu Capitão! Preparado para a missão?
+m BigCapy CapyGato CapyGato, para de roubar minhas cenouras!
+p Capivarinhas Hora de relaxar na sombra!
+p SrPelos Alguém viu minha boia de patinho?
+p DonaCapivara Festa na lagoa hoje à noite!
+p CapitãoCapivara De boa na lagoa rsrs!
+i r CapyMcCapyface
+i r BigCapy
+i e Capivarinhas
+i e SrPelos
+a
+q

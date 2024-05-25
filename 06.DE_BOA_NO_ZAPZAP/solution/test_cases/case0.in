@@ -1,0 +1,19 @@
+s Capivara1
+s Capivara2
+s Capivara3
+s Capivara4
+c Capivara1 Capivara2
+c Capivara1 Capivara3
+c Capivara2 Capivara3
+c Capivara3 Capivara4
+m Capivara1 Capivara2 Olá Capivara2, como você está?
+m Capivara2 Capivara3 Bom dia Capivara3!
+m Capivara3 Capivara4 Vamos nos encontrar mais tarde?
+p Capivara1 Mensagem para todos os meus amigos!
+p Capivara3 Estou muito feliz hoje!
+i r Capivara2
+i r Capivara3
+i e Capivara1
+i e Capivara3
+a
+q

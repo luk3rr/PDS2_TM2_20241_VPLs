@@ -14,6 +14,16 @@ Soberano::Soberano(std::string nome)
               << " agora está farejando todas as mensagens do reino!" << std::endl;
 }
 
+std::string Soberano::GetNome() const
+{
+    return m_nome;
+}
+
+std::vector<std::shared_ptr<Mensagem>> Soberano::GetMensagens() const
+{
+    return m_mensagens;
+}
+
 void Soberano::RegistrarMensagem(std::shared_ptr<Mensagem> mensagem)
 {
     m_mensagens.push_back(mensagem);
@@ -34,7 +44,7 @@ void Soberano::ExibirMensagens() const
         std::cout << "----------" << std::endl;
         for (auto& mensagem : m_mensagens)
         {
-            std::cout << "Remetente: " << mensagem->GetRemetente() << std::endl;
+            std::cout << "Remetente: " << mensagem->GetRemetente()->GetNome() << std::endl;
             std::cout << "Destinatário: " << mensagem->GetDestinatario() << std::endl;
             std::cout << "Conteúdo: " << mensagem->GetConteudo() << std::endl;
             std::cout << "----------" << std::endl;

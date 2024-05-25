@@ -5,70 +5,125 @@
  */
 
 #include "sudito.h"
-
-/*
-*### class Sudito
-#### Atributos
-- **std::string m_nome**: Nome do súdito
-- **std::vector<std::unique_ptr<Sudito>> m_conexoes**: Vetor de smart pointers para
-armazenar as conexões do súdito
-- **std::vector<std::shared_ptr<Mensagem>> m_mensagensRecebidas**: Vetor de smart
-pointers para armazenar mensagens recebidas
-
-#### Métodos
-- **Suditos(std::string nome)**: Construtor que inicializa o nome do súdito
-- **void AdicionarConexao(std::shared_ptr<Sudito> novaConexao)**: Método para adicionar
-uma nova conexão
-  - Deve imprimir a mensagem "Súdito <NOME> adicionou <NOME\_NOVA\_CONEXAO> como
-conexão!"
-- **void EnviarMensagem(std::shared_ptr<Sudito> destinatario, std::string conteudo,
-Soberano& soberano)**: Método para enviar uma mensagem pessoal para outra conexão
-  - Deve imprimir "Súdito <NOME> enviando nova mensagem para <NOME_DESTINATARIO>"
-- **void PostarMensagem(std::string conteudo, Soberano& soberano)**: Método para postar
-uma mensagem para todas as conexões
-  - Deve imprimir "Súdito <NOME> postou uma nova mensagem!"
-- **void ReceberMensagem(std::shared_ptr<Mensagem> mensagem)**: Método para receber uma
-mensagem
-  - Deve imprimir "Súdito <NOME> recebeu uma nova mensagem!"
-* */
+#include "mensagem.h"
+#include <memory>
 
 Sudito::Sudito(std::string nome)
     : m_nome(nome)
 { }
 
+bool Sudito::VerificarConexao(std::shared_ptr<Sudito> outro)
+{
+    for (auto& conexao : m_conexoes)
+    {
+        if (conexao == outro)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+std::string Sudito::GetNome()
+{
+    return m_nome;
+}
+
+std::vector<std::shared_ptr<Mensagem>> Sudito::GetMensagensRecebidas()
+{
+    return m_mensagensRecebidas;
+}
+
+std::vector<std::shared_ptr<Mensagem>> Sudito::GetMensagensEnviadas()
+{
+    return m_mensagensEnviadas;
+}
+
+std::vector<std::shared_ptr<Sudito>> Sudito::GetConexoes()
+{
+    return m_conexoes;
+}
+
 void Sudito::AdicionarConexao(std::shared_ptr<Sudito> novaConexao)
 {
-    m_conexoes.push_back(novaConexao);
-    std::cout << "Súdito " << m_nome << " adicionou " << novaConexao->m_nome
+    this->m_conexoes.push_back(novaConexao);
+    std::cout << "Súdito " << m_nome << " adicionou " << novaConexao->GetNome()
               << " como conexão!" << std::endl;
 }
 
-void Sudito::EnviarMensagem(std::shared_ptr<Sudito> destinatario,
-                            std::string             conteudo,
-                            Soberano&               soberano)
+void Sudito::EnviarMensagem(std::shared_ptr<Mensagem> msg, std::shared_ptr<Sudito> dest)
 {
-    std::cout << "Súdito " << m_nome << " enviando nova mensagem para "
-              << destinatario->m_nome << std::endl;
-    std::shared_ptr<Mensagem> mensagem =
-        std::make_shared<Mensagem>(m_nome, destinatario->m_nome, conteudo);
-    destinatario->ReceberMensagem(mensagem);
-    soberano.ReceberMensagem(mensagem);
+    if (VerificarConexao(dest))
+    {
+        std::cout << "Súdito " << m_nome << " enviando nova mensagem para "
+                  << dest->GetNome() << std::endl;
+
+        dest->ReceberMensagem(msg);
+        m_mensagensEnviadas.push_back(msg);
+    }
+    else
+    {
+        std::cout << "Súdito " << m_nome << " não pode enviar mensagem para "
+                  << dest->GetNome() << " pois não são conexões!" << std::endl;
+    }
 }
 
-void Sudito::PostarMensagem(std::string conteudo, Soberano& soberano)
+void Sudito::PostarMensagem(std::shared_ptr<Mensagem> mensagem)
 {
     std::cout << "Súdito " << m_nome << " postou uma nova mensagem!" << std::endl;
-    std::shared_ptr<Mensagem> mensagem =
-        std::make_shared<Mensagem>(m_nome, "Todos", conteudo);
+
     for (auto& conexao : m_conexoes)
     {
         conexao->ReceberMensagem(mensagem);
     }
-    soberano.ReceberMensagem(mensagem);
 }
 
 void Sudito::ReceberMensagem(std::shared_ptr<Mensagem> mensagem)
 {
     m_mensagensRecebidas.push_back(mensagem);
-    std::cout << "Súdito " << m_nome << " recebeu uma nova mensagem!" << std::endl;
+
+    std::cout << "Súdito " << m_nome << " recebeu uma nova mensagem de "
+              << mensagem->GetRemetente()->GetNome() << std::endl;
+}
+
+void Sudito::ExibirMensagensEnviadas()
+{
+    if (m_mensagensEnviadas.empty())
+    {
+        std::cout << "----------" << std::endl;
+        std::cout << "Nenhuma mensagem enviada por " << m_nome << std::endl;
+        std::cout << "----------" << std::endl;
+        return;
+    }
+
+    std::cout << "----------" << std::endl;
+    std::cout << "Mensagens enviadas por " << m_nome << ":" << std::endl;
+    for (auto& msg : m_mensagensEnviadas)
+    {
+        std::cout << "----------" << std::endl;
+        std::cout << "Destinatário: " << msg->GetDestinatario() << std::endl;
+        std::cout << "Conteúdo: " << msg->GetConteudo() << std::endl;
+        std::cout << "----------" << std::endl;
+    }
+}
+
+void Sudito::ExibirMensagensRecebidas()
+{
+    if (m_mensagensRecebidas.empty())
+    {
+        std::cout << "----------" << std::endl;
+        std::cout << "Nenhuma mensagem recebida por " << m_nome << std::endl;
+        std::cout << "----------" << std::endl;
+        return;
+    }
+
+    std::cout << "----------" << std::endl;
+    std::cout << "Mensagens recebidas por " << m_nome << ":" << std::endl;
+    for (auto& msg : m_mensagensRecebidas)
+    {
+        std::cout << "----------" << std::endl;
+        std::cout << "Remetente: " << msg->GetRemetente()->GetNome() << std::endl;
+        std::cout << "Conteúdo: " << msg->GetConteudo() << std::endl;
+    }
+    std::cout << "----------" << std::endl;
 }

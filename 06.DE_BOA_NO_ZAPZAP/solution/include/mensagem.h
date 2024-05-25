@@ -11,21 +11,35 @@
 #include <memory>
 #include <string>
 
+/**
+ * @brief Classe que representa uma mensagem enviada por um Sudito
+ **/
 class Mensagem
 {
+    private:
+        std::string             m_conteudo;
+        std::string             m_destinatario;
+        std::shared_ptr<Sudito> m_remetente;
+
     public:
         Mensagem(std::string             conteudo,
                  std::shared_ptr<Sudito> remetente,
-                 std::shared_ptr<Sudito> destinatario);
+                 std::string             destinatario);
 
-        std::string             GetConteudo() const;
+        /**
+         * @return Retorna o conteúdo da mensagem
+         */
+        std::string GetConteudo() const;
+
+        /**
+         * @return Retorna o destinatário da mensagem
+         */
+        std::string GetDestinatario() const;
+
+        /**
+         * @return Retorna o remetente da mensagem
+         */
         std::shared_ptr<Sudito> GetRemetente() const;
-        std::shared_ptr<Sudito> GetDestinatario() const;
-
-    private:
-        std::string             m_conteudo;
-        std::shared_ptr<Sudito> m_remetente;
-        std::shared_ptr<Sudito> m_destinatario;
 };
 
 #endif // MENSAGEM_H_

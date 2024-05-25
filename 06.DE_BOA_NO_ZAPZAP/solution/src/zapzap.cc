@@ -10,6 +10,14 @@ ZapZap::ZapZap(std::string nomeSoberano)
     : m_soberano(nomeSoberano)
 { }
 
+ZapZap::~ZapZap()
+{ }
+
+bool ZapZap::ExisteSudito(const std::string& nome) const
+{
+    return m_suditos.find(nome) != m_suditos.end();
+}
+
 void ZapZap::CadastrarSudito(const std::string& nome)
 {
     m_suditos[nome] = std::make_shared<Sudito>(nome);
@@ -26,34 +34,32 @@ void ZapZap::EnviarMensagem(const std::string& nome1,
                             const std::string& conteudo)
 {
     std::shared_ptr<Mensagem> mensagem =
-        make_shared<Mensagem>(m_suditos[nome1], m_suditos[nome2], conteudo);
+        make_shared<Mensagem>(conteudo, m_suditos[nome1], m_suditos[nome2]->GetNome());
 
+    m_suditos[nome1]->EnviarMensagem(mensagem, m_suditos[nome2]);
     m_soberano.RegistrarMensagem(mensagem);
-
-    m_suditos[nome1]->EnviarMensagem(mensagem);
 }
 
 void ZapZap::PostarMensagem(const std::string& nome, const std::string& conteudo)
 {
-    m_soberano.
+    std::shared_ptr<Mensagem> mensagem =
+        make_shared<Mensagem>(conteudo, m_suditos[nome], "Conexões");
+
+    m_suditos[nome]->PostarMensagem(mensagem);
+    m_soberano.RegistrarMensagem(mensagem);
 }
 
-void ZapZap::ImprimirMensagensSúdito(const std::string& nome) const
+void ZapZap::ImprimirTodasMensagens() const
 {
-    std::cout << "Súdito: " << nome << std::endl;
-    std::cout << "----------" << std::endl;
-    if (m_suditos.at(nome)->MensagensRecebidas().size() == 0)
-    {
-        std::cout << "Nenhuma mensagem encontrada." << std::endl;
-        std::cout << "----------" << std::endl;
-    }
-    else
-    {
-        for (auto& mensagem : m_suditos.at(nome)->MensagensRecebidas())
-        {
-            std::cout << "Remetente: " << mensagem->Remetente()->Nome() << std::endl;
-            std::cout << "Conteúdo: " << mensagem->Conteudo() << std::endl;
-            std::cout << "----------" << std::endl;
-        }
-    }
+    m_soberano.ExibirMensagens();
+}
+
+void ZapZap::ImprimirMensagensEnviadas(const std::string& nomeSudito) const
+{
+    m_suditos.at(nomeSudito)->ExibirMensagensEnviadas();
+}
+
+void ZapZap::ImprimirMensagensRecebidas(const std::string& nomeSudito) const
+{
+    m_suditos.at(nomeSudito)->ExibirMensagensRecebidas();
 }

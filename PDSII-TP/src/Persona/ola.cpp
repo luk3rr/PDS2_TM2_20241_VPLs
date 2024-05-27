@@ -4,8 +4,16 @@ Personagem::Personagem(){
   this->nome = "";
 }
 
+Personagem::Personagem(std::string nomeInicial){
+  this->nome = nomeInicial;
+}
+
+Personagem::Personagem(const Personagem *copy){
+  this->nome = copy->nome;
+}
+
 std::string Personagem::getNome(){
-  return this->getNome();
+  return this->nome;
 }
 
 void Personagem::setNome(std::string newName){
@@ -18,5 +26,5 @@ void Personagem::cumprimento(){
 }
 
 Personagem::~Personagem(){
-  std::cout << "O personagem: " << this->nome << "Nao fara mais parte da realidade" << std::endl;
+  std::cout << "O personagem: " << this->nome << " naum fara mais parte da realidade" << std::endl;
 }

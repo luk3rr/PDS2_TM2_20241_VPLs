@@ -11,7 +11,9 @@ class Personagem {
 		void setNome(std::string);
 	public:
 		Personagem();
-		void cumprimento();
+		Personagem(const Personagem *copy);
+		Personagem(std::string nomeInicial);
+		virtual void cumprimento();
 		~Personagem();
 };
 

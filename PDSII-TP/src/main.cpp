@@ -4,9 +4,11 @@
 #include <iostream>
 
 void iniciaRealidade();
+void criaPersonagemAlunoExemplo();
 
 int main () {
   iniciaRealidade();
+
   return 0;
 }
 
@@ -26,7 +28,7 @@ void iniciaRealidade(){
     switch(escolha) {
       case 1:
         std::cout << "Historia 03" << std::endl;
-        //criaAlunoExemplo(); //Historia 03
+        criaPersonagemAlunoExemplo(); //Historia 03
         break;
       case 2:
         std::cout << "Historia 01" << std::endl;
@@ -43,4 +45,9 @@ void iniciaRealidade(){
         break;
     }
   }
+}
+
+void criaPersonagemAlunoExemplo(){
+  Aluno a("Adao", 1);
+  a.printAluno();
 }

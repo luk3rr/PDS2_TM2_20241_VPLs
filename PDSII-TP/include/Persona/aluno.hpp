@@ -4,15 +4,18 @@
 #include "ola.hpp"
 
 //Inclusão do Aluno
-class Aluno : Personagem {
+class Aluno : public Personagem {
   private:
     int matricula;
   protected:
-    int getNome();
-		void setNome(int);
+    int getMat();
+		void setMat(int);
   public:
     Aluno();
-    void criaAlunoExemplo();
+    Aluno(std::string nome);
+    Aluno(std::string nome, int);
+    void cumprimento() override;
+    void printAluno();
     ~Aluno();
 };
 

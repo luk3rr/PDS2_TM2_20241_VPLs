@@ -13,7 +13,7 @@ class Personagem {
 		Personagem();
 		Personagem(const Personagem *copy);
 		Personagem(std::string nomeInicial);
-		virtual void cumprimento();
+		virtual void cumprimento() = 0;
 		~Personagem();
 };
 

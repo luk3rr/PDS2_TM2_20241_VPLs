@@ -12,6 +12,12 @@ Aluno::Aluno(std::string nomeInicial, int matInicial) : Personagem(nomeInicial){
   this->matricula = matInicial;
 }
 
+// Aluno::Aluno(const Aluno *copy){
+//   std::string newNome = copy->getNome();
+//   this->setNome(newNome);
+//   this->matricula = copy->matricula;
+// }
+
 int Aluno::getMat(){
   return this->matricula;
 }

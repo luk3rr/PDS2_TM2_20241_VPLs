@@ -14,6 +14,7 @@ class Aluno : public Personagem {
     Aluno();
     Aluno(std::string nome);
     Aluno(std::string nome, int);
+    //Aluno(const Aluno *copy);
     void cumprimento() override;
     void printAluno();
     ~Aluno();

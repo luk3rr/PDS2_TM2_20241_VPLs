@@ -1,6 +1,5 @@
 #include "ponto3d.hpp"
 
-//Implementação do Ponto3D
 float Ponto3D::calcularDistancia(Ponto3D* p){
   float dx = p->coordenadaX;
   float dy = p->coordenadaY;
@@ -8,19 +7,16 @@ float Ponto3D::calcularDistancia(Ponto3D* p){
   return sqrt(dx*dx + dy*dy + dz*dz);
 }
 
-void calculaOrigemAoPontoUnico(int valor){
+void calculaLocal(){
   Ponto3D* p1 = new Ponto3D;
   p1->coordenadaX = 0;
   p1->coordenadaY = 0;
   p1->coordenadaZ = 0;
 
   Ponto3D* p2 = new Ponto3D;
-  p2->coordenadaX = valor;
-  p2->coordenadaY = valor;
-  p2->coordenadaZ = valor;
+  p2->coordenadaX = 5;
+  p2->coordenadaY = 5;
+  p2->coordenadaZ = 5;
 
-  std::cout << p1->calcularDistancia(p2) << std::endl;
-
-  delete p1;
-  delete p2;
+  cout << p1->calcularDistancia(p2) << endl;
 }

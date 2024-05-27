@@ -1,53 +1,40 @@
-#include "ola.hpp"
-#include "ponto3d.hpp"
+#include "persona.hpp"
+#include "pessoa.hpp"
 #include "aluno.hpp"
+#include "curso.hpp"
+#include "animal.hpp"
+#include "cachorro.hpp"
+#include "gato.hpp"
+#include "pato.hpp"
+#include "ponto3d.hpp"
 #include <iostream>
+#include <list>
+#include <memory>
 
-void iniciaRealidade();
-void criaPersonagemAlunoExemplo();
 
-int main () {
-  iniciaRealidade();
+int main() {
+  Animal* bixo1 = new Gato();
+  Animal* bixo2 = new Gato();
+  bixo1->fale();
+  bixo2->fale();
+  delete bixo1;
+  delete bixo2;
 
-  return 0;
-}
-
-void iniciaRealidade(){
-  bool realidadeVirtual = true;
-  while (realidadeVirtual){
-    std::cout << "----------------------------------------------------------------" << std::endl;
-    std::cout << "--    Bem vindo a nossa realidade virtual                     --" << std::endl;
-    std::cout << "--    O que desejas?                                          --" << std::endl;
-    std::cout << "--    1 - Criar o personagem                                  --" << std::endl;
-    std::cout << "--    2 - Dar boas vindas                                     --" << std::endl;
-    std::cout << "--    3 - Calcular o local da proxima missao                  --" << std::endl;
-    std::cout << "--    0 - Voltar a realidade                                  --" << std::endl;
-    std::cout << "----------------------------------------------------------------" << std::endl;
-    int escolha;
-    std::cin >> escolha;
-    switch(escolha) {
-      case 1:
-        std::cout << "Historia 03" << std::endl;
-        criaPersonagemAlunoExemplo(); //Historia 03
-        break;
-      case 2:
-        std::cout << "Historia 01" << std::endl;
-        //cumprimento(); //Historia 01
-        break;
-      case 3:
-        calculaOrigemAoPontoUnico(5); //Historia 02
-        break;
-      case 0:
-        realidadeVirtual = false; //Historia 02
-        break;
-      default:
-        std::cout << "Alternativa inexistente!" << std::endl;
-        break;
-    }
+  list<Animal*> lista;
+ 
+  // Canto da bixarada;
+  for(int i=0; i<50;i++) {
+    if (i % 3 == 0)
+      lista.push_back(new Cachorro());
+    else if (i % 3 == 1)
+      lista.push_back(new Gato());
+    else
+      lista.push_back(new Pato());
   }
+ 
+  for (auto a : lista)
+    a->fale();
+
+  return 0; 
 }
 
-void criaPersonagemAlunoExemplo(){
-  Aluno a("Adao", 1);
-  a.printAluno();
-}

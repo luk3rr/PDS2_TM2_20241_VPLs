@@ -1,18 +1,22 @@
 #ifndef PONTO3D_H
 #define PONTO3D_H
 
-#include <cmath>
 #include <iostream>
+#include <cstdlib>
+#include <cmath>
 
-//Inclusão do Ponto3D
-struct Ponto3D {
-  float coordenadaX;
-  float coordenadaY;
-  float coordenadaZ;
+using namespace std;
 
-  float calcularDistancia(Ponto3D* p);
+class Ponto3D {
+    public:
+        float coordenadaX;
+        float coordenadaY;
+        float coordenadaZ;
+    
+
+        float calcularDistancia(Ponto3D* p);
 };
 
-void calculaOrigemAoPontoUnico(int valor);
+void calculaLocal();
 
-#endif
+#endif //PONTO3D_H

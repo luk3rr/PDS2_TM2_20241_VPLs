@@ -3,7 +3,16 @@
 
 #include <iostream>
 
-//Inclusão do cumprimento
-void cumprimento();
+class Personagem {
+  private:
+    std::string nome;
+	protected:
+		std::string getNome();
+		void setNome(std::string);
+	public:
+		Personagem();
+		void cumprimento();
+		~Personagem();
+};
 
 #endif

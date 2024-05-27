@@ -21,3 +21,21 @@ ${BUILD_BIN}/ola.o: ${INCLUDE}/Persona/ola.hpp ${SRC}/Persona/ola.cpp
 
 ${BUILD_BIN}/main.o: ${INCLUDE}/Persona/aluno.hpp ${INCLUDE}/Mapa/ponto3d.hpp  ${INCLUDE}/Persona/ola.hpp ${SRC}/main.cpp
 	${CC} ${CFLAGS} -I ${INCLUDE}/Persona/ -I ${INCLUDE}/Mapa/ -c ${SRC}/main.cpp -o ${BUILD_BIN}/main.o
+
+builder:
+	if not exist build mkdir build
+	if not exist build\bin mkdir build\bin
+
+run:
+	${BUILD}/${TARGET}
+
+clean:
+	del build\*.exe
+	del build\bin\*.o
+
+test:
+	g++ -std=c++11 -Wall -g test.cpp -o progTeste
+	.\progTeste.exe
+
+cleanTest:
+	del progTeste.exe

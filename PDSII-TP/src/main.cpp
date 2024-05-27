@@ -3,25 +3,34 @@
 #include "aluno.hpp"
 #include <iostream>
 
+void iniciaRealidade();
+
 int main () {
+  iniciaRealidade();
+  return 0;
+}
+
+void iniciaRealidade(){
   bool realidadeVirtual = true;
   while (realidadeVirtual){
-    std::cout << "----------------------------------------------------------------" << endl;
-    std::cout << "--    Bem vindo a nossa realidade virtual                     --" << endl;
-    std::cout << "--    O que desejas?                                          --" << endl;
-    std::cout << "--    1 - Criar o personagem                                  --" << endl;
-    std::cout << "--    2 - Dar boas vindas                                     --" << endl;
-    std::cout << "--    3 - Calcular o local da proxima missao                  --" << endl;
-    std::cout << "--    0 - Voltar a realidade                                 --" << endl;
-    std::cout << "----------------------------------------------------------------" << endl;
+    std::cout << "----------------------------------------------------------------" << std::endl;
+    std::cout << "--    Bem vindo a nossa realidade virtual                     --" << std::endl;
+    std::cout << "--    O que desejas?                                          --" << std::endl;
+    std::cout << "--    1 - Criar o personagem                                  --" << std::endl;
+    std::cout << "--    2 - Dar boas vindas                                     --" << std::endl;
+    std::cout << "--    3 - Calcular o local da proxima missao                  --" << std::endl;
+    std::cout << "--    0 - Voltar a realidade                                  --" << std::endl;
+    std::cout << "----------------------------------------------------------------" << std::endl;
     int escolha;
     std::cin >> escolha;
     switch(escolha) {
       case 1:
-        criaAlunoExemplo(); //Historia 03
+        std::cout << "Historia 03" << std::endl;
+        //criaAlunoExemplo(); //Historia 03
         break;
       case 2:
-        cumprimento(); //Historia 01
+        std::cout << "Historia 01" << std::endl;
+        //cumprimento(); //Historia 01
         break;
       case 3:
         calculaOrigemAoPontoUnico(5); //Historia 02
@@ -30,9 +39,8 @@ int main () {
         realidadeVirtual = false; //Historia 02
         break;
       default:
-        std::cout << "Alternativa inexistente!" << endl;
+        std::cout << "Alternativa inexistente!" << std::endl;
         break;
     }
   }
-  return 0;
 }

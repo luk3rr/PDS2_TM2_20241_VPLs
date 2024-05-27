@@ -1,17 +1,20 @@
 #ifndef ALUNO_H
 #define ALUNO_H
 
-#include <iostream>
-
-using namespace std;
+#include "ola.hpp"
 
 //Inclusão do Aluno
-struct Aluno {
-  string nome;
-  int matricula;
-  float calcularRSG();
+class Aluno : Personagem {
+  private:
+    int matricula;
+  protected:
+    int getNome();
+		void setNome(int);
+  public:
+    Aluno();
+    void criaAlunoExemplo();
+    ~Aluno();
 };
 
-void criaAlunoExemplo();
 
 #endif

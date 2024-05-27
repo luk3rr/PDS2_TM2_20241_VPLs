@@ -11,10 +11,19 @@
 #include <list>
 #include <memory>
 
+void cantoDaBixardaSmartPointer();
+void cantoDaBixardaPointer();
 
 int main() {
+  cantoDaBixardaPointer();
+  cout << "\n--------Smart Pointer--------------\n" <<endl;
+  cantoDaBixardaSmartPointer();
+  return 0; 
+}
+
+void cantoDaBixardaPointer(){
   Animal* bixo1 = new Gato();
-  Animal* bixo2 = new Gato();
+  Animal* bixo2 = new Pato();
   bixo1->fale();
   bixo2->fale();
   delete bixo1;
@@ -22,7 +31,6 @@ int main() {
 
   list<Animal*> lista;
  
-  // Canto da bixarada;
   for(int i=0; i<50;i++) {
     if (i % 3 == 0)
       lista.push_back(new Cachorro());
@@ -34,7 +42,26 @@ int main() {
  
   for (auto a : lista)
     a->fale();
+}
 
-  return 0; 
+void cantoDaBixardaSmartPointer (){
+  unique_ptr<Animal> bixo1(new Gato());
+  unique_ptr<Animal> bixo2(new Pato());
+  bixo1->fale();
+  bixo2->fale();
+
+  for(int i=0; i<50;i++) {
+    if (i % 3 == 0){
+      unique_ptr<Animal> bixo(new Gato());
+      bixo->fale();
+    }else if (i % 3 == 1){
+      unique_ptr<Animal> bixo(new Pato());
+      bixo->fale();
+    }
+    else{
+      unique_ptr<Animal> bixo(new Cachorro());
+      bixo->fale();
+    }
+  }
 }
 

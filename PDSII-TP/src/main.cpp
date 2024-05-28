@@ -16,7 +16,7 @@ void cantoDaBixardaPointer();
 
 int main() {
   cantoDaBixardaPointer();
-  cout << "\n--------Smart Pointer--------------\n" <<endl;
+  cout << "\n--------Ponteiro Inteligente--------------\n" <<endl;
   cantoDaBixardaSmartPointer();
   return 0; 
 }

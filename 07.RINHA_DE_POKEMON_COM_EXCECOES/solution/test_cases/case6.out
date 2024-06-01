@@ -1,0 +1,75 @@
+Treinador T1 não encontrado o.O
+Treinador: T1
+----------
+Nenhum pokémon encontrado :(
+----------
+Treinador: T3
+----------
+Nenhum pokémon encontrado :(
+----------
+Poder do ataque não pode ser negativo '-'
+Poder do ataque não pode ser negativo '-'
+Potência do ataque não pode ser negativa '-'
+Pokémon P1 não encontrado no time do treinador T2 o.O
+### RINHA ###
+T3 (P5) vs. T1 (P1)
+Pokémon: P5
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 0.5
+HP: 100
+Dano: 1.5
+Pokémon: P1
+Tipo de ataque: Aquático! Splash!
+Potência do ataque: 0.5
+HP: 98.5
+#############
+Pokémon P4 não encontrado no time do treinador T1 o.O
+Pokémon P3 não encontrado no time do treinador T3 o.O
+### RINHA ###
+T1 (P1) vs. T3 (P5)
+Pokémon: P1
+Tipo de ataque: Aquático! Splash!
+Potência do ataque: 0.5
+HP: 98.5
+Dano: 2.56
+Pokémon: P5
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 0.5
+HP: 97.44
+#############
+Treinador: T1
+----------
+Pokémon: P1
+Tipo de ataque: Aquático! Splash!
+Potência do ataque: 0.5
+HP: 98.5
+----------
+Treinador: T2
+----------
+Nenhum pokémon encontrado :(
+----------
+Treinador: T3
+----------
+Pokémon: P5
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 0.5
+HP: 97.44
+----------
+Pokémon: P6
+Tipo de ataque: Elétrico! Bzzzz!
+Potência do ataque: 0.5
+HP: 100
+----------
+Treinador T5 não encontrado o.O
+Fim da execução
+Treinador T4 foi destruído!
+Treinador T2 foi destruído!
+Classe derivada : Pokémon explosivo P5 diz: Adeus!
+Classe base : Pokémon P5 foi destruído!
+Classe derivada : Pokémon elétrico P6 diz: Adeus!
+Classe base : Pokémon P6 foi destruído!
+Treinador T3 foi destruído!
+Classe derivada : Pokémon aquático P1 diz: Adeus!
+Classe base : Pokémon P1 foi destruído!
+Treinador T1 foi destruído!
+Rinha destruída pela Polícia Federal!

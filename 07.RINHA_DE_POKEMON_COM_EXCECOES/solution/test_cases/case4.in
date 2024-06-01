@@ -1,0 +1,15 @@
+t DrZager
+t OMonitorDePDS2
+a OMonitorDePDS2 Shellder 83 0.66
+a OMonitorDePDS2 Shellder -83 0.66
+a OMonitorDePDS2 Shellder 83 -0.66
+a OMonitorDePDS2 Shellder 83 0.66
+x DrZager Dinamite 33 1
+r OMonitorDePDS2 Shellder DrZager Dinamite
+r DrZager Dinamite OMonitorDePDS2 Shellder
+r OMonitorDePDS2 Shellder DrZager Dinamite
+r DrZager Dinamite OMonitorDePDS2 Shellder
+r OMonitorDePDS2 Shellder DrZager Dinamite
+r OMonitorDePDS2 Dinamite DrZager Shellder
+i OMonitorDePDS2
+q

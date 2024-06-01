@@ -1,0 +1,13 @@
+t Ash
+t Xerosic
+t Xerosic
+i Xerosic
+i Trolei
+e Ash Pikachu 42 0.7
+x Xerosic Cheirosinho 33 0.99
+x Xerosic Cheirosinho 33 0.99
+x Xerosic Cheirosin -33 0.99
+r Ash Pikachu Xerosic Cheirosin
+r Ash Pikachu Xerosic Cheirosinho
+r Ash Pikachu Xerosic Cheirosin
+q

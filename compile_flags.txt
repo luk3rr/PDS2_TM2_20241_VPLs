@@ -1,4 +1,4 @@
 -xc++
 -I
-06.DE_BOA_NO_ZAPZAP/solution/include
+07.RINHA_DE_POKEMON_COM_EXCECOES/solution/include
 -std=c++20

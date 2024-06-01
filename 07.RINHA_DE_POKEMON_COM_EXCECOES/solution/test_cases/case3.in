@@ -1,0 +1,16 @@
+t Ash
+t EquipeRocket
+e Ash Pikachu 100 1
+x EquipeRocket Meowth 1 0.1
+x EquipeRocket Meowth -1 0.1
+x EquipeRocket Meowth 1 0.1
+x EquipeRocket Pikachu 1 0.1
+r Ash Pikachu EquipeRocket Meowth
+r Ash Pikachu EquipeRocket Pikachu
+i Trolei
+e Trolei tt 1 1
+i Trolei
+r Trolei tt EquipeRocket Pikachu
+r Trolei tt EquipeRocket Trolei
+r Trolei tt EquipeRocket tt
+q

@@ -1,0 +1,23 @@
+t T4
+i T1
+t T2
+t T3
+t T1
+i T1
+i T3
+a T1 P1 5.12 0.5
+x T3 P2 -3.6 0.5
+e T1 P4 -8 0.5
+a T3 P3 0 -0.5
+x T3 P5 3 0.5
+e T3 P6 10 0.5
+r T2 P1 T3 P5
+r T3 P5 T1 P1
+r T1 P4 T3 P3
+r T3 P3 T1 P4
+r T1 P1 T3 P5
+i T1
+i T2
+i T3
+i T5
+q

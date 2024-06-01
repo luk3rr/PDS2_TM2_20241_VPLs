@@ -1,0 +1,430 @@
+case = 1
+input =
+t Ash
+t Xerosic
+t Xerosic
+i Xerosic
+i Trolei
+e Ash Pikachu 42 0.7
+x Xerosic Cheirosinho 33 0.99
+x Xerosic Cheirosinho 33 0.99
+x Xerosic Cheirosin -33 0.99
+r Ash Pikachu Xerosic Cheirosin
+r Ash Pikachu Xerosic Cheirosinho
+r Ash Pikachu Xerosic Cheirosin
+q
+
+output =
+Treinador Xerosic já existe (-_-)
+Treinador: Xerosic
+----------
+Nenhum pokémon encontrado :(
+----------
+Treinador Trolei não encontrado o.O
+Pokémon Cheirosinho já existe no time do treinador Xerosic (-_-)
+Poder do ataque não pode ser negativo '-'
+Pokémon Cheirosin não encontrado no time do treinador Xerosic o.O
+### RINHA ###
+Ash (Pikachu) vs. Xerosic (Cheirosinho)
+Pokémon: Pikachu
+Tipo de ataque: Elétrico! Bzzzz!
+Potência do ataque: 0.7
+HP: 100
+Dano: 29.4
+Pokémon: Cheirosinho
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 0.99
+HP: 70.6
+#############
+Pokémon Cheirosin não encontrado no time do treinador Xerosic o.O
+Fim da execução
+Classe derivada : Pokémon elétrico Pikachu diz: Adeus!
+Classe base : Pokémon Pikachu foi destruído!
+Treinador Ash foi destruído!
+Classe derivada : Pokémon explosivo Cheirosinho diz: Adeus!
+Classe base : Pokémon Cheirosinho foi destruído!
+Treinador Xerosic foi destruído!
+Rinha destruída pela Polícia Federal!
+
+case = 2
+input =
+t Ash
+t Xerosic
+e Ash Pikachu 68 0.7
+x Xerosic Cheirosinho 33 0.99
+r Ash Pikachu Xerosic Cheirosinho
+r Xerosic Cheirosinho Ash Pikachu
+r Ash Pikachu Xerosic Cheirosinho
+r Ash Pikachu Xerosic Cheirosinho
+q
+
+output =
+### RINHA ###
+Ash (Pikachu) vs. Xerosic (Cheirosinho)
+Pokémon: Pikachu
+Tipo de ataque: Elétrico! Bzzzz!
+Potência do ataque: 0.7
+HP: 100
+Dano: 47.6
+Pokémon: Cheirosinho
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 0.99
+HP: 52.4
+#############
+### RINHA ###
+Xerosic (Cheirosinho) vs. Ash (Pikachu)
+Pokémon: Cheirosinho
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 0.99
+HP: 52.4
+Dano: 32.67
+Pokémon: Pikachu
+Tipo de ataque: Elétrico! Bzzzz!
+Potência do ataque: 0.7
+HP: 67.33
+#############
+### RINHA ###
+Ash (Pikachu) vs. Xerosic (Cheirosinho)
+Pokémon: Pikachu
+Tipo de ataque: Elétrico! Bzzzz!
+Potência do ataque: 0.7
+HP: 67.33
+Dano: 47.6
+Pokémon: Cheirosinho
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 0.99
+HP: 4.8
+#############
+### RINHA ###
+Ash (Pikachu) vs. Xerosic (Cheirosinho)
+Pokémon: Pikachu
+Tipo de ataque: Elétrico! Bzzzz!
+Potência do ataque: 0.7
+HP: 67.33
+Dano: 47.6
+Cheirosinho Faliceu! ;-;
+Pokémon: Cheirosinho
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 0.99
+HP: 0
+#############
+Fim da execução
+Classe derivada : Pokémon elétrico Pikachu diz: Adeus!
+Classe base : Pokémon Pikachu foi destruído!
+Treinador Ash foi destruído!
+Classe derivada : Pokémon explosivo Cheirosinho diz: Adeus!
+Classe base : Pokémon Cheirosinho foi destruído!
+Treinador Xerosic foi destruído!
+Rinha destruída pela Polícia Federal!
+
+case = 3
+input =
+t Ash
+t EquipeRocket
+e Ash Pikachu 100 1
+x EquipeRocket Meowth 1 0.1
+x EquipeRocket Meowth -1 0.1
+x EquipeRocket Meowth 1 0.1
+x EquipeRocket Pikachu 1 0.1
+r Ash Pikachu EquipeRocket Meowth
+r Ash Pikachu EquipeRocket Pikachu
+i Trolei
+e Trolei tt 1 1
+i Trolei
+r Trolei tt EquipeRocket Pikachu
+r Trolei tt EquipeRocket Trolei
+r Trolei tt EquipeRocket tt
+q
+
+output =
+Pokémon Meowth já existe no time do treinador EquipeRocket (-_-)
+Pokémon Meowth já existe no time do treinador EquipeRocket (-_-)
+### RINHA ###
+Ash (Pikachu) vs. EquipeRocket (Meowth)
+Pokémon: Pikachu
+Tipo de ataque: Elétrico! Bzzzz!
+Potência do ataque: 1
+HP: 100
+Dano: 100
+Meowth Faliceu! ;-;
+Pokémon: Meowth
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 0.1
+HP: 0
+#############
+### RINHA ###
+Ash (Pikachu) vs. EquipeRocket (Pikachu)
+Pokémon: Pikachu
+Tipo de ataque: Elétrico! Bzzzz!
+Potência do ataque: 1
+HP: 100
+Dano: 100
+Pikachu Faliceu! ;-;
+Pokémon: Pikachu
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 0.1
+HP: 0
+#############
+Treinador Trolei não encontrado o.O
+Treinador Trolei não encontrado o.O
+Treinador Trolei não encontrado o.O
+Treinador Trolei não encontrado o.O
+Treinador Trolei não encontrado o.O
+Treinador Trolei não encontrado o.O
+Fim da execução
+Classe derivada : Pokémon elétrico Pikachu diz: Adeus!
+Classe base : Pokémon Pikachu foi destruído!
+Treinador Ash foi destruído!
+Classe derivada : Pokémon explosivo Meowth diz: Adeus!
+Classe base : Pokémon Meowth foi destruído!
+Classe derivada : Pokémon explosivo Pikachu diz: Adeus!
+Classe base : Pokémon Pikachu foi destruído!
+Treinador EquipeRocket foi destruído!
+Rinha destruída pela Polícia Federal!
+
+case = 4
+input =
+t DrZager
+t OMonitorDePDS2
+a OMonitorDePDS2 Shellder 83 0.66
+a OMonitorDePDS2 Shellder -83 0.66
+a OMonitorDePDS2 Shellder 83 -0.66
+a OMonitorDePDS2 Shellder 83 0.66
+x DrZager Dinamite 33 1
+r OMonitorDePDS2 Shellder DrZager Dinamite
+r DrZager Dinamite OMonitorDePDS2 Shellder
+r OMonitorDePDS2 Shellder DrZager Dinamite
+r DrZager Dinamite OMonitorDePDS2 Shellder
+r OMonitorDePDS2 Shellder DrZager Dinamite
+r OMonitorDePDS2 Dinamite DrZager Shellder
+i OMonitorDePDS2
+q
+
+output =
+Pokémon Shellder já existe no time do treinador OMonitorDePDS2 (-_-)
+Pokémon Shellder já existe no time do treinador OMonitorDePDS2 (-_-)
+Pokémon Shellder já existe no time do treinador OMonitorDePDS2 (-_-)
+### RINHA ###
+OMonitorDePDS2 (Shellder) vs. DrZager (Dinamite)
+Pokémon: Shellder
+Tipo de ataque: Aquático! Splash!
+Potência do ataque: 0.66
+HP: 100
+Dano: 54.78
+Pokémon: Dinamite
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 1
+HP: 45.22
+#############
+### RINHA ###
+DrZager (Dinamite) vs. OMonitorDePDS2 (Shellder)
+Pokémon: Dinamite
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 1
+HP: 45.22
+Dano: 33
+Pokémon: Shellder
+Tipo de ataque: Aquático! Splash!
+Potência do ataque: 0.66
+HP: 67
+#############
+### RINHA ###
+OMonitorDePDS2 (Shellder) vs. DrZager (Dinamite)
+Pokémon: Shellder
+Tipo de ataque: Aquático! Splash!
+Potência do ataque: 0.66
+HP: 67
+Dano: 54.78
+Dinamite Faliceu! ;-;
+Pokémon: Dinamite
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 1
+HP: 0
+#############
+### RINHA ###
+DrZager (Dinamite) vs. OMonitorDePDS2 (Shellder)
+Dinamite já partiu dessa pra melhor e não pode atacar!
+#############
+### RINHA ###
+OMonitorDePDS2 (Shellder) vs. DrZager (Dinamite)
+Pokémon: Shellder
+Tipo de ataque: Aquático! Splash!
+Potência do ataque: 0.66
+HP: 67
+Dano: 54.78
+Dinamite já morreu. Não chute Pokémon morto!
+Pokémon: Dinamite
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 1
+HP: 0
+#############
+Pokémon Dinamite não encontrado no time do treinador OMonitorDePDS2 o.O
+Treinador: OMonitorDePDS2
+----------
+Pokémon: Shellder
+Tipo de ataque: Aquático! Splash!
+Potência do ataque: 0.66
+HP: 67
+----------
+Fim da execução
+Classe derivada : Pokémon explosivo Dinamite diz: Adeus!
+Classe base : Pokémon Dinamite foi destruído!
+Treinador DrZager foi destruído!
+Classe derivada : Pokémon aquático Shellder diz: Adeus!
+Classe base : Pokémon Shellder foi destruído!
+Treinador OMonitorDePDS2 foi destruído!
+Rinha destruída pela Polícia Federal!
+
+case = 5
+input =
+t DrZager
+i DrZager
+t OMonitorDePDS2
+i OMonitorDePDS2
+a OMonitorDePDS2 Shellder 83 0.66
+x DrZager Dinamite 33 -1
+r OMonitorDePDS2 Shellder DrZager Dinamite
+r DrZager Dinamite OMonitorDePDS2 Shellder
+r OMonitorDePDS2 Shellder DrZager Dinamite
+r DrZager Dinamite OMonitorDePDS2 Shellder
+r OMonitorDePDS2 Shellder DrZager Dinamite
+i DrZager
+i OMonitorDePDS2
+q
+
+output =
+Treinador: DrZager
+----------
+Nenhum pokémon encontrado :(
+----------
+Treinador: OMonitorDePDS2
+----------
+Nenhum pokémon encontrado :(
+----------
+Potência do ataque não pode ser negativa '-'
+Pokémon Dinamite não encontrado no time do treinador DrZager o.O
+Pokémon Dinamite não encontrado no time do treinador DrZager o.O
+Pokémon Dinamite não encontrado no time do treinador DrZager o.O
+Pokémon Dinamite não encontrado no time do treinador DrZager o.O
+Pokémon Dinamite não encontrado no time do treinador DrZager o.O
+Treinador: DrZager
+----------
+Nenhum pokémon encontrado :(
+----------
+Treinador: OMonitorDePDS2
+----------
+Pokémon: Shellder
+Tipo de ataque: Aquático! Splash!
+Potência do ataque: 0.66
+HP: 100
+----------
+Fim da execução
+Treinador DrZager foi destruído!
+Classe derivada : Pokémon aquático Shellder diz: Adeus!
+Classe base : Pokémon Shellder foi destruído!
+Treinador OMonitorDePDS2 foi destruído!
+Rinha destruída pela Polícia Federal!
+
+case = 6
+input =
+t T4
+i T1
+t T2
+t T3
+t T1
+i T1
+i T3
+a T1 P1 5.12 0.5
+x T3 P2 -3.6 0.5
+e T1 P4 -8 0.5
+a T3 P3 0 -0.5
+x T3 P5 3 0.5
+e T3 P6 10 0.5
+r T2 P1 T3 P5
+r T3 P5 T1 P1
+r T1 P4 T3 P3
+r T3 P3 T1 P4
+r T1 P1 T3 P5
+i T1
+i T2
+i T3
+i T5
+q
+
+output =
+Treinador T1 não encontrado o.O
+Treinador: T1
+----------
+Nenhum pokémon encontrado :(
+----------
+Treinador: T3
+----------
+Nenhum pokémon encontrado :(
+----------
+Poder do ataque não pode ser negativo '-'
+Poder do ataque não pode ser negativo '-'
+Potência do ataque não pode ser negativa '-'
+Pokémon P1 não encontrado no time do treinador T2 o.O
+### RINHA ###
+T3 (P5) vs. T1 (P1)
+Pokémon: P5
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 0.5
+HP: 100
+Dano: 1.5
+Pokémon: P1
+Tipo de ataque: Aquático! Splash!
+Potência do ataque: 0.5
+HP: 98.5
+#############
+Pokémon P4 não encontrado no time do treinador T1 o.O
+Pokémon P3 não encontrado no time do treinador T3 o.O
+### RINHA ###
+T1 (P1) vs. T3 (P5)
+Pokémon: P1
+Tipo de ataque: Aquático! Splash!
+Potência do ataque: 0.5
+HP: 98.5
+Dano: 2.56
+Pokémon: P5
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 0.5
+HP: 97.44
+#############
+Treinador: T1
+----------
+Pokémon: P1
+Tipo de ataque: Aquático! Splash!
+Potência do ataque: 0.5
+HP: 98.5
+----------
+Treinador: T2
+----------
+Nenhum pokémon encontrado :(
+----------
+Treinador: T3
+----------
+Pokémon: P5
+Tipo de ataque: Explosivo! Booom!
+Potência do ataque: 0.5
+HP: 97.44
+----------
+Pokémon: P6
+Tipo de ataque: Elétrico! Bzzzz!
+Potência do ataque: 0.5
+HP: 100
+----------
+Treinador T5 não encontrado o.O
+Fim da execução
+Treinador T4 foi destruído!
+Treinador T2 foi destruído!
+Classe derivada : Pokémon explosivo P5 diz: Adeus!
+Classe base : Pokémon P5 foi destruído!
+Classe derivada : Pokémon elétrico P6 diz: Adeus!
+Classe base : Pokémon P6 foi destruído!
+Treinador T3 foi destruído!
+Classe derivada : Pokémon aquático P1 diz: Adeus!
+Classe base : Pokémon P1 foi destruído!
+Treinador T1 foi destruído!
+Rinha destruída pela Polícia Federal!
+

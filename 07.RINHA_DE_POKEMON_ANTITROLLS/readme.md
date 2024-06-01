@@ -4,7 +4,7 @@ Esse VPL depende das implementações feitas no VPL ‘Rinha de Pokémon’. Se 
 # Tarefa
 O objetivo deste VPL é trabalhar conceitos relacionados ao desenvolvimento e utilização de exceções personalizadas em C++.
 
-Em geral, a melhor maneira de testar um sistema é disponibilizando-o para um usuário, pois estes vão tentar fazer com o seu sistema coisas que você nem imaginaria e que ocasionalmente vão quebrar o seu programa :')
+Em geral, a melhor maneira de testar um sistema é disponibilizando-o para alguns usuários, pois estes vão tentar fazer com o seu sistema coisas que você nem imaginaria e que ocasionalmente vão quebrar o seu programa :')
 
 Pensando nisso, como um entusiasta dos sistemas inquebráveis e resilientes a trollagens, sua tarefa é implementar exceções personalizadas que lidem com os diversos erros que podem ocorrer durante a rinha (novamente, as lícitas).
 
@@ -12,29 +12,26 @@ Pensando nisso, como um entusiasta dos sistemas inquebráveis e resilientes a tr
 
 ## O que você deve implementar
 ### rinhaExcept.hpp
-No VPL, existe um arquivo vazio chamado *rinhaExcept.{hpp, cpp}*. Você deve fazer a definição e implementação de suas exceções personalizadas nestes arquivos.
+No VPL, existe um arquivo vazio chamado *rinhaExcept.{hpp, cpp}*. Você deve fazer a declaração e implementação de suas exceções personalizadas nestes arquivos.
 
 Os casos de exceção que devem ser tratados são os seguintes:
 1. Tentativa de adicionar um treinador com nome repetido
    - Deve implementar o método **what()** que retorna a mensagem "Treinador NOME já existe (-_-)"
-
 1. Tentativa de adicionar um Pokémon com nome repetido a um mesmo treinador
    - Deve implementar o método **what()** que retorna a mensagem "Pokémon NOME\_POKEMON já pertence ao treinador NOME\_TREINADOR (-_-)"
-
 2. Tentativa de usar um Pokémon que não está no time de um determinado treinador
    - Deve implementar o método **what()** que retorna a mensagem "Pokémon NOME\_POKEMON não encontrado no time do treinador NOME\_TREINADOR o.O"
-
 3. Tentativa de usar um treinador que não está na rinha
    - Deve implementar o método **what()** que retornar a mensagem "Treinador NOME não encontrado o.O"
-
 4. Poder do ataque não pode ser negativo
    - Deve implementar o método **what()** que retorna a mensagem "Poder do ataque não pode ser negativo '-'"
-
 5. Potência do ataque não pode ser negativa
    - Deve implementar o método **what()** que retorna a mensagem "Potência do ataque não pode ser negativa '-'"
 
 ### Onde você deve lançar exceções
-O melhor local para lançar exceções depende fortemente da arquitetura do seu programa. Você deve decidir qual o local mais apropriado para lançar suas exceções. No entanto, tente achar pelo menos um caso de lançamento de cada uma das 5 exceções citadas acima.
+O melhor local para lançar exceções depende fortemente da arquitetura do seu programa. Você deve decidir qual o local mais apropriado para lançar suas exceções. No entanto, tente achar pelo menos um caso de lançamento de cada uma das 6 exceções citadas acima.
+
+OBS.: As exceções deve ser lançadas a partir das funções de suas classes. Caso tenha passado pela sua cabeça, você não deve lançar as exceções no seu main O.O
 
 ### Onde devo capturar e tratar as exceções ?
 Para facilitar a correção deste pobre monitor, você deve tratar todas as exceções que forem lançadas no main do seu programa.
@@ -47,7 +44,7 @@ O main deve tratar as mesmas entradas do VPL 'Rinha de Pokémon', mas você deve
 
 # Regras do jogo
 1. Todos os atributos de todas as classes devem ser encapsulados e acessados somente através de métodos Get e Set.
-2. Você deve lançar cada uma das cinco exceções citadas pelo menos uma vez.
+2. Você deve lançar cada uma das seis exceções citadas pelo menos uma vez.
 3. Respeita o formato das mensagens que são impressas. O moodle verifica se seu programa funciona corretamente comparando a sua saída com a esperada para cada caso de teste. Se houver alguma coisa fora de lugar, os testes vão falhar.
 
 # Exemplos de entrada e saída
@@ -76,7 +73,7 @@ Nenhum pokémon encontrado :(\
 Treinador Trolei não encontrado o.O\
 Pokémon Cheirosinho já existe no time do treinador Xerosic (-\_-)\
 Poder do ataque não pode ser negativo '-'\
-Pokémon Cheirosin não encontrado no time do treinador Xerosic o.O
+Pokémon Cheirosin não encontrado no time do treinador Xerosic o.O\
 \### RINHA ###\
 Ash (Pikachu) vs. Xerosic (Cheirosinho)\
 Pokémon: Pikachu\
@@ -101,5 +98,6 @@ Rinha destruída pela Polícia Federal!
 
 # Links não tão inúteis
 1. [https://cplusplus.com/doc/tutorial/exceptions/](https://cplusplus.com/doc/tutorial/exceptions/)
-2. [https://www.geeksforgeeks.org/exception-handling-c/]()https://www.geeksforgeeks.org/exception-handling-c/
+2. [https://www.geeksforgeeks.org/exception-handling-c/](https://www.geeksforgeeks.org/exception-handling-c/)
 3. [Exemplo de como implementar exceções customizadas em C++](https://github.com/luk3rr/PERSONAL_FINANCE/blob/main/include/CartaoDeCreditoExcp.hpp)
+4. [https://www.tutorialspoint.com/cplusplus/cpp_exceptions_handling.htm](https://www.tutorialspoint.com/cplusplus/cpp_exceptions_handling.htm)

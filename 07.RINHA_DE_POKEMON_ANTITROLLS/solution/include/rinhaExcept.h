@@ -1,11 +1,11 @@
 /*
- * Filename: rinhaExcpt.h
+ * Filename: rinhaExcept.h
  * Created on: May 31, 2024
  * Author: Lucas Araújo <araujolucas@dcc.ufmg.br>
  */
 
-#ifndef RINHAEXCPT_H_
-#define RINHAEXCPT_H_
+#ifndef RINHAEXCEPT_H_
+#define RINHAEXCEPT_H_
 
 #include <exception>
 #include <iostream>
@@ -105,4 +105,4 @@ class NegativeStrength : public std::exception
         }
 };
 
-#endif // RINHAEXCPT_H_
+#endif // RINHAEXCEPT_H_

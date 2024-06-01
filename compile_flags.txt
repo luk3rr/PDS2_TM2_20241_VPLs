@@ -1,4 +1,4 @@
 -xc++
 -I
-07.RINHA_DE_POKEMON_COM_EXCECOES/solution/include
+07.RINHA_DE_POKEMON_ANTITROLLS/solution/include
 -std=c++20

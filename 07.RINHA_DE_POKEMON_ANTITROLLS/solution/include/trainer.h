@@ -12,6 +12,7 @@
 #include <vector>
 
 #include "pokemon.h"
+#include "rinhaExcept.h"
 #include "pokemon_aquatic.h"
 #include "pokemon_electric.h"
 #include "pokemon_explosive.h"

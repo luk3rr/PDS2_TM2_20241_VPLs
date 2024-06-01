@@ -5,7 +5,6 @@
  */
 
 #include "rinha.h"
-#include "rinhaExcpt.h"
 
 Rinha::Rinha() { }
 

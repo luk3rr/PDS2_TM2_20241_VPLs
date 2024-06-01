@@ -1,4 +1,4 @@
-# Rinha de Pokémon
+# Rinha de Pokémon antitrolls
 Esse VPL depende das implementações feitas no VPL ‘Rinha de Pokémon’. Se você não as fez, seja um(a) bom(boa) garoto(a) e volte lá para fazê-las.
 
 # Tarefa

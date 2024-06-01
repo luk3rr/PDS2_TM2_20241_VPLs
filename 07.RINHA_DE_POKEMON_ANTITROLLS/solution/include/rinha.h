@@ -7,9 +7,11 @@
 #ifndef RINHA_H_
 #define RINHA_H_
 
-#include "trainer.h"
-#include "trainer.h"
 #include <iostream>
+#include <vector>
+
+#include "trainer.h"
+#include "rinhaExcept.h"
 
 class Rinha
 {

@@ -11,7 +11,7 @@
 
 #include "rinha.h"
 #include "trainer.h"
-#include "rinhaExcpt.h"
+#include "rinhaExcept.h"
 
 int main()
 {

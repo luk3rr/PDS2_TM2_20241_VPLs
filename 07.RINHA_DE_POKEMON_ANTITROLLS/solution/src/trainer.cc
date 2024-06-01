@@ -5,7 +5,6 @@
  */
 
 #include "trainer.h"
-#include "rinhaExcpt.h"
 
 Trainer::Trainer(std::string name)
 {

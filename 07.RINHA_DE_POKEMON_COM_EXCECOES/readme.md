@@ -32,15 +32,13 @@ Os casos de exceção que devem ser tratados são os seguintes:
    - Deve implementar o método **what()** que retorna a mensagem "Potência do ataque não pode ser negativa '-'"
 
 ### Onde você deve lançar exceções
-O melhor local para lançar exceções depende fortemente de como você implementou o seu programa. Você deve decidir qual o local mais apropriado para lançar suas exceções. No entanto, tente achar pelo menos um caso de lançamento de cada uma das 5 exceções citadas acima.
+O melhor local para lançar exceções depende fortemente da arquitetura do seu programa. Você deve decidir qual o local mais apropriado para lançar suas exceções. No entanto, tente achar pelo menos um caso de lançamento de cada uma das 5 exceções citadas acima.
 
-### Onde devo capturar ?
+### Onde devo capturar e tratar as exceções ?
 Para facilitar a correção deste pobre monitor, você deve tratar todas as exceções que forem lançadas no main do seu programa.
 
 ### Freedom
-Como ainda vivemos em um país livre, você pode adicionar novos atributos às classes, ou implementar outros métodos ou classes que achar necessário para a sua solução. Além disso, você não precisa seguir a nomenclatura de atributos, métodos e classes utilizada. Você poderia, por exemplo, colocar tudo em português, mas o seu programa deve implementar a lógica e comportamento solicitados.
-
-Além disso, você pode estar se perguntando por que diabos eu pedi para você imprimir mensagens nos destrutores. Bom, além de tentar fazer com que você os implemente, também gostaria que você visualizasse a ordem que os destrutores são chamados quando há heranças envolvidas.
+Como ainda vivemos em um país livre, você pode adicionar novos atributos às classes, ou implementar outros métodos ou classes que achar necessário para a sua solução.
 
 ### Main
 O main deve tratar as mesmas entradas do VPL 'Rinha de Pokémon', mas você deve alterá-lo para capturar as exceções que são lançadas pelo seu programa.
@@ -77,7 +75,7 @@ Treinador Trolei não encontrado o.O\
 Pokémon Cheirosinho já existe no time do treinador Xerosic (-\_-)\
 Poder do ataque não pode ser negativo '-'\
 Pokémon Cheirosin não encontrado no time do treinador Xerosic o.O
-\### RINHA ###
+\### RINHA ###\
 Ash (Pikachu) vs. Xerosic (Cheirosinho)\
 Pokémon: Pikachu\
 Tipo de ataque: Elétrico! Bzzzz!\

@@ -6,7 +6,7 @@ O objetivo deste VPL é trabalhar conceitos relacionados ao desenvolvimento e ut
 
 Em geral, a melhor maneira de testar um sistema é disponibilizando-o para um usuário, pois estes vão tentar fazer com o seu sistema coisas que você nem imaginaria e que ocasionalmente vão quebrar o seu programa :')
 
-Pensando nisso, como um entusiasta dos sistemas inquebráveis de rinhas (novamente, as lícitas), sua tarefa é implementar exceções personalizadas que lidam com os diversos erros que podem ocorrer durante o campeonato.
+Pensando nisso, como um entusiasta dos sistemas inquebráveis e resilientes a trollagens, sua tarefa é implementar exceções personalizadas que lidem com os diversos erros que podem ocorrer durante a rinha (novamente, as lícitas).
 
 ## O que você deve implementar
 ### rinhaExcept.hpp

@@ -8,6 +8,8 @@ Em geral, a melhor maneira de testar um sistema é disponibilizando-o para um us
 
 Pensando nisso, como um entusiasta dos sistemas inquebráveis e resilientes a trollagens, sua tarefa é implementar exceções personalizadas que lidem com os diversos erros que podem ocorrer durante a rinha (novamente, as lícitas).
 
+![Diga não a trollagem](./img/antitroll.jpg)
+
 ## O que você deve implementar
 ### rinhaExcept.hpp
 No VPL, existe um arquivo vazio chamado *rinhaExcept.{hpp, cpp}*. Você deve fazer a definição e implementação de suas exceções personalizadas nestes arquivos.

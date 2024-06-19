@@ -3,7 +3,8 @@ A Rondolândia é uma nação idílica, governada por uma dinastia de capivaras 
 
 Em um certo momento passado, as capivaras perceberam que ideia do labor é uma furada, e decidiram criar a filosofia do ZapZap, que advoga pela manutenção da tranquilidade e que essa tranquilidade só pode ser alcançada fortalecendo as relações sociais. Assim, Torresmo IV, soberano da Rondolândia, teve a brilhante ideia de criar uma rede social chamada ZapZap, onde seus súditos pudessem praticar a filosofia do ZapZap sem sair de casa, o que aumentaria a paz no reino e permitiria Torresmo IV espionar todos os súditos do reino, prevenindo possíveis rebeliões e garantindo a permanência da dinastia por mais várias gerações. Uma ideia genial, não é mesmo ?!
 
-![img/capivara.webp](img/capivara.webp)
+<img src="img/capivara.png" alt="Dia da Capivara: por que espécie some da Lagoa da Pampulha? | Minas Gerais  | G1" width="400" height="225" role="presentation" class="img-fluid atto_image_button_text-bottom"></p>
+
 De boa na Lagoa da Pampulha ( ‾ʖ̫‾)
 
 # Tarefa

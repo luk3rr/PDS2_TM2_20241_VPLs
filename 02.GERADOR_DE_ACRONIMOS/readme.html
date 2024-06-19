@@ -1,0 +1,109 @@
+<p dir="ltr" style="text-align: left;"></p>
+<p dir="auto">Acrônimos são abreviações formadas pelas letras iniciais de uma expressão ou conjunto de palavras, que juntas formam uma nova palavra pronunciável.</p>
+<p dir="auto">Eles são utilizados em diversos contextos, desde áreas técnicas e científicas até na linguagem cotidiana. Por exemplo, "NASA" é um acrônimo para "National Aeronautics and Space Administration".</p>
+<p dir="auto">Existem ainda os acrônimos recursivos (estes são os mais legais), que são aqueles que contém a própria palavra ou parte dela em sua definição. Isso significa que uma ou mais letras do acrônimo representam a palavra ou frase que o próprio acrônimo está tentando abreviar. Esse tipo de acrônimo cria um loop auto-referencial. Por exemplo, se você já programou em python provavelmente conhece o "PIP Installs Packages", que é um exemplo de acrônimo recursivo.</p>
+<div dir="auto">
+    <h1 tabindex="-1" dir="auto">Tarefa</h1><a id="user-content-tarefa" aria-label="Permalink: Tarefa" href="https://github.com/luk3rr/PDS2_TM2_20241_VPLs/tree/main/02.GERADOR_DE_ACRONIMOS#tarefa"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+            <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+        </svg></a>
+</div>
+<p dir="auto">O objetivo desse VPL é avançar na prática dos comandos de entrada e saída específicos de C++ (cout, cin e getline) e também a utilização do tipo string.</p>
+<p dir="auto">Como um entusiasta dos acrônimos (principalmente dos recursivos), sua tarefa é criar um programa em C++ que lê um texto escrito pelo usuário, mostra o seu acrônimo e identifica se ele é um acrônimo recursivo ou não.</p>
+<div dir="auto">
+    <h1 tabindex="-1" dir="auto">Regras do jogo</h1><a id="user-content-regras-do-jogo" aria-label="Permalink: Regras do jogo" href="https://github.com/luk3rr/PDS2_TM2_20241_VPLs/tree/main/02.GERADOR_DE_ACRONIMOS#regras-do-jogo"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+            <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+        </svg></a>
+</div>
+<ol dir="auto">
+    <li>É garantido que todos os textos recebidos pelo seu programa terão as palavras separadas por espaço;</li>
+    <li>A primeira letra de cada palavra é sempre maiúscula, mas as demais podem ser maiúsculas ou minúsculas;<ol dir="auto">
+            <li>Para as preposições que ocasionalmente se intrometam no meio do texto, terão a primeira letra maiúscula somente se fizerem parte do acrônimo (vide exemplo 3 e 4)</li>
+        </ol>
+    </li>
+    <li>O texto pode, ocasionalmente, conter símbolos especiais, como ':', '&amp;' etc, mas estes não devem fazer parte do acrônimo;</li>
+    <li>O acrônimo deve ser mostrado completamente em letra maiúscula;</li>
+    <li>O seu programa deve utilizar&nbsp;<strong>std::cin</strong>&nbsp;ou&nbsp;<strong>std::getline</strong>&nbsp;para obter a entrada do usuário;</li>
+    <li>O seu programa deve imprimir um inteiro que pode assumir o valor de 0 ou 1, e o acrônimo encontrado. O inteiro deve ser 0 caso o acrônimo não seja um acrônimo recursivo ou 1 caso contrário (veja os exemplos).</li>
+</ol>
+<p dir="auto">Para os fins desta tarefa, considere para a formação do acrônimo somente a primeira letra de cada palavra. Casos em que o acrônimo e formada por uma combinação de várias letras de uma palavra não aparecem nos casos de teste. Por exemplo:</p>
+<blockquote>
+    <p dir="auto">REMAX:&nbsp;<strong>R</strong>eal&nbsp;<strong>E</strong>state&nbsp;<strong>MAX</strong>imums</p>
+</blockquote>
+<blockquote>
+    <p dir="auto">Gestapo:&nbsp;<strong>Ge</strong>heime&nbsp;<strong>Sta</strong>ats<strong>po</strong>lizei</p>
+</blockquote>
+<blockquote>
+    <p dir="auto">Interpol:&nbsp;<strong>Inter</strong>national&nbsp;<strong>Po</strong>lice</p>
+</blockquote>
+<blockquote>
+    <p dir="auto">Hamas:&nbsp;<strong>Ha</strong>rakat al-<strong>M</strong>uqawamah&nbsp;<strong>a</strong>l-I<strong>s</strong>lamiyyah</p>
+</blockquote>
+<div dir="auto">
+    <h1 tabindex="-1" dir="auto">Exemplos de entrada e saída</h1><a id="user-content-exemplos-de-entrada-e-saída" aria-label="Permalink: Exemplos de entrada e saída" href="https://github.com/luk3rr/PDS2_TM2_20241_VPLs/tree/main/02.GERADOR_DE_ACRONIMOS#exemplos-de-entrada-e-sa%C3%ADda"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+            <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+        </svg></a>
+</div>
+<div dir="auto">
+    <h2 tabindex="-1" dir="auto">Exemplo 1</h2><a id="user-content-exemplo-1" aria-label="Permalink: Exemplo 1" href="https://github.com/luk3rr/PDS2_TM2_20241_VPLs/tree/main/02.GERADOR_DE_ACRONIMOS#exemplo-1"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+            <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+        </svg></a>
+</div>
+<p dir="auto"><strong>input</strong></p>
+<blockquote>
+    <p dir="auto">PHP: Hypertext Pre-processor</p>
+</blockquote>
+<p dir="auto"><strong>output</strong></p>
+<blockquote>
+    <p dir="auto">1 PHP</p>
+</blockquote>
+<div dir="auto">
+    <h2 tabindex="-1" dir="auto">Exemplo 2</h2><a id="user-content-exemplo-2" aria-label="Permalink: Exemplo 2" href="https://github.com/luk3rr/PDS2_TM2_20241_VPLs/tree/main/02.GERADOR_DE_ACRONIMOS#exemplo-2"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+            <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+        </svg></a>
+</div>
+<p dir="auto"><strong>input</strong></p>
+<blockquote>
+    <p dir="auto">PhP: Hypertext Pre-processor</p>
+</blockquote>
+<p dir="auto"><strong>output</strong></p>
+<blockquote>
+    <p dir="auto">1 PHP</p>
+    <p dir="auto"></p>
+    <div dir="auto">
+        <h2 tabindex="-1" dir="auto">Exemplo 3</h2><a id="user-content-exemplo-3" aria-label="Permalink: Exemplo 3" href="https://github.com/luk3rr/PDS2_TM2_20241_VPLs/tree/main/02.GERADOR_DE_ACRONIMOS#exemplo-3"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+            </svg></a>
+    </div>
+    <p dir="auto"><strong>input</strong></p>
+    <blockquote>
+        <p dir="auto">Institute of Electrical and Electronics Engineers</p>
+    </blockquote>
+    <p dir="auto"><strong>output</strong></p>
+    <blockquote>
+        <p dir="auto">0 IEEE</p>
+    </blockquote>
+    <div dir="auto">
+        <h2 tabindex="-1" dir="auto">Exemplo 4</h2><a id="user-content-exemplo-4" aria-label="Permalink: Exemplo 4" href="https://github.com/luk3rr/PDS2_TM2_20241_VPLs/tree/main/02.GERADOR_DE_ACRONIMOS#exemplo-4"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+            </svg></a>
+    </div>
+    <p dir="auto"><strong>input</strong></p>
+    <blockquote>
+        <p dir="auto">WINE Is Not an Emulator</p>
+    </blockquote>
+    <p dir="auto"><strong>output</strong></p>
+    <blockquote>
+        <p dir="auto">1 WINE</p>
+    </blockquote>
+    <p dir="auto"><span style="font-size: 2rem;">Links não tão inúteis</span><br></p>
+</blockquote>
+<div dir="auto"><a id="user-content-links-não-tão-inúteis" aria-label="Permalink: Links não tão inúteis" href="https://github.com/luk3rr/PDS2_TM2_20241_VPLs/tree/main/02.GERADOR_DE_ACRONIMOS#links-n%C3%A3o-t%C3%A3o-in%C3%BAteis"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+            <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+        </svg></a></div>
+<ol dir="auto">
+    <li><a href="https://en.wikipedia.org/wiki/Acronym" rel="nofollow">https://en.wikipedia.org/wiki/Acronym</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Recursive_acronym" rel="nofollow">https://en.wikipedia.org/wiki/Recursive_acronym</a></li>
+    <li><a href="https://cplusplus.com/reference/sstream/stringstream/stringstream/" rel="nofollow">https://cplusplus.com/reference/sstream/stringstream/stringstream/</a></li>
+    <li><a href="https://cplusplus.com/reference/cctype/toupper/" rel="nofollow">https://cplusplus.com/reference/cctype/toupper/</a></li>
+</ol><br>
+<p></p>

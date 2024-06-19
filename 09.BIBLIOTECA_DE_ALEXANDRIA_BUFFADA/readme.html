@@ -1,0 +1,515 @@
+<!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
+
+<p>
+    Esse VPL depende das implementações feitas no VPL ‘Biblioteca de
+    Alexandria’. Se você não as fez, seja um(a) bom(boa) garoto(a) e volte lá
+    para fazê-las.
+</p>
+<h1 id="tarefa">Tarefa</h1>
+<p>
+    O objetivo deste VPL é trabalhar conceitos relacionados ao desenvolvimento
+    de classes em C++, especificamente encapsulamento, herança, composição e
+    polimorfismo.
+</p>
+<p>
+    A nossa biblioteca de Alexandria era simples demais, por isso vamos buffar
+    ela e tentar deixar as coisas mais legais. Como um entusiasta da manutenção
+    nos sistemas, você trabalhará na extensão do programa já implementado,
+    adicionando uma classe que representará o usuário e integrar toda a lógica
+    de empréstimos e devoluções com essa nova classe.
+</p>
+<h2 id="o-que-você-deve-implementar">O que você deve implementar</h2>
+<h3 id="class-user">class User</h3>
+<h4 id="atributos">Atributos</h4>
+<ul>
+    <li><strong>m_name</strong>, string: nome do usuário</li>
+    <li><strong>m_email</strong>, string: email do usuário</li>
+    <li><strong>m_cpf</strong>, string: cpf do usuário</li>
+    <li>
+        <strong>m_id</strong>, std::size_t: Da mesma forma que os IDs dos itens,
+        esse ID deve ser um inteiro não negativo e sequencial, começando do
+        zero.
+    </li>
+</ul>
+<h4 id="métodos">Métodos</h4>
+<ul>
+    <li>
+        <strong>User(std::size_t id, std::string name, std::string email, std::string
+            cpf)</strong>: Construtor
+    </li>
+    <li>
+        Destrutor
+        <ul>
+            <li>Deve imprimir a mensagem “Usuário ID foi para o beleléu!”</li>
+            <li>
+                (Beleléu é um eufemismo, mas por algum motivo existe um
+                <a href="https://www.amazon.com.br/Belel%C3%A9u-Patr%C3%ADcio-Dugnani/dp/8535631003" target="_blank">livro</a>
+                de capa engraçada com o mesmo nome)
+            </li>
+        </ul>
+    </li>
+    <li>Métodos Get e Set</li>
+    <li>
+        <strong>PrintInfo</strong>: Método que deve imprimir as informações do
+        usuário no seguinte formato
+        <ul>
+            <li>ID: x</li>
+            <li>NOME: x</li>
+            <li>EMAIL: x</li>
+            <li>CPF: x</li>
+            <li>
+                (Considere que “x” é o valor armazenado na variável do dado em
+                questão)
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3 id="class-item-cd-library-periodic-book">
+    class Item, CD, Library, Periodic, Book
+</h3>
+<p>
+    As classes implementadas no último VPL devem ser mantidas. A única classe
+    que necessita de alterações será a <strong>Library</strong>, então se você está mudando
+    alguma coisas nas outras classes você com certeza não está seguindo o
+    caminho das pedras ._.
+</p>
+<p>
+    Atributos que você deve adicionar em Library:<br>
+</p>
+<ul>
+    <li>Crie um vector de <strong>ponteiros</strong> para objetos do tipo
+        <strong>User</strong>.
+    </li>
+    <li>Precisamos de um registro de empréstimos, de forma que seja possível
+        armazenar todo o histórico de empréstimos, seja de itens já devolvidos ou
+        não.
+        <ul>
+            <li>Existem <span class="math inline"><em>n</em></span> formas de fazer
+                isso, algumas mais fáceis que outras. Pense um pouco, mas como você
+                provavelmente ainda é juninho na programação, se não tiver criatividade
+                suficiente
+                <a href="https://github.com/luk3rr/aaaaaaaaah/blob/main/SOCORRO/historico_de_emprestimos.cc" target="_blank">pegue na mão do monitor que ele lhe mostrará um caminho</a>.
+            </li>
+        </ul>
+    </li>
+</ul>
+<p></p>
+<p>
+    Métodos que você deve adicionar ou alterar em Library:<br>
+</p>
+<ul>
+    <li>
+        Assim como fez com Item, crie um método para procurar um User pelo ID.
+    </li>
+</ul>
+<ul>
+    <li>
+        A assinatura dos métodos Reserve e Release precisa ser alterada,
+        conforme abaixo:
+        <ul>
+            <li>
+                <strong>void Reserve(std::size_t item_id, std::size_t user_id);</strong>
+            </li>
+            <li>
+                <strong>void Reserve(std::string item_title, std::size_t user_id);</strong>
+            </li>
+            <li>
+                <strong>void Release(std::size_t item_id, std::size_t user_id);</strong>
+            </li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>
+        Para que a saída do seu programa seja condizente com o que é esperado
+        nos casos de teste, você deve:
+        <ul>
+            <li>
+                Procurar um <strong>item</strong> e, caso não o encontre, imprima a
+                mensagem “Item ID não encontrado o.O” (você já faz isso no VPL anterior) e
+                termine a função (veja o link 1).
+            </li>
+            <li>
+                Caso o item exista, procure pelo usuário. Se não encontrá-lo, imprima
+                “Usuário ID não encontrado o.O” e termine a função.
+            </li>
+            <li>
+                Se o item e o usuário foram encontrados, então implemente a lógica da
+                reserva ou devolução.
+                <ul>
+                    <li>
+
+                        A lógica de reserva usa a função <strong>Reserve</strong> da classe
+                        <strong>Item</strong>. Lembra quando eu disse que você só alteraria a
+                        classe Library, então,
+                        <a href="https://pbs.twimg.com/media/FYDl1MlX0AEvcIm?format=png&amp;name=900x900" target="_blank">eu menti</a>. A solução fica mais fácil se Item::Reserve retornar um booleano que
+                        indica que o item pode ser reservado ou não. As mensagens que
+                        Item::Reserve já mostra devem ser mantidas e devem ser impressas antes das
+                        mensagens citadas abaixo:
+                        <ul>
+                            <li>
+                                Se o item for reservado com sucesso, então mostre a mensagem “Usuário NOME_USUARIO reservou o item TITULO_ITEM com sucesso!”
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+
+                        A lógica de devolução usa a função <strong>Release</strong> da classe
+                        <strong>Item</strong>, mas também depende de se o usuário realmente tem
+                        uma reserva daquele item e se a devolução dessa reserva ainda está
+                        pendente. As mensagens que Item::Release já mostra devem ser mantidas e
+                        devem ser impressas antes das mensagens citadas abaixo:
+                        <ul>
+                            <li>
+
+                                Se a devolução for feita com sucesso, então imprima “Usuário
+                                NOME_USUARIO devolveu o item TITULO_ITEM” com sucesso!
+                            </li>
+                            <li>
+                                Se não, imprima “Usuário NOME_USUARIO não reservou o item TITULO_ITEM
+                                o.O”
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>
+        Crie o método <strong>AddUser(nome, email, cpf)</strong>
+    </li>
+</ul>
+<ul>
+    <li>
+        Crie um método chamado <strong>PrintUsers</strong> para mostrar as
+        informações de todos os usuários registrados
+        <ul>
+            <li>
+                Se não existe usuário cadastrado, imprima apenas “Não há usuários
+                cadastrados. Acho que estão todos no TikTok -.-”
+            </li>
+            <li>
+                Se não, imprima as informações de cada usuário no seguinte formato:<br>
+                <ul>
+                    <li>
+                        ----------
+                    </li>
+                    <li>
+                        (Infos do usuário 0)
+                    </li>
+                    <li>
+                        ----------
+                    </li>
+                    <li>
+                        (etc etc)
+                    </li>
+                    <li>
+                        ----------
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>
+        Crie um método chamado <strong>PrintReservations</strong> para mostrar
+        todo o histórico de empréstimos
+        <ul>
+            <li>
+                Se não existir reservas no histórico, imprima apenas “Não há reservas no
+                momento. Hoje em dia as pessoas só pensam em TikTok -.-”
+            </li>
+            <li>
+                Se não, imprima as informações de cada reserva:
+                <ul>
+                    <li>
+                        ----------
+                    </li>
+                    <li>
+                        Item: x
+                    </li>
+                    <li>
+                        Usuário: x
+                    </li>
+                    <li>
+                        Status: (O status da reserva pode ser ‘Devolvido’
+                        <a href="https://en.wikipedia.org/wiki/Exclusive_or" target="_blank">XOR</a>
+                        ‘Reservado’)
+                    </li>
+                    <li>
+                        ----------
+                    </li>
+                    <li>
+                        (etc etc)
+                    </li>
+                    <li>
+                        ----------
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </li>
+</ul>
+<ul>
+    <li>
+        Por último, mas mais <strong>importante</strong> que tudo: se você criou
+        os <strong>users</strong> no heap, não maltrate o servidor do VPL e libere
+        a memória.
+        <ul>
+            <li>
+
+                Atualmente o seu destrutor já apaga os <strong>itens</strong> que foram
+                criados. Logo abaixo, apague os <strong>usuários</strong> e por último
+                imprima a mensagem “Bye!”.
+            </li>
+        </ul>
+    </li>
+</ul>
+<p></p>
+<p>
+    Considere que a impressão das informações dos usuários e reservas serão
+    feitas na ordem em que elas foram cadastradas no sistema.
+</p>
+<p>
+    OBS.: Um usuário certamente pode reserva mais de uma cópia de um mesmo
+    item, o que provocará várias entradas iguais no histórico. Você deve
+    realizar a devolução para o primeiro item não devolvido encontrado no
+    histórico.
+</p>
+<h3 id="freedom">Freedom</h3>
+<p>
+    Como ainda vivemos em um país livre, você pode adicionar novos atributos
+    às classes, ou implementar outros métodos ou classes que achar necessário
+    para a sua solução. Além disso, você não precisa seguir a nomenclatura de
+    atributos, métodos e classes utilizada. Você poderia, por exemplo, colocar
+    tudo em português, mas o seu programa deve implementar a lógica e
+    comportamento solicitados.
+</p>
+<h3 id="main">Main</h3>
+<p>
+    Por fim, você deve implementar o <strong>main.cpp</strong> do seu programa
+    e toda a lógica de entrada/saída que será responsável por manipular os
+    seguintes comandos:&nbsp;</p>
+<ul>
+    <li>a l ‘copies pages title author isbn date genre
+        publisher’: Comando para adicionar (<strong>a</strong>) um livro
+        (<strong>l</strong>)&nbsp;</li>
+    <li>a j ‘copies volume number title date editor
+        topics’: Comando para adicionar (<strong>a</strong>) um jornal
+        (<strong>j</strong>) (é um periódico)&nbsp;</li>
+    <li>a r ‘copies volume number title
+        date editor topics’: Comando para adicionar (<strong>a</strong>) uma
+        revista (<strong>r</strong>) (é um periódico)&nbsp;</li>
+    <li>a c ‘copies tracks
+        duration title artist date’: Comando para adicionar (<strong>a</strong>)
+        um CD&nbsp;</li>
+    <li>a u ‘name email cpf’: Comando para adicionar (<strong>a</strong>)
+        um usuário (<strong>u</strong>)&nbsp;</li>
+    <li>r t ‘title userID’: Comando para
+        reservar (<strong>r</strong>) um item buscando-o pelo título
+        (<strong>t</strong>) para um usuário com determinado ID&nbsp;</li>
+    <li>r i ‘itemID
+        userID’: Comando para reservar (<strong>r</strong>) um item buscando-o
+        pelo ID (<strong>i</strong>) para um usuário com determinado ID</li>
+    <li>d
+        ‘itemID userID’: Comando para devolver (<strong>d</strong>) um item.
+        Diferentemente da reserva, a devolução só é possível indicando o ID do
+        item e o ID do usuário que fez a reserva</li>
+    <li>s c: Imprime o catalogo da
+        biblioteca</li>
+    <li>s u: Imprime as informações de todos os usuários cadastrados&nbsp;</li>
+    <li>s r: Imprime as informações de todas as reservas registradas
+    </li>
+</ul>
+<p>
+    O último comando da sua função main antes do ‘return 0;’ deve ser
+    ‘std::cout &lt;&lt; “Fim da execução” &lt;&lt; std::endl;’.
+</p>
+<h1 id="regras-do-jogo">Regras do jogo</h1>
+<ol type="1">
+    <li>
+        Todos os atributos de todas as classes devem ser encapsulados e
+        acessados somente através de métodos Get e Set. Se você perceber que
+        algum método Get ou Set não é utilizado pelo seu programa, então você
+        não precisa implementá-lo.
+    </li>
+    <li>
+        Você deve fazer todas as heranças e sobrescrita de métodos solicitadas.
+    </li>
+    <li>
+        Respeita o formato das mensagens que são impressas. O moodle verifica se
+        seu programa funciona corretamente comparando a sua saída com a esperada
+        para cada caso de teste. Se houver alguma coisa fora de lugar, os testes
+        vão falhar.
+    </li>
+    <li>
+        Separe cada especificação (hpp) de sua respectiva implementação (cpp).
+        Não implemente tudo em um único arquivo. Seja organizado.
+    </li>
+</ol>
+<h1 id="exemplos-de-entrada-e-saída">Exemplos de entrada e saída</h1>
+<h2 id="exemplo-1">Exemplo 1</h2>
+<p>
+    <strong>input</strong><br>
+    a l 5 300 DomCasmurro MachadoDeAssis 9788532803186 01/01/1899 Romance
+    EditoraNovaFronteira<br>
+    a u Lucaaassss alo@lucas.me
+    0111001001100101011000010110110001101101011001010110111001110100011001010010000001110110011000110010000011000011101010010010000001100011011101010111001001101001011011110111001101101111<br>
+    a j 3 10 5 FolhaDeSãoPaulo 01/05/2019 FolhaDeSãoPaulo
+    Política,Economia,Esportes<br>
+    a r 2 7 12 Veja 15/04/2024 EditoraAbril Política,Cultura,Tecnologia<br>
+    a u voceeeeeee alo@vc.me
+    011011010111010101101001011101000110111101101111001000000110001101110101011100100110100101101111011100110110111100100000011011010111001101101101<br>
+    a u outrapessoa alo@op.me
+    011011100010000001100011011000010111001001100001001000000110010101110101001000000110111000100000011000110110111101101100011011110111000101110101011001010110100100100000011101010110110100100000011000110111000001100110001000000110010101101101001000000110001001101001011011100110000101110010011010010110111100100000001001110010110100100111<br>
+    a c 4 12 8230 RaçaNegra-AoVivo RaçaNegra 20/03/2024<br>
+    s r<br>
+    r t DomCasmurro 0<br>
+    r i 1 10<br>
+    r i 1 0<br>
+    r i 1 1<br>
+    r i 1 2<br>
+    r i 1 0<br>
+    r i 1 0<br>
+    d 2 0<br>
+    d 2 1<br>
+    d 2 0<br>
+    d 3 1<br>
+    d 1 3<br>
+    r t DomCasmurro 99<br>
+    d 1 2<br>
+    d 0 0<br>
+    s c<br>
+    s u<br>
+    s r
+</p>
+<p>
+    <strong>output</strong><br>
+    Não há reservas no momento. Hoje em dia as pessoas só pensam em TikTok
+    -.-<br>
+    Item 0 reservado com sucesso :)<br>
+    Usuário Lucaaassss reservou o item DomCasmurro com sucesso!<br>
+    Usuário 10 não encontrado o.O<br>
+    Item 1 reservado com sucesso :)<br>
+    Usuário Lucaaassss reservou o item FolhaDeSãoPaulo com sucesso!<br>
+    Item 1 reservado com sucesso :)<br>
+    Usuário voceeeeeee reservou o item FolhaDeSãoPaulo com sucesso!<br>
+    Item 1 reservado com sucesso :)<br>
+    Usuário outrapessoa reservou o item FolhaDeSãoPaulo com sucesso!<br>
+    Item 1 não disponível para empréstimo :(<br>
+    Item 1 não disponível para empréstimo :(<br>
+    Usuário Lucaaassss não reservou o item Veja o.O<br>
+    Usuário voceeeeeee não reservou o item Veja o.O<br>
+    Usuário Lucaaassss não reservou o item Veja o.O<br>
+    Usuário voceeeeeee não reservou o item RaçaNegra-AoVivo o.O<br>
+    Usuário 3 não encontrado o.O<br>
+    Usuário 99 não encontrado o.O<br>
+    Item 1 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)<br>
+    Usuário outrapessoa devolveu o item FolhaDeSãoPaulo com sucesso!<br>
+    Item 0 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)<br>
+    Usuário Lucaaassss devolveu o item DomCasmurro com sucesso!<br>----------<br>
+    ITEM: Livro<br>
+    ID: 0<br>
+    TÍTULO: DomCasmurro<br>
+    AUTOR(A): MachadoDeAssis<br>
+    EDITORA: EditoraNovaFronteira<br>
+    GÊNERO: Romance<br>
+    NÚMERO DE PÁGINAS: 300<br>
+    ISBN: 9788532803186<br>
+    DATA: 01/01/1899<br>
+    CÓPIAS DISPONÍVEIS: 5<br>
+    CÓPIAS RESERVADAS: 0<br>
+    ----------<br>
+    ITEM: Jornal<br>
+    ID: 1<br>
+    TÍTULO: FolhaDeSãoPaulo<br>
+    EDITORA: FolhaDeSãoPaulo<br>
+    TÓPICOS: Política,Economia,Esportes<br>
+    DATA: 01/05/2019<br>
+    CÓPIAS DISPONÍVEIS: 1<br>
+    CÓPIAS RESERVADAS: 2<br>
+    ----------<br>
+    ITEM: Revista<br>
+    ID: 2<br>
+    TÍTULO: Veja<br>
+    EDITORA: EditoraAbril<br>
+    TÓPICOS: Política,Cultura,Tecnologia<br>
+    DATA: 15/04/2024<br>
+    CÓPIAS DISPONÍVEIS: 2<br>
+    CÓPIAS RESERVADAS: 0<br>
+    ----------<br>
+    ITEM: CD<br>
+    ID: 3<br>
+    TÍTULO: RaçaNegra-AoVivo<br>
+    ARTISTA: RaçaNegra<br>
+    FAIXAS: 12<br>
+    DURAÇÃO: 02:17:10<br>
+    DATA: 20/03/2024<br>
+    CÓPIAS DISPONÍVEIS: 4<br>
+    CÓPIAS RESERVADAS: 0<br>
+    ----------<br>
+    ----------<br>
+    ID: 0<br>
+    NOME: Lucaaassss<br>
+    EMAIL: alo@lucas.me<br>
+    CPF:
+    0111001001100101011000010110110001101101011001010110111001110100011001010010000001110110011000110010000011000011101010010010000001100011011101010111001001101001011011110111001101101111<br>
+    ----------<br>
+    ID: 1<br>
+    NOME: voceeeeeee<br>
+    EMAIL: alo@vc.me<br>
+    CPF:
+    011011010111010101101001011101000110111101101111001000000110001101110101011100100110100101101111011100110110111100100000011011010111001101101101<br>
+    ----------<br>
+    ID: 2<br>
+    NOME: outrapessoa<br>
+    EMAIL: alo@op.me<br>
+    CPF: 011011100010000001100011011000010111001001100001001000000110010101110101001000000110111000100000011000110110111101101100011011110111000101110101011001010110100100100000011101010110110100100000011000110111000001100110001000000110010101101101001000000110001001101001011011100110000101110010011010010110111100100000001001110010110100100111<br>
+    ----------<br>
+    ----------<br>
+    Item: DomCasmurro<br>
+    Usuário: Lucaaassss<br>
+    Status: Devolvido<br>
+    ----------<br>
+    Item: FolhaDeSãoPaulo<br>
+    Usuário: Lucaaassss<br>
+    Status: Reservado<br>
+    ----------<br>
+    Item: FolhaDeSãoPaulo<br>
+    Usuário: voceeeeeee<br>
+    Status: Reservado<br>
+    ----------<br>
+    Item: FolhaDeSãoPaulo<br>
+    Usuário: outrapessoa<br>
+    Status: Devolvido<br>
+    ----------<br>
+    Fim da execução<br>
+    Livro 0 diz: Leia-me amanhã!<br>
+    Item 0 liberado da memória!<br>
+    Jornal 1 diz: Leia-me amanhã!<br>
+    Item 1 liberado da memória!<br>
+    Revista 2 diz: Leia-me amanhã!<br>
+    Item 2 liberado da memória!<br>
+    CD 3 diz: Ouça-me amanhã!<br>
+    Item 3 liberado da memória!<br>
+    Usuário 0 foi para o beleléu!<br>
+    Usuário 1 foi para o beleléu!<br>
+    Usuário 2 foi para o beleléu!<br>
+    Bye!
+</p>
+<h1 id="links-não-tão-inúteis">Links não tão inúteis</h1>
+<ol type="1">
+    <li>
+        <a href="https://stackoverflow.com/questions/346613/how-do-you-exit-from-a-void-function-in-c">https://stackoverflow.com/questions/346613/how-do-you-exit-from-a-void-function-in-c</a>
+    </li>
+    <li>
+        <a href="https://cplusplus.com/reference/utility/pair/pair/">https://cplusplus.com/reference/utility/pair/pair/</a>
+    </li>
+</ol>

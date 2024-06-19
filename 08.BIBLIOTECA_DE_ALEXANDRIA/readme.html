@@ -1,0 +1,454 @@
+<br>
+<p>A <a href="https://pt.wikipedia.org/wiki/Biblioteca_de_Alexandria" target="_blank">Biblioteca
+        de Alexandria</a> foi o local onde os seres humanos colheram pela primeira
+    vez, de maneira séria e sistemática, o conhecimento do mundo. Localizada
+    na cidade de Alexandria, no Egito, fundada por Ptolomeu I, por volta do
+    século III AEC, serviu como centro de aprendizado e pesquisa, agregando
+    o conhecimento de filósofos e cientistas do mundo mediterrâneo.</p>
+<p>Além do famoso Eratóstenes, a biblioteca também foi o lar do
+    astrônomo Hiparco, que mapeou as constelações e fez uma estimativa da
+    intensidade do brilho das estrelas; Euclides, que sistematizou com
+    brilhantismo a geometria e que disse a seu rei, quando se debatia com um
+    difícil problema matemático: “Não existe uma estrada real para a
+    geometria”; Dionísio da Trácia, o homem que definiu as categorias
+    gramaticais e fez para o estudo da língua o que Euclides fez para a
+    geometria; Herófilo, o fisiologista que estabeleceu de maneira sólida
+    que é o cérebro, e não o coração, a morada da inteligência; Heron de
+    Alexandria, inventor de engrenagens e de motores a vapor, e autor de
+    <em>Automata</em>, o primeiro livro sobre robôs; Apolônio de Perga, o
+    matemático que demonstrou os formatos das seções cônicas — elipse,
+    parábola e hipérbole —, curvas que, hoje sabemos, formam as órbitas de
+    planetas, cometas e estrelas; Arquimedes, o maior gênio da mecânica até
+    Leonardo da Vinci; e o astrônomo e geógrafo Ptolomeu, que compilou muito
+    do que é hoje a pseudociência da astrologia: seu universo geocêntrico
+    sustentou-se durante 1500 anos, um lembrete de que a capacidade
+    intelectual não é uma garantia de que não se estará de todo errado. E
+    entre esses grandes homens havia uma grande mulher, Hipátia, matemática
+    e astrônoma, o último luminar da biblioteca, cujo martírio está ligado à
+    destruição da biblioteca sete séculos após sua fundação.
+</p>
+<p>(O parágrafo acima foi retirado do livro Cosmos, de Carl Sagan)</p><img src="img/biblioteca.jpg" alt="" width="276" height="183" role="presentation" class="img-fluid atto_image_button_text-bottom"><br><br>
+<p>Infelizmente a maior parte do conhecimento desenvolvido e armazenado
+    entre as paredes da biblioteca foi sucessivamente destruído por
+    incêndios, invasões persas e também pelo já citado Júlio César (sim, o
+    mesmo da Cifra de César), que destruiu boa parte da biblioteca durante
+    um conflito com os egípcios.</p>
+<h1 id="tarefa">Tarefa</h1>
+<p>O objetivo deste VPL é trabalhar conceitos relacionados ao
+    desenvolvimento de classes em C++, especificamente encapsulamento,
+    herança, composição e polimorfismo.</p>
+<p>Na época da biblioteca de Alexandria, utilizavam-se rolos de <a href="https://pt.wikipedia.org/wiki/Papiro" target="_blank">papiro</a> para armazenar
+    todo o conhecimento produzido, mas no mundo contemporâneo podemos
+    utilizar os meios digitais, que são mais fáceis de manipular e não
+    sofrem tanto com as ações do tempo como os papiros.</p>
+<p>Pensando nisso, como um entusiasta da preservação da sabedoria, sua
+    tarefa é implementar um sistema de biblioteca, de forma que seja
+    possível registrar, catalogar e buscar livros, revistas, jornais
+    etc.</p>
+<h2 id="o-que-você-deve-implementar">O que você deve implementar</h2>
+<h3 id="class-item">class Item</h3>
+<p>Classe responsável por representar um item genérico do acervo da
+    biblioteca.</p>
+<h4 id="atributos">Atributos</h4>
+<ul>
+    <li><strong>m_id</strong>, std::size_t: Todo item da biblioteca deve ter
+        um ID</li>
+    <li><strong>m_title</strong>, string: Título do item</li>
+    <li><strong>m_author</strong>, string: Nome do autor ou autores.</li>
+    <li><strong>m_date</strong>, string: Data de publicação. Não se preocupe
+        com o formato, o que o usuário digitar deve ser armazenado.</li>
+    <li><strong>m_availableCopies</strong>, std::size_t: Indica a quantidade
+        disponível para aluguel imediato no acervo, ou seja, os itens que ainda
+        não foram reservados</li>
+    <li><strong>m_loanedCopies</strong>: std::size_t: Indica quantos itens
+        foram reservados. Inicialmente deve ser definido como zero.</li>
+    <li><strong>m_itemType</strong>, string: Deve armazenar o tipo do item
+        <ul>
+            <li>O tipo pode ser “Livro”, “Jornal”, “Revista” ou “CD”.</li>
+        </ul>
+    </li>
+</ul>
+<h4 id="métodos">Métodos</h4>
+<ul>
+    <li>Construtor e destrutor
+        <ul>
+            <li>O destrutor deve imprimir a mensagem “Item ID liberado da
+                memória!”</li>
+            <li>(Acredito que dizer “Item ID destruído!” não pega muito bem no
+                contexto de itens de uma biblioteca, ainda mais depois do que foi citado
+                no texto de introdução deste VPL)</li>
+        </ul>
+    </li>
+    <li>Métodos Get e Set para obter e definir os valores dos atributos</li>
+    <li><strong>PrintInfo():</strong> Método <strong>virtual</strong>
+        responsável por mostrar as informações do item da seguinte maneira:
+        <ul>
+            <li>ID: x</li>
+            <li>TÍTULO: x</li>
+            <li>AUTOR(A): x</li>
+            <li>DATA: x</li>
+            <li>TIPO: x</li>
+            <li>CÓPIAS DISPONÍVEIS: x</li>
+            <li>CÓPIAS RESERVADAS: x</li>
+            <li>(Considere que “x” é o valor armazenado na variável do dado em
+                questão)</li>
+        </ul>
+    </li>
+    <li><strong>Reserve()</strong>: Método que implementa a lógica de
+        reservar um item.
+        <ul>
+            <li>Se houver itens disponíveis para empréstimo, deve imprimir “Item ID
+                reservado com sucesso :)”</li>
+            <li>Se não houver, deve imprimir “Item ID não disponível para empréstimo
+                :(”</li>
+        </ul>
+    </li>
+    <li><strong>Release()</strong>: Método que implementa a lógica de
+        devolução do item e liberá-lo para um novo empréstimo.
+        <ul>
+            <li>Se realmente houver algum empréstimo, deve imprimir “Item ID
+                recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)”</li>
+            <li>A sua lógica deve lidar com a tentativa de devolver um item que não
+                está emprestado. Se nenhum item tiver sido emprestado, então imprima
+                “Nenhuma cópia do item ID está emprestada o.O”.
+                <ul>
+                    <li>Isso é mais simples do que você inicialmente pode imaginar. Se
+                        m_loanedCopies for igual a zero para um determinado item, então nenhuma
+                        cópia dele foi emprestada. Se não…</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3 id="class-book">class Book</h3>
+<p>Classe que representa um livro. Deve ser herança de Item.</p>
+<h4 id="atributos-1">Atributos</h4>
+<ul>
+    <li><strong>m_numPages</strong>, std::size_t: Armazena a quantidade de
+        páginas do livro</li>
+    <li><strong>m_genre</strong>, string: Armazena o gênero do livro</li>
+    <li><strong>m_publisher</strong>, string: Armazena o nome da editora que
+        publicou o livro</li>
+    <li><strong>m_isbn</strong>, string: Armazena o ISBN do livro</li>
+</ul>
+<h4 id="métodos-1">Métodos</h4>
+<ul>
+    <li>Construtor e destrutor
+        <ul>
+            <li>O destrutor deve imprimir a mensagem “Livro ID diz: Leia-me amanhã!”</li>
+        </ul>
+    </li>
+    <li>Métodos Get e Set para obter e definir os valores dos atributos</li>
+    <li><strong>PrintInfo():</strong> Sobrescrita do método virtual da
+        classe base responsável por mostrar as informações do livro da seguinte
+        maneira:
+        <ul>
+            <li>ITEM: x</li>
+            <li>ID: x</li>
+            <li>TÍTULO: x</li>
+            <li>AUTOR(A): x</li>
+            <li>EDITORA: x</li>
+            <li>GÊNERO: x</li>
+            <li>NÚMERO DE PÁGINAS: x</li>
+            <li>ISBN: x</li>
+            <li>DATA: x</li>
+            <li>CÓPIAS DISPONÍVEIS: x</li>
+            <li>CÓPIAS RESERVADAS: x</li>
+            <li>(Considere que “x” é o valor armazenado na variável do dado em
+                questão)</li>
+        </ul>
+    </li>
+</ul>
+<h3 id="class-periodic">class Periodic</h3>
+<p>Classe que representa um periódico (revista, jornal etc). Deve ser
+    herança de Item.</p>
+<h4 id="atributos-2">Atributos</h4>
+<ul>
+    <li><strong>m_volume, m_number:</strong> Todo periódico tem um volume e
+        um número. O volume corresponde ao número sequencial a partir do ano de
+        fundação do periódico. O número corresponde a edição publicada em um
+        determinado ano. Por exemplo, se o periódico foi fundado em 2010, a
+        primeiro edição de 2024 teria volume = 13 (em 2010 o volume é zero) e
+        numero = 1. Aqui, como no VPL sobre CAVs, você pode decidir utilizar uma
+        variável do tipo pair (veja o link 2) para representar os dois valores
+        ou duas variáveis do tipo std::size_t separadas.</li>
+    <li><strong>m_topics</strong>, string: Deve armazena os tópicos
+        abordados pelo periódico.</li>
+</ul>
+<p>(Não precisa se preocupar com o ano de fundação do periódico, a
+    explicação é mais para você saber para que os atributos servem. Nos
+    casos de teste seu programa já receberá o volume e o número diretamente,
+    sem precisar fazer cálculos com anos)</p>
+<h4 id="métodos-2">Métodos</h4>
+<ul>
+    <li>Construtor e destrutor
+        <ul>
+            <li>O destrutor deve imprimir a mensagem “TIPO ID diz: Leia-me amanhã!”</li>
+            <li>Nessa tarefa, o TIPO de um periódico pode ser jornal ou
+                revista.</li>
+        </ul>
+    </li>
+    <li>Métodos Get e Set para obter e definir os valores dos atributos</li>
+    <li><strong>PrintInfo():</strong> Sobrescrita do método virtual da
+        classe base responsável por mostrar as informações do jornal da seguinte
+        maneira:
+        <ul>
+            <li>ITEM: x</li>
+            <li>ID: x</li>
+            <li>TÍTULO: x</li>
+            <li>EDITORA: x</li>
+            <li>TÓPICOS: x</li>
+            <li>DATA: x</li>
+            <li>CÓPIAS DISPONÍVEIS: x</li>
+            <li>CÓPIAS RESERVADAS: x</li>
+            <li>(Considere que “x” é o valor armazenado na variável do dado em
+                questão)</li>
+            <li>(EDITORA no caso é o atributo autor de Item. Não cheguei na idade de
+                ler jornal ou revista, mas acredito que cada seção tenha um autor, então
+                utilizamos EDITORA para simplificar)</li>
+        </ul>
+    </li>
+</ul>
+<p>Se você estiver se perguntando o motivo de eu não ter separado a
+    classe periódico em duas classes diferentes (revista e jornal), a
+    resposta é uma das duas opções abaixo:&nbsp;</p>
+<p>1. O monitor não teve
+    criatividade suficiente para elaborar atributos ou métodos que fossem
+    específicos das duas classes&nbsp;</p>
+<p>2. O monitor estava com pena dos alunos e
+    decidiu diminuir o tamanho do VPL, agregando revista e jornal em apenas
+    uma classe</p>
+<p>Qual opção você acha que é ? O.O</p>
+<h3 id="class-cd">class CD</h3>
+<p>Classe que representa um <em>compact disc</em>. Deve ser herança de
+    Item.</p>
+<h4 id="atributos-3">Atributos</h4>
+<ul>
+    <li><strong>m_tracks</strong>, std::size_t: Indica a quantidade de
+        faixas de áudio existem no CD.</li>
+    <li><strong>m_duration</strong>, std::size_t: Duração em segundos do
+        CD.</li>
+</ul>
+<h4 id="métodos-3">Métodos</h4>
+<ul>
+    <li>Construtor e destrutor
+        <ul>
+            <li>O destrutor deve imprimir a mensagem “CD ID diz: Ouça-me amanhã!”</li>
+        </ul>
+    </li>
+    <li>Métodos Get e Set para obter e definir os valores dos atributos</li>
+    <li><strong>PrintInfo():</strong> Sobrescrita do método virtual da
+        classe base responsável por mostrar as informações do CD da seguinte
+        maneira:
+        <ul>
+            <li>ITEM: x</li>
+            <li>ID: x</li>
+            <li>TÍTULO: x</li>
+            <li>ARTISTA: x</li>
+            <li>FAIXAS: x</li>
+            <li>DURAÇÃO: x<br></li>
+            <li>DATA: x</li>
+            <li>CÓPIAS DISPONÍVEIS: x</li>
+            <li>CÓPIAS RESERVADAS: x</li>
+            <li>(Considere que “x” é o valor armazenado na variável do dado em
+                questão)</li>
+            <li>(ARTISTA no caso é o atributo author de Item.)</li>
+            <li>(DURAÇÃO foi dada em segundos, mas você deve imprimir no seguinte
+                formato HH:MM:SS (hora, minuto e segundo, com dois digitados cada
+                um)</li>
+        </ul>
+    </li>
+</ul>
+<h3 id="class-library">class Library</h3>
+<p>É aqui que a brincadeira começa. A classe Library é a responsável
+    por:&nbsp;</p>
+<p>1. Buscar items&nbsp;</p>
+<p>2. Registrar items&nbsp;</p>
+<p>3. Reservar items, caso estejam
+    disponíveis&nbsp;</p>
+<p>4. Imprimir o catalogo completo</p>
+<h4 id="atributos-4">Atributos</h4>
+<ul>
+    <li><strong>m_item</strong>, vector: Vetor que armazena
+        <strong>ponteiros</strong> para os itens do acervo.
+    </li>
+</ul>
+<h4 id="métodos-4">Métodos</h4>
+<ul>
+    <li>Construtor e destrutor
+        <ul>
+            <li>Se você criou os objetos do tipo Item no heap (você provavelmente
+                fez isso), então você deve liberar a memória.</li>
+            <li>Após liberar a memória, imprima “Bye!”</li>
+        </ul>
+    </li>
+    <li><strong>AddBook(copies, pages, title, author, isbn, date, genre,
+            publisher)</strong></li>
+    <li><strong>AddPeriodic(copies, volume, number, title, date, editor,
+            topics, type)</strong>: type já é recebido aqui, pois você pode ter
+        periódicos de diferentes tipos.</li>
+    <li><strong>AddCD(copies, tracks, duration, title, artist,
+            date)</strong></li>
+    <li><strong>Item* Search(id)</strong>: Método para procurar um item pelo
+        ID. Caso o item exista, deve retornar um ponteiro para ele, caso
+        contrário retorne <em>nullptr</em></li>
+    <li><strong>Item* Search(title)</strong>: Método para procurar um item
+        pelo título.
+        <ul>
+            <li>Tenha atenção:</li>
+            <li>Não é garantido que todos os itens terão nomes diferentes. Ou seja,
+                dois autores (ou editoras ou artistas) diferentes podem ter obras com o
+                mesmo nome. No entanto, um mesmo autor/editora/artista nunca terá duas
+                obras com o mesmo nome.</li>
+            <li>Dito isso, se for encontrado mais de um item com o mesmo nome,
+                imprima:
+                <ul>
+                    <li>Vários itens com o mesmo título encontrados:</li>
+                    <li>----------<br></li>
+                    <li>Informações do primeiro item encontrado</li>
+                    <li>----------</li>
+                    <li>Informações do segundo item encontrado</li>
+                    <li>----------</li>
+                    <li>etc etc</li>
+                    <li>----------</li>
+                    <li>(Retorne <em>nullptr</em>)</li>
+                </ul>
+            </li>
+            <li>Se existir apenas um item com o título pesquisado, retorne um
+                ponteiro para ele.</li>
+            <li>Se não existir nenhum item com o título pesquisado, retorne
+                <em>nullptr</em>
+            </li>
+        </ul>
+    </li>
+    <li><strong>Reserve(id)</strong>: Implementa a lógica de encontrar um
+        item pelo ID e chamar o método Reserve da classe Item para ele, caso o
+        item exista. Se o item não existir, imprima “Item ID não encontrado
+        o.O”</li>
+    <li><strong>Reserve(title)</strong>: Implementa a lógica de encontrar um
+        item pelo título e chamar o método Reserve da classe Item para ele, caso
+        o item exista. Se o item não existir, imprima “Item TITLE não encontrado
+        o.O”</li>
+    <li><strong>Release(id)</strong>: Implementa a lógica de encontrar um
+        item e chamar o método Release da classe Item. Se o item não existir,
+        imprima “Item ID não encontrado o.O”</li>
+    <li><strong>PrintCollection()</strong>: Imprime todo o catalogo da
+        biblioteca na ordem dos IDs dos itens (item 1, item 2, item 3 etc)
+        <ul>
+            <li>Se você fez o VPL como espero que faça, apenas chame PrintInfo de
+                cada Item, de forma que a impressão seja formata da seguinte maneira:
+                <ul>
+                    <li>----------</li>
+                    <li>Informações do primeiro item</li>
+                    <li>----------</li>
+                    <li>Informações do segundo item</li>
+                    <li>----------</li>
+                    <li>etc etc</li>
+                    <li>----------</li>
+                </ul>
+            </li>
+            <li>Se não houver itens, imprima apenas “Estamos sem itens, mas você
+                pode fazer uma doação ;-;”</li>
+        </ul>
+    </li>
+</ul>
+<p>Não coloquei o tipo dos parâmetros recebidos pelos métodos
+    acima, você certamente conseguirá inferi-los. Sua função deve ter
+    exatamente os mesmo parâmetros como descrito acima, mas você pode mudar
+    a ordem ou o nome deles.</p>
+<p>A respeito da lógica de criar IDs para cada item:&nbsp;</p>
+<p>- Cada ID deve ser
+    um inteiro não negativo</p>
+<p>- Os IDs devem ser sequenciais começando do zero&nbsp;</p>
+<p>- O usuário não fornece o ID, a sua função Library que deve gerenciá-los&nbsp;</p>
+<p>- Pense sobre a melhor maneira de fazer isso</p>
+<p>Existe polimorfismo na forma como implementamos os métodos
+    <strong>Search</strong> e <strong>Reserve</strong>. Você sabe qual o
+    tipo desse polimorfismo (talvez isso caia na prova, cof cof).
+</p>
+<h3 id="freedom">Freedom</h3>
+<p>Como ainda vivemos em um país livre, você pode adicionar novos
+    atributos às classes, ou implementar outros métodos ou classes que achar
+    necessário para a sua solução. Além disso, você não precisa seguir a
+    nomenclatura de atributos, métodos e classes utilizada. Você poderia,
+    por exemplo, colocar tudo em português, mas o seu programa deve
+    implementar a lógica e comportamento solicitados.</p>
+<h3 id="main">Main</h3>
+<p>Por fim, você deve implementar o <strong>main.cpp</strong> do seu
+    programa e toda a lógica de entrada/saída que será responsável por
+    manipular os seguintes comandos:&nbsp;</p>
+<p>- a l ‘copies pages title author isbn
+    date genre publisher’: Comando para adicionar (<strong>a</strong>) um
+    livro (<strong>l</strong>)&nbsp;</p>
+<p>- a j ‘copies volume number title date editor
+    topics’: Comando para adicionar (<strong>a</strong>) um jornal
+    (<strong>j</strong>) (é um periódico)</p>
+<p>- a r ‘copies volume number title
+    date editor topics’: Comando para adicionar (<strong>a</strong>) uma
+    revista (<strong>r</strong>) (é um periódico)&nbsp;</p>
+<p>- a c ‘copies tracks
+    duration title artist date’: Comando para adicionar (<strong>a</strong>)
+    um CD&nbsp;</p>
+<p>- r t ‘title’: Comando para reservar (<strong>r</strong>) um item
+    buscando-o pelo título (<strong>t</strong>)&nbsp;</p>
+<p>- r i ‘id': Comando para
+    reservar (<strong>r</strong>) um item buscando-o pelo ID
+    (<strong>i</strong>)&nbsp;</p>
+<p>- d ’id’: Comando para devolver
+    (<strong>d</strong>) um item. Diferentemente da reserva, a devolução só
+    é possível indicando o ID do item</p>
+<p>- s: Imprime o catalogo da
+    biblioteca</p>
+<p>O último comando da sua função main antes do ‘return 0;’ deve ser
+    ‘std::cout &lt;&lt; “Fim da execução” &lt;&lt; std::endl;’.</p>
+<p>Observe que diferentemente do VPLs sobre Pokémons, aqui alguns
+    comandos são seguidos por outros até que os parâmetros para a criação do
+    objeto sejam dados. Como você pode implementar isso no seu main?</p>
+<h1 id="regras-do-jogo">Regras do jogo</h1>
+<ol type="1">
+    <li>Todos os atributos de todas as classes devem ser encapsulados e
+        acessados somente através de métodos Get e Set. Se você perceber que
+        algum método Get ou Set não é utilizado pelo seu programa, então você
+        não precisa implementá-lo.</li>
+    <li>Você deve fazer todas as heranças e sobrescrita de métodos
+        solicitadas.</li>
+    <li>Respeita o formato das mensagens que são impressas. O moodle
+        verifica se seu programa funciona corretamente comparando a sua saída
+        com a esperada para cada caso de teste. Se houver alguma coisa fora de
+        lugar, os testes vão falhar.</li>
+    <li>Separe cada especificação (hpp) de sua respectiva implementação
+        (cpp). Não implemente tudo em um único arquivo. Seja organizado.</li>
+</ol>
+<h1 id="exemplos-de-entrada-e-saída">Exemplos de entrada e saída</h1>
+<h2 id="exemplo-1">Exemplo 1</h2>
+<p><strong>input</strong><br>
+    a l 1 500 Sapiens YuvalNoahHarari 123456789-00 2011 História
+    CompanhiaDasLetras<br>
+    a l 1 500 Sapiens VamoVerSeSeuProgramaEhBãoMesmo 123456789-00 2011
+    História CompanhiaDasLetras<br>
+    a l 1 220 ORomanceDasEquaçõesAlgébricas GilbertoGeraldoGarbi
+    123456789-00 1997 Matemática EditoraLivrariaDaFísica<br>
+    a r 2 6 4 ExtraExtraUmGatoBotouUmOvo:EntendaOCaso May2014 Anônimo
+    PiadaRuim<br>
+    a j 3 10 5 FolhaDeSãoPaulo 01/05/2019 FolhaDeSãoPaulo
+    Política,Economia,Esportes<br>
+    a c 1 13 4227 SobrevivendoNoInferno RacionaisMC’s 27/10/1997<br>
+    a c 1 11 3789 Reanimation LinkinPark 30/07/2002<br>
+    r t Sapiens<br>
+    r i 0<br>
+    r i 1<br>
+    d 0<br>
+    r 3<br>
+    s<br>
+    d 3</p>
+<p><strong>output</strong></p>
+<p>Vários itens com o mesmo título encontrados:<br>----------<br>ITEM: Livro<br>ID: 0<br>TÍTULO: Sapiens<br>AUTOR(A): YuvalNoahHarari<br>EDITORA: CompanhiaDasLetras<br>GÊNERO: História<br>NÚMERO DE PÁGINAS: 500<br>ISBN: 123456789-00<br>DATA: 2011<br>CÓPIAS DISPONÍVEIS: 1<br>CÓPIAS RESERVADAS: 0<br>----------<br>ITEM: Livro<br>ID: 1<br>TÍTULO: Sapiens<br>AUTOR(A): VamoVerSeSeuProgramaEhBãoMesmo<br>EDITORA: CompanhiaDasLetras<br>GÊNERO: História<br>NÚMERO DE PÁGINAS: 500<br>ISBN: 123456789-00<br>DATA: 2011<br>CÓPIAS DISPONÍVEIS: 1<br>CÓPIAS RESERVADAS: 0<br>----------<br>Item Sapiens não encontrado o.O<br>Item 0 reservado com sucesso :)<br>Item 1 reservado com sucesso :)<br>Item 0 recebido. Obrigado pelo seu compromisso em nos devolvê-lo :=)<br>----------<br>ITEM: Livro<br>ID: 0<br>TÍTULO: Sapiens<br>AUTOR(A): YuvalNoahHarari<br>EDITORA: CompanhiaDasLetras<br>GÊNERO: História<br>NÚMERO DE PÁGINAS: 500<br>ISBN: 123456789-00<br>DATA: 2011<br>CÓPIAS DISPONÍVEIS: 1<br>CÓPIAS RESERVADAS: 0<br>----------<br>ITEM: Livro<br>ID: 1<br>TÍTULO: Sapiens<br>AUTOR(A): VamoVerSeSeuProgramaEhBãoMesmo<br>EDITORA: CompanhiaDasLetras<br>GÊNERO: História<br>NÚMERO DE PÁGINAS: 500<br>ISBN: 123456789-00<br>DATA: 2011<br>CÓPIAS DISPONÍVEIS: 0<br>CÓPIAS RESERVADAS: 1<br>----------<br>ITEM: Livro<br>ID: 2<br>TÍTULO: ORomanceDasEquaçõesAlgébricas<br>AUTOR(A): GilbertoGeraldoGarbi<br>EDITORA: EditoraLivrariaDaFísica<br>GÊNERO: Matemática<br>NÚMERO DE PÁGINAS: 220<br>ISBN: 123456789-00<br>DATA: 1997<br>CÓPIAS DISPONÍVEIS: 1<br>CÓPIAS RESERVADAS: 0<br>----------<br>ITEM: Revista<br>ID: 3<br>TÍTULO: ExtraExtraUmGatoBotouUmOvo:EntendaOCaso<br>EDITORA: Anônimo<br>TÓPICOS: PiadaRuim<br>DATA: May2014<br>CÓPIAS DISPONÍVEIS: 2<br>CÓPIAS RESERVADAS: 0<br>----------<br>ITEM: Jornal<br>ID: 4<br>TÍTULO: FolhaDeSãoPaulo<br>EDITORA: FolhaDeSãoPaulo<br>TÓPICOS: Política,Economia,Esportes<br>DATA: 01/05/2019<br>CÓPIAS DISPONÍVEIS: 3<br>CÓPIAS RESERVADAS: 0<br>----------<br>ITEM: CD<br>ID: 5<br>TÍTULO: SobrevivendoNoInferno<br>ARTISTA: RacionaisMC's<br>FAIXAS: 13<br>DURAÇÃO: 01:10:27<br>DATA: 27/10/1997<br>CÓPIAS DISPONÍVEIS: 1<br>CÓPIAS RESERVADAS: 0<br>----------<br>ITEM: CD<br>ID: 6<br>TÍTULO: Reanimation<br>ARTISTA: LinkinPark<br>FAIXAS: 11<br>DURAÇÃO: 01:03:09<br>DATA: 30/07/2002<br>CÓPIAS DISPONÍVEIS: 1<br>CÓPIAS RESERVADAS: 0<br>----------<br>Nenhuma cópia do item 3 está emprestada o.O<br>Fim da execução<br>Livro 0 diz: Leia-me amanhã!<br>Item 0 liberado da memória!<br>Livro 1 diz: Leia-me amanhã!<br>Item 1 liberado da memória!<br>Livro 2 diz: Leia-me amanhã!<br>Item 2 liberado da memória!<br>Revista 3 diz: Leia-me amanhã!<br>Item 3 liberado da memória!<br>Jornal 4 diz: Leia-me amanhã!<br>Item 4 liberado da memória!<br>CD 5 diz: Ouça-me amanhã!<br>Item 5 liberado da memória!<br>CD 6 diz: Ouça-me amanhã!<br>Item 6 liberado da memória!<br>Bye!<br></p>
+<h1 id="links-não-tão-inúteis">Links não tão inúteis</h1>
+<ol type="1">
+    <li><a href="https://pt.wikipedia.org/wiki/Biblioteca_de_Alexandria" target="_blank">https://pt.wikipedia.org/wiki/Biblioteca_de_Alexandria</a></li>
+    <li><a href="https://cplusplus.com/reference/utility/pair/pair/" target="_blank">https://cplusplus.com/reference/utility/pair/pair/</a></li>
+    <li><a href="https://pt.wikipedia.org/wiki/Sobrecarga_de_fun%C3%A7%C3%A3o" target="_blank">https://pt.wikipedia.org/wiki/Sobrecarga_de_fun%C3%A7%C3%A3o</a></li>
+    <li><a href="https://terminalroot.com.br/2021/06/o-que-significa-override-em-cpp.html" target="_blank">https://terminalroot.com.br/2021/06/o-que-significa-override-em-cpp.html</a></li>
+    <li><a href="https://stackoverflow.com/questions/13340891/how-can-i-use-setfill-properly-in-c" target="_blank">https://stackoverflow.com/questions/13340891/how-can-i-use-setfill-properly-in-c</a></li>
+    <li><a href="https://www.youtube.com/watch?v=TjnE1gV42Jw" target="_blank">https://www.youtube.com/watch?v=TjnE1gV42Jw</a><br></li>
+</ol>

@@ -1,0 +1,107 @@
+<br>
+<p>Esse VPL depende das implementações feitas no VPL ‘Rinha de Pokémon’.
+    Se você não as fez, seja um(a) bom(boa) garoto(a) e volte lá para
+    fazê-las.</p>
+<h1 id="tarefa">Tarefa</h1>
+<p>O objetivo deste VPL é trabalhar conceitos relacionados ao
+    desenvolvimento e utilização de exceções personalizadas em C++.</p>
+<p>Em geral, a melhor maneira de testar um sistema é disponibilizando-o
+    para alguns usuários, pois estes vão tentar fazer com o seu sistema coisas
+    que você nem imaginaria e que ocasionalmente vão quebrar o seu programa
+    :’)</p>
+<p>Pensando nisso, como um entusiasta dos sistemas inquebráveis e
+    resilientes a trollagens, sua tarefa é implementar exceções
+    personalizadas que lidem com os diversos erros que podem ocorrer durante
+    a rinha (novamente, as lícitas).</p>
+<figure>
+    <img src="img/antitroll.jpg" alt="" width="300" height="335" role="presentation" class="img-fluid atto_image_button_text-bottom"><br>
+</figure>
+<h2 id="o-que-você-deve-implementar">O que você deve implementar</h2>
+<h3 id="rinhaexcept.hpp">rinhaExcept.{hpp, cpp}<br></h3>
+<p>No VPL, há dois arquivos vazios chamados <em>rinhaExcept.{hpp,
+        cpp}</em>. Você deve fazer a declaração e implementação de suas exceções
+    personalizadas nestes arquivos.</p>
+<p>Os casos de exceção que devem ser tratados são os seguintes:&nbsp;</p>1. Tentativa de adicionar um treinador com nome repetido<br>&nbsp;&nbsp; - Deve implementar o método <strong>what() </strong>que retorna a mensagem "Treinador NOME já existe (-_-)"<br>2. Tentativa de adicionar um Pokémon com nome repetido a um mesmo treinador<br>&nbsp;&nbsp; - Deve implementar o método <strong>what()</strong> que retorna a mensagem "Pokémon NOME_POKEMON já pertence ao treinador NOME_TREINADOR (-_-)"<br>3. Tentativa de usar um Pokémon que não está no time de um determinado treinador<br>&nbsp;&nbsp; - Deve implementar o método <strong>what()</strong> que retorna a mensagem "Pokémon NOME_POKEMON não encontrado no time do treinador NOME_TREINADOR o.O"<br>4. Tentativa de usar um treinador que não está na rinha<br>&nbsp;&nbsp; - Deve implementar o método <strong>what()</strong> que retornar a mensagem "Treinador NOME não encontrado o.O"<br>5. Poder do ataque não pode ser negativo<br>&nbsp;&nbsp; - Deve implementar o método <strong>what()</strong> que retorna a mensagem "Poder do ataque não pode ser negativo '-' "<br>6. Potência do ataque não pode ser negativa<br>&nbsp;&nbsp; - Deve implementar o método <strong>what()</strong> que retorna a mensagem "Potência do ataque não pode ser negativa '-' "<br><br>
+<h3 id="onde-você-deve-lançar-exceções">Onde você deve lançar
+    exceções</h3>
+<p>O melhor local para lançar exceções depende fortemente da arquitetura
+    do seu programa. Você deve decidir qual o local mais apropriado para
+    lançar suas exceções. No entanto, tente achar pelo menos um caso de
+    lançamento de cada uma das 6 exceções citadas acima.</p>
+<p>OBS.: As exceções deve ser lançadas a partir das funções de suas classes. Caso tenha passado pela sua cabeça, você não deve lançar as exceções no seu main O.O<br></p>
+<h3 id="onde-devo-capturar-e-tratar-as-exceções">Onde devo capturar e
+    tratar as exceções ?</h3>
+<p>Para facilitar a correção deste pobre monitor, você deve tratar todas
+    as exceções que forem lançadas no <strong>main</strong> do seu programa.</p>
+<h3 id="freedom">Freedom</h3>
+<p>Como ainda vivemos em um país livre, você pode adicionar novos
+    atributos às classes, ou implementar outros métodos ou classes que achar
+    necessário para a sua solução.</p>
+<h3 id="main">Main</h3>
+<p>O main deve tratar as mesmas entradas do VPL ‘Rinha de Pokémon’, mas
+    você deve alterá-lo para capturar as exceções que são lançadas pelo seu
+    programa.</p>
+<h1 id="regras-do-jogo">Regras do jogo</h1>
+<ol type="1">
+    <li>Todos os atributos de todas as classes devem ser encapsulados e
+        acessados somente através de métodos Get e Set.</li>
+    <li>Você deve lançar cada uma das seis exceções citadas pelo menos uma
+        vez.</li>
+    <li>Respeita o formato das mensagens que são impressas. O moodle
+        verifica se seu programa funciona corretamente comparando a sua saída
+        com a esperada para cada caso de teste. Se houver alguma coisa fora de
+        lugar, os testes vão falhar.</li>
+</ol>
+<h1 id="exemplos-de-entrada-e-saída">Exemplos de entrada e saída</h1>
+<h2 id="exemplo-1">Exemplo 1</h2>
+<p><strong>input</strong><br>
+    t Ash<br>
+    t Xerosic<br>
+    t Xerosic<br>
+    i Xerosic<br>
+    i Trolei<br>
+    e Ash Pikachu 42 0.7<br>
+    x Xerosic Cheirosinho 33 0.99<br>
+    x Xerosic Cheirosinho 33 0.99<br>
+    x Xerosic Cheirosin -33 0.99<br>
+    r Ash Pikachu Xerosic Cheirosin<br>
+    r Ash Pikachu Xerosic Cheirosinho<br>
+    r Ash Pikachu Xerosic Cheirosin<br>
+    q</p>
+<p><strong>output</strong><br>
+    Treinador Xerosic já existe (-_-)<br>
+    Treinador: Xerosic<br>----------<br>
+    Nenhum pokémon encontrado :(<br>----------<br>
+    Treinador Trolei não encontrado o.O<br>
+    Pokémon Cheirosinho já existe no time do treinador Xerosic (-_-)<br>
+    Poder do ataque não pode ser negativo ‘-’<br>
+    Pokémon Cheirosin não encontrado no time do treinador Xerosic o.O<br>
+    ### RINHA ###<br>
+    Ash (Pikachu) vs.&nbsp;Xerosic (Cheirosinho)<br>
+    Pokémon: Pikachu<br>
+    Tipo de ataque: Elétrico! Bzzzz!<br>
+    Potência do ataque: 0.7<br>
+    HP: 100<br>
+    Dano: 29.4<br>
+    Pokémon: Cheirosinho<br>
+    Tipo de ataque: Explosivo! Booom!<br>
+    Potência do ataque: 0.99<br>
+    HP: 70.6<br>
+    #############<br>
+    Pokémon Cheirosin não encontrado no time do treinador Xerosic o.O<br>
+    Fim da execução<br>
+    Classe derivada : Pokémon elétrico Pikachu diz: Adeus!<br>
+    Classe base : Pokémon Pikachu foi destruído!<br>
+    Treinador Ash foi destruído!<br>
+    Classe derivada : Pokémon explosivo Cheirosinho diz: Adeus!<br>
+    Classe base : Pokémon Cheirosinho foi destruído!<br>
+    Treinador Xerosic foi destruído!<br>
+    Rinha destruída pela Polícia Federal!</p>
+<h1 id="links-não-tão-inúteis">Links não tão inúteis</h1>
+<ol type="1">
+    <li><a href="https://cplusplus.com/doc/tutorial/exceptions/" target="_blank">https://cplusplus.com/doc/tutorial/exceptions/</a></li>
+    <li><a href="https://www.geeksforgeeks.org/exception-handling-c/" target="_blank">https://www.geeksforgeeks.org/exception-handling-c/</a><br></li>
+    <li><a href="https://github.com/luk3rr/PERSONAL_FINANCE/blob/main/include/CartaoDeCreditoExcp.hpp" target="_blank">Exemplo
+            de como implementar exceções customizadas em C++</a></li>
+    <li><a href="https://www.tutorialspoint.com/cplusplus/cpp_exceptions_handling.htm" target="_blank">https://www.tutorialspoint.com/cplusplus/cpp_exceptions_handling.htm</a><br></li>
+</ol>

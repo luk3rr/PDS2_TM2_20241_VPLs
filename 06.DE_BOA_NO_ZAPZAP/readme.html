@@ -1,0 +1,523 @@
+<br>
+<p>A Rondolândia é uma nação idílica, governada por uma dinastia de
+    capivaras fundada por Bacon - The Great, há várias gerações.</p>
+<p>Em um certo momento passado, as capivaras perceberam que ideia do
+    labor é uma furada, e decidiram criar a filosofia do ZapZap, que advoga
+    pela manutenção da tranquilidade e que essa tranquilidade só pode ser
+    alcançada fortalecendo as relações sociais. Assim, Torresmo IV, soberano
+    da Rondolândia, teve a brilhante ideia de criar uma rede social chamada
+    ZapZap, onde seus súditos pudessem praticar a filosofia do ZapZap sem
+    sair de casa, o que aumentaria a paz no reino e permitiria Torresmo IV
+    espionar todos os súditos do reino, prevenindo possíveis rebeliões e
+    garantindo a permanência da dinastia por mais várias gerações. Uma ideia
+    genial, não é mesmo ?!</p>
+<p><img src="img/capivara.png" alt="Dia da Capivara: por que espécie some da Lagoa da Pampulha? | Minas Gerais  | G1" width="400" height="225" role="presentation" class="img-fluid atto_image_button_text-bottom"></p>
+<p>De boa na Lagoa da Pampulha (&nbsp; ‾ʖ̫‾)<br></p>
+<h1 id="tarefa">Tarefa</h1>
+<p>O objetivo deste VPL é trabalhar conceitos relacionados ao emprego de
+    smart pointers em C++ (homens de verdade usam <em>new</em> e <em>delete</em>, mas okay,
+    vocês precisam aprender isso ¯\<em>(ツ)</em>/¯).</p>
+<p>Como um entusiasta dos sistemas de espionagem, sua tarefa é ajudar
+    Torresmo no desenvolvimento de sua rede social.</p>
+<p>Para que Torresmo fique satisfeito, a rede social deve permitir que
+    as pessoas criem conexões, enviem mensagens pessoais para uma conexão e
+    postem mensagens para todas as conexões. Não menos importante, Torresmo
+    precisa saber de todas as fofocas que são trocadas no reino.</p>
+<h2 id="o-que-você-deve-implementar">O que você deve implementar</h2>
+<h3 id="class-soberano">class Soberano</h3>
+<h4 id="atributos">Atributos</h4>
+<ul>
+    <li>
+        <p><strong>std::string m_nome</strong>: Nome do soberano</p>
+    </li>
+    <li>
+        <p><strong>std::vector&lt;std::shared_ptr<mensagem>&gt;
+                    m_mensagens</mensagem></strong>: Vetor que armazena todas as mensagens trocadas no
+            reino</p>
+    </li>
+</ul>
+<h4 id="métodos">Métodos</h4>
+<ul>
+    <li>
+        <p><strong>Soberano(std::string nome)</strong>: Construtor que
+            inicializa o nome do soberano</p>
+        <ul>
+            <li>Devo imprimir a mensagem “Soberano &lt;NOME&gt; agora está farejando
+                todas as mensagens do reino!”</li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>void RegistrarMensagem(std::shared_ptr<mensagem>
+                    mensagem)</mensagem></strong>: Método para registrar uma nova mensagem no vetor de
+            mensagens</p>
+    </li>
+    <li>
+        <p><strong>void ExibirMensagens() const</strong>: Método para exibir
+            todas as mensagens captadas pelo soberano.</p>
+        <ul>
+            <li>Caso ele já tenha captado ao menos uma mensagem:
+                <ul>
+                    <li>Soberano: &lt;NOME&gt;</li>
+                    <li>----------<br></li>
+                    <li>Remetente: &lt;NOME_REMETENTE&gt;</li>
+                    <li>Destinatário: &lt;NOME_DESTINATARIO&gt;</li>
+                    <li>Conteúdo: &lt;CONTEUDO_MENSAGEM&gt;</li>
+                    <li>----------</li>
+                    <li>ETC</li>
+                    <li>----------</li>
+                </ul>
+            </li>
+            <li>Caso contrário
+                <ul>
+                    <li>Soberano: &lt;NOME&gt;</li>
+                    <li>----------</li>
+                    <li>Nenhuma mensagem encontrada.</li>
+                    <li>----------</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3 id="class-sudito">class Sudito</h3>
+<h4 id="atributos-1">Atributos</h4>
+<ul>
+    <li>
+        <p><strong>std::string m_nome</strong>: Nome do súdito</p>
+    </li>
+    <li>
+        <p><strong>std::vector&lt;std::shared_ptr<sudito>&gt;
+                    m_conexoes</sudito></strong>: Vetor de smart pointers para armazenar as conexões
+            do súdito</p>
+    </li>
+    <li>
+        <p><strong>std::vector&lt;std::shared_ptr<mensagem>&gt;
+                    m_mensagensRecebidas</mensagem></strong>: Vetor de smart pointers para armazenar
+            mensagens recebidas</p>
+    </li>
+    <li>
+        <p><strong>std::vector&lt;std::shared_ptr<mensagem>&gt;
+                    m_mensagensEnviadas</mensagem></strong>: Vetor de smart pointers para armazenar
+            mensagens enviadas</p>
+    </li>
+</ul>
+<h4 id="métodos-1">Métodos</h4>
+<ul>
+    <li>
+        <p><strong>Suditos(std::string nome)</strong>: Construtor que
+            inicializa o nome do súdito</p>
+    </li>
+    <li>
+        <p><strong>void AdicionarConexao(std::shared_ptr<sudito>
+                    novaConexao)</sudito></strong>: Método para adicionar uma nova conexão</p>
+        <ul>
+            <li>Deve imprimir a mensagem “Súdito &lt;NOME&gt; adicionou
+                &lt;NOME_NOVA_CONEXAO&gt; como conexão!”</li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>void EnviarMensagem(std::shared_ptr<mensagem> msg,
+                    std::shared_ptr<sudito> destinatario)</sudito>
+                </mensagem></strong>: Método para enviar uma
+            mensagem pessoal para outra conexão</p>
+        <ul>
+            <li>Se o destinatário não for conexão do Súdito atual, então imprima
+                “Súdito &lt;NOME&gt; não pode enviar mensagem para
+                &lt;NOME_DESTINATARIO&gt;” pois não são conexões!” e finalize a
+                função.</li>
+            <li>Caso contrário, deve imprimir “Súdito &lt;NOME&gt; enviando nova
+                mensagem para &lt;NOME_DESTINATARIO&gt;<nome_destinatario>” e enviar a mensagem.</nome_destinatario>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>void PostarMensagem(std::shared_ptr<mensagem>
+                    msg)</mensagem></strong>: Método para postar uma mensagem para todas as
+            conexões</p>
+        <ul>
+            <li>Deve imprimir “Súdito &lt;NOME&gt; postou uma nova mensagem!” e
+                implementar toda a lógica de distribuir as mensagens entre as
+                conexões</li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>void ReceberMensagem(std::shared_ptr<mensagem>
+                    msg)</mensagem></strong>: Método para receber uma mensagem</p>
+        <ul>
+            <li>Deve imprimir “Súdito &lt;NOME&gt; recebeu uma nova mensagem de
+                &lt;NOME_REMETENTE”</li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>void ExibirMensagensEnviadas()</strong>: Método para
+            imprimir todas as mensagens enviadas pelo súdito</p>
+        <ul>
+            <li>Se nenhuma mensagem foi enviada, imprima no seguinte formato:
+                <ul>
+                    <li>----------</li>
+                    <li>Nenhuma mensagem enviada por &lt;NOME&gt;</li>
+                    <li>----------</li>
+                </ul>
+            </li>
+            <li>Caso contrário, imprima:
+                <ul>
+                    <li>----------</li>
+                    <li>Mensagens enviadas por &lt;NOME&gt;:</li>
+                    <li>----------</li>
+                    <li>Destinatário: &lt;NOME_DESTINATARIO&gt;</li>
+                    <li>Conteúdo: &lt;CONTEUDO_MSG&gt;</li>
+                    <li>----------</li>
+                    <li>etc etc</li>
+                    <li>----------</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>void ExibirMensagensRecebidas()</strong>: Método para
+            imprimir todas as mensagens recebidas pelo súdito</p>
+        <ul>
+            <li>Se nenhuma mensagem foi recebida, imprima no seguinte formato:
+                <ul>
+                    <li>----------</li>
+                    <li>Nenhuma mensagem recebida por &lt;NOME&gt;</li>
+                    <li>----------</li>
+                </ul>
+            </li>
+            <li>Caso contrário, imprima:
+                <ul>
+                    <li>----------</li>
+                    <li>Mensagens recebidas por &lt;NOME&gt;:</li>
+                    <li>----------</li>
+                    <li>Remetente: &lt;NOME_REMETENTE&gt;</li>
+                    <li>Conteúdo: &lt;CONTEUDO_MSG&gt;</li>
+                    <li>----------</li>
+                    <li>etc etc</li>
+                    <li>----------</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3 id="class-mensagem">class Mensagem</h3>
+<h4 id="atributos-2">Atributos</h4>
+<ul>
+    <li>
+        <p><strong>std::string m_conteudo</strong>: Conteúdo da
+            mensagem</p>
+    </li>
+    <li>
+        <p><strong>std::string m_destinatario</strong>: Nome do destinatário
+            (acho que talvez aqui possa ser smart pointer, mas não lembro o motivo
+            de ter colocado string ‘-’ )</p>
+    </li>
+    <li>
+        <p><strong>std::shared_ptr<sudito> m_remetente</sudito></strong>: Smart
+            pointer para o remetente da mensagem</p>
+    </li>
+</ul>
+<h4 id="métodos-2">Métodos</h4>
+<ul>
+    <li>
+        <p><strong>Mensagem(std::string conteudo, std::shared_ptr<sudito>
+                    remetente, std::string destinatario)</sudito></strong>: Construtor que inicializa
+            o conteúdo da mensagem, o remetente e o destinatário</p>
+    </li>
+    <li>
+        <p>Os métodos Gets e Sets que forem necessários</p>
+    </li>
+</ul>
+<h3 id="class-zapzap">class ZapZap</h3>
+<p>Essa classe é a responsável por representar a nossa rede social,
+    gerenciando todas as demais classes.</p>
+<h4 id="atributos-3">Atributos</h4>
+<ul>
+    <li>
+        <p><strong>Soberano m_soberano</strong>: Instância do soberano que
+            armazena todas as mensagens trocadas no reino</p>
+    </li>
+    <li>
+        <p><strong>std::unordered_map&lt;std::string,
+                std::shared_ptr<sudito>&gt; m_suditos</sudito></strong>: Map que armazena os
+            súditos cadastrados na rede social</p>
+        <ul>
+            <li>Você também pode utilizar vector, mas por motivos que não entram no
+                escopo da disciplina de PDS2, a busca é mais rápida utilizando
+                estruturas de dados do tipo <strong>map</strong> do que do tipo
+                <strong>vector</strong>. Na seção <em>links não tão inúteis</em> (eles são
+                inúteis se você não os abrir e ver o conteúdo), deixei algumas
+                referências sobre o <strong>map</strong>, caso você queira aprender algo
+                a mais. Algoritmos e estruturas de dados são a parte mais legal da
+                computação, então divirta-se!
+            </li>
+        </ul>
+    </li>
+</ul>
+<h4 id="métodos-3">Métodos</h4>
+<ul>
+    <li>
+        <p><strong>void CadastrarSudito(const std::string&amp;
+                nome)</strong>: Cadastra um novo súdito</p>
+    </li>
+    <li>
+        <p><strong>void CriarConexao(const std::string&amp; nome1, const
+                std::string&amp; nome2)</strong>: Cria uma conexão entre dois
+            súditos</p>
+    </li>
+    <li>
+        <p><strong>void EnviarMensagem(const std::string&amp; nome1, const
+                std::string&amp; nome2, const std::string&amp; conteudo)</strong>: Envia
+            uma mensagem pessoal de um súdito para outro. Nesse caso, nome1 envia
+            para nome2</p>
+    </li>
+    <li>
+        <p><strong>void PostarMensagem(const std::string&amp; nome, const
+                std::string&amp; conteudo)</strong>: Posta uma mensagem para todas as
+            conexões de um súdito. O nome do destinatário desse post deve ser
+            “Conexões”.</p>
+    </li>
+    <li>
+        <p><strong>void ImprimirTodasMensagens() const</strong>: Imprime
+            todas as mensagens capturadas pelo soberano</p>
+    </li>
+    <li>
+        <p><strong>void ImprimirMensagensEnviadas(const std::string&amp;
+                nome) const</strong>: Imprime todas as mensagens enviadas por um
+            súdito</p>
+    </li>
+    <li>
+        <p><strong>void ImprimirMensagensRecebidas(const std::string&amp;
+                nome) const</strong>: Imprime todas as mensagens recebidas por um
+            súdito</p>
+    </li>
+</ul>
+<p>OBS.: Para que a saída dos métodos de impressão sejam condizentes com
+    a saída para os casos de teste, imprima as informações na ordem que elas
+    foram inseridas no vector.</p>
+<h3 id="dependência-circular">Dependência circular</h3>
+<p>Se você ainda não se deparou com erros de dependência circular,
+    provavelmente vai ter que lidar com isso nessa atividade.</p>
+<p>Esse erro ocorre quando você tem dois arquivos que se incluem
+    mutuamente. Por exemplo, suponho que você tenha o arquivo <em>a.hpp</em>
+    e o arquivo <em>b.hpp</em>. O erro de dependência circular ocorre se
+    você incluir <em>a.hpp</em> em <em>b.hpp</em> e também incluir
+    <em>b.hpp</em> em <em>a.hpp</em>. Isso deixa o compilador literalmente
+    doidão e ele não vai conseguir compilar seu código.
+</p>
+<p>Existem várias formas de lidar com erros de dependência circular, e
+    todas sempre me pareceram gambiarras. Caso você se depare com
+    esse empecilho, os links 5, 6 e 7 podem te ajudar.</p>
+<h3 id="freedom">Freedom</h3>
+<p>Como ainda vivemos em um país livre, você pode adicionar novos
+    atributos às classes, ou implementar outros métodos ou classes que achar
+    necessário para a sua solução. Além disso, você não precisa seguir a
+    nomenclatura de atributos, métodos e classes utilizada. Você poderia,
+    por exemplo, colocar tudo em inglês, mas o seu programa deve implementar
+    a lógica e comportamento solicitados.</p>
+<h3 id="main">Main</h3>
+<p>Antes da execução o seu programa já deve instânciar um Soberano com o
+    nome “Torresmo IV”.</p>
+<ul>
+    <li>
+        <p>‘s nome’: comando para cadastrar um súdito</p>
+    </li>
+    <li>
+        <p>‘c nome1 nome2’: comando para criar uma conexão entre dois
+            súditos</p>
+    </li>
+    <li>
+        <p>‘m nome1 nome2 conteudo’: comando para enviar uma mensagem
+            pessoal de nome1 para nome2</p>
+    </li>
+    <li>
+        <p>‘p nome conteudo’: comando para postar uma mensagem de nome para
+            todas as suas conexões</p>
+    </li>
+    <li>
+        <p>‘i r nome’: comando para imprimir as mensagens recebidas por um
+            súdito</p>
+    </li>
+    <li>
+        <p>‘i e nome’: comando para imprimir as mensagens enviadas por um
+            súdito</p>
+    </li>
+    <li>
+        <p>‘a’: comando para imprimir todas as mensagens registradas pelo
+            soberano</p>
+    </li>
+    <li>
+        <p>‘q’: comando para finalizar o programa</p>
+    </li>
+</ul>
+<p>Você pode assumir que <strong>não</strong> ocorre de dois súditos
+    terem o mesmo nome e que todos os nomes são válidos, ou seja, não vou
+    tentar trollar o seu programa. Além disso, nos casos de teste sempre
+    haverá um, e somente um, soberano.</p>
+<p>A última mensagem impressa pelo seu programa deve ser “E as capivaras
+    viveram felizes para sempre…”</p>
+<h1 id="regras-do-jogo">Regras do jogo</h1>
+<ol type="1">
+    <li>Todos os atributos de todas as classes devem ser encapsulados e
+        acessados somente através de métodos Get e Set. Se você perceber que
+        algum método Get ou Set não é utilizado pelo seu programa, então você
+        não precisa implementá-lo.</li>
+    <li>Respeita o formato das mensagens que são impressas. O moodle
+        verifica se seu programa funciona corretamente comparando a sua saída
+        com a esperada para cada caso de teste. Se houver alguma coisa fora de
+        lugar, os testes vão falhar.</li>
+    <li>Separe cada especificação (hpp) de sua respectiva implementação
+        (cpp). Não implemente tudo em um único arquivo. Seja organizado.</li>
+</ol>
+<h1 id="exemplos-de-entrada-e-saída">Exemplos de entrada e saída</h1>
+<h2 id="exemplo-1">Exemplo 1</h2>
+<p><strong>input</strong><br>
+    s Capivarinhas<br>
+    s CapyMcCapyface<br>
+    s SrPelos<br>
+    s DonaCapivara<br>
+    s BigCapy<br>
+    s CapitãoCapivara<br>
+    s CapyGato<br>
+    c Capivarinhas CapyMcCapyface<br>
+    c Capivarinhas SrPelos<br>
+    c CapyMcCapyface DonaCapivara<br>
+    c SrPelos BigCapy<br>
+    c DonaCapivara CapitãoCapivara<br>
+    c BigCapy CapyGato<br>
+    m Capivarinhas CapyMcCapyface E aí, CapyMcCapyface! Vamos dar um rolê na
+    lagoa?<br>
+    m CapyMcCapyface DonaCapivara Alô, DonaCapivara! Tem pão de queijo
+    aí?<br>
+    m SrPelos BigCapy CapyPower! Vamos dominar o mundo?<br>
+    m DonaCapivara CapitãoCapivara Capitão, meu Capitão! Preparado para a
+    missão?<br>
+    m BigCapy CapyGato CapyGato, para de roubar minhas cenouras!<br>
+    p Capivarinhas Hora de relaxar na sombra!<br>
+    p SrPelos Alguém viu minha boia de patinho?<br>
+    p DonaCapivara Festa na lagoa hoje à noite!<br>
+    p CapitãoCapivara De boa na lagoa rsrs!<br>
+    i r CapyMcCapyface<br>
+    i r BigCapy<br>
+    i e Capivarinhas<br>
+    i e SrPelos<br>
+    a<br>
+    q</p>
+<p><strong>output</strong><br>
+    Soberano Torresmo IV agora está farejando todas as mensagens do
+    reino!<br>
+    Súdito Capivarinhas adicionou CapyMcCapyface como conexão!<br>
+    Súdito CapyMcCapyface adicionou Capivarinhas como conexão!<br>
+    Súdito Capivarinhas adicionou SrPelos como conexão!<br>
+    Súdito SrPelos adicionou Capivarinhas como conexão!<br>
+    Súdito CapyMcCapyface adicionou DonaCapivara como conexão!<br>
+    Súdito DonaCapivara adicionou CapyMcCapyface como conexão!<br>
+    Súdito SrPelos adicionou BigCapy como conexão!<br>
+    Súdito BigCapy adicionou SrPelos como conexão!<br>
+    Súdito DonaCapivara adicionou CapitãoCapivara como conexão!<br>
+    Súdito CapitãoCapivara adicionou DonaCapivara como conexão!<br>
+    Súdito BigCapy adicionou CapyGato como conexão!<br>
+    Súdito CapyGato adicionou BigCapy como conexão!<br>
+    Súdito Capivarinhas enviando nova mensagem para CapyMcCapyface<br>
+    Súdito CapyMcCapyface recebeu uma nova mensagem de Capivarinhas<br>
+    Súdito CapyMcCapyface enviando nova mensagem para DonaCapivara<br>
+    Súdito DonaCapivara recebeu uma nova mensagem de CapyMcCapyface<br>
+    Súdito SrPelos enviando nova mensagem para BigCapy<br>
+    Súdito BigCapy recebeu uma nova mensagem de SrPelos<br>
+    Súdito DonaCapivara enviando nova mensagem para CapitãoCapivara<br>
+    Súdito CapitãoCapivara recebeu uma nova mensagem de DonaCapivara<br>
+    Súdito BigCapy enviando nova mensagem para CapyGato<br>
+    Súdito CapyGato recebeu uma nova mensagem de BigCapy<br>
+    Súdito Capivarinhas postou uma nova mensagem!<br>
+    Súdito CapyMcCapyface recebeu uma nova mensagem de Capivarinhas<br>
+    Súdito SrPelos recebeu uma nova mensagem de Capivarinhas<br>
+    Súdito SrPelos postou uma nova mensagem!<br>
+    Súdito Capivarinhas recebeu uma nova mensagem de SrPelos<br>
+    Súdito BigCapy recebeu uma nova mensagem de SrPelos<br>
+    Súdito DonaCapivara postou uma nova mensagem!<br>
+    Súdito CapyMcCapyface recebeu uma nova mensagem de DonaCapivara<br>
+    Súdito CapitãoCapivara recebeu uma nova mensagem de DonaCapivara<br>
+    Súdito CapitãoCapivara postou uma nova mensagem!<br>
+    Súdito DonaCapivara recebeu uma nova mensagem de CapitãoCapivara<br>
+    ----------<br>
+    Mensagens recebidas por CapyMcCapyface:<br>
+    ----------<br>
+    Remetente: Capivarinhas<br>
+    Conteúdo: E aí, CapyMcCapyface! Vamos dar um rolê na lagoa?<br>
+    ----------<br>
+    Remetente: Capivarinhas<br>
+    Conteúdo: Hora de relaxar na sombra!<br>
+    ----------<br>
+    Remetente: DonaCapivara<br>
+    Conteúdo: Festa na lagoa hoje à noite!<br>
+    ----------<br>
+    ----------<br>
+    Mensagens recebidas por BigCapy:<br>
+    ----------<br>
+    Remetente: SrPelos<br>
+    Conteúdo: CapyPower! Vamos dominar o mundo?<br>
+    ----------<br>
+    Remetente: SrPelos<br>
+    Conteúdo: Alguém viu minha boia de patinho?<br>
+    ----------<br>
+    ----------<br>
+    Mensagens enviadas por Capivarinhas:<br>
+    ----------<br>
+    Destinatário: CapyMcCapyface<br>
+    Conteúdo: E aí, CapyMcCapyface! Vamos dar um rolê na lagoa?<br>
+    ----------<br>
+    ----------<br>
+    Mensagens enviadas por SrPelos:<br>
+    ----------<br>
+    Destinatário: BigCapy<br>
+    Conteúdo: CapyPower! Vamos dominar o mundo?<br>
+    ----------<br>
+    Soberano: Torresmo IV<br>
+    ----------<br>
+    Remetente: Capivarinhas<br>
+    Destinatário: CapyMcCapyface<br>
+    Conteúdo: E aí, CapyMcCapyface! Vamos dar um rolê na lagoa?<br>
+    ----------<br>
+    Remetente: CapyMcCapyface<br>
+    Destinatário: DonaCapivara<br>
+    Conteúdo: Alô, DonaCapivara! Tem pão de queijo aí?<br>
+    ----------<br>
+    Remetente: SrPelos<br>
+    Destinatário: BigCapy<br>
+    Conteúdo: CapyPower! Vamos dominar o mundo?<br>
+    ----------<br>
+    Remetente: DonaCapivara<br>
+    Destinatário: CapitãoCapivara<br>
+    Conteúdo: Capitão, meu Capitão! Preparado para a missão?<br>
+    ----------<br>
+    Remetente: BigCapy<br>
+    Destinatário: CapyGato<br>
+    Conteúdo: CapyGato, para de roubar minhas cenouras!<br>
+    ----------<br>
+    Remetente: Capivarinhas<br>
+    Destinatário: Conexões<br>
+    Conteúdo: Hora de relaxar na sombra!<br>
+    ----------<br>
+    Remetente: SrPelos<br>
+    Destinatário: Conexões<br>
+    Conteúdo: Alguém viu minha boia de patinho?<br>
+    ----------<br>
+    Remetente: DonaCapivara<br>
+    Destinatário: Conexões<br>
+    Conteúdo: Festa na lagoa hoje à noite!<br>
+    ----------<br>
+    Remetente: CapitãoCapivara<br>
+    Destinatário: Conexões<br>
+    Conteúdo: De boa na lagoa rsrs!<br>
+    ----------<br>
+    E as capivaras viveram felizes para sempre…</p>
+<h1 id="links-não-tão-inúteis">Links não tão inúteis</h1>
+<ol type="1">
+    <li><a href="https://stackoverflow.com/questions/2572678/c-stl-map-vs-vector-speed" target="_blank">https://stackoverflow.com/questions/2572678/c-stl-map-vs-vector-speed</a></li>
+    <li><a href="https://www.youtube.com/watch?v=K_v_EIIZlp4" target="_blank">https://www.youtube.com/watch?v=K_v_EIIZlp4</a></li>
+    <li><a href="https://www.youtube.com/watch?v=7mwgA9XFIEQ" target="_blank">https://www.youtube.com/watch?v=7mwgA9XFIEQ</a></li>
+    <li><a href="https://www.youtube.com/watch?v=FsfRsGFHuv4" target="_blank">https://www.youtube.com/watch?v=FsfRsGFHuv4</a></li>
+    <li><a href="https://stackoverflow.com/questions/625799/resolve-build-errors-due-to-circular-dependency-amongst-classes" target="_blank">https://stackoverflow.com/questions/625799/resolve-build-errors-due-to-circular-dependency-amongst-classes</a></li>
+    <li><a href="https://pvigier.github.io/2018/02/09/dependency-graph.html" target="_blank">https://pvigier.github.io/2018/02/09/dependency-graph.html</a></li>
+    <li><a href="https://stackoverflow.com/questions/4757565/what-are-forward-declarations-in-c" target="_blank">https://stackoverflow.com/questions/4757565/what-are-forward-declarations-in-c</a></li>
+    <li><a href="https://www.geeksforgeeks.org/smart-pointers-cpp/" target="_blank">https://www.geeksforgeeks.org/smart-pointers-cpp/</a></li>
+    <li><a href="https://medium.com/@victorgsampaio/entendendo-c-smart-pointers-d0ca51a87886" target="_blank">https://medium.com/@victorgsampaio/entendendo-c-smart-pointers-d0ca51a87886</a><br></li>
+</ol>

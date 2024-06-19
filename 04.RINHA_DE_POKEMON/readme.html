@@ -1,0 +1,540 @@
+<br>
+<p>Segundo a legislação brasileira, é crime realizar ou promover “brigas
+    de galo” ou quaisquer outras lutas entre animais. No entanto, no mundo
+    de Pokémon aparentemente ainda não há legislações que garantam os
+    direitos dos monstros (Pokémon vem de <strong>Poke</strong>tto
+    <strong>Mon</strong>sutā, que é Pocket Monster em inglês). Além disso,
+    pelo que eu entendi, monstros não são animais, então é lícito realizar
+    rinhas de Pokémons em território brasileiro.
+</p>
+<h1 id="tarefa">Tarefa</h1>
+<p>O objetivo deste VPL é trabalhar conceitos relacionados ao
+    desenvolvimento de classes em C++, especificamente encapsulamento,
+    herança, composição e o temido polimorfismo.</p>
+<p>Como um entusiasta das rinhas (lícitas), sua tarefa é implementar um
+    campeonato de batalhas de Pokémons, onde diferentes treinadores podem se
+    desafiar.</p>
+<p>OBS.: Se o objetivo fosse ficar milionário, poderíamos incluir e
+    gerenciar um sistema de apostas. No entanto, como o objetivo é apenas
+    aprender C++ e POO, não teremos um sistema de apostas.</p>
+<h2 id="o-que-você-deve-implementar">O que você deve implementar</h2>
+<h3 id="class-pokemon">class Pokemon</h3>
+<p>Classe base que representa um Pokémon genérico.</p>
+<h4 id="atributos">Atributos</h4>
+<ol type="1">
+    <li>
+        <p><strong>m_name</strong>, <strong>m_attackType</strong> do tipo
+            string, que armazena o nome do Pokémon e o tipo do ataque que ele faz
+            (elétrico, aquático, explosivo etc);</p>
+    </li>
+    <li>
+        <p><strong>m_hp</strong> do tipo double, que indica a vida atual do
+            Pokémon; O HP é definido inicialmente como 100 para todos os
+            Pokémons.</p>
+    </li>
+    <li>
+        <p><strong>m_attackStrength</strong> do tipo double no intervalo
+            [0,1], que indica a potência do ataque do Pokémon.</p>
+    </li>
+</ol>
+<h4 id="métodos">Métodos</h4>
+<ol type="1">
+    <li>
+        <p><strong>Pokemon(string name, string attackType, double
+                m_attackStrength):</strong> Método construtor para a inicialização dos
+            atributos;</p>
+    </li>
+    <li>
+        <p><strong>virtual ~Pokemon()</strong>: Destrutor que deve ser
+            implementado.</p>
+        <ul>
+            <li>Deve imprimir a mensagem: “Classe base : Pokémon NOME foi
+                destruído!”</li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>virtual double CalculateDamage() = 0:</strong> Método
+            virtual puro que deve ser implementado por todas as classes derivadas
+            (veja o link 2 e 3). Deve ser responsável por calcular o dano que o
+            Pokémon causa.</p>
+        <ul>
+            <li>O cálculo do dano é feito multiplicando a potência do ataque pelo
+                poder de ataque.</li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>Attack(Pokemon* target):</strong> Método que implementa o
+            comportamento de atacar outro Pokémon (target).</p>
+        <ul>
+            <li>Se o Pokémon atacante estiver com HP igual a zero, então ele não
+                pode atacar e a função deve apenas imprimir a mensagem “NOME já partiu
+                dessa pra melhor e não pode atacar!”</li>
+            <li>Caso contrário:
+                <ul>
+                    <li>Imprima as informações do Pokémon atacante (use a função
+                        PrintInfo)</li>
+                    <li>Calcule o dano que ele causa</li>
+                    <li>Imprima o dano calculado no formato “Dano: X”</li>
+                    <li>Aplique o dano sobre o Pokémon alvo</li>
+                    <li>Imprima as informações sobre o Pokémon alvo</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>ReceiveAttack(double)</strong>: Método que implementa o
+            comportamento de quando um Pokémon recebe uma pancada (ou lapada, no bom
+            português). O valor recebido como parâmetro deve ser debitado do hp do
+            Pokémon. O hp nunca deve ficar negativo, sendo o menor valor válido
+            zero, que indica que o Pokémon já morreu (que deus o tenha).</p>
+        <ul>
+            <li>Caso o Pokémon já esteja morto, a função deve apenas imprimir a
+                mensagem “NOME já morreu. Não chute Pokémon morto!”</li>
+            <li>Caso contrário, implemente a lógica de debitar o HP de acordo com o
+                dano recebido.
+                <ul>
+                    <li>Caso o hp chegue a zero, deve-se imprimir a mensagem “NOME Faliceu!
+                        ;-;”</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>virtual SayAttackType()</strong>: Método que imprime o
+            tipo do ataque.</p>
+    </li>
+    <li>
+        <p><strong>PrintInfo</strong>:</p>
+        <ul>
+            <li>Imprime as informações do Pokémon no formato:
+                <ul>
+                    <li>Pokémon: NOME</li>
+                    <li>Tipo de ataque: TIPO</li>
+                    <li>Potência do ataque: X</li>
+                    <li>HP: Y</li>
+                </ul>
+            </li>
+            <li>(TIPO é a mensagem impressa pela função SayAttackType(). Você vai
+                perceber que vai ser chamado SayAttackType() com o comportamento
+                implementado pela classe derivada!)</li>
+        </ul>
+    </li>
+</ol>
+<h3 id="class-electricpokemon">class ElectricPokemon</h3>
+<p>Herda de Pokémon.</p>
+<h4 id="atributos-1">Atributos</h4>
+<ol type="1">
+    <li><strong>m_electricPower</strong> do tipo double, que indica quanto
+        de dano elétrico o Pokémon pode dar.</li>
+</ol>
+<h4 id="métodos-1">Métodos</h4>
+<ol type="1">
+    <li>
+        <p><strong>ElectricPokemon(string name, string attackType, double
+                electricPower, double attackStrength)</strong>: Método construtor para a
+            inicialização dos atributos;</p>
+    </li>
+    <li>
+        <p><strong>virtual ~ElectricPokemon()</strong>: Destrutor que deve
+            ser implementado.</p>
+        <ul>
+            <li>Deve imprimir a mensagem: “Classe derivada : Pokémon elétrico NOME
+                diz: Adeus!”</li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>virtual double CalculateDamage()</strong>: Sobrescrita do
+            método virtual da superclasse.</p>
+    </li>
+    <li>
+        <p><strong>SayAttackType()</strong>: Sobrescrita do método da
+            superclasse. Imprime o tipo do ataque no seguinte formato:</p>
+        <ul>
+            <li>TIPO! Bzzzz!</li>
+            <li>(Imagine que “Bzzzz” é um barulho de choque e não de uma abelha ._.
+                )</li>
+        </ul>
+    </li>
+</ol>
+<h3 id="class-aquaticpokemon">class AquaticPokemon</h3>
+<p>Herda de Pokémon.</p>
+<h4 id="atributos-2">Atributos</h4>
+<ol type="1">
+    <li><strong>m_aquaticPower</strong> do tipo double, que indica quanto de
+        dano aquático o Pokémon pode dar.</li>
+</ol>
+<h4 id="métodos-2">Métodos</h4>
+<ol type="1">
+    <li>
+        <p><strong>AquaticPokemon(string name, string attackType, double
+                aquaticPower, double attackStrength)</strong>: Método construtor para a
+            inicialização dos atributos;</p>
+    </li>
+    <li>
+        <p><strong>virtual ~AquaticPokemon()</strong>: Destrutor que deve
+            ser implementado.</p>
+        <ul>
+            <li>Deve imprimir a mensagem: “Classe derivada : Pokémon aquático NOME
+                diz: Adeus!”</li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>virtual double CalculateDamage()</strong>: Sobrescrita do
+            método virtual da superclasse.</p>
+    </li>
+    <li>
+        <p><strong>SayAttackType()</strong>: Sobrescrita do método da
+            superclasse. Imprime o tipo do ataque no seguinte formato:</p>
+        <ul>
+            <li>TIPO! Splash!</li>
+        </ul>
+    </li>
+</ol>
+<h3 id="class-explosivepokemon">class ExplosivePokemon</h3>
+<p>Herda de Pokémon.</p>
+<p>Sendo politicamente correto, sei que não existe Pokémon do tipo
+    “explosivo” no anime. No entanto, não consegui pensar em uma onomatopeia
+    legal para um Pokémon de fogo e, cá entre nós, o BOOM dos Pokémons
+    explosivos é fenomenal. Então, considere isso liberdade artística da
+    minha parte.</p>
+<h4 id="atributos-3">Atributos</h4>
+<ol type="1">
+    <li><strong>m_explosivePower</strong> do tipo double, que indica quanto
+        de dano explosivo o Pokémon pode dar.</li>
+</ol>
+<h4 id="métodos-3">Métodos</h4>
+<ol type="1">
+    <li>
+        <p><strong>PokemonExplosive(string name, string attackType, double
+                explosivePower, double attackStrength)</strong>: Método construtor para
+            a inicialização dos atributos;</p>
+    </li>
+    <li>
+        <p><strong>virtual ~Explosive()</strong>: Destrutor que deve ser
+            implementado.</p>
+        <ul>
+            <li>Deve imprimir a mensagem: “Classe derivada : Pokémon explosivo NOME
+                diz: Adeus!”</li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>virtual double CalculateDamage()</strong>: Sobrescrita do
+            método virtual da superclasse.</p>
+    </li>
+    <li>
+        <p><strong>SayAttackType()</strong>: Sobrescrita do método da
+            superclasse. Imprime o tipo do ataque no seguinte formato:</p>
+        <ul>
+            <li>TIPO! Booom!</li>
+        </ul>
+    </li>
+</ol>
+<h3 id="trainer">Trainer</h3>
+<h4 id="atributos-4">Atributos</h4>
+<ol type="1">
+    <li><strong>m_name</strong>, do tipo string, que armazena o nome do
+        treinador;</li>
+    <li><strong>m_pokemons</strong>, um vector que armazenar uma lista de
+        ponteiros para objetos do tipo <strong>Pokémon</strong>.</li>
+</ol>
+<h4 id="métodos-4">Métodos</h4>
+<ol type="1">
+    <li>
+        <p><strong>Trainer(string)</strong>: Construtor que inicializa o
+            atributo ‘name’ do treinador.</p>
+    </li>
+    <li>
+        <p><strong>~Trainer()</strong>: Se você criou Pokémons no heap
+            (utilizou new), então você deve liberar a memória (isso é importante!).
+            Além disso, o destrutor deve imprimir a mensagem: “Treinador NOME foi
+            destruído!”</p>
+    </li>
+    <li>
+        <p>Métodos para criar Pokémons específicos:</p>
+        <ul>
+            <li><strong>AddElectricPokemon(string name, string attackType, double
+                    electricPower, double attackStrength);</strong></li>
+            <li><strong>AddAquaticPokemon(string name, string attackType, double
+                    aquaticPower, double attackStrength);</strong></li>
+            <li><strong>AddExplosivePokemon(string name, string attackType, double
+                    explosivePower, double attackStrength);</strong></li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>UsePokemon(string name):</strong> Busca pelo Pokémon com
+            o nome informado e retorna um ponteiro para ele;</p>
+    </li>
+    <li>
+        <p><strong>PrintInfo():</strong> Imprime as informações do treinador
+            no seguinte formato:</p>
+        <ul>
+            <li>Se nenhum Pokémon foi cadastrado
+                <ul>
+                    <li>Treinador: NOME</li>
+                    <li>---------<br></li>
+                    <li>Nenhum Pokémon encontrado :(</li>
+                    <li>---------<br></li>
+                </ul>
+            </li>
+            <li>Caso contrário:
+                <ul>
+                    <li>Treinador: NOME</li>
+                    <li>---------</li>
+                    <li>(Informações sobre o pokemon 0)</li>
+                    <li>---------</li>
+                    <li>(Informações sobre o pokemon 1)</li>
+                    <li>---------</li>
+                    <li>(etc etc etc)</li>
+                    <li>---------</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ol>
+<h3 id="rinha">Rinha</h3>
+<h4 id="atributos-5">Atributos</h4>
+<ol start="2" type="1">
+    <li><strong>m_trainers</strong>, um vector que armazenar uma lista de
+        ponteiros para objetos do tipo <strong>Trainer</strong>.</li>
+</ol>
+<h4 id="métodos-5">Métodos</h4>
+<ol type="1">
+    <li>
+        <p><strong>Rinha()</strong>: Construtor default.</p>
+    </li>
+    <li>
+        <p><strong>~Rinha()</strong>: Se você criou treinadores no heap
+            (utilizou new), então você deve liberar a memória (isso é importante!).
+            Além disso, você deve imprimir a mensagem “Rinha destruída pela Polícia
+            Federal!”</p>
+    </li>
+    <li>
+        <p><strong>AddTrainer(string name)</strong>: Método para criar
+            treinadores com um nome específico.</p>
+    </li>
+    <li>
+        <p>Métodos para criar Pokémons específicos:</p>
+        <ul>
+            <li><strong>AddElectricPokemon(string trainerName, string pokemonName,
+                    double electricPower, double attackStrength);</strong></li>
+            <li><strong>AddAquaticPokemon(string trainerName, string pokemonName,
+                    double aquaticPower, double attackStrength);</strong></li>
+            <li><strong>AddExplosivePokemon(string trainerName, string pokemonName,
+                    double explosivePower, double attackStrength);</strong></li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>Fight(string trainerName1, string pokemonName1, string
+                trainerName2, string pokemonName2):</strong> Executa a batalha
+            considerando o nome dos treinadores e Pokémons informados. Deve imprimir
+            as seguintes informações:</p>
+        <ul>
+            <li>### RINHA ###</li>
+            <li>NOME_TREINADOR_1 (NOME_POKEMON_1) vs.&nbsp;NOME_TREINADOR_2
+                (NOME_POKEMON_2)</li>
+            <li>Chamar método <strong>Attack</strong> (nesse caso, pokemon1 ataca
+                pokemon2)</li>
+            <li>#############<br></li>
+
+        </ul>
+    </li>
+</ol>
+<h3 id="freedom">Freedom</h3>
+<p>Como ainda vivemos em um país livre, você pode adicionar novos
+    atributos às classes, ou implementar outros métodos ou classes que achar
+    necessário para a sua solução. Além disso, você não precisa seguir a
+    nomenclatura de atributos, métodos e classes utilizada. Você poderia,
+    por exemplo, colocar tudo em português, mas o seu programa deve
+    implementar a lógica e comportamento solicitados.</p>
+<p>Além disso, você pode estar se perguntando por que diabos eu pedi
+    para você imprimir mensagens nos destrutores. Bom, além de tentar fazer
+    com que você os implemente, também gostaria que você visualizasse a
+    ordem que os destrutores são chamados quando há heranças envolvidas.</p>
+<h3 id="main">Main</h3>
+<p>Por fim, você deve implementar o <strong>main.cpp</strong> do seu
+    programa e toda a lógica de entrada/saída que será responsável por
+    manipular os seguintes comandos:&nbsp;</p>
+<ul>
+    <li>‘t nome’: comando para cadastrar um
+        treinador na rinha;&nbsp;</li>
+    <li>‘i nome’: comando para imprimir as informações de
+        um treinador;&nbsp;</li>
+    <li>‘e nomeTreinador nomePokemon forcaAtaque
+        potenciaAtaque’: comando para adicionar um Pokémon elétrico ao treinador
+        informado;&nbsp;</li>
+    <li>‘a nomeTreinador nomePokemon forcaAtaque potenciaAtaque’:
+        comando para adicionar um Pokémon aquático ao treinador informado;&nbsp;</li>
+    <li>‘x
+        nomeTreinador nomePokemon forcaAtaque potenciaAtaque’: comando para
+        adicionar um Pokémon explosivo ao treinador informado;</li>
+    <li>&nbsp;‘r
+        nomeTreinador1 nomePokemon1 nomeTreinador2 nomePokemon2’: comando para
+        realizar uma batalha de acordo com os nomes informados.&nbsp;</li>
+    <li>&nbsp;‘q’: comando
+        para finalizar o programa.</li>
+</ul>
+<p>O último comando da sua função main antes do ‘return 0;’ deve ser
+    ‘std::cout &lt;&lt; “Fim da execução” &lt;&lt; std::endl;’.</p>
+<p>Você pode assumir que todos os nomes utilizados nas entradas são
+    válidos. Ou seja, não ocorre nos casos de teste a tentativa de realizar
+    uma batalha com um treinador ou Pokémon que ainda não foi
+    registrado.</p>
+<h1 id="regras-do-jogo">Regras do jogo</h1>
+<ol type="1">
+    <li>Todos os atributos de todas as classes devem ser encapsulados e
+        acessados somente através de métodos Get e Set.</li>
+    <li>Você deve fazer todas as heranças e sobrescrita de métodos
+        solicitadas.</li>
+    <li>Respeita o formato das mensagens que são impressas. O moodle
+        verifica se seu programa funciona corretamente comparando a sua saída
+        com a esperada para cada caso de teste. Se houver alguma coisa fora de
+        lugar, os testes vão falhar.</li>
+    <li>Separe cada especificação (hpp) de sua respectiva implementação (cpp). Não implemente tudo em um único arquivo. Seja organizado.</li>
+</ol>
+<h1 id="exemplos-de-entrada-e-saída">Exemplos de entrada e saída</h1>
+<h2 id="exemplo-1">Exemplo 1</h2>
+<p><strong>input</strong><br>
+    t Ash<br>
+    t Xerosic<br>
+    e Ash Pikachu 42 0.7<br>
+    x Xerosic Cheirosinho 33 0.99<br>
+    r Ash Pikachu Xerosic Cheirosinho<br>
+    q</p>
+<p><strong>output</strong><br>
+    ### RINHA ###<br>
+    Ash (Pikachu) vs.&nbsp;Xerosic (Cheirosinho)<br>
+    Pokémon: Pikachu<br>
+    Tipo de ataque: Elétrico! Bzzzz!<br>
+    Potência do ataque: 0.7<br>
+    HP: 100<br>
+    Dano: 29.4<br>
+    Pokémon: Cheirosinho<br>
+    Tipo de ataque: Explosivo! Booom!<br>
+    Potência do ataque: 0.99<br>
+    HP: 70.6<br>
+    #############<br>
+    Fim da execução<br>
+    Classe derivada : Pokémon elétrico Pikachu diz: Adeus!<br>
+    Classe base : Pokémon Pikachu foi destruído!<br>
+    Treinador Ash foi destruído!<br>
+    Classe derivada : Pokémon explosivo Cheirosinho diz: Adeus!<br>
+    Classe base : Pokémon Cheirosinho foi destruído!<br>
+    Treinador Xerosic foi destruído!<br>
+    Rinha destruída pela Polícia Federal!</p>
+<h2 id="exemplo-2">Exemplo 2</h2>
+<p>DISCLAIMER: Eu sei que o Meowth não é um Pokémon explosivo, mas eu
+    queria mandar a Equipe Rocket para o espaço e tenho certeza que você não
+    gostaria de implementar mais um tipo de Pokémon só para que eu pudesse
+    fazer isso ._.</p>
+<p><strong>input</strong><br>
+    t Ash<br>
+    t EquipeRocket<br>
+    e Ash Pikachu 100 1<br>
+    x EquipeRocket Meowth 1 0.1<br>
+    r Ash Pikachu EquipeRocket Meowth<br>
+    q</p>
+<p><strong>output</strong><br>
+    ### RINHA ###<br>
+    Ash (Pikachu) vs.&nbsp;EquipeRocket (Meowth)<br>
+    Pokémon: Pikachu<br>
+    Tipo de ataque: Elétrico! Bzzzz!<br>
+    Potência do ataque: 1<br>
+    HP: 100<br>
+    Dano: 100<br>
+    Meowth Faliceu! ;-;<br>
+    Pokémon: Meowth<br>
+    Tipo de ataque: Explosivo! Booom!<br>
+    Potência do ataque: 0.1<br>
+    HP: 0<br>
+    #############<br>
+    Fim da execução<br>
+    Classe derivada : Pokémon elétrico Pikachu diz: Adeus!<br>
+    Classe base : Pokémon Pikachu foi destruído!<br>
+    Treinador Ash foi destruído!<br>
+    Classe derivada : Pokémon explosivo Meowth diz: Adeus!<br>
+    Classe base : Pokémon Meowth foi destruído!<br>
+    Treinador EquipeRocket foi destruído!<br>
+    Rinha destruída pela Polícia Federal!</p>
+<h2 id="exemplo-3">Exemplo 3</h2>
+<p><strong>input</strong><br>
+    t DrZager<br>
+    t OMonitorDePDS2<br>
+    a OMonitorDePDS2 Shellder 83 0.66<br>
+    x DrZager Dinamite 33 1<br>
+    r OMonitorDePDS2 Shellder DrZager Dinamite<br>
+    r DrZager Dinamite OMonitorDePDS2 Shellder<br>
+    r OMonitorDePDS2 Shellder DrZager Dinamite<br>
+    r DrZager Dinamite OMonitorDePDS2 Shellder<br>
+    r OMonitorDePDS2 Shellder DrZager Dinamite<br>
+    q</p>
+<p><strong>output</strong><br>
+    ### RINHA ###<br>
+    OMonitorDePDS2 (Shellder) vs.&nbsp;DrZager (Dinamite)<br>
+    Pokémon: Shellder<br>
+    Tipo de ataque: Aquático! Splash!<br>
+    Potência do ataque: 0.66<br>
+    HP: 100<br>
+    Dano: 54.78<br>
+    Pokémon: Dinamite<br>
+    Tipo de ataque: Explosivo! Booom!<br>
+    Potência do ataque: 1<br>
+    HP: 45.22<br>
+    #############<br>
+    ### RINHA ###<br>
+    DrZager (Dinamite) vs.&nbsp;OMonitorDePDS2 (Shellder)<br>
+    Pokémon: Dinamite<br>
+    Tipo de ataque: Explosivo! Booom!<br>
+    Potência do ataque: 1<br>
+    HP: 45.22<br>
+    Dano: 33<br>
+    Pokémon: Shellder<br>
+    Tipo de ataque: Aquático! Splash!<br>
+    Potência do ataque: 0.66<br>
+    HP: 67<br>
+    #############<br>
+    ### RINHA ###<br>
+    OMonitorDePDS2 (Shellder) vs.&nbsp;DrZager (Dinamite)<br>
+    Pokémon: Shellder<br>
+    Tipo de ataque: Aquático! Splash!<br>
+    Potência do ataque: 0.66<br>
+    HP: 67<br>
+    Dano: 54.78<br>
+    Dinamite Faliceu! ;-;<br>
+    Pokémon: Dinamite<br>
+    Tipo de ataque: Explosivo! Booom!<br>
+    Potência do ataque: 1<br>
+    HP: 0<br>
+    #############<br>
+    ### RINHA ###<br>
+    DrZager (Dinamite) vs.&nbsp;OMonitorDePDS2 (Shellder)<br>
+    Dinamite já partiu dessa pra melhor e não pode atacar!<br>
+    #############<br>
+    ### RINHA ###<br>
+    OMonitorDePDS2 (Shellder) vs.&nbsp;DrZager (Dinamite)<br>
+    Pokémon: Shellder<br>
+    Tipo de ataque: Aquático! Splash!<br>
+    Potência do ataque: 0.66<br>
+    HP: 67<br>
+    Dano: 54.78<br>
+    Dinamite já morreu. Não chute Pokémon morto!<br>
+    Pokémon: Dinamite<br>
+    Tipo de ataque: Explosivo! Booom!<br>
+    Potência do ataque: 1<br>
+    HP: 0<br>
+    #############<br>
+    Fim da execução<br>
+    Classe derivada : Pokémon explosivo Dinamite diz: Adeus!<br>
+    Classe base : Pokémon Dinamite foi destruído!<br>
+    Treinador DrZager foi destruído!<br>
+    Classe derivada : Pokémon aquático Shellder diz: Adeus!<br>
+    Classe base : Pokémon Shellder foi destruído!<br>
+    Treinador OMonitorDePDS2 foi destruído!<br>
+    Rinha destruída pela Polícia Federal!</p>
+<h1 id="links-não-tão-inúteis">Links não tão inúteis</h1>
+<ol type="1">
+    <li><a href="https://www2.camara.leg.br/legin/fed/decret/1960-1969/decreto-50620-18-maio-1961-390463-publicacaooriginal-1-pe.html" target="_blank">https://www2.camara.leg.br/legin/fed/decret/1960-1969/decreto-50620-18-maio-1961-390463-publicacaooriginal-1-pe.html</a></li>
+    <li><a href="https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/" target="_blank">https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/</a></li>
+    <li><a href="https://stackoverflow.com/questions/1306778/virtual-pure-virtual-explained" target="_blank">https://stackoverflow.com/questions/1306778/virtual-pure-virtual-explained</a></li>
+    <li><a href="https://stackoverflow.com/questions/18198314/what-is-the-override-keyword-in-c-used-for" target="_blank">https://stackoverflow.com/questions/18198314/what-is-the-override-keyword-in-c-used-for</a></li>
+    <li><a href="https://www.naukri.com/code360/library/new-and-delete-operator-in-c" target="_blank">https://www.naukri.com/code360/library/new-and-delete-operator-in-c</a></li>
+</ol>
